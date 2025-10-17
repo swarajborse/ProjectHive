@@ -1,4 +1,4 @@
 # IoT Example Project
-**Contributor:** Example_IoT
+**Contributor:** Tejas-Santosh-Nalawade
 ## Description
 This is a sample project for IoT

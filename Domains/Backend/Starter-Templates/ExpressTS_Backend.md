@@ -1,6 +1,6 @@
 # Express.js + TypeScript + MongoDB Starter Template
 
-**Contributor:** SampleContributor
+**Contributor:** Tejas-Santosh-Nalawade
 **Domain:** Backend
 **Last Updated:** October 2024
 

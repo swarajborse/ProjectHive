@@ -1,6 +1,6 @@
 # ✅ Todo App
 
-**Contributor:** SampleContributor  
+**Contributor:** Tejas-Santosh-Nalawade  
 **Domain:** Frontend  
 **Difficulty:** Beginner  
 **Tech Stack:** HTML, CSS, JavaScript

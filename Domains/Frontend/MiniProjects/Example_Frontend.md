@@ -1,4 +1,4 @@
 # Frontend Example Project
-**Contributor:** Example_Frontend
+**Contributor:** Tejas-Santosh-Nalawade
 ## Description
 This is a sample project for Frontend

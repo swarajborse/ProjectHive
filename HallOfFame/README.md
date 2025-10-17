@@ -22,13 +22,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/SampleContributor.png" width="100" height="100" style="border-radius: 50%;" alt="SampleContributor"/>
+<img src="https://github.com/Tejas-Santosh-Nalawade.png" width="100" height="100" style="border-radius: 50%;" alt="Tejas-Santosh-Nalawade"/>
 
-**[@SampleContributor](https://github.com/SampleContributor)**
+**[@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade)**
 
-*Contributions: 8 PRs across 4 domain(s)*
+*Contributions: 21 PRs across 13 domain(s)*
 
-*Domains: AI-ML, Backend, Frontend, FullStack*
+*Domains: AI-ML, AR-VR, Backend, Blockchain, Cloud, Cybersecurity, DevOps, Frontend, FullStack, IoT, MLOps, NLP, Robotics-Automation*
 
 </div>
 
@@ -38,13 +38,11 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/Example_AI-ML.png" width="100" height="100" style="border-radius: 50%;" alt="Example_AI-ML"/>
+<img src="https://github.com/github.png" width="100" height="100" style="border-radius: 50%;" alt="Pending"/>
 
-**[@Example_AI-ML](https://github.com/Example_AI-ML)**
+**[Username Pending]**
 
-*Contributions: 1 PRs across 1 domain(s)*
-
-*Domains: AI-ML*
+*Contributions: TBD*
 
 </div>
 
@@ -54,13 +52,11 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/Example_AR-VR.png" width="100" height="100" style="border-radius: 50%;" alt="Example_AR-VR"/>
+<img src="https://github.com/github.png" width="100" height="100" style="border-radius: 50%;" alt="Pending"/>
 
-**[@Example_AR-VR](https://github.com/Example_AR-VR)**
+**[Username Pending]**
 
-*Contributions: 1 PRs across 1 domain(s)*
-
-*Domains: AR-VR*
+*Contributions: TBD*
 
 </div>
 
@@ -70,13 +66,11 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/Example_Backend.png" width="100" height="100" style="border-radius: 50%;" alt="Example_Backend"/>
+<img src="https://github.com/github.png" width="100" height="100" style="border-radius: 50%;" alt="Pending"/>
 
-**[@Example_Backend](https://github.com/Example_Backend)**
+**[Username Pending]**
 
-*Contributions: 1 PRs across 1 domain(s)*
-
-*Domains: Backend*
+*Contributions: TBD*
 
 </div>
 
@@ -86,13 +80,11 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/Example_Blockchain.png" width="100" height="100" style="border-radius: 50%;" alt="Example_Blockchain"/>
+<img src="https://github.com/github.png" width="100" height="100" style="border-radius: 50%;" alt="Pending"/>
 
-**[@Example_Blockchain](https://github.com/Example_Blockchain)**
+**[Username Pending]**
 
-*Contributions: 1 PRs across 1 domain(s)*
-
-*Domains: Blockchain*
+*Contributions: TBD*
 
 </div>
 
@@ -102,13 +94,11 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/Example_Cloud.png" width="100" height="100" style="border-radius: 50%;" alt="Example_Cloud"/>
+<img src="https://github.com/github.png" width="100" height="100" style="border-radius: 50%;" alt="Pending"/>
 
-**[@Example_Cloud](https://github.com/Example_Cloud)**
+**[Username Pending]**
 
-*Contributions: 1 PRs across 1 domain(s)*
-
-*Domains: Cloud*
+*Contributions: TBD*
 
 </div>
 
@@ -118,13 +108,11 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/Example_Cybersecurity.png" width="100" height="100" style="border-radius: 50%;" alt="Example_Cybersecurity"/>
+<img src="https://github.com/github.png" width="100" height="100" style="border-radius: 50%;" alt="Pending"/>
 
-**[@Example_Cybersecurity](https://github.com/Example_Cybersecurity)**
+**[Username Pending]**
 
-*Contributions: 1 PRs across 1 domain(s)*
-
-*Domains: Cybersecurity*
+*Contributions: TBD*
 
 </div>
 
@@ -134,13 +122,11 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/Example_DevOps.png" width="100" height="100" style="border-radius: 50%;" alt="Example_DevOps"/>
+<img src="https://github.com/github.png" width="100" height="100" style="border-radius: 50%;" alt="Pending"/>
 
-**[@Example_DevOps](https://github.com/Example_DevOps)**
+**[Username Pending]**
 
-*Contributions: 1 PRs across 1 domain(s)*
-
-*Domains: DevOps*
+*Contributions: TBD*
 
 </div>
 
@@ -150,13 +136,11 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/Example_Frontend.png" width="100" height="100" style="border-radius: 50%;" alt="Example_Frontend"/>
+<img src="https://github.com/github.png" width="100" height="100" style="border-radius: 50%;" alt="Pending"/>
 
-**[@Example_Frontend](https://github.com/Example_Frontend)**
+**[Username Pending]**
 
-*Contributions: 1 PRs across 1 domain(s)*
-
-*Domains: Frontend*
+*Contributions: TBD*
 
 </div>
 
@@ -166,13 +150,11 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/Example_FullStack.png" width="100" height="100" style="border-radius: 50%;" alt="Example_FullStack"/>
+<img src="https://github.com/github.png" width="100" height="100" style="border-radius: 50%;" alt="Pending"/>
 
-**[@Example_FullStack](https://github.com/Example_FullStack)**
+**[Username Pending]**
 
-*Contributions: 1 PRs across 1 domain(s)*
-
-*Domains: FullStack*
+*Contributions: TBD*
 
 </div>
 

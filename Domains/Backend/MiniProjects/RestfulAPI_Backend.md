@@ -1,6 +1,6 @@
 # RESTful API for Blog Platform
 
-**Contributor:** SampleContributor
+**Contributor:** Tejas-Santosh-Nalawade
 **Domain:** Backend
 **Difficulty:** Intermediate
 **Tech Stack:** Node.js, Express.js, MongoDB, JWT
