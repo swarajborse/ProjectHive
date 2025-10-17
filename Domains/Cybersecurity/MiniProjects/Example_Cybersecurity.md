@@ -1,4 +1,4 @@
 # Cybersecurity Example Project
-**Contributor:** Example_Cybersecurity
+**Contributor:** Tejas-Santosh-Nalawade
 ## Description
 This is a sample project for Cybersecurity

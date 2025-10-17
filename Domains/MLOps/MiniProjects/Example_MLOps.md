@@ -1,4 +1,4 @@
 # MLOps Example Project
-**Contributor:** Example_MLOps
+**Contributor:** Tejas-Santosh-Nalawade
 ## Description
 This is a sample project for MLOps

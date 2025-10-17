@@ -1,6 +1,6 @@
 # React + TypeScript + Vite Starter Template
 
-**Contributor:** SampleContributor
+**Contributor:** Tejas-Santosh-Nalawade
 **Domain:** Frontend
 **Last Updated:** October 2024
 

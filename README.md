@@ -12,9 +12,9 @@
 ![Stars](https://img.shields.io/github/stars/Tejas-Santosh-Nalawade/ProjectHive?style=for-the-badge)
 ![Forks](https://img.shields.io/github/forks/Tejas-Santosh-Nalawade/ProjectHive?style=for-the-badge)
 
-**Open-source hub for learning through real code projects across 15+ tech domains**
+**An open-source hub where you can learn by contributing to real code projects across 15+ tech domains.**
 
-[🚀 Quick Start](#-quick-start) • [📖 How to Contribute](#-how-to-contribute) • [🏆 Leaderboard](DomainsLeaderboards/Overall.md) • [📚 Resources](#-learning-resources)
+[🏆 Leaderboard](DomainsLeaderboards/Overall.md) • [📖 Contribution Guide](CONTRIBUTING.md) • [🚀 Quick Start](QUICK_START.md)
 
 </div>
 
@@ -22,22 +22,79 @@
 
 ## 🎯 What is ProjectHive?
 
-A Hacktoberfest-friendly repository where you contribute **real working code projects** (not just docs) and get recognized on an auto-updating leaderboard.
+ProjectHive is a Hacktoberfest-friendly repository designed for you to contribute **real, working code projects** (not just documentation) and get recognized for your work on an auto-updating leaderboard.
 
-**What you contribute:**
-- 💻 **Mini-Projects** - Complete working applications with actual code files
-- 📦 **Starter Templates** - Boilerplate code to help others get started
-- 🗺️ **Learning Roadmaps** - Guides for mastering different technologies
+> [!IMPORTANT]
+> **⚠️ COMPULSORY: Add This Line to Get on the Leaderboard!**
+> 
+> You **MUST** include this line at the start of your project's README.md file:
+> 
+> ```markdown
+> **Contributor:** your-github-username
+> ```
+> 
+> Replace `your-github-username` with your actual GitHub username (e.g., `**Contributor:** john-doe`).
+> 
+> **Without this line, your name will NOT be added to the leaderboard!**
+> 
+> 📖 [**See examples of correct and incorrect formats →**](CONTRIBUTOR_TAG_EXAMPLE.md)
 
-**What you get:**
-- ✅ Automatic leaderboard recognition
-- ✅ Portfolio-worthy contributions  
-- ✅ Real coding experience
-- ✅ Valid Hacktoberfest PRs
+**What you can contribute:**
+- 💻 **Mini-Projects:** Complete, working applications with actual code files.
+- 📦 **Starter Templates:** Boilerplate code to help others get started quickly.
+- 🗺️ **Learning Roadmaps:** Guides and resources for mastering different technologies.
+
+**What you get in return:**
+- ✅ Automatic recognition on the project leaderboard.
+- ✅ Portfolio-worthy contributions and real coding experience.
+- ✅ Validated PRs for Hacktoberfest.
 
 ---
 
-## 🚀 Available Domains
+## 🚀 How to Contribute: A 5-Step Guide
+
+Here’s a simple workflow to get your contribution merged.
+
+### Step 1: Fork & Clone the Repository
+First, create your own copy of this repository by forking it. Then, clone it to your local machine.
+
+```bash
+git clone https://github.com/YOUR-USERNAME/ProjectHive.git
+cd ProjectHive
+```
+
+### Step 2: Create a New Branch
+Create a branch with a descriptive name for your contribution.
+
+```bash
+git checkout -b add-your-project-name
+```
+
+### Step 3: Add Your Project
+- Navigate to the appropriate domain: `Domains/[YourDomain]/MiniProjects/`.
+- Create a new folder for your project.
+- Add all your code files (e.g., HTML, CSS, JS, Python).
+- **⚠️ COMPULSORY:** Include a `README.md` in your project folder with this line at the start:
+  - `**Contributor:** YourGitHubUsername` (replace with your actual GitHub username)
+  - **Without this line, you will NOT appear on the leaderboard!**
+
+### Step 4: Commit & Push Your Changes
+Commit your changes with a clear message and push them to your forked repository.
+
+```bash
+git add .
+git commit -m "Add: [Domain] Your Project Name"
+git push origin add-your-project-name
+```
+
+### Step 5: Create a Pull Request
+Go to your forked repository on GitHub and create a Pull Request. Once it's reviewed and merged, you'll automatically appear on the [leaderboard](DomainsLeaderboards/Overall.md)!
+
+---
+
+## 📚 Available Domains
+
+Choose a domain and start contributing!
 
 | Domain | Roadmap | Projects |
 |--------|---------|----------|
@@ -58,169 +115,45 @@ A Hacktoberfest-friendly repository where you contribute **real working code pro
 
 ---
 
-## ⚡ Quick Start
-
-1. **Fork & Clone**
-   ```bash
-   git clone https://github.com/YOUR-USERNAME/ProjectHive.git
-   cd ProjectHive
-   ```
-
-2. **Create Branch**
-   ```bash
-   git checkout -b add-your-project
-   ```
-
-3. **Add Your Project**
-   - Go to `Domains/[YourDomain]/MiniProjects/`
-   - Create a folder with your project name
-   - Add all code files (HTML, CSS, JS, Python, etc.)
-   - Include a README.md with `**Contributor:** YourGitHubUsername`
-
-4. **Commit & Push**
-   ```bash
-   git add .
-   git commit -m "Add: [Domain] ProjectName"
-   git push origin add-your-project
-   ```
-
-5. **Create Pull Request**
-   - Go to GitHub and create a PR
-   - Wait for review and merge
-   - Automatically appear on the [leaderboard](DomainsLeaderboards/Overall.md)!
-
----
-
-## 📖 How to Contribute
-
-### Option 1: Add a Mini-Project (Recommended)
-
-Create a **folder** with your complete project:
-
-```
-Domains/Frontend/MiniProjects/MyAwesomeApp/
-├── index.html
-├── style.css
-├── script.js
-├── package.json (if needed)
-└── README.md (required)
-```
-
-**README.md must include:**
-```markdown
-# Project Name
-**Contributor:** YourGitHubUsername
-
-## Description
-What your project does
-
-## Tech Stack
-- HTML/CSS/JS or whatever you used
-
-## How to Run
-Steps to run your project
-```
-
-### Option 2: Add a Starter Template
-
-Provide boilerplate code in `Domains/[Domain]/Starter-Templates/`
-
-### Option 3: Improve Roadmaps
-
-Enhance learning paths in `Domains/[Domain]/Roadmap.md`
-
----
-
-## � Contribution Rules
+## 📜 Contribution Rules
 
 ✅ **DO:**
-- Include actual working code files (not just markdown descriptions)
-- Add `**Contributor:** YourUsername` in your README
-- Test your code before submitting
-- Follow existing project structure
+- Include actual, working code files.
+- **⚠️ MUST ADD:** `**Contributor:** YourUsername` at the start of your project's README (replace with your actual GitHub username).
+- Test your code before submitting.
+- Follow the existing project structure.
 
 ❌ **DON'T:**
-- Submit only markdown files without code
-- Copy others' work without attribution
-- Add spam or low-quality content
-- Modify existing projects without permission
+- Submit only Markdown files without code.
+- Copy others' work without attribution.
+- Add spam or low-quality content.
+- Forget the contributor tag (your name won't appear on the leaderboard without it!).
 
-**Full guidelines:** [CONTRIBUTING.md](CONTRIBUTING.md)
-
----
-
-## 🏆 Leaderboard & Recognition
-
-Every merged PR automatically:
-- ✅ Adds you to the [leaderboard](DomainsLeaderboards/Overall.md)
-- ✅ Top 10 appear in [Hall of Fame](HallOfFame/README.md) with profile pictures
-- ✅ Gets tracked by GitHub Actions within 2-3 minutes
-- ✅ Updates your contributor badge on the repository
-
-**How it works:** When your PR merges, our automation scans for `**Contributor:** YourUsername` and updates both the leaderboard and Hall of Fame automatically.
-
-**When do badges appear?** Your GitHub profile will automatically show up in the Contributors section within 24 hours of your PR being merged. Hall of Fame updates happen within 2-3 minutes! Make sure your commits are linked to your GitHub account for proper attribution.
-
-📖 [Learn more about automation →](AUTOMATION_GUIDE.md)
+For more details, please read our [**CONTRIBUTING.md**](CONTRIBUTING.md).
 
 ---
 
-## 🤝 Code of Conduct
+## 🏆 Recognition & Leaderboard
 
-- Be respectful and inclusive
-- Help others learn
-- Provide constructive feedback
-- No spam or plagiarism
+Every merged PR automatically updates your stats:
 
----
+- You will be added to the [**Overall Leaderboard**](DomainsLeaderboards/Overall.md).
+- Top contributors are featured in the [**Hall of Fame**](HallOfFame/README.md).
+- Your contributor badge will appear on the repository.
 
-## 📚 Learning Resources
+**Important:** Make sure to include `**Contributor:** YourGitHubUsername` in your project's README to get recognized!
 
-### 🎓 Documentation & Guides
-- [Quick Start Guide](QUICK_START.md) - Get started in 5 minutes
-- [Contributing Guidelines](CONTRIBUTING.md) - Detailed contribution process
-- [Domain Roadmaps](Domains/) - Learning paths for each tech domain
-
-### 🏆 Competitive Programming
-- [Codeforces](https://codeforces.com/) - Practice competitive programming
-- [CodeChef](https://www.codechef.com/) - Programming contests and practice
-- [LeetCode](https://leetcode.com/) - Interview preparation problems
-
-### 💻 Development Resources
-- [MDN Web Docs](https://developer.mozilla.org/) - Web development documentation
-- [freeCodeCamp](https://www.freecodecamp.org/) - Learn to code for free
-- [GitHub Docs](https://docs.github.com/) - Git and GitHub tutorials
-- [DevDocs](https://devdocs.io/) - API documentation browser
-
-### 🎨 Design Resources
-- [Figma](https://www.figma.com/community) - Design and prototyping
-- [Dribbble](https://dribbble.com/) - Design inspiration
-- [Font Awesome](https://fontawesome.com/) - Icon library
-
-### 📖 Open Source Guides
-- [Open Source Guide](https://opensource.guide/) - How to contribute to open source
-- [First Timers Only](https://www.firsttimersonly.com/) - Friendly open source projects
-- [Good First Issue](https://goodfirstissue.dev/) - Find beginner-friendly issues
-
----
-
-## � Need Help?
-
-- 📖 Read [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines
-- � [Create an issue](https://github.com/Tejas-Santosh-Nalawade/ProjectHive/issues) for bugs
-- 💬 [Start a discussion](https://github.com/Tejas-Santosh-Nalawade/ProjectHive/discussions) for questions
+📖 [**Read the full Leaderboard Guide →**](LEADERBOARD_GUIDE.md)
 
 ---
 
 ## 📄 License
 
-MIT License - see [LICENSE](LICENSE)
-
----
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 <div align="center">
 
-**Made with ❤️ for Hacktoberfest and Open Source Learning**
+**Made with ❤️ for Hacktoberfest and the Open Source Community.**
 
 ⭐ Star this repo • 🍴 Fork it • 🤝 Contribute
 

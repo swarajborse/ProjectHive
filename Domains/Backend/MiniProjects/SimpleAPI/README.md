@@ -1,6 +1,6 @@
 # 🚀 Simple REST API
 
-**Contributor:** SampleContributor  
+**Contributor:** Tejas-Santosh-Nalawade  
 **Domain:** Backend  
 **Difficulty:** Beginner  
 **Tech Stack:** Node.js, Express.js

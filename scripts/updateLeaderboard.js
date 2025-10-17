@@ -52,11 +52,33 @@ function scanDirectory(dir, domain) {
       // Read file and find contributors
       try {
         const content = fs.readFileSync(itemPath, 'utf8');
-        const matches = content.match(/\*\*Contributor:\*\*\s*([\w\-]+)/gi);
         
-        if (matches) {
-          matches.forEach(match => {
-            const username = match.split(':')[1].trim().replace(/\*+/g, '').trim();
+        // Multiple regex patterns to catch different formats
+        const patterns = [
+          /\*\*Contributor:\*\*\s*([\w\-]+)/gi,
+          /\*\*Contributor\*\*:\s*([\w\-]+)/gi,
+          /Contributor:\s*\*\*([\w\-]+)\*\*/gi,
+          /Contributor:\s*([\w\-]+)/gi,
+          /@([\w\-]+)\s*-\s*Contributor/gi
+        ];
+        
+        patterns.forEach(pattern => {
+          const matches = content.matchAll(pattern);
+          
+          for (const match of matches) {
+            // Extract username and clean it
+            let username = match[1];
+            if (!username) continue;
+            
+            username = username.trim().replace(/\*+/g, '').replace(/\[|\]|\(|\)/g, '').trim();
+            
+            // Validate username (GitHub username rules)
+            if (!username || username.length === 0 || username.length > 39) continue;
+            if (!/^[a-zA-Z0-9]([a-zA-Z0-9\-]*[a-zA-Z0-9])?$/.test(username)) continue;
+            
+            // Skip placeholder names
+            const placeholders = ['yourname', 'username', 'yourusername', 'yourgithubusername', 'contributor'];
+            if (placeholders.includes(username.toLowerCase())) continue;
             
             if (!contributors[username]) {
               contributors[username] = {
@@ -71,8 +93,11 @@ function scanDirectory(dir, domain) {
               contributors[username].domains[domain] = 0;
             }
             contributors[username].domains[domain] += 1;
-          });
-        }
+            
+            console.log(`✓ Found contributor: ${username} in ${domain}`);
+            break; // Only count once per file per pattern
+          }
+        });
       } catch (err) {
         console.error(`Error reading file ${itemPath}:`, err.message);
       }
@@ -167,8 +192,19 @@ Top 10 contributors are featured in our [Hall of Fame](../HallOfFame/README.md)!
 *Leaderboard updates automatically on every merged PR via GitHub Actions*
 `;
 
-  fs.writeFileSync(leaderboardFile, md);
-  console.log('✅ Leaderboard updated!');
+  try {
+    // Ensure directory exists
+    const leaderboardDir = path.dirname(leaderboardFile);
+    if (!fs.existsSync(leaderboardDir)) {
+      fs.mkdirSync(leaderboardDir, { recursive: true });
+    }
+    
+    fs.writeFileSync(leaderboardFile, md, 'utf8');
+    console.log('✅ Leaderboard updated successfully!');
+  } catch (err) {
+    console.error('❌ Error writing leaderboard:', err.message);
+    throw err;
+  }
 }
 
 // Generate Hall of Fame markdown
@@ -290,8 +326,19 @@ Made with ❤️ by the ProjectHive Community | **Hacktoberfest 2025**
 
 </div>`;
 
-  fs.writeFileSync(hallOfFameFile, md);
-  console.log('✅ Hall of Fame updated!');
+  try {
+    // Ensure directory exists
+    const hallOfFameDir = path.dirname(hallOfFameFile);
+    if (!fs.existsSync(hallOfFameDir)) {
+      fs.mkdirSync(hallOfFameDir, { recursive: true });
+    }
+    
+    fs.writeFileSync(hallOfFameFile, md, 'utf8');
+    console.log('✅ Hall of Fame updated successfully!');
+  } catch (err) {
+    console.error('❌ Error writing Hall of Fame:', err.message);
+    throw err;
+  }
 }
 
 // Main execution

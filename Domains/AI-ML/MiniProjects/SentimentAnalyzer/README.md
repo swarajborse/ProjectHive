@@ -1,6 +1,6 @@
 # 🤖 Sentiment Analysis with Machine Learning
 
-**Contributor:** SampleContributor  
+**Contributor:** Tejas-Santosh-Nalawade  
 **Domain:** AI-ML  
 **Difficulty:** Intermediate  
 **Tech Stack:** Python, scikit-learn, NLTK, Flask

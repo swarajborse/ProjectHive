@@ -1,6 +1,6 @@
 # 🚀 Full-Stack Task Manager Application
 
-**Contributor:** SampleContributor  
+**Contributor:** Tejas-Santosh-Nalawade  
 **Domain:** FullStack  
 **Difficulty:** Intermediate  
 **Tech Stack:** React.js, Node.js, Express.js, MongoDB, JWT Authentication
