@@ -33,8 +33,6 @@
 
 <a href="https://github.com/Tejas-Santosh-Nalawade/ProjectHive/graphs/contributors">
 
-<a href="https://github.com/Tejas-Santosh-Nalawade/ProjectHive/graphs/contributors">  <img src="https://contrib.rocks/image?repo=Tejas-Santosh-Nalawade/ProjectHive" />
-
   <img src="https://contrib.rocks/image?repo=Tejas-Santosh-Nalawade/ProjectHive" /></a>
 
 </a>
