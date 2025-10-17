@@ -5,8 +5,74 @@ const domainsDir = path.join(__dirname, '../Domains');
 const leaderboardFile = path.join(__dirname, '../DomainsLeaderboards/Overall.md');
 const hallOfFameFile = path.join(__dirname, '../HallOfFame/README.md');
 
+// Get PR information from environment variables
+const PR_AUTHOR = process.env.PR_AUTHOR;
+const PR_NUMBER = process.env.PR_NUMBER;
+
 // Contributor data structure
 let contributors = {};
+
+// Add PR author automatically if available
+function addPRAuthor() {
+  if (PR_AUTHOR && PR_AUTHOR !== 'undefined') {
+    console.log(`🎯 Auto-detected PR author: ${PR_AUTHOR}`);
+    
+    // Validate username
+    if (PR_AUTHOR.length > 0 && PR_AUTHOR.length <= 39) {
+      if (/^[a-zA-Z0-9]([a-zA-Z0-9\-]*[a-zA-Z0-9])?$/.test(PR_AUTHOR)) {
+        // Skip bot accounts
+        const bots = ['github-actions', 'dependabot', 'renovate', 'codecov'];
+        if (!bots.some(bot => PR_AUTHOR.toLowerCase().includes(bot))) {
+          if (!contributors[PR_AUTHOR]) {
+            contributors[PR_AUTHOR] = {
+              totalPRs: 0,
+              domains: {},
+              autoCredited: true
+            };
+          }
+          
+          // Try to detect which domain was modified using git
+          try {
+            const { execSync } = require('child_process');
+            const gitDiff = execSync('git diff --name-only HEAD~1 HEAD 2>/dev/null || git diff --name-only HEAD', {
+              encoding: 'utf8',
+              stdio: ['pipe', 'pipe', 'ignore']
+            });
+            
+            const changedFiles = gitDiff.split('\n').filter(f => f.length > 0);
+            const detectedDomains = new Set();
+            
+            changedFiles.forEach(file => {
+              const domainMatch = file.match(/^Domains\/([^\/]+)\//);
+              if (domainMatch) {
+                detectedDomains.add(domainMatch[1]);
+              }
+            });
+            
+            if (detectedDomains.size > 0) {
+              console.log(`📁 Auto-detected domains: ${Array.from(detectedDomains).join(', ')}`);
+              detectedDomains.forEach(domain => {
+                if (!contributors[PR_AUTHOR].domains[domain]) {
+                  contributors[PR_AUTHOR].domains[domain] = 0;
+                }
+                contributors[PR_AUTHOR].domains[domain] += 1;
+                contributors[PR_AUTHOR].totalPRs += 1;
+              });
+            } else {
+              // If no domain detected, credit as general contribution
+              contributors[PR_AUTHOR].totalPRs += 1;
+            }
+          } catch (error) {
+            // Git command failed, just credit the PR without domain
+            contributors[PR_AUTHOR].totalPRs += 1;
+          }
+          
+          console.log(`✅ PR author ${PR_AUTHOR} will be credited automatically`);
+        }
+      }
+    }
+  }
+}
 
 // Scan all domains and count contributions
 function scanContributions() {
@@ -343,6 +409,11 @@ Made with ❤️ by the ProjectHive Community | **Hacktoberfest 2025**
 
 // Main execution
 console.log('🔄 Scanning contributions...');
+
+// First, add PR author automatically if available
+addPRAuthor();
+
+// Then scan all files for contributor tags
 scanContributions();
 
 console.log(`📊 Found ${Object.keys(contributors).length} contributors`);
