@@ -1,0 +1,24 @@
+name: Update Leaderboard
+on:
+  pull_request:
+    types: [closed]
+jobs:
+  update:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      - name: Run leaderboard update
+        run: node scripts/updateLeaderboard.js
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add DomainsLeaderboards/Overall.md
+          git add HallOfFame/README.md
+          git commit -m "Update leaderboard and Hall of Fame after merged PR"
+          git push

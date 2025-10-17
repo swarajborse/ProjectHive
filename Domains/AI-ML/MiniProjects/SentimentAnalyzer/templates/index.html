@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Sentiment Analyzer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🤖 AI Sentiment Analyzer</h1>
+            <p class="subtitle">Analyze the sentiment of any text using Machine Learning</p>
+        </header>
+
+        <main>
+            <div class="input-section">
+                <label for="text-input">Enter text to analyze:</label>
+                <textarea 
+                    id="text-input" 
+                    placeholder="Type or paste your text here... (e.g., 'This product is amazing!')"
+                    rows="6"
+                ></textarea>
+                
+                <div class="button-group">
+                    <button id="analyze-btn" class="btn btn-primary">
+                        <span class="btn-text">Analyze Sentiment</span>
+                        <span class="loader" style="display: none;"></span>
+                    </button>
+                    <button id="clear-btn" class="btn btn-secondary">Clear</button>
+                </div>
+            </div>
+
+            <div id="result-section" class="result-section" style="display: none;">
+                <h2>Analysis Result</h2>
+                
+                <div id="sentiment-card" class="sentiment-card">
+                    <div class="sentiment-header">
+                        <span id="sentiment-emoji" class="sentiment-emoji">😊</span>
+                        <div>
+                            <h3 id="sentiment-label">Positive</h3>
+                            <p id="confidence-text">Confidence: 95%</p>
+                        </div>
+                    </div>
+                    
+                    <div class="probability-bars">
+                        <div class="prob-item">
+                            <div class="prob-label">
+                                <span>😊 Positive</span>
+                                <span id="prob-positive">0%</span>
+                            </div>
+                            <div class="prob-bar">
+                                <div id="bar-positive" class="prob-fill positive"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="prob-item">
+                            <div class="prob-label">
+                                <span>😐 Neutral</span>
+                                <span id="prob-neutral">0%</span>
+                            </div>
+                            <div class="prob-bar">
+                                <div id="bar-neutral" class="prob-fill neutral"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="prob-item">
+                            <div class="prob-label">
+                                <span>😞 Negative</span>
+                                <span id="prob-negative">0%</span>
+                            </div>
+                            <div class="prob-bar">
+                                <div id="bar-negative" class="prob-fill negative"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="examples-section">
+                <h3>Try these examples:</h3>
+                <div class="example-chips">
+                    <button class="example-chip" data-text="This product is absolutely amazing! I love it!">
+                        ✨ Positive Example
+                    </button>
+                    <button class="example-chip" data-text="Terrible service. Very disappointed with the quality.">
+                        😞 Negative Example
+                    </button>
+                    <button class="example-chip" data-text="It's okay, nothing special. Just average.">
+                        😐 Neutral Example
+                    </button>
+                </div>
+            </div>
+
+            <div class="info-section">
+                <h3>How it works:</h3>
+                <ol>
+                    <li>Enter any text in the input box above</li>
+                    <li>Click "Analyze Sentiment" to get AI-powered analysis</li>
+                    <li>View the sentiment (Positive, Negative, or Neutral) with confidence score</li>
+                    <li>See probability distribution across all sentiment categories</li>
+                </ol>
+                
+                <div class="tech-stack">
+                    <h4>Powered by:</h4>
+                    <p>Python • scikit-learn • NLTK • Flask • Machine Learning</p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Part of <strong>ProjectHive</strong> - AI-ML Domain Mini Project</p>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
