@@ -147,9 +147,27 @@ Every merged PR automatically updates your stats:
 
 ---
 
-## 📄 License
+## � Our Amazing Contributors
+
+<div align="center">
+
+<a href="https://github.com/Tejas-Santosh-Nalawade/ProjectHive/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Tejas-Santosh-Nalawade/ProjectHive" alt="Contributors" />
+</a>
+
+**Thank you to all our contributors! 🎉**
+
+Want to see your face here? [Start contributing!](CONTRIBUTING.md)
+
+</div>
+
+---
+
+## �📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
 
 <div align="center">
 
