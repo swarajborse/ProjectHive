@@ -8,7 +8,6 @@
 
 ![Hacktoberfest](https://img.shields.io/badge/Hacktoberfest-2024-blueviolet?style=for-the-badge&logo=hacktoberfest)![Contributors](https://img.shields.io/github/contributors/Tejas-Santosh-Nalawade/ProjectHive?style=for-the-badge)
 
-![Contributors](https://img.shields.io/github/contributors/Tejas-Santosh-Nalawade/ProjectHive?style=for-the-badge&color=success)![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge)
 
 ![PRs Welcome](https://img.shields.io/badge/PRs-WELCOME-brightgreen.svg?style=for-the-badge)
 
