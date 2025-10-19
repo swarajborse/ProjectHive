@@ -26,7 +26,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 **[@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade)**
 
-*Contributions: 19 PRs across 13 domain(s)*
+*Contributions: 20 PRs across 13 domain(s)*
 
 *Domains: AI-ML, AR-VR, Backend, Blockchain, Cloud, Cybersecurity, DevOps, Frontend, FullStack, IoT, MLOps, NLP, Robotics-Automation*
 
@@ -54,22 +54,6 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/shirshanag.png" width="100" height="100" style="border-radius: 50%;" alt="shirshanag"/>
-
-**[@shirshanag](https://github.com/shirshanag)**
-
-*Contributions: 1 PRs across 1 domain(s)*
-
-*Domains: IoT*
-
-</div>
-
----
-
-### 🏅 Rank 4
-
-<div align="center">
-
 <img src="https://github.com/SanjeevDeori.png" width="100" height="100" style="border-radius: 50%;" alt="SanjeevDeori"/>
 
 **[@SanjeevDeori](https://github.com/SanjeevDeori)**
@@ -82,7 +66,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 5
+### 🏅 Rank 4
 
 <div align="center">
 
@@ -98,7 +82,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 6
+### 🏅 Rank 5
 
 <div align="center">
 
@@ -109,6 +93,20 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 *Contributions: 1 PRs across 1 domain(s)*
 
 *Domains: Frontend*
+
+</div>
+
+---
+
+### 🏅 Rank 6
+
+<div align="center">
+
+<img src="https://github.com/github.png" width="100" height="100" style="border-radius: 50%;" alt="Pending"/>
+
+**[Username Pending]**
+
+*Contributions: TBD*
 
 </div>
 
