@@ -1,0 +1,24 @@
+{
+  "name": "gracefulshutdownapi",
+  "version": "1.0.0",
+  "description": "an api demonstrating graceful shutdowns",
+  "keywords": [
+    "express",
+    "javascript",
+    "node",
+    "js"
+  ],
+  "license": "ISC",
+  "author": "ogagaoghene esavwede",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "test"
+  },
+  "dependencies": {
+    "@godaddy/terminus": "^4.12.1",
+    "express": "^5.1.0",
+    "mongoose": "^8.19.1"
+  }
+}
