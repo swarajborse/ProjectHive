@@ -10,15 +10,22 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 
 | Rank | Contributor | Total PRs | Domains Contributed | Last Active |
 |------|-------------|-----------|---------------------|-------------|
-| 🥇 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 20 | 13 (AI-ML, AR-VR, Backend, Blockchain, Cloud, Cybersecurity, DevOps, Frontend, FullStack, IoT, MLOps, NLP, Robotics-Automation) | Recent |
+| 🥇 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 19 | 13 (AI-ML, AR-VR, Backend, Blockchain, Cloud, Cybersecurity, DevOps, Frontend, FullStack, IoT, MLOps, NLP, Robotics-Automation) | Recent |
 | 🥈 | [@Ogagaoghene](https://github.com/Ogagaoghene) | 2 | 1 (Backend) | Recent |
-| 🥉 | [@SanjeevDeori](https://github.com/SanjeevDeori) | 1 | 1 (Frontend) | Recent |
-| 4 | [@snehal492006](https://github.com/snehal492006) | 1 | 1 (Frontend) | Recent |
-| 5 | [@Mansi13-6](https://github.com/Mansi13-6) | 1 | 1 (Frontend) | Recent |
+| 🥉 | [@SamaKool](https://github.com/SamaKool) | 1 | 1 (CompetitiveProgramming) | Recent |
+| 4 | [@SanjeevDeori](https://github.com/SanjeevDeori) | 1 | 1 (Frontend) | Recent |
+| 5 | [@snehal492006](https://github.com/snehal492006) | 1 | 1 (Frontend) | Recent |
+| 6 | [@Mansi13-6](https://github.com/Mansi13-6) | 1 | 1 (Frontend) | Recent |
 
 ---
 
 ## 📊 Domain Breakdown
+
+### CompetitiveProgramming
+
+| Contributor | Contributions |
+|-------------|---------------|
+| [@SamaKool](https://github.com/SamaKool) | 1 |
 
 ### AI-ML
 
