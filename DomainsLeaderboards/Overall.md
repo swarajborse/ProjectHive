@@ -11,8 +11,8 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | Rank | Contributor | Total PRs | Domains Contributed | Last Active |
 |------|-------------|-----------|---------------------|-------------|
 | 🥇 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 19 | 13 (AI-ML, AR-VR, Backend, Blockchain, Cloud, Cybersecurity, DevOps, Frontend, FullStack, IoT, MLOps, NLP, Robotics-Automation) | Recent |
-| 🥈 | [@Ogagaoghene](https://github.com/Ogagaoghene) | 2 | 1 (Backend) | Recent |
-| 🥉 | [@Kanikashreesivakumar](https://github.com/Kanikashreesivakumar) | 1 | 1 (AI-ML) | Recent |
+| 🥈 | [@Mansi13-6](https://github.com/Mansi13-6) | 2 | 1 (Frontend) | Recent |
+| 🥉 | [@Ogagaoghene](https://github.com/Ogagaoghene) | 2 | 1 (Backend) | Recent |
 | 4 | [@SanjeevDeori](https://github.com/SanjeevDeori) | 1 | 1 (Frontend) | Recent |
 | 5 | [@snehal492006](https://github.com/snehal492006) | 1 | 1 (Frontend) | Recent |
 
@@ -20,12 +20,20 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 
 ## 📊 Domain Breakdown
 
+### Frontend
+
+| Contributor | Contributions |
+|-------------|---------------|
+| [@Mansi13-6](https://github.com/Mansi13-6) | 2 |
+| [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 2 |
+| [@SanjeevDeori](https://github.com/SanjeevDeori) | 1 |
+| [@snehal492006](https://github.com/snehal492006) | 1 |
+
 ### AI-ML
 
 | Contributor | Contributions |
 |-------------|---------------|
 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 2 |
-| [@Kanikashreesivakumar](https://github.com/Kanikashreesivakumar) | 1 |
 
 ### AR-VR
 
@@ -63,14 +71,6 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | Contributor | Contributions |
 |-------------|---------------|
 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 1 |
-
-### Frontend
-
-| Contributor | Contributions |
-|-------------|---------------|
-| [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 2 |
-| [@SanjeevDeori](https://github.com/SanjeevDeori) | 1 |
-| [@snehal492006](https://github.com/snehal492006) | 1 |
 
 ### FullStack
 
