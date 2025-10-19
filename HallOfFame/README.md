@@ -54,13 +54,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/Aaditya-2407.png" width="100" height="100" style="border-radius: 50%;" alt="Aaditya-2407"/>
+<img src="https://github.com/Rushorgir.png" width="100" height="100" style="border-radius: 50%;" alt="Rushorgir"/>
 
-**[@Aaditya-2407](https://github.com/Aaditya-2407)**
+**[@Rushorgir](https://github.com/Rushorgir)**
 
-*Contributions: 1 PRs across 0 domain(s)*
+*Contributions: 1 PRs across 1 domain(s)*
 
-*Domains: *
+*Domains: AI-ML*
 
 </div>
 
