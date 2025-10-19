@@ -38,13 +38,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/Ogagaoghene.png" width="100" height="100" style="border-radius: 50%;" alt="Ogagaoghene"/>
+<img src="https://github.com/SanjeevDeori.png" width="100" height="100" style="border-radius: 50%;" alt="SanjeevDeori"/>
 
-**[@Ogagaoghene](https://github.com/Ogagaoghene)**
+**[@SanjeevDeori](https://github.com/SanjeevDeori)**
 
 *Contributions: 2 PRs across 1 domain(s)*
 
-*Domains: Backend*
+*Domains: Frontend*
 
 </div>
 
@@ -54,13 +54,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/shirshanag.png" width="100" height="100" style="border-radius: 50%;" alt="shirshanag"/>
+<img src="https://github.com/Ogagaoghene.png" width="100" height="100" style="border-radius: 50%;" alt="Ogagaoghene"/>
 
-**[@shirshanag](https://github.com/shirshanag)**
+**[@Ogagaoghene](https://github.com/Ogagaoghene)**
 
-*Contributions: 1 PRs across 1 domain(s)*
+*Contributions: 2 PRs across 1 domain(s)*
 
-*Domains: Robotics-Automation*
+*Domains: Backend*
 
 </div>
 

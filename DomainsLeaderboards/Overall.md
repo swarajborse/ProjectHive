@@ -11,19 +11,19 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | Rank | Contributor | Total PRs | Domains Contributed | Last Active |
 |------|-------------|-----------|---------------------|-------------|
 | 🥇 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 21 | 13 (AI-ML, AR-VR, Backend, Blockchain, Cloud, Cybersecurity, DevOps, Frontend, FullStack, IoT, MLOps, NLP, Robotics-Automation) | Recent |
-| 🥈 | [@Ogagaoghene](https://github.com/Ogagaoghene) | 2 | 1 (Backend) | Recent |
-| 🥉 | [@shirshanag](https://github.com/shirshanag) | 1 | 1 (Robotics-Automation) | Recent |
+| 🥈 | [@SanjeevDeori](https://github.com/SanjeevDeori) | 2 | 1 (Frontend) | Recent |
+| 🥉 | [@Ogagaoghene](https://github.com/Ogagaoghene) | 2 | 1 (Backend) | Recent |
 
 ---
 
 ## 📊 Domain Breakdown
 
-### Robotics-Automation
+### Frontend
 
 | Contributor | Contributions |
 |-------------|---------------|
-| [@shirshanag](https://github.com/shirshanag) | 1 |
-| [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 1 |
+| [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 4 |
+| [@SanjeevDeori](https://github.com/SanjeevDeori) | 2 |
 
 ### AI-ML
 
@@ -68,12 +68,6 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 |-------------|---------------|
 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 1 |
 
-### Frontend
-
-| Contributor | Contributions |
-|-------------|---------------|
-| [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 4 |
-
 ### FullStack
 
 | Contributor | Contributions |
@@ -93,6 +87,12 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 1 |
 
 ### NLP
+
+| Contributor | Contributions |
+|-------------|---------------|
+| [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 1 |
+
+### Robotics-Automation
 
 | Contributor | Contributions |
 |-------------|---------------|
