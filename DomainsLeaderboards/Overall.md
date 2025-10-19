@@ -11,9 +11,9 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | Rank | Contributor | Total PRs | Domains Contributed | Last Active |
 |------|-------------|-----------|---------------------|-------------|
 | 🥇 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 19 | 13 (AI-ML, AR-VR, Backend, Blockchain, Cloud, Cybersecurity, DevOps, Frontend, FullStack, IoT, MLOps, NLP, Robotics-Automation) | Recent |
-| 🥈 | [@snehal492006](https://github.com/snehal492006) | 2 | 1 (Frontend) | Recent |
+| 🥈 | [@SanjeevDeori](https://github.com/SanjeevDeori) | 2 | 1 (Frontend) | Recent |
 | 🥉 | [@Ogagaoghene](https://github.com/Ogagaoghene) | 2 | 1 (Backend) | Recent |
-| 4 | [@SanjeevDeori](https://github.com/SanjeevDeori) | 1 | 1 (Frontend) | Recent |
+| 4 | [@snehal492006](https://github.com/snehal492006) | 1 | 1 (Frontend) | Recent |
 
 ---
 
@@ -23,9 +23,9 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 
 | Contributor | Contributions |
 |-------------|---------------|
-| [@snehal492006](https://github.com/snehal492006) | 2 |
+| [@SanjeevDeori](https://github.com/SanjeevDeori) | 2 |
 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 2 |
-| [@SanjeevDeori](https://github.com/SanjeevDeori) | 1 |
+| [@snehal492006](https://github.com/snehal492006) | 1 |
 
 ### AI-ML
 

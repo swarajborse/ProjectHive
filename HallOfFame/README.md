@@ -38,9 +38,9 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/snehal492006.png" width="100" height="100" style="border-radius: 50%;" alt="snehal492006"/>
+<img src="https://github.com/SanjeevDeori.png" width="100" height="100" style="border-radius: 50%;" alt="SanjeevDeori"/>
 
-**[@snehal492006](https://github.com/snehal492006)**
+**[@SanjeevDeori](https://github.com/SanjeevDeori)**
 
 *Contributions: 2 PRs across 1 domain(s)*
 
@@ -70,9 +70,9 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/SanjeevDeori.png" width="100" height="100" style="border-radius: 50%;" alt="SanjeevDeori"/>
+<img src="https://github.com/snehal492006.png" width="100" height="100" style="border-radius: 50%;" alt="snehal492006"/>
 
-**[@SanjeevDeori](https://github.com/SanjeevDeori)**
+**[@snehal492006](https://github.com/snehal492006)**
 
 *Contributions: 1 PRs across 1 domain(s)*
 
