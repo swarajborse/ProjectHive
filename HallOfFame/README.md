@@ -38,22 +38,6 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/SanjeevDeori.png" width="100" height="100" style="border-radius: 50%;" alt="SanjeevDeori"/>
-
-**[@SanjeevDeori](https://github.com/SanjeevDeori)**
-
-*Contributions: 2 PRs across 1 domain(s)*
-
-*Domains: Frontend*
-
-</div>
-
----
-
-### 🥉 Rank 3
-
-<div align="center">
-
 <img src="https://github.com/Ogagaoghene.png" width="100" height="100" style="border-radius: 50%;" alt="Ogagaoghene"/>
 
 **[@Ogagaoghene](https://github.com/Ogagaoghene)**
@@ -66,13 +50,29 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
+### 🥉 Rank 3
+
+<div align="center">
+
+<img src="https://github.com/Kanikashreesivakumar.png" width="100" height="100" style="border-radius: 50%;" alt="Kanikashreesivakumar"/>
+
+**[@Kanikashreesivakumar](https://github.com/Kanikashreesivakumar)**
+
+*Contributions: 1 PRs across 1 domain(s)*
+
+*Domains: AI-ML*
+
+</div>
+
+---
+
 ### 🏅 Rank 4
 
 <div align="center">
 
-<img src="https://github.com/snehal492006.png" width="100" height="100" style="border-radius: 50%;" alt="snehal492006"/>
+<img src="https://github.com/SanjeevDeori.png" width="100" height="100" style="border-radius: 50%;" alt="SanjeevDeori"/>
 
-**[@snehal492006](https://github.com/snehal492006)**
+**[@SanjeevDeori](https://github.com/SanjeevDeori)**
 
 *Contributions: 1 PRs across 1 domain(s)*
 
@@ -86,11 +86,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/github.png" width="100" height="100" style="border-radius: 50%;" alt="Pending"/>
+<img src="https://github.com/snehal492006.png" width="100" height="100" style="border-radius: 50%;" alt="snehal492006"/>
 
-**[Username Pending]**
+**[@snehal492006](https://github.com/snehal492006)**
 
-*Contributions: TBD*
+*Contributions: 1 PRs across 1 domain(s)*
+
+*Domains: Frontend*
 
 </div>
 
