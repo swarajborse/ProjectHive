@@ -54,13 +54,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/Em-Vi.png" width="100" height="100" style="border-radius: 50%;" alt="Em-Vi"/>
+<img src="https://github.com/Aaditya-2407.png" width="100" height="100" style="border-radius: 50%;" alt="Aaditya-2407"/>
 
-**[@Em-Vi](https://github.com/Em-Vi)**
+**[@Aaditya-2407](https://github.com/Aaditya-2407)**
 
-*Contributions: 1 PRs across 1 domain(s)*
+*Contributions: 1 PRs across 0 domain(s)*
 
-*Domains: AI-ML*
+*Domains: *
 
 </div>
 
