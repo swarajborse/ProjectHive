@@ -38,13 +38,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/Esavwede.png" width="100" height="100" style="border-radius: 50%;" alt="Esavwede"/>
+<img src="https://github.com/Ogagaoghene.png" width="100" height="100" style="border-radius: 50%;" alt="Ogagaoghene"/>
 
-**[@Esavwede](https://github.com/Esavwede)**
+**[@Ogagaoghene](https://github.com/Ogagaoghene)**
 
-*Contributions: 1 PRs across 1 domain(s)*
+*Contributions: 2 PRs across 1 domain(s)*
 
-*Domains: Frontend*
+*Domains: Backend*
 
 </div>
 
@@ -54,9 +54,9 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/Ogagaoghene.png" width="100" height="100" style="border-radius: 50%;" alt="Ogagaoghene"/>
+<img src="https://github.com/Esavwede.png" width="100" height="100" style="border-radius: 50%;" alt="Esavwede"/>
 
-**[@Ogagaoghene](https://github.com/Ogagaoghene)**
+**[@Esavwede](https://github.com/Esavwede)**
 
 *Contributions: 1 PRs across 1 domain(s)*
 
