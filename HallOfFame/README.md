@@ -54,13 +54,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/Esavwede.png" width="100" height="100" style="border-radius: 50%;" alt="Esavwede"/>
+<img src="https://github.com/Em-Vi.png" width="100" height="100" style="border-radius: 50%;" alt="Em-Vi"/>
 
-**[@Esavwede](https://github.com/Esavwede)**
+**[@Em-Vi](https://github.com/Em-Vi)**
 
 *Contributions: 1 PRs across 1 domain(s)*
 
-*Domains: Backend*
+*Domains: AI-ML*
 
 </div>
 
@@ -70,11 +70,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/github.png" width="100" height="100" style="border-radius: 50%;" alt="Pending"/>
+<img src="https://github.com/SanjeevDeori.png" width="100" height="100" style="border-radius: 50%;" alt="SanjeevDeori"/>
 
-**[Username Pending]**
+**[@SanjeevDeori](https://github.com/SanjeevDeori)**
 
-*Contributions: TBD*
+*Contributions: 1 PRs across 1 domain(s)*
+
+*Domains: Frontend*
 
 </div>
 
