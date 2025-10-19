@@ -44,7 +44,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 *Contributions: 1 PRs across 1 domain(s)*
 
-*Domains: Backend*
+*Domains: Frontend*
 
 </div>
 
