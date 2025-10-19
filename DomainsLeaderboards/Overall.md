@@ -10,20 +10,22 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 
 | Rank | Contributor | Total PRs | Domains Contributed | Last Active |
 |------|-------------|-----------|---------------------|-------------|
-| 🥇 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 21 | 13 (AI-ML, AR-VR, Backend, Blockchain, Cloud, Cybersecurity, DevOps, Frontend, FullStack, IoT, MLOps, NLP, Robotics-Automation) | Recent |
-| 🥈 | [@Ogagaoghene](https://github.com/Ogagaoghene) | 2 | 1 (Backend) | Recent |
-| 🥉 | [@Rushorgir](https://github.com/Rushorgir) | 1 | 1 (CompetitiveProgramming) | Recent |
+| 🥇 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 19 | 13 (AI-ML, AR-VR, Backend, Blockchain, Cloud, Cybersecurity, DevOps, Frontend, FullStack, IoT, MLOps, NLP, Robotics-Automation) | Recent |
+| 🥈 | [@snehal492006](https://github.com/snehal492006) | 2 | 1 (Frontend) | Recent |
+| 🥉 | [@Ogagaoghene](https://github.com/Ogagaoghene) | 2 | 1 (Backend) | Recent |
 | 4 | [@SanjeevDeori](https://github.com/SanjeevDeori) | 1 | 1 (Frontend) | Recent |
 
 ---
 
 ## 📊 Domain Breakdown
 
-### CompetitiveProgramming
+### Frontend
 
 | Contributor | Contributions |
 |-------------|---------------|
-| [@Rushorgir](https://github.com/Rushorgir) | 1 |
+| [@snehal492006](https://github.com/snehal492006) | 2 |
+| [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 2 |
+| [@SanjeevDeori](https://github.com/SanjeevDeori) | 1 |
 
 ### AI-ML
 
@@ -67,13 +69,6 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | Contributor | Contributions |
 |-------------|---------------|
 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 1 |
-
-### Frontend
-
-| Contributor | Contributions |
-|-------------|---------------|
-| [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 4 |
-| [@SanjeevDeori](https://github.com/SanjeevDeori) | 1 |
 
 ### FullStack
 

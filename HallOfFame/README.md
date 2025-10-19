@@ -26,7 +26,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 **[@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade)**
 
-*Contributions: 21 PRs across 13 domain(s)*
+*Contributions: 19 PRs across 13 domain(s)*
 
 *Domains: AI-ML, AR-VR, Backend, Blockchain, Cloud, Cybersecurity, DevOps, Frontend, FullStack, IoT, MLOps, NLP, Robotics-Automation*
 
@@ -38,13 +38,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/Ogagaoghene.png" width="100" height="100" style="border-radius: 50%;" alt="Ogagaoghene"/>
+<img src="https://github.com/snehal492006.png" width="100" height="100" style="border-radius: 50%;" alt="snehal492006"/>
 
-**[@Ogagaoghene](https://github.com/Ogagaoghene)**
+**[@snehal492006](https://github.com/snehal492006)**
 
 *Contributions: 2 PRs across 1 domain(s)*
 
-*Domains: Backend*
+*Domains: Frontend*
 
 </div>
 
@@ -54,13 +54,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/Rushorgir.png" width="100" height="100" style="border-radius: 50%;" alt="Rushorgir"/>
+<img src="https://github.com/Ogagaoghene.png" width="100" height="100" style="border-radius: 50%;" alt="Ogagaoghene"/>
 
-**[@Rushorgir](https://github.com/Rushorgir)**
+**[@Ogagaoghene](https://github.com/Ogagaoghene)**
 
-*Contributions: 1 PRs across 1 domain(s)*
+*Contributions: 2 PRs across 1 domain(s)*
 
-*Domains: CompetitiveProgramming*
+*Domains: Backend*
 
 </div>
 
