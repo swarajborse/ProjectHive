@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎯 Interactive Quiz Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+
+        <!-- Start Screen -->
+        <div id="startScreen" class="screen active">
+            <div class="header">
+                <h1>🎯 Quiz Master</h1>
+                <p>Test your knowledge across multiple categories!</p>
+            </div>
+
+            <h3 style="text-align: center; color: var(--primary-color); margin-bottom: 20px;">Select Difficulty</h3>
+            <div class="difficulty-selector">
+                <button class="difficulty-btn active" data-difficulty="easy">🟢 Easy</button>
+                <button class="difficulty-btn" data-difficulty="medium">🟡 Medium</button>
+                <button class="difficulty-btn" data-difficulty="hard">🔴 Hard</button>
+            </div>
+
+            <h3 style="text-align: center; color: var(--primary-color); margin: 30px 0 20px;">Choose a Category</h3>
+            <div class="category-grid">
+                <button class="category-card" onclick="startQuiz('general')">
+                    <div class="category-icon">🌍</div>
+                    <div>General Knowledge</div>
+                </button>
+                <button class="category-card" onclick="startQuiz('science')">
+                    <div class="category-icon">🔬</div>
+                    <div>Science</div>
+                </button>
+                <button class="category-card" onclick="startQuiz('history')">
+                    <div class="category-icon">📜</div>
+                    <div>History</div>
+                </button>
+                <button class="category-card" onclick="startQuiz('technology')">
+                    <div class="category-icon">💻</div>
+                    <div>Technology</div>
+                </button>
+                <button class="category-card" onclick="startQuiz('sports')">
+                    <div class="category-icon">⚽</div>
+                    <div>Sports</div>
+                </button>
+                <button class="category-card" onclick="startQuiz('entertainment')">
+                    <div class="category-icon">🎬</div>
+                    <div>Entertainment</div>
+                </button>
+            </div>
+
+            <div class="leaderboard" id="leaderboardPreview"></div>
+        </div>
+
+        <!-- Quiz Screen -->
+        <div id="quizScreen" class="screen">
+            <div class="quiz-header">
+                <div class="timer">⏱️ <span id="timerDisplay">30</span>s</div>
+                <div class="score">Score: <span id="scoreDisplay">0</span></div>
+            </div>
+
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+
+            <div class="question-container">
+                <div class="question-number" id="questionNumber">Question 1 of 10</div>
+                <div class="question-text" id="questionText"></div>
+                <div class="options" id="optionsContainer"></div>
+            </div>
+
+            <button class="next-btn" id="nextBtn" onclick="nextQuestion()" disabled>Next Question →</button>
+        </div>
+
+        <!-- Results Screen -->
+        <div id="resultsScreen" class="screen">
+            <div class="results-container">
+                <div class="results-icon" id="resultsIcon">🎉</div>
+                <h2 style="color: var(--primary-color);">Quiz Complete!</h2>
+                <div class="results-score"><span id="finalScore">0</span>/<span id="totalQuestions">10</span></div>
+                <div class="results-message" id="resultsMessage"></div>
+
+                <div class="results-details">
+                    <div class="result-item">
+                        <span>Correct Answers:</span>
+                        <strong id="correctAnswers" style="color: var(--success-color);">0</strong>
+                    </div>
+                    <div class="result-item">
+                        <span>Wrong Answers:</span>
+                        <strong id="wrongAnswers" style="color: var(--danger-color);">0</strong>
+                    </div>
+                    <div class="result-item">
+                        <span>Accuracy:</span>
+                        <strong id="accuracy" style="color: var(--primary-color);">0%</strong>
+                    </div>
+                    <div class="result-item">
+                        <span>Category:</span>
+                        <strong id="categoryDisplay">-</strong>
+                    </div>
+                    <div class="result-item">
+                        <span>Difficulty:</span>
+                        <strong id="difficultyDisplay">-</strong>
+                    </div>
+                </div>
+
+                <div class="action-buttons">
+                    <button class="btn btn-primary" onclick="restartQuiz()">🔄 Try Again</button>
+                    <button class="btn btn-secondary" onclick="goHome()">🏠 Home</button>
+                    <button class="btn btn-success" onclick="shareScore()">📤 Share Score</button>
+                </div>
+
+                <div class="leaderboard" id="leaderboardFull"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
