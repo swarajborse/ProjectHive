@@ -12,18 +12,24 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 |------|-------------|-----------|---------------------|-------------|
 | 🥇 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 21 | 13 (AI-ML, AR-VR, Backend, Blockchain, Cloud, Cybersecurity, DevOps, Frontend, FullStack, IoT, MLOps, NLP, Robotics-Automation) | Recent |
 | 🥈 | [@Ogagaoghene](https://github.com/Ogagaoghene) | 2 | 1 (Backend) | Recent |
-| 🥉 | [@Rushorgir](https://github.com/Rushorgir) | 1 | 1 (AI-ML) | Recent |
+| 🥉 | [@shirshanag](https://github.com/shirshanag) | 1 | 1 (Robotics-Automation) | Recent |
 
 ---
 
 ## 📊 Domain Breakdown
+
+### Robotics-Automation
+
+| Contributor | Contributions |
+|-------------|---------------|
+| [@shirshanag](https://github.com/shirshanag) | 1 |
+| [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 1 |
 
 ### AI-ML
 
 | Contributor | Contributions |
 |-------------|---------------|
 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 2 |
-| [@Rushorgir](https://github.com/Rushorgir) | 1 |
 
 ### AR-VR
 
@@ -87,12 +93,6 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 1 |
 
 ### NLP
-
-| Contributor | Contributions |
-|-------------|---------------|
-| [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 1 |
-
-### Robotics-Automation
 
 | Contributor | Contributions |
 |-------------|---------------|

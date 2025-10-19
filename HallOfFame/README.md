@@ -54,13 +54,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/Rushorgir.png" width="100" height="100" style="border-radius: 50%;" alt="Rushorgir"/>
+<img src="https://github.com/shirshanag.png" width="100" height="100" style="border-radius: 50%;" alt="shirshanag"/>
 
-**[@Rushorgir](https://github.com/Rushorgir)**
+**[@shirshanag](https://github.com/shirshanag)**
 
 *Contributions: 1 PRs across 1 domain(s)*
 
-*Domains: AI-ML*
+*Domains: Robotics-Automation*
 
 </div>
 
