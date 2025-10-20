@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Race Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>⚡ Typing Speed Race</h1>
+            <p class="tagline">Race against your best performance!</p>
+        </header>
+
+        <div class="race-track">
+            <div class="progress-section">
+                <div class="progress-label">
+                    <span class="racer-name"><span class="racer-icon">🏃</span> You</span>
+                    <span id="playerPercent">0%</span>
+                </div>
+                <div class="progress-bar-container">
+                    <div class="progress-bar player-progress" id="playerProgress" style="width: 0%"></div>
+                </div>
+
+                <div class="progress-label">
+                    <span class="racer-name"><span class="racer-icon">👻</span> Ghost (Best)</span>
+                    <span id="ghostPercent">0%</span>
+                </div>
+                <div class="progress-bar-container">
+                    <div class="progress-bar ghost-progress" id="ghostProgress" style="width: 0%"></div>
+                </div>
+            </div>
+
+            <div class="text-display" id="textDisplay"></div>
+
+            <textarea 
+                class="input-area" 
+                id="inputArea" 
+                placeholder="Click 'Start Race' to begin typing..."
+                disabled
+            ></textarea>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-label">WPM</div>
+                    <div class="stat-value" id="wpmDisplay">0</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Accuracy</div>
+                    <div class="stat-value accuracy" id="accuracyDisplay">100%</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Time</div>
+                    <div class="stat-value" id="timeDisplay">0s</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Best WPM</div>
+                    <div class="stat-value best" id="bestWpmDisplay">--</div>
+                </div>
+            </div>
+
+            <div class="controls">
+                <button class="btn btn-primary" id="startBtn">Start Race</button>
+                <button class="btn btn-secondary" id="resetBtn" disabled>Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="results-modal" id="resultsModal">
+        <div class="results-content">
+            <h2>🏁 Race Complete!</h2>
+            <div id="newRecordBadge"></div>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-label">Final WPM</div>
+                    <div class="stat-value" id="finalWpm">0</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Accuracy</div>
+                    <div class="stat-value accuracy" id="finalAccuracy">100%</div>
+                </div>
+            </div>
+            <div class="controls" style="margin-top: 30px;">
+                <button class="btn btn-primary" id="raceAgainBtn">Race Again</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

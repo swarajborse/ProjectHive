@@ -1,0 +1,84 @@
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  min-height: 100vh; /* Ensures full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center; 
+  margin-left: 500px;
+   
+  
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 10rem); /* Responsive sizing */
+  grid-gap: 5px;
+  justify-content: center; /* Horizontally centers the grid */
+  align-items: center;
+}
+
+.square {
+  width: 10rem; /* Responsive sizing */
+  height: 10rem; /* Responsive sizing */
+  font-size: 2rem; /* Use rem for better scaling */
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #1e1e1e;
+  border: 2px solid #333;
+  color: #ffffff;
+  transition: background-color 0.2s ease;
+}
+
+.square:hover {
+  background-color: #333;
+}
+
+.square.winning {
+  background-color: #4caf50; /* Highlight winning squares */
+  border-color: #388e3c; /* Darker border for winning squares */
+}
+
+.info {
+  margin-top: 20px;
+}
+
+button {
+  padding: .625rem; /* Use rem for better scaling */
+  font-size: 1rem; /* Use rem for better scaling */
+  background-color: #333;
+  color: #ffffff;
+  border: 2px solid #555;
+  cursor: pointer;
+  border-radius: .3125rem; /* Use rem for better scaling */
+}
+
+button:hover {
+  background-color: #555;
+}
+
+button[disabled] {
+  background-color: #555;
+  cursor: not-allowed;
+}
+
+h1 {
+  color: #e0e0e0;
+}
+
+h2 {
+  color: #b0b0b0;
+}
+
+/* Confetti styles */
+.confetti {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
