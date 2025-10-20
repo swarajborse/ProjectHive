@@ -70,13 +70,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/k4niz.png" width="100" height="100" style="border-radius: 50%;" alt="k4niz"/>
+<img src="https://github.com/Mansi13-6.png" width="100" height="100" style="border-radius: 50%;" alt="Mansi13-6"/>
 
-**[@k4niz](https://github.com/k4niz)**
+**[@Mansi13-6](https://github.com/Mansi13-6)**
 
-*Contributions: 3 PRs across 3 domain(s)*
+*Contributions: 3 PRs across 1 domain(s)*
 
-*Domains: AI-ML, AR-VR, FullStack*
+*Domains: Frontend*
 
 </div>
 
@@ -86,13 +86,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/Kanikashreesivakumar.png" width="100" height="100" style="border-radius: 50%;" alt="Kanikashreesivakumar"/>
+<img src="https://github.com/k4niz.png" width="100" height="100" style="border-radius: 50%;" alt="k4niz"/>
 
-**[@Kanikashreesivakumar](https://github.com/Kanikashreesivakumar)**
+**[@k4niz](https://github.com/k4niz)**
 
-*Contributions: 2 PRs across 2 domain(s)*
+*Contributions: 3 PRs across 3 domain(s)*
 
-*Domains: AR-VR, FullStack*
+*Domains: AI-ML, AR-VR, FullStack*
 
 </div>
 
