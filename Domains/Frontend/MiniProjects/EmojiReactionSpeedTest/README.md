@@ -1,6 +1,6 @@
 # Emoji Reaction Speed Test
 
-Develop an interactive Pomodoro Timer web application that helps users manage productivity using the Pomodoro Technique.
+Develop an interactive reaction speed game where random emojis appear on screen and players must click the matching target emoji before time runs out. 
 
 ## How to play
 
@@ -12,10 +12,11 @@ Develop an interactive Pomodoro Timer web application that helps users manage pr
 
 ## Features
 
-- **Customizable Timer:** Set work/break intervals, with pause/reset controls.
-- **Task Management:** System to track tasks and completed Pomodoro sessions per task.
-- **Visual Feedback:** Progress animation with color-coded timer states.
-- **Statistics & Design:** Session statistics and a responsive, distraction-free interface.
+- Random emoji generation with multiple decoy emojis on screen
+- Target emoji display with countdown timer for each round
+- Score tracking system with combo multipliers for consecutive hits
+- Multiple difficulty levels (easy, medium, hard) with varying speeds
+- Smooth animations and visual feedback for correct/incorrect clicks
 
 ## Tech Stack
 
@@ -24,7 +25,4 @@ CSS3
 JavaScript (Vanilla)
 
 ## Future
-
-- localStorage persistence
-- audio alerts
-- customizable timer settings
+High scores, sound effects for hits/misses
