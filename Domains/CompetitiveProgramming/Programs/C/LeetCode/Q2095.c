@@ -6,6 +6,8 @@
 Difficulty: Medium
 Tags: Linked List, Two Pointers
 
+Contributor: SOHAM-GADEKAR
+
 ---------------------------------------------------------------
 Problem Statement:
 ---------------------------------------------------------------

@@ -6,6 +6,8 @@
 Difficulty: Easy
 Tags: Binary Tree, Depth-First Search, Recursion
 
+Contributor: SOHAM-GADEKAR
+
 ---------------------------------------------------------------
 Problem Statement:
 ---------------------------------------------------------------
