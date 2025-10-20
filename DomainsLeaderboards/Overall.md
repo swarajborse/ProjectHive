@@ -12,7 +12,7 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 |------|-------------|-----------|---------------------|-------------|
 | 🥇 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 19 | 13 (AI-ML, AR-VR, Backend, Blockchain, Cloud, Cybersecurity, DevOps, Frontend, FullStack, IoT, MLOps, NLP, Robotics-Automation) | Recent |
 | 🥈 | [@Aaditya-2407](https://github.com/Aaditya-2407) | 6 | 1 (Frontend) | Recent |
-| 🥉 | [@Ogagaoghene](https://github.com/Ogagaoghene) | 3 | 1 (Backend) | Recent |
+| 🥉 | [@Ogagaoghene](https://github.com/Ogagaoghene) | 4 | 1 (Backend) | Recent |
 | 4 | [@vatsalgupta2004](https://github.com/vatsalgupta2004) | 2 | 2 (AI-ML, Frontend) | Recent |
 | 5 | [@Esavwede](https://github.com/Esavwede) | 1 | 1 (Backend) | Recent |
 | 6 | [@MeghPatel-007](https://github.com/MeghPatel-007) | 1 | 1 (Frontend) | Recent |
@@ -31,7 +31,7 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | Contributor | Contributions |
 |-------------|---------------|
 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 4 |
-| [@Ogagaoghene](https://github.com/Ogagaoghene) | 3 |
+| [@Ogagaoghene](https://github.com/Ogagaoghene) | 4 |
 | [@Esavwede](https://github.com/Esavwede) | 1 |
 
 ### AI-ML
