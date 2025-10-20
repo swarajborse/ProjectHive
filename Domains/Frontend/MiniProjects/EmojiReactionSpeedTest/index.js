@@ -48,7 +48,13 @@ let difficultySettings = {
     comboThreshold: 7,
   },
 };
-currentDifficulty = difficultySettings.Medium;
+let currentDifficulty = difficultySettings.Medium;
+let roundEmojis = [];
+let correctClicks = 0;
+
+const clearGameArea = () => {
+  gameArea.innerHTML = "";
+};
 
 const gameArea = document.getElementById("game-area");
 const targetDisplay = document.getElementById("target-display");
@@ -64,17 +70,27 @@ const startButton = document.getElementById("start-button");
 const restartButton = document.getElementById("restart-button");
 
 const startGame = (difficulty) => {
+  // reset core game state
   score = 0;
   streak = 0;
   bestStreak = 0;
   lives = 3;
   comboMultiplier = 1;
   reactionTimes = [];
+  correctClicks = 0;
+  totalRounds = 0;
+  roundEmojis = [];
   gameActive = true;
+
   if (timerInterval) clearInterval(timerInterval);
-  currentDifficulty = difficultySettings[difficulty];
-  startRound();
+  // defensive: if difficulty is invalid, fall back to Medium
+  currentDifficulty = difficultySettings[difficulty] || difficultySettings.Medium;
+
+  // If the game-over screen was visible, hide it so the game area is interactive again
+  if (gameOverScreen) gameOverScreen.style.display = "none";
+
   updateUI();
+  startRound();
 };
 startRound = () => {
   if (!gameActive) return;
@@ -83,32 +99,17 @@ startRound = () => {
   currentTarget = emojis[randomIndex];
   targetDisplay.textContent = currentTarget;
   totalRounds++;
-  const targetPosition = Math.floor(
-    Math.random() * currentDifficulty.numberOfDecoys
-  );
+  roundEmojis = [];
+  const numDecoys = currentDifficulty.numberOfDecoys;
+  while (roundEmojis.length < numDecoys) {
+    const idx = Math.floor(Math.random() * emojis.length);
+    const cand = emojis[idx];
+    if (cand === currentTarget) continue;
+    if (!roundEmojis.includes(cand)) roundEmojis.push(cand);
+  }
+
+  const targetPosition = Math.floor(Math.random() * (roundEmojis.length + 1));
   roundEmojis.splice(targetPosition, 0, currentTarget);
-
-  for (let i = roundEmojis.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [roundEmojis[i], roundEmojis[j]] = [roundEmojis[j], roundEmojis[i]];
-  }
-};
-
-const updateUI = () => {
-  scoreDisplay.textContent = score;
-  streakDisplay.textContent = streak;
-  bestStreakDisplay.textContent = bestStreak;
-  livesDisplay.textContent = lives;
-
-  const hearts = "❤️ ".repeat(lives).trim();
-  livesDisplay.textContent = hearts || "💔";
-
-  if (comboMultiplier > 1) {
-    comboBadge.textContent = comboMultiplier + "x";
-    comboBadge.style.display = "inline";
-  } else {
-    comboBadge.style.display = "none";
-  }
   for (let i = roundEmojis.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [roundEmojis[i], roundEmojis[j]] = [roundEmojis[j], roundEmojis[i]];
@@ -151,6 +152,24 @@ const updateUI = () => {
 
   startTimer();
   roundStartTime = Date.now();
+  updateUI();
+};
+
+const updateUI = () => {
+  scoreDisplay.textContent = score;
+  streakDisplay.textContent = streak;
+  bestStreakDisplay.textContent = bestStreak;
+  livesDisplay.textContent = lives;
+
+  const hearts = "❤️ ".repeat(lives).trim();
+  livesDisplay.textContent = hearts || "💔";
+
+  if (comboMultiplier > 1) {
+    comboBadge.textContent = comboMultiplier + "x";
+    comboBadge.style.display = "inline";
+  } else {
+    comboBadge.style.display = "none";
+  }
 };
 
 const startTimer = () => {
@@ -197,7 +216,7 @@ const handleTimeout = () => {
   }
 };
 
-const handleEmojiClick = (emoji, tile) => {
+const handleEmojiClick = (clickedEmoji, element) => {
   if (!gameActive) return;
 
   if (clickedEmoji === currentTarget) {
