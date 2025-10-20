@@ -134,13 +134,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/Em-Vi.png" width="100" height="100" style="border-radius: 50%;" alt="Em-Vi"/>
+<img src="https://github.com/nafasebra.png" width="100" height="100" style="border-radius: 50%;" alt="nafasebra"/>
 
-**[@Em-Vi](https://github.com/Em-Vi)**
+**[@nafasebra](https://github.com/nafasebra)**
 
 *Contributions: 1 PRs across 1 domain(s)*
 
-*Domains: AI-ML*
+*Domains: Frontend*
 
 </div>
 
