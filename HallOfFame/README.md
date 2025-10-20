@@ -38,11 +38,11 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/snehal492006.png" width="100" height="100" style="border-radius: 50%;" alt="snehal492006"/>
+<img src="https://github.com/Aaditya-2407.png" width="100" height="100" style="border-radius: 50%;" alt="Aaditya-2407"/>
 
-**[@snehal492006](https://github.com/snehal492006)**
+**[@Aaditya-2407](https://github.com/Aaditya-2407)**
 
-*Contributions: 2 PRs across 1 domain(s)*
+*Contributions: 6 PRs across 1 domain(s)*
 
 *Domains: Frontend*
 
@@ -58,7 +58,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 **[@Ogagaoghene](https://github.com/Ogagaoghene)**
 
-*Contributions: 2 PRs across 1 domain(s)*
+*Contributions: 5 PRs across 1 domain(s)*
 
 *Domains: Backend*
 
@@ -67,6 +67,54 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 ---
 
 ### 🏅 Rank 4
+
+<div align="center">
+
+<img src="https://github.com/vatsalgupta2004.png" width="100" height="100" style="border-radius: 50%;" alt="vatsalgupta2004"/>
+
+**[@vatsalgupta2004](https://github.com/vatsalgupta2004)**
+
+*Contributions: 2 PRs across 2 domain(s)*
+
+*Domains: AI-ML, Frontend*
+
+</div>
+
+---
+
+### 🏅 Rank 5
+
+<div align="center">
+
+<img src="https://github.com/Esavwede.png" width="100" height="100" style="border-radius: 50%;" alt="Esavwede"/>
+
+**[@Esavwede](https://github.com/Esavwede)**
+
+*Contributions: 1 PRs across 1 domain(s)*
+
+*Domains: Backend*
+
+</div>
+
+---
+
+### 🏅 Rank 6
+
+<div align="center">
+
+<img src="https://github.com/MeghPatel-007.png" width="100" height="100" style="border-radius: 50%;" alt="MeghPatel-007"/>
+
+**[@MeghPatel-007](https://github.com/MeghPatel-007)**
+
+*Contributions: 1 PRs across 1 domain(s)*
+
+*Domains: Frontend*
+
+</div>
+
+---
+
+### 🏅 Rank 7
 
 <div align="center">
 
@@ -82,57 +130,17 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 5
-
-<div align="center">
-
-<img src="https://github.com/github.png" width="100" height="100" style="border-radius: 50%;" alt="Pending"/>
-
-**[Username Pending]**
-
-*Contributions: TBD*
-
-</div>
-
----
-
-### 🏅 Rank 6
-
-<div align="center">
-
-<img src="https://github.com/github.png" width="100" height="100" style="border-radius: 50%;" alt="Pending"/>
-
-**[Username Pending]**
-
-*Contributions: TBD*
-
-</div>
-
----
-
-### 🏅 Rank 7
-
-<div align="center">
-
-<img src="https://github.com/github.png" width="100" height="100" style="border-radius: 50%;" alt="Pending"/>
-
-**[Username Pending]**
-
-*Contributions: TBD*
-
-</div>
-
----
-
 ### 🏅 Rank 8
 
 <div align="center">
 
-<img src="https://github.com/github.png" width="100" height="100" style="border-radius: 50%;" alt="Pending"/>
+<img src="https://github.com/snehal492006.png" width="100" height="100" style="border-radius: 50%;" alt="snehal492006"/>
 
-**[Username Pending]**
+**[@snehal492006](https://github.com/snehal492006)**
 
-*Contributions: TBD*
+*Contributions: 1 PRs across 1 domain(s)*
+
+*Domains: Frontend*
 
 </div>
 
@@ -142,11 +150,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/github.png" width="100" height="100" style="border-radius: 50%;" alt="Pending"/>
+<img src="https://github.com/Utkarsh-660.png" width="100" height="100" style="border-radius: 50%;" alt="Utkarsh-660"/>
 
-**[Username Pending]**
+**[@Utkarsh-660](https://github.com/Utkarsh-660)**
 
-*Contributions: TBD*
+*Contributions: 1 PRs across 1 domain(s)*
+
+*Domains: Frontend*
 
 </div>
 
@@ -156,11 +166,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/github.png" width="100" height="100" style="border-radius: 50%;" alt="Pending"/>
+<img src="https://github.com/alisha1510.png" width="100" height="100" style="border-radius: 50%;" alt="alisha1510"/>
 
-**[Username Pending]**
+**[@alisha1510](https://github.com/alisha1510)**
 
-*Contributions: TBD*
+*Contributions: 1 PRs across 1 domain(s)*
+
+*Domains: Frontend*
 
 </div>
 
@@ -203,7 +215,7 @@ For detailed statistics and domain-specific rankings, check out:
 
 *Rankings are updated automatically with each merged contribution.*
 
-**Last Updated:** 2025-10-19
+**Last Updated:** 2025-10-20
 
 ---
 

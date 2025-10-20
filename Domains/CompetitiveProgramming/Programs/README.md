@@ -75,6 +75,11 @@ Pick the language folder you're most comfortable with or want to learn:
    - Time: O(n log n), Space: O(n)
    - Link: https://www.codechef.com/problems/TSORT
 
+4. **Sieve of Eranthoses** (`sieveoferanthoses.cpp`)
+   - Topics: Number Theory
+   - Time: O(n log log n), Space: O(n)
+   - Link: Link: https://cp-algorithms.com/algebra/sieve-of-eratosthenes.html
+
 ### Python Programs
 
 1. **Watermelon** (`Watermelon.py`) - Easy | Codeforces

@@ -1,0 +1,24 @@
+{
+  "name": "apisecurity",
+  "version": "1.0.0",
+  "description": "a simple repository demonstrating basic api security",
+  "keywords": [
+    "api",
+    "security"
+  ],
+  "license": "ISC",
+  "author": "ogagaoghene esavwede",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "test"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.1.0",
+    "express-rate-limiter": "^1.3.1",
+    "helmet": "^8.1.0"
+  }
+}
