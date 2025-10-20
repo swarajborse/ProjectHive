@@ -26,7 +26,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 **[@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade)**
 
-*Contributions: 20 PRs across 13 domain(s)*
+*Contributions: 19 PRs across 13 domain(s)*
 
 *Domains: AI-ML, AR-VR, Backend, Blockchain, Cloud, Cybersecurity, DevOps, Frontend, FullStack, IoT, MLOps, NLP, Robotics-Automation*
 
@@ -134,6 +134,22 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
+<img src="https://github.com/anfasmhsn.png" width="100" height="100" style="border-radius: 50%;" alt="anfasmhsn"/>
+
+**[@anfasmhsn](https://github.com/anfasmhsn)**
+
+*Contributions: 1 PRs across 1 domain(s)*
+
+*Domains: Cloud*
+
+</div>
+
+---
+
+### 🏅 Rank 9
+
+<div align="center">
+
 <img src="https://github.com/AksharGoyal.png" width="100" height="100" style="border-radius: 50%;" alt="AksharGoyal"/>
 
 **[@AksharGoyal](https://github.com/AksharGoyal)**
@@ -146,29 +162,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 9
+### 🏅 Rank 10
 
 <div align="center">
 
 <img src="https://github.com/MeghPatel-007.png" width="100" height="100" style="border-radius: 50%;" alt="MeghPatel-007"/>
 
 **[@MeghPatel-007](https://github.com/MeghPatel-007)**
-
-*Contributions: 1 PRs across 1 domain(s)*
-
-*Domains: Frontend*
-
-</div>
-
----
-
-### 🏅 Rank 10
-
-<div align="center">
-
-<img src="https://github.com/SanjeevDeori.png" width="100" height="100" style="border-radius: 50%;" alt="SanjeevDeori"/>
-
-**[@SanjeevDeori](https://github.com/SanjeevDeori)**
 
 *Contributions: 1 PRs across 1 domain(s)*
 
