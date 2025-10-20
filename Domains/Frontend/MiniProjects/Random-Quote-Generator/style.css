@@ -1,0 +1,214 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%); /* Initial vibrant gradient background */
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    color: #fff;
+    overflow: hidden;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 600px;
+    width: 90%;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    animation: fadeIn 1s ease-out; 
+}
+
+
+.quote-box {
+    margin-bottom: 30px;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; /* Smooth transition for quote content */
+}
+
+.quote-box.fade-out {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+.quote-box.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #fff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+
+.quote-box {
+    margin-bottom: 30px;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote-text {
+    font-size: 1.8em;
+    font-style: italic;
+    margin-bottom: 15px;
+    line-height: 1.4;
+    color: #e0e0e0;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.quote-author {
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #c0c0c0;
+}
+
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+
+button {
+    background: linear-gradient(45deg, #ff6b6b, #ffa500);
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-size: 1em;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(45deg, #ffa500, #ff6b6b);
+}
+
+button:active {
+    transform: translateY(0) scale(0.98);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.new-quote-btn {
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+}
+
+.new-quote-btn:hover {
+    background: linear-gradient(45deg, #0072ff, #00c6ff);
+}
+
+.share-twitter-btn {
+    background: linear-gradient(45deg, #1da1f2, #00acee);
+}
+
+.share-twitter-btn:hover {
+    background: linear-gradient(45deg, #00acee, #1da1f2);
+}
+
+.share-facebook-btn {
+    background: linear-gradient(45deg, #3b5998, #8b9dc3);
+}
+
+.share-facebook-btn:hover {
+    background: linear-gradient(45deg, #8b9dc3, #3b5998);
+}
+
+.copy-btn {
+    background: linear-gradient(45deg, #28a745, #218838);
+}
+
+.copy-btn:hover {
+    background: linear-gradient(45deg, #218838, #28a745);
+}
+
+
+@media (max-width: 768px) {
+    .quote-box {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .quote-text {
+        font-size: 1.5em;
+    }
+
+    .quote-author {
+        font-size: 1em;
+    }
+
+    .buttons button {
+        padding: 10px 15px;
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .quote-text {
+        font-size: 1.2em;
+    }
+
+    .quote-author {
+        font-size: 0.9em;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .buttons button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
