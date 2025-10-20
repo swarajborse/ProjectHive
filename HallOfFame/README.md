@@ -42,9 +42,9 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 **[@vatsalgupta2004](https://github.com/vatsalgupta2004)**
 
-*Contributions: 2 PRs across 1 domain(s)*
+*Contributions: 3 PRs across 2 domain(s)*
 
-*Domains: Frontend*
+*Domains: AI-ML, Frontend*
 
 </div>
 
