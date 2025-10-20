@@ -70,6 +70,22 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
+<img src="https://github.com/AksharGoyal.png" width="100" height="100" style="border-radius: 50%;" alt="AksharGoyal"/>
+
+**[@AksharGoyal](https://github.com/AksharGoyal)**
+
+*Contributions: 2 PRs across 1 domain(s)*
+
+*Domains: Backend*
+
+</div>
+
+---
+
+### 🏅 Rank 5
+
+<div align="center">
+
 <img src="https://github.com/vatsalgupta2004.png" width="100" height="100" style="border-radius: 50%;" alt="vatsalgupta2004"/>
 
 **[@vatsalgupta2004](https://github.com/vatsalgupta2004)**
@@ -82,7 +98,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 5
+### 🏅 Rank 6
 
 <div align="center">
 
@@ -93,22 +109,6 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 *Contributions: 2 PRs across 2 domain(s)*
 
 *Domains: AI-ML, FullStack*
-
-</div>
-
----
-
-### 🏅 Rank 6
-
-<div align="center">
-
-<img src="https://github.com/Kanikashreesivakumar.png" width="100" height="100" style="border-radius: 50%;" alt="Kanikashreesivakumar"/>
-
-**[@Kanikashreesivakumar](https://github.com/Kanikashreesivakumar)**
-
-*Contributions: 1 PRs across 1 domain(s)*
-
-*Domains: AI-ML*
 
 </div>
 
