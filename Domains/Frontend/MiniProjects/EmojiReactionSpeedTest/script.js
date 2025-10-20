@@ -199,8 +199,71 @@ const handleTimeout = () => {
 
 const handleEmojiClick = (emoji, tile) => {
   if (!gameActive) return;
+
+  if (clickedEmoji === currentTarget) {
+    const reactionTime = Date.now() - roundStartTime;
+    reactionTimes.push(reactionTime);
+    correctClicks++;
+
+    streak++;
+    if (streak > bestStreak) {
+      bestStreak = streak;
+    }
+
+    calculateScore(reactionTime);
+
+    element.classList.add("correct-flash");
+    clearInterval(timerInterval);
+
+    setTimeout(() => {
+      startRound();
+    }, 500);
+  } else {
+    streak = 0;
+    comboMultiplier = 1;
+    lives--;
+
+    element.classList.add("shake-error");
+    updateUI();
+
+    if (lives <= 0) {
+      clearInterval(timerInterval);
+      gameOver();
+    } else {
+      clearInterval(timerInterval);
+      setTimeout(() => {
+        startRound();
+      }, 500);
+    }
+  }
 };
-const calculateScore = () => {};
+
+// Scoring
+const calculateScore = (reactionTime) => {
+  const basePoints = 10;
+  let speedBonus = 0;
+
+  if (reactionTime < 500) {
+    speedBonus = 50;
+  } else if (reactionTime < 800) {
+    speedBonus = 30;
+  } else if (reactionTime < 1200) {
+    speedBonus = 15;
+  } else {
+    speedBonus = 5;
+  }
+
+  if (streak >= currentDifficulty.comboThreshold && comboMultiplier === 1) {
+    comboMultiplier = 1.5;
+    comboBadge.style.display = "inline";
+    comboBadge.style.animation = "pulse 0.5s";
+  }
+
+  const points = Math.round((basePoints + speedBonus) * comboMultiplier);
+  score += points;
+
+  updateUI();
+};
 
 const gameOver = () => {
   gameActive = false;
