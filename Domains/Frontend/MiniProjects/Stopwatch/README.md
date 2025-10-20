@@ -1,7 +1,7 @@
 **Contributor:** Aaditya-2407
 
 ## Description
-A simple web app that converts between different units of measurement, such as length (cm/in), weight (kg/lb), and temperature (C/F).
+A functional stopwatch application built with vanilla JavaScript. It allows users to start, stop, and reset the timer, as well as record lap times.
 
 ## Tech Stack
 - HTML
