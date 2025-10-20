@@ -42,7 +42,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 **[@Aaditya-2407](https://github.com/Aaditya-2407)**
 
-*Contributions: 3 PRs across 1 domain(s)*
+*Contributions: 5 PRs across 1 domain(s)*
 
 *Domains: Frontend*
 
@@ -86,22 +86,6 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/SOHAM-GADEKAR.png" width="100" height="100" style="border-radius: 50%;" alt="SOHAM-GADEKAR"/>
-
-**[@SOHAM-GADEKAR](https://github.com/SOHAM-GADEKAR)**
-
-*Contributions: 1 PRs across 1 domain(s)*
-
-*Domains: CompetitiveProgramming*
-
-</div>
-
----
-
-### 🏅 Rank 6
-
-<div align="center">
-
 <img src="https://github.com/SanjeevDeori.png" width="100" height="100" style="border-radius: 50%;" alt="SanjeevDeori"/>
 
 **[@SanjeevDeori](https://github.com/SanjeevDeori)**
@@ -114,7 +98,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 7
+### 🏅 Rank 6
 
 <div align="center">
 
@@ -130,7 +114,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 8
+### 🏅 Rank 7
 
 <div align="center">
 
@@ -146,7 +130,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 9
+### 🏅 Rank 8
 
 <div align="center">
 
@@ -162,7 +146,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 10
+### 🏅 Rank 9
 
 <div align="center">
 
@@ -173,6 +157,20 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 *Contributions: 1 PRs across 1 domain(s)*
 
 *Domains: Frontend*
+
+</div>
+
+---
+
+### 🏅 Rank 10
+
+<div align="center">
+
+<img src="https://github.com/github.png" width="100" height="100" style="border-radius: 50%;" alt="Pending"/>
+
+**[Username Pending]**
+
+*Contributions: TBD*
 
 </div>
 
