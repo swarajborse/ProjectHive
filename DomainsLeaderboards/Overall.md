@@ -12,7 +12,7 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 |------|-------------|-----------|---------------------|-------------|
 | 🥇 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 19 | 13 (AI-ML, AR-VR, Backend, Blockchain, Cloud, Cybersecurity, DevOps, Frontend, FullStack, IoT, MLOps, NLP, Robotics-Automation) | Recent |
 | 🥈 | [@Ogagaoghene](https://github.com/Ogagaoghene) | 2 | 1 (Backend) | Recent |
-| 🥉 | [@ManaswibRane](https://github.com/ManaswibRane) | 1 | 1 (CompetitiveProgramming) | Recent |
+| 🥉 | [@SOHAM-GADEKAR](https://github.com/SOHAM-GADEKAR) | 1 | 1 (CompetitiveProgramming) | Recent |
 | 4 | [@SanjeevDeori](https://github.com/SanjeevDeori) | 1 | 1 (Frontend) | Recent |
 | 5 | [@snehal492006](https://github.com/snehal492006) | 1 | 1 (Frontend) | Recent |
 | 6 | [@Utkarsh-660](https://github.com/Utkarsh-660) | 1 | 1 (Frontend) | Recent |
@@ -27,7 +27,7 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 
 | Contributor | Contributions |
 |-------------|---------------|
-| [@ManaswibRane](https://github.com/ManaswibRane) | 1 |
+| [@SOHAM-GADEKAR](https://github.com/SOHAM-GADEKAR) | 1 |
 
 ### AI-ML
 
