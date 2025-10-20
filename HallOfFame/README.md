@@ -74,9 +74,9 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 **[@alisha1510](https://github.com/alisha1510)**
 
-*Contributions: 3 PRs across 1 domain(s)*
+*Contributions: 3 PRs across 2 domain(s)*
 
-*Domains: Frontend*
+*Domains: AI-ML, Frontend*
 
 </div>
 
