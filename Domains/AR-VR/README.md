@@ -265,12 +265,12 @@ YourARVRProject/
 ## 📊 Project Template
 
 ```markdown
-# Project Name
+# Wearable Translation Glasses
 
-**Contributor:** YourGitHubUsername
+**Contributor:** Mansi13-6
 **Domain:** AR-VR
-**Difficulty:** [Beginner/Intermediate/Advanced]
-**Platform:** [AR / VR / Mixed Reality]
+**Difficulty:** [Intermediate]
+**Platform:** [AR / VR]
 
 ## Description
 Brief description of the AR/VR experience.
@@ -321,9 +321,10 @@ Android Build Support (for Quest)
 \`\`\`
 Window → Package Manager
 Install:
-- XR Plugin Management
-- XR Interaction Toolkit
-- Oculus XR Plugin (for Quest)
+# pip install numpy==1.24.4
+# pip install opencv-python
+# pip install easyocr
+# pip install googletrans==4.0.0-rc1
 \`\`\`
 
 ### 3. Project Settings

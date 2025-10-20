@@ -26,7 +26,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 **[@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade)**
 
-*Contributions: 19 PRs across 13 domain(s)*
+*Contributions: 20 PRs across 13 domain(s)*
 
 *Domains: AI-ML, AR-VR, Backend, Blockchain, Cloud, Cybersecurity, DevOps, Frontend, FullStack, IoT, MLOps, NLP, Robotics-Automation*
 
@@ -70,6 +70,22 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
+<img src="https://github.com/k4niz.png" width="100" height="100" style="border-radius: 50%;" alt="k4niz"/>
+
+**[@k4niz](https://github.com/k4niz)**
+
+*Contributions: 3 PRs across 3 domain(s)*
+
+*Domains: AI-ML, AR-VR, FullStack*
+
+</div>
+
+---
+
+### 🏅 Rank 5
+
+<div align="center">
+
 <img src="https://github.com/vatsalgupta2004.png" width="100" height="100" style="border-radius: 50%;" alt="vatsalgupta2004"/>
 
 **[@vatsalgupta2004](https://github.com/vatsalgupta2004)**
@@ -82,13 +98,45 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 5
+### 🏅 Rank 6
 
 <div align="center">
 
-<img src="https://github.com/Esavwede.png" width="100" height="100" style="border-radius: 50%;" alt="Esavwede"/>
+<img src="https://github.com/Mansi13-6.png" width="100" height="100" style="border-radius: 50%;" alt="Mansi13-6"/>
 
-**[@Esavwede](https://github.com/Esavwede)**
+**[@Mansi13-6](https://github.com/Mansi13-6)**
+
+*Contributions: 2 PRs across 1 domain(s)*
+
+*Domains: Frontend*
+
+</div>
+
+---
+
+### 🏅 Rank 7
+
+<div align="center">
+
+<img src="https://github.com/alisha1510.png" width="100" height="100" style="border-radius: 50%;" alt="alisha1510"/>
+
+**[@alisha1510](https://github.com/alisha1510)**
+
+*Contributions: 2 PRs across 1 domain(s)*
+
+*Domains: Frontend*
+
+</div>
+
+---
+
+### 🏅 Rank 8
+
+<div align="center">
+
+<img src="https://github.com/AksharGoyal.png" width="100" height="100" style="border-radius: 50%;" alt="AksharGoyal"/>
+
+**[@AksharGoyal](https://github.com/AksharGoyal)**
 
 *Contributions: 1 PRs across 1 domain(s)*
 
@@ -98,7 +146,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 6
+### 🏅 Rank 9
 
 <div align="center">
 
@@ -114,61 +162,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 7
+### 🏅 Rank 10
 
 <div align="center">
 
 <img src="https://github.com/SanjeevDeori.png" width="100" height="100" style="border-radius: 50%;" alt="SanjeevDeori"/>
 
 **[@SanjeevDeori](https://github.com/SanjeevDeori)**
-
-*Contributions: 1 PRs across 1 domain(s)*
-
-*Domains: Frontend*
-
-</div>
-
----
-
-### 🏅 Rank 8
-
-<div align="center">
-
-<img src="https://github.com/snehal492006.png" width="100" height="100" style="border-radius: 50%;" alt="snehal492006"/>
-
-**[@snehal492006](https://github.com/snehal492006)**
-
-*Contributions: 1 PRs across 1 domain(s)*
-
-*Domains: Frontend*
-
-</div>
-
----
-
-### 🏅 Rank 9
-
-<div align="center">
-
-<img src="https://github.com/Utkarsh-660.png" width="100" height="100" style="border-radius: 50%;" alt="Utkarsh-660"/>
-
-**[@Utkarsh-660](https://github.com/Utkarsh-660)**
-
-*Contributions: 1 PRs across 1 domain(s)*
-
-*Domains: Frontend*
-
-</div>
-
----
-
-### 🏅 Rank 10
-
-<div align="center">
-
-<img src="https://github.com/alisha1510.png" width="100" height="100" style="border-radius: 50%;" alt="alisha1510"/>
-
-**[@alisha1510](https://github.com/alisha1510)**
 
 *Contributions: 1 PRs across 1 domain(s)*
 
