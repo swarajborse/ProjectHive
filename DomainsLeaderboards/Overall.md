@@ -14,25 +14,26 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | 🥈 | [@Aaditya-2407](https://github.com/Aaditya-2407) | 6 | 1 (Frontend) | Recent |
 | 🥉 | [@Ogagaoghene](https://github.com/Ogagaoghene) | 5 | 1 (Backend) | Recent |
 | 4 | [@vatsalgupta2004](https://github.com/vatsalgupta2004) | 2 | 2 (AI-ML, Frontend) | Recent |
-| 5 | [@Esavwede](https://github.com/Esavwede) | 1 | 1 (Backend) | Recent |
+| 5 | [@Kanikashreesivakumar](https://github.com/Kanikashreesivakumar) | 1 | 1 (FullStack) | Recent |
 | 6 | [@MeghPatel-007](https://github.com/MeghPatel-007) | 1 | 1 (Frontend) | Recent |
 | 7 | [@SanjeevDeori](https://github.com/SanjeevDeori) | 1 | 1 (Frontend) | Recent |
 | 8 | [@snehal492006](https://github.com/snehal492006) | 1 | 1 (Frontend) | Recent |
 | 9 | [@Utkarsh-660](https://github.com/Utkarsh-660) | 1 | 1 (Frontend) | Recent |
 | 10 | [@alisha1510](https://github.com/alisha1510) | 1 | 1 (Frontend) | Recent |
 | 11 | [@Mansi13-6](https://github.com/Mansi13-6) | 1 | 1 (Frontend) | Recent |
+| 12 | [@k4niz](https://github.com/k4niz) | 1 | 1 (FullStack) | Recent |
 
 ---
 
 ## 📊 Domain Breakdown
 
-### Backend
+### FullStack
 
 | Contributor | Contributions |
 |-------------|---------------|
-| [@Ogagaoghene](https://github.com/Ogagaoghene) | 5 |
-| [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 4 |
-| [@Esavwede](https://github.com/Esavwede) | 1 |
+| [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 2 |
+| [@Kanikashreesivakumar](https://github.com/Kanikashreesivakumar) | 1 |
+| [@k4niz](https://github.com/k4niz) | 1 |
 
 ### AI-ML
 
@@ -46,6 +47,13 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | Contributor | Contributions |
 |-------------|---------------|
 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 1 |
+
+### Backend
+
+| Contributor | Contributions |
+|-------------|---------------|
+| [@Ogagaoghene](https://github.com/Ogagaoghene) | 5 |
+| [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 4 |
 
 ### Blockchain
 
@@ -84,12 +92,6 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | [@Utkarsh-660](https://github.com/Utkarsh-660) | 1 |
 | [@alisha1510](https://github.com/alisha1510) | 1 |
 | [@Mansi13-6](https://github.com/Mansi13-6) | 1 |
-
-### FullStack
-
-| Contributor | Contributions |
-|-------------|---------------|
-| [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 2 |
 
 ### IoT
 

@@ -86,13 +86,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/Esavwede.png" width="100" height="100" style="border-radius: 50%;" alt="Esavwede"/>
+<img src="https://github.com/Kanikashreesivakumar.png" width="100" height="100" style="border-radius: 50%;" alt="Kanikashreesivakumar"/>
 
-**[@Esavwede](https://github.com/Esavwede)**
+**[@Kanikashreesivakumar](https://github.com/Kanikashreesivakumar)**
 
 *Contributions: 1 PRs across 1 domain(s)*
 
-*Domains: Backend*
+*Domains: FullStack*
 
 </div>
 
