@@ -70,13 +70,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/alisha1510.png" width="100" height="100" style="border-radius: 50%;" alt="alisha1510"/>
+<img src="https://github.com/Mansi13-6.png" width="100" height="100" style="border-radius: 50%;" alt="Mansi13-6"/>
 
-**[@alisha1510](https://github.com/alisha1510)**
+**[@Mansi13-6](https://github.com/Mansi13-6)**
 
-*Contributions: 3 PRs across 2 domain(s)*
+*Contributions: 2 PRs across 2 domain(s)*
 
-*Domains: AI-ML, Frontend*
+*Domains: AR-VR, Frontend*
 
 </div>
 
@@ -118,6 +118,22 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
+<img src="https://github.com/alisha1510.png" width="100" height="100" style="border-radius: 50%;" alt="alisha1510"/>
+
+**[@alisha1510](https://github.com/alisha1510)**
+
+*Contributions: 2 PRs across 1 domain(s)*
+
+*Domains: Frontend*
+
+</div>
+
+---
+
+### 🏅 Rank 8
+
+<div align="center">
+
 <img src="https://github.com/AksharGoyal.png" width="100" height="100" style="border-radius: 50%;" alt="AksharGoyal"/>
 
 **[@AksharGoyal](https://github.com/AksharGoyal)**
@@ -130,7 +146,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 8
+### 🏅 Rank 9
 
 <div align="center">
 
@@ -146,29 +162,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 9
+### 🏅 Rank 10
 
 <div align="center">
 
 <img src="https://github.com/SanjeevDeori.png" width="100" height="100" style="border-radius: 50%;" alt="SanjeevDeori"/>
 
 **[@SanjeevDeori](https://github.com/SanjeevDeori)**
-
-*Contributions: 1 PRs across 1 domain(s)*
-
-*Domains: Frontend*
-
-</div>
-
----
-
-### 🏅 Rank 10
-
-<div align="center">
-
-<img src="https://github.com/snehal492006.png" width="100" height="100" style="border-radius: 50%;" alt="snehal492006"/>
-
-**[@snehal492006](https://github.com/snehal492006)**
 
 *Contributions: 1 PRs across 1 domain(s)*
 
