@@ -54,6 +54,22 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
+<img src="https://github.com/Ogagaoghene.png" width="100" height="100" style="border-radius: 50%;" alt="Ogagaoghene"/>
+
+**[@Ogagaoghene](https://github.com/Ogagaoghene)**
+
+*Contributions: 3 PRs across 1 domain(s)*
+
+*Domains: Backend*
+
+</div>
+
+---
+
+### 🏅 Rank 4
+
+<div align="center">
+
 <img src="https://github.com/vatsalgupta2004.png" width="100" height="100" style="border-radius: 50%;" alt="vatsalgupta2004"/>
 
 **[@vatsalgupta2004](https://github.com/vatsalgupta2004)**
@@ -66,33 +82,17 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 4
-
-<div align="center">
-
-<img src="https://github.com/Ogagaoghene.png" width="100" height="100" style="border-radius: 50%;" alt="Ogagaoghene"/>
-
-**[@Ogagaoghene](https://github.com/Ogagaoghene)**
-
-*Contributions: 2 PRs across 1 domain(s)*
-
-*Domains: Backend*
-
-</div>
-
----
-
 ### 🏅 Rank 5
 
 <div align="center">
 
-<img src="https://github.com/Aerospace-prog.png" width="100" height="100" style="border-radius: 50%;" alt="Aerospace-prog"/>
+<img src="https://github.com/Esavwede.png" width="100" height="100" style="border-radius: 50%;" alt="Esavwede"/>
 
-**[@Aerospace-prog](https://github.com/Aerospace-prog)**
+**[@Esavwede](https://github.com/Esavwede)**
 
 *Contributions: 1 PRs across 1 domain(s)*
 
-*Domains: Frontend*
+*Domains: Backend*
 
 </div>
 
