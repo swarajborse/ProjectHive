@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="converter-container">
+        <h1>Unit Converter</h1>
+        <div class="input-group">
+            <input type="number" id="input-value" value="1">
+            <select id="from-unit">
+                <option value="cm">Centimeters (cm)</option>
+                <option value="in">Inches (in)</option>
+                <option value="kg">Kilograms (kg)</option>
+                <option value="lb">Pounds (lb)</option>
+                <option value="c">Celsius (°C)</option>
+                <option value="f">Fahrenheit (°F)</option>
+            </select>
+        </div>
+        <div class="equals-sign">=</div>
+        <div class="input-group">
+            <input type="number" id="output-value" readonly>
+            <select id="to-unit">
+                <option value="cm">Centimeters (cm)</option>
+                <option value="in">Inches (in)</option>
+                <option value="kg">Kilograms (kg)</option>
+                <option value="lb">Pounds (lb)</option>
+                <option value="c">Celsius (°C)</option>
+                <option value="f">Fahrenheit (°F)</option>
+            </select>
+        </div>
+        <p id="error-msg" class="error"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
