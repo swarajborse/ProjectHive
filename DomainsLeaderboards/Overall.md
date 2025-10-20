@@ -14,33 +14,27 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | 🥈 | [@Aaditya-2407](https://github.com/Aaditya-2407) | 6 | 1 (Frontend) | Recent |
 | 🥉 | [@Ogagaoghene](https://github.com/Ogagaoghene) | 5 | 1 (Backend) | Recent |
 | 4 | [@vatsalgupta2004](https://github.com/vatsalgupta2004) | 2 | 2 (AI-ML, Frontend) | Recent |
-| 5 | [@Kanikashreesivakumar](https://github.com/Kanikashreesivakumar) | 1 | 1 (FullStack) | Recent |
-| 6 | [@MeghPatel-007](https://github.com/MeghPatel-007) | 1 | 1 (Frontend) | Recent |
-| 7 | [@SanjeevDeori](https://github.com/SanjeevDeori) | 1 | 1 (Frontend) | Recent |
-| 8 | [@snehal492006](https://github.com/snehal492006) | 1 | 1 (Frontend) | Recent |
-| 9 | [@Utkarsh-660](https://github.com/Utkarsh-660) | 1 | 1 (Frontend) | Recent |
-| 10 | [@alisha1510](https://github.com/alisha1510) | 1 | 1 (Frontend) | Recent |
-| 11 | [@Mansi13-6](https://github.com/Mansi13-6) | 1 | 1 (Frontend) | Recent |
-| 12 | [@k4niz](https://github.com/k4niz) | 1 | 1 (FullStack) | Recent |
+| 5 | [@k4niz](https://github.com/k4niz) | 2 | 2 (AI-ML, FullStack) | Recent |
+| 6 | [@Kanikashreesivakumar](https://github.com/Kanikashreesivakumar) | 1 | 1 (AI-ML) | Recent |
+| 7 | [@MeghPatel-007](https://github.com/MeghPatel-007) | 1 | 1 (Frontend) | Recent |
+| 8 | [@SanjeevDeori](https://github.com/SanjeevDeori) | 1 | 1 (Frontend) | Recent |
+| 9 | [@snehal492006](https://github.com/snehal492006) | 1 | 1 (Frontend) | Recent |
+| 10 | [@Utkarsh-660](https://github.com/Utkarsh-660) | 1 | 1 (Frontend) | Recent |
+| 11 | [@alisha1510](https://github.com/alisha1510) | 1 | 1 (Frontend) | Recent |
+| 12 | [@Mansi13-6](https://github.com/Mansi13-6) | 1 | 1 (Frontend) | Recent |
 
 ---
 
 ## 📊 Domain Breakdown
-
-### FullStack
-
-| Contributor | Contributions |
-|-------------|---------------|
-| [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 2 |
-| [@Kanikashreesivakumar](https://github.com/Kanikashreesivakumar) | 1 |
-| [@k4niz](https://github.com/k4niz) | 1 |
 
 ### AI-ML
 
 | Contributor | Contributions |
 |-------------|---------------|
 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 2 |
+| [@Kanikashreesivakumar](https://github.com/Kanikashreesivakumar) | 1 |
 | [@vatsalgupta2004](https://github.com/vatsalgupta2004) | 1 |
+| [@k4niz](https://github.com/k4niz) | 1 |
 
 ### AR-VR
 
@@ -92,6 +86,13 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | [@Utkarsh-660](https://github.com/Utkarsh-660) | 1 |
 | [@alisha1510](https://github.com/alisha1510) | 1 |
 | [@Mansi13-6](https://github.com/Mansi13-6) | 1 |
+
+### FullStack
+
+| Contributor | Contributions |
+|-------------|---------------|
+| [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 2 |
+| [@k4niz](https://github.com/k4niz) | 1 |
 
 ### IoT
 
