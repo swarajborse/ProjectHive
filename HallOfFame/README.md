@@ -70,22 +70,6 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/alisha1510.png" width="100" height="100" style="border-radius: 50%;" alt="alisha1510"/>
-
-**[@alisha1510](https://github.com/alisha1510)**
-
-*Contributions: 3 PRs across 2 domain(s)*
-
-*Domains: CompetitiveProgramming, Frontend*
-
-</div>
-
----
-
-### 🏅 Rank 5
-
-<div align="center">
-
 <img src="https://github.com/vatsalgupta2004.png" width="100" height="100" style="border-radius: 50%;" alt="vatsalgupta2004"/>
 
 **[@vatsalgupta2004](https://github.com/vatsalgupta2004)**
@@ -98,7 +82,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 6
+### 🏅 Rank 5
 
 <div align="center">
 
@@ -114,7 +98,39 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
+### 🏅 Rank 6
+
+<div align="center">
+
+<img src="https://github.com/alisha1510.png" width="100" height="100" style="border-radius: 50%;" alt="alisha1510"/>
+
+**[@alisha1510](https://github.com/alisha1510)**
+
+*Contributions: 2 PRs across 1 domain(s)*
+
+*Domains: Frontend*
+
+</div>
+
+---
+
 ### 🏅 Rank 7
+
+<div align="center">
+
+<img src="https://github.com/SamaKool.png" width="100" height="100" style="border-radius: 50%;" alt="SamaKool"/>
+
+**[@SamaKool](https://github.com/SamaKool)**
+
+*Contributions: 1 PRs across 1 domain(s)*
+
+*Domains: CompetitiveProgramming*
+
+</div>
+
+---
+
+### 🏅 Rank 8
 
 <div align="center">
 
@@ -130,7 +146,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 8
+### 🏅 Rank 9
 
 <div align="center">
 
@@ -146,29 +162,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 9
+### 🏅 Rank 10
 
 <div align="center">
 
 <img src="https://github.com/SanjeevDeori.png" width="100" height="100" style="border-radius: 50%;" alt="SanjeevDeori"/>
 
 **[@SanjeevDeori](https://github.com/SanjeevDeori)**
-
-*Contributions: 1 PRs across 1 domain(s)*
-
-*Domains: Frontend*
-
-</div>
-
----
-
-### 🏅 Rank 10
-
-<div align="center">
-
-<img src="https://github.com/snehal492006.png" width="100" height="100" style="border-radius: 50%;" alt="snehal492006"/>
-
-**[@snehal492006](https://github.com/snehal492006)**
 
 *Contributions: 1 PRs across 1 domain(s)*
 

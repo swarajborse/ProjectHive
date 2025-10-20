@@ -13,15 +13,16 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | 🥇 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 19 | 13 (AI-ML, AR-VR, Backend, Blockchain, Cloud, Cybersecurity, DevOps, Frontend, FullStack, IoT, MLOps, NLP, Robotics-Automation) | Recent |
 | 🥈 | [@Aaditya-2407](https://github.com/Aaditya-2407) | 6 | 1 (Frontend) | Recent |
 | 🥉 | [@Ogagaoghene](https://github.com/Ogagaoghene) | 5 | 1 (Backend) | Recent |
-| 4 | [@alisha1510](https://github.com/alisha1510) | 3 | 2 (CompetitiveProgramming, Frontend) | Recent |
-| 5 | [@vatsalgupta2004](https://github.com/vatsalgupta2004) | 2 | 2 (AI-ML, Frontend) | Recent |
-| 6 | [@k4niz](https://github.com/k4niz) | 2 | 2 (AI-ML, FullStack) | Recent |
-| 7 | [@AksharGoyal](https://github.com/AksharGoyal) | 1 | 1 (Backend) | Recent |
-| 8 | [@MeghPatel-007](https://github.com/MeghPatel-007) | 1 | 1 (Frontend) | Recent |
-| 9 | [@SanjeevDeori](https://github.com/SanjeevDeori) | 1 | 1 (Frontend) | Recent |
-| 10 | [@snehal492006](https://github.com/snehal492006) | 1 | 1 (Frontend) | Recent |
-| 11 | [@Utkarsh-660](https://github.com/Utkarsh-660) | 1 | 1 (Frontend) | Recent |
-| 12 | [@Mansi13-6](https://github.com/Mansi13-6) | 1 | 1 (Frontend) | Recent |
+| 4 | [@vatsalgupta2004](https://github.com/vatsalgupta2004) | 2 | 2 (AI-ML, Frontend) | Recent |
+| 5 | [@k4niz](https://github.com/k4niz) | 2 | 2 (AI-ML, FullStack) | Recent |
+| 6 | [@alisha1510](https://github.com/alisha1510) | 2 | 1 (Frontend) | Recent |
+| 7 | [@SamaKool](https://github.com/SamaKool) | 1 | 1 (CompetitiveProgramming) | Recent |
+| 8 | [@AksharGoyal](https://github.com/AksharGoyal) | 1 | 1 (Backend) | Recent |
+| 9 | [@MeghPatel-007](https://github.com/MeghPatel-007) | 1 | 1 (Frontend) | Recent |
+| 10 | [@SanjeevDeori](https://github.com/SanjeevDeori) | 1 | 1 (Frontend) | Recent |
+| 11 | [@snehal492006](https://github.com/snehal492006) | 1 | 1 (Frontend) | Recent |
+| 12 | [@Utkarsh-660](https://github.com/Utkarsh-660) | 1 | 1 (Frontend) | Recent |
+| 13 | [@Mansi13-6](https://github.com/Mansi13-6) | 1 | 1 (Frontend) | Recent |
 
 ---
 
@@ -31,21 +32,7 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 
 | Contributor | Contributions |
 |-------------|---------------|
-| [@alisha1510](https://github.com/alisha1510) | 1 |
-
-### Frontend
-
-| Contributor | Contributions |
-|-------------|---------------|
-| [@Aaditya-2407](https://github.com/Aaditya-2407) | 6 |
-| [@alisha1510](https://github.com/alisha1510) | 2 |
-| [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 2 |
-| [@vatsalgupta2004](https://github.com/vatsalgupta2004) | 1 |
-| [@MeghPatel-007](https://github.com/MeghPatel-007) | 1 |
-| [@SanjeevDeori](https://github.com/SanjeevDeori) | 1 |
-| [@snehal492006](https://github.com/snehal492006) | 1 |
-| [@Utkarsh-660](https://github.com/Utkarsh-660) | 1 |
-| [@Mansi13-6](https://github.com/Mansi13-6) | 1 |
+| [@SamaKool](https://github.com/SamaKool) | 1 |
 
 ### AI-ML
 
@@ -92,6 +79,20 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | Contributor | Contributions |
 |-------------|---------------|
 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 1 |
+
+### Frontend
+
+| Contributor | Contributions |
+|-------------|---------------|
+| [@Aaditya-2407](https://github.com/Aaditya-2407) | 6 |
+| [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 2 |
+| [@alisha1510](https://github.com/alisha1510) | 2 |
+| [@vatsalgupta2004](https://github.com/vatsalgupta2004) | 1 |
+| [@MeghPatel-007](https://github.com/MeghPatel-007) | 1 |
+| [@SanjeevDeori](https://github.com/SanjeevDeori) | 1 |
+| [@snehal492006](https://github.com/snehal492006) | 1 |
+| [@Utkarsh-660](https://github.com/Utkarsh-660) | 1 |
+| [@Mansi13-6](https://github.com/Mansi13-6) | 1 |
 
 ### FullStack
 
