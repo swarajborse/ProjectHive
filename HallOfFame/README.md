@@ -70,6 +70,38 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
+<img src="https://github.com/k4niz.png" width="100" height="100" style="border-radius: 50%;" alt="k4niz"/>
+
+**[@k4niz](https://github.com/k4niz)**
+
+*Contributions: 3 PRs across 3 domain(s)*
+
+*Domains: AI-ML, AR-VR, FullStack*
+
+</div>
+
+---
+
+### 🏅 Rank 5
+
+<div align="center">
+
+<img src="https://github.com/Kanikashreesivakumar.png" width="100" height="100" style="border-radius: 50%;" alt="Kanikashreesivakumar"/>
+
+**[@Kanikashreesivakumar](https://github.com/Kanikashreesivakumar)**
+
+*Contributions: 2 PRs across 2 domain(s)*
+
+*Domains: AR-VR, FullStack*
+
+</div>
+
+---
+
+### 🏅 Rank 6
+
+<div align="center">
+
 <img src="https://github.com/vatsalgupta2004.png" width="100" height="100" style="border-radius: 50%;" alt="vatsalgupta2004"/>
 
 **[@vatsalgupta2004](https://github.com/vatsalgupta2004)**
@@ -82,23 +114,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 5
-
-<div align="center">
-
-<img src="https://github.com/k4niz.png" width="100" height="100" style="border-radius: 50%;" alt="k4niz"/>
-
-**[@k4niz](https://github.com/k4niz)**
-
-*Contributions: 2 PRs across 2 domain(s)*
-
-*Domains: AI-ML, FullStack*
-
-</div>
-
----
-
-### 🏅 Rank 6
+### 🏅 Rank 7
 
 <div align="center">
 
@@ -109,22 +125,6 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 *Contributions: 2 PRs across 1 domain(s)*
 
 *Domains: Frontend*
-
-</div>
-
----
-
-### 🏅 Rank 7
-
-<div align="center">
-
-<img src="https://github.com/SamaKool.png" width="100" height="100" style="border-radius: 50%;" alt="SamaKool"/>
-
-**[@SamaKool](https://github.com/SamaKool)**
-
-*Contributions: 1 PRs across 1 domain(s)*
-
-*Domains: CompetitiveProgramming*
 
 </div>
 
