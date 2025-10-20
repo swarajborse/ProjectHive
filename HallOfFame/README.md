@@ -38,11 +38,27 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
+<img src="https://github.com/Aaditya-2407.png" width="100" height="100" style="border-radius: 50%;" alt="Aaditya-2407"/>
+
+**[@Aaditya-2407](https://github.com/Aaditya-2407)**
+
+*Contributions: 3 PRs across 1 domain(s)*
+
+*Domains: Frontend*
+
+</div>
+
+---
+
+### 🥉 Rank 3
+
+<div align="center">
+
 <img src="https://github.com/vatsalgupta2004.png" width="100" height="100" style="border-radius: 50%;" alt="vatsalgupta2004"/>
 
 **[@vatsalgupta2004](https://github.com/vatsalgupta2004)**
 
-*Contributions: 3 PRs across 2 domain(s)*
+*Contributions: 2 PRs across 2 domain(s)*
 
 *Domains: AI-ML, Frontend*
 
@@ -50,7 +66,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🥉 Rank 3
+### 🏅 Rank 4
 
 <div align="center">
 
@@ -61,22 +77,6 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 *Contributions: 2 PRs across 1 domain(s)*
 
 *Domains: Backend*
-
-</div>
-
----
-
-### 🏅 Rank 4
-
-<div align="center">
-
-<img src="https://github.com/Aaditya-2407.png" width="100" height="100" style="border-radius: 50%;" alt="Aaditya-2407"/>
-
-**[@Aaditya-2407](https://github.com/Aaditya-2407)**
-
-*Contributions: 1 PRs across 1 domain(s)*
-
-*Domains: Frontend*
 
 </div>
 
