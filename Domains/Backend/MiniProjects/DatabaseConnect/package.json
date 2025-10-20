@@ -1,0 +1,21 @@
+{
+  "name": "databaseconnect",
+  "version": "1.0.0",
+  "description": "This repo shows you how to connect to a mongodb database",
+  "keywords": [
+    "mongoose",
+    "mongodb"
+  ],
+  "license": "ISC",
+  "author": "ogagaoghene esavwede",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "test"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "mongoose": "^8.19.1"
+  }
+}

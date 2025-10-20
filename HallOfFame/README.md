@@ -58,7 +58,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 **[@Ogagaoghene](https://github.com/Ogagaoghene)**
 
-*Contributions: 3 PRs across 1 domain(s)*
+*Contributions: 5 PRs across 1 domain(s)*
 
 *Domains: Backend*
 
