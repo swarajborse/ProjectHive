@@ -54,22 +54,6 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/MeghPatel-007.png" width="100" height="100" style="border-radius: 50%;" alt="MeghPatel-007"/>
-
-**[@MeghPatel-007](https://github.com/MeghPatel-007)**
-
-*Contributions: 2 PRs across 1 domain(s)*
-
-*Domains: Frontend*
-
-</div>
-
----
-
-### 🏅 Rank 4
-
-<div align="center">
-
 <img src="https://github.com/vatsalgupta2004.png" width="100" height="100" style="border-radius: 50%;" alt="vatsalgupta2004"/>
 
 **[@vatsalgupta2004](https://github.com/vatsalgupta2004)**
@@ -82,7 +66,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 5
+### 🏅 Rank 4
 
 <div align="center">
 
@@ -98,7 +82,39 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
+### 🏅 Rank 5
+
+<div align="center">
+
+<img src="https://github.com/Aerospace-prog.png" width="100" height="100" style="border-radius: 50%;" alt="Aerospace-prog"/>
+
+**[@Aerospace-prog](https://github.com/Aerospace-prog)**
+
+*Contributions: 1 PRs across 1 domain(s)*
+
+*Domains: Frontend*
+
+</div>
+
+---
+
 ### 🏅 Rank 6
+
+<div align="center">
+
+<img src="https://github.com/MeghPatel-007.png" width="100" height="100" style="border-radius: 50%;" alt="MeghPatel-007"/>
+
+**[@MeghPatel-007](https://github.com/MeghPatel-007)**
+
+*Contributions: 1 PRs across 1 domain(s)*
+
+*Domains: Frontend*
+
+</div>
+
+---
+
+### 🏅 Rank 7
 
 <div align="center">
 
@@ -114,7 +130,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 7
+### 🏅 Rank 8
 
 <div align="center">
 
@@ -130,7 +146,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 8
+### 🏅 Rank 9
 
 <div align="center">
 
@@ -146,29 +162,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 9
+### 🏅 Rank 10
 
 <div align="center">
 
 <img src="https://github.com/alisha1510.png" width="100" height="100" style="border-radius: 50%;" alt="alisha1510"/>
 
 **[@alisha1510](https://github.com/alisha1510)**
-
-*Contributions: 1 PRs across 1 domain(s)*
-
-*Domains: Frontend*
-
-</div>
-
----
-
-### 🏅 Rank 10
-
-<div align="center">
-
-<img src="https://github.com/Mansi13-6.png" width="100" height="100" style="border-radius: 50%;" alt="Mansi13-6"/>
-
-**[@Mansi13-6](https://github.com/Mansi13-6)**
 
 *Contributions: 1 PRs across 1 domain(s)*
 
