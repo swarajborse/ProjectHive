@@ -11,27 +11,23 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | Rank | Contributor | Total PRs | Domains Contributed | Last Active |
 |------|-------------|-----------|---------------------|-------------|
 | 🥇 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 19 | 13 (AI-ML, AR-VR, Backend, Blockchain, Cloud, Cybersecurity, DevOps, Frontend, FullStack, IoT, MLOps, NLP, Robotics-Automation) | Recent |
-| 🥈 | [@Utkarsh-660](https://github.com/Utkarsh-660) | 2 | 1 (Frontend) | Recent |
-| 🥉 | [@Ogagaoghene](https://github.com/Ogagaoghene) | 2 | 1 (Backend) | Recent |
+| 🥈 | [@Ogagaoghene](https://github.com/Ogagaoghene) | 2 | 1 (Backend) | Recent |
+| 🥉 | [@ManaswibRane](https://github.com/ManaswibRane) | 1 | 1 (CompetitiveProgramming) | Recent |
 | 4 | [@SanjeevDeori](https://github.com/SanjeevDeori) | 1 | 1 (Frontend) | Recent |
 | 5 | [@snehal492006](https://github.com/snehal492006) | 1 | 1 (Frontend) | Recent |
-| 6 | [@alisha1510](https://github.com/alisha1510) | 1 | 1 (Frontend) | Recent |
-| 7 | [@Mansi13-6](https://github.com/Mansi13-6) | 1 | 1 (Frontend) | Recent |
+| 6 | [@Utkarsh-660](https://github.com/Utkarsh-660) | 1 | 1 (Frontend) | Recent |
+| 7 | [@alisha1510](https://github.com/alisha1510) | 1 | 1 (Frontend) | Recent |
+| 8 | [@Mansi13-6](https://github.com/Mansi13-6) | 1 | 1 (Frontend) | Recent |
 
 ---
 
 ## 📊 Domain Breakdown
 
-### Frontend
+### CompetitiveProgramming
 
 | Contributor | Contributions |
 |-------------|---------------|
-| [@Utkarsh-660](https://github.com/Utkarsh-660) | 2 |
-| [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 2 |
-| [@SanjeevDeori](https://github.com/SanjeevDeori) | 1 |
-| [@snehal492006](https://github.com/snehal492006) | 1 |
-| [@alisha1510](https://github.com/alisha1510) | 1 |
-| [@Mansi13-6](https://github.com/Mansi13-6) | 1 |
+| [@ManaswibRane](https://github.com/ManaswibRane) | 1 |
 
 ### AI-ML
 
@@ -75,6 +71,17 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | Contributor | Contributions |
 |-------------|---------------|
 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 1 |
+
+### Frontend
+
+| Contributor | Contributions |
+|-------------|---------------|
+| [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 2 |
+| [@SanjeevDeori](https://github.com/SanjeevDeori) | 1 |
+| [@snehal492006](https://github.com/snehal492006) | 1 |
+| [@Utkarsh-660](https://github.com/Utkarsh-660) | 1 |
+| [@alisha1510](https://github.com/alisha1510) | 1 |
+| [@Mansi13-6](https://github.com/Mansi13-6) | 1 |
 
 ### FullStack
 

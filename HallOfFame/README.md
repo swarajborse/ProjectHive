@@ -38,13 +38,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/Utkarsh-660.png" width="100" height="100" style="border-radius: 50%;" alt="Utkarsh-660"/>
+<img src="https://github.com/Ogagaoghene.png" width="100" height="100" style="border-radius: 50%;" alt="Ogagaoghene"/>
 
-**[@Utkarsh-660](https://github.com/Utkarsh-660)**
+**[@Ogagaoghene](https://github.com/Ogagaoghene)**
 
 *Contributions: 2 PRs across 1 domain(s)*
 
-*Domains: Frontend*
+*Domains: Backend*
 
 </div>
 
@@ -54,13 +54,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/Ogagaoghene.png" width="100" height="100" style="border-radius: 50%;" alt="Ogagaoghene"/>
+<img src="https://github.com/ManaswibRane.png" width="100" height="100" style="border-radius: 50%;" alt="ManaswibRane"/>
 
-**[@Ogagaoghene](https://github.com/Ogagaoghene)**
+**[@ManaswibRane](https://github.com/ManaswibRane)**
 
-*Contributions: 2 PRs across 1 domain(s)*
+*Contributions: 1 PRs across 1 domain(s)*
 
-*Domains: Backend*
+*Domains: CompetitiveProgramming*
 
 </div>
 
@@ -102,9 +102,9 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/alisha1510.png" width="100" height="100" style="border-radius: 50%;" alt="alisha1510"/>
+<img src="https://github.com/Utkarsh-660.png" width="100" height="100" style="border-radius: 50%;" alt="Utkarsh-660"/>
 
-**[@alisha1510](https://github.com/alisha1510)**
+**[@Utkarsh-660](https://github.com/Utkarsh-660)**
 
 *Contributions: 1 PRs across 1 domain(s)*
 
@@ -118,9 +118,9 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/Mansi13-6.png" width="100" height="100" style="border-radius: 50%;" alt="Mansi13-6"/>
+<img src="https://github.com/alisha1510.png" width="100" height="100" style="border-radius: 50%;" alt="alisha1510"/>
 
-**[@Mansi13-6](https://github.com/Mansi13-6)**
+**[@alisha1510](https://github.com/alisha1510)**
 
 *Contributions: 1 PRs across 1 domain(s)*
 
@@ -134,11 +134,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/github.png" width="100" height="100" style="border-radius: 50%;" alt="Pending"/>
+<img src="https://github.com/Mansi13-6.png" width="100" height="100" style="border-radius: 50%;" alt="Mansi13-6"/>
 
-**[Username Pending]**
+**[@Mansi13-6](https://github.com/Mansi13-6)**
 
-*Contributions: TBD*
+*Contributions: 1 PRs across 1 domain(s)*
+
+*Domains: Frontend*
 
 </div>
 
