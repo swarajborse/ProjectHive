@@ -1,33 +1,77 @@
 # FastAPI CRUD App
+
 **Contributor:** AksharGoyal
 
-## Description
-A fully functional API server that allows CRUD operations powered by SQLAlchemy's Object-Relational Mapping (ORM) feature.
+## Overview
+Simple, starter FastAPI application demonstrating CRUD operations backed by SQLAlchemy ORM. Includes a minimal API for creating, listing, updating and deleting "items".
 
-## Tech Stack
-- Python
+## Tech stack
+- Python 3.12+
 - FastAPI
 - SQLAlchemy
+- Uvicorn (ASGI server)
+- "uv" as the local environment manager (see pyproject.toml)
 
-## How to Run
-1. Install `uv` and make sure you have Python 3.12+.
-2. Run `uv venv` to create a virtual environment and then run `source .venv/bin/activate` to activate the virtual environment.
-3. Run `uv pip install -r requirements.txt` to install necessary libraries.
-4. Run `uv run uvicorn app.main:app --reload` or `uvicorn app.main:app --reload` and open http://127.0.0.1:8000 in a browser. You will get below output:  
-```{"detail":"Not Found"}```.  
-If you append the endpoint items (`http://127.0.0.1:8000/items/`), you will get an empty list `[]`.
-5. You can even get list of items in terminal via cURL: `curl -X GET http://127.0.0.1:8000/items/`.  
-6. If you want to add a new item, you may use
+## Prerequisites
+- Linux (dev container in this repo is Ubuntu 24.04.2 LTS)
+- Python 3.12+
+- Docker (optional)
+- The `uv` tool is used in these instructions as the environment manager. Commands that use `uv` are shown with the `uv` prefix.
+
+## Quickstart 
+1. Create and activate the virtual environment
 ```sh
-curl -X POST http://127.0.0.1:8000/items/ -H "Content-Type: application/json" -d '{"title":"A Nice Hoodie","description": "A nice hoodie to wear with style.", "price": 39.99}'
+uv venv --python=3.12      # creates .venv by default
+source .venv/bin/activate
 ```
-7. After adding a new item, if you try to GET the items again, you will see our item was added. You can try this on Postman as well.
-![alt text](image.png)
-8. If you made a mistake with the item you created, you can make a PUT request with the id of that item to make that change:  
+
+2. Install dependencies (pyproject-based)
 ```sh
-curl -X PUT http://127.0.0.1:8000/items/1 -H "Content-Type: application/json" -d '{"title":"A Cool Hoodie","description": "A nice hoodie to wear with style.", "price": 49.99}'
+uv install
+# or, if you prefer pip:
+uv run pip install -r requirements.txt
 ```
-9. Finally, if you want to get rid of an item with a particular id, say 1, we can use:  
+
+3. Run the server
+```sh
+uv run uvicorn app.main:app --reload
+```
+
+4. Open the API in your browser
+```sh
+$BROWSER http://127.0.0.1:8000/docs
+```
+The root path returns 404 by default; use the documented endpoints (e.g. /items/).
+
+## API endpoints
+- GET /items/        — List items
+- POST /items/       — Create item
+- GET /items/{id}    — Retrieve single item
+- PUT /items/{id}    — Update item
+- DELETE /items/{id} — Delete item
+
+## Examples 
+List items:
+```sh
+curl -X GET http://127.0.0.1:8000/items/
+# returns: []
+```
+
+Create an item:
+```sh
+curl -X POST http://127.0.0.1:8000/items/ \
+  -H "Content-Type: application/json" \
+  -d '{"title":"A Nice Hoodie","description":"A nice hoodie to wear with style.","price":39.99}'
+```
+
+Update item with id 1:
+```sh
+curl -X PUT http://127.0.0.1:8000/items/1 \
+  -H "Content-Type: application/json" \
+  -d '{"title":"A Cool Hoodie","description":"A nice hoodie to wear with style.","price":49.99}'
+```
+
+Delete item with id 1:
 ```sh
 curl -X DELETE http://127.0.0.1:8000/items/1
 ```

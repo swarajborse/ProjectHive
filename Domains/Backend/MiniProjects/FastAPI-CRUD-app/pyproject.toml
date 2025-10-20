@@ -1,0 +1,28 @@
+[project]
+name = "fastapi-crud-app"
+version = "0.1.0"
+description = "Minimal FastAPI CRUD example using SQLAlchemy"
+requires-python = ">=3.12,<4.0"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "AksharGoyal" }]
+
+dependencies = [
+  "fastapi>=0.95",
+  "uvicorn[standard]>=0.22",
+  "sqlalchemy>=2.0",
+  "pydantic>=2.0"
+]
+
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.uv]
+# Use 'uv' as the environment manager. Typical commands used in this repo:
+#   uv venv --python=3.12
+#   uv install
+#   uv run <command>
+environment-manager = "venv"
+python = "3.12"
+venv-path = ".venv"
