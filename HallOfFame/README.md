@@ -134,13 +134,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/SOHAM-GADEKAR.png" width="100" height="100" style="border-radius: 50%;" alt="SOHAM-GADEKAR"/>
+<img src="https://github.com/anfasmhsn.png" width="100" height="100" style="border-radius: 50%;" alt="anfasmhsn"/>
 
-**[@SOHAM-GADEKAR](https://github.com/SOHAM-GADEKAR)**
+**[@anfasmhsn](https://github.com/anfasmhsn)**
 
 *Contributions: 1 PRs across 1 domain(s)*
 
-*Domains: Frontend*
+*Domains: Cloud*
 
 </div>
 
