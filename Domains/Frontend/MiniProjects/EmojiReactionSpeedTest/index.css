@@ -1,6 +1,6 @@
 body {
-  font-family: "Segoe UI Emoji", "Apple Color Emoji", sans-serif;
-  background: #1f2937;
+  font-family: "Segoe UI Emoji", "Apple Color Emoji", "Poppins", sans-serif;
+  background: #253851;
   color: #f3f4f6;
   margin: 0;
   padding: 0;
@@ -8,6 +8,11 @@ body {
   flex-direction: column;
   min-height: 100vh;
   overflow: hidden;
+}
+#game-info {
+  text-align: center;
+  margin-top: 0px;
+  font-family: "Poppins", sans-serif;
 }
 
 #stats-header {
@@ -85,8 +90,8 @@ body {
   flex-grow: 1;
   position: relative;
   width: 90%;
-  max-width: 1200px;
-  height: 500px;
+  max-width: 1000px;
+  height: 450px;
   margin: 10px auto;
   border: 2px dashed #4b5563;
 }
@@ -172,14 +177,21 @@ footer {
   text-align: center;
   background: #374151;
   margin-top: auto;
+  font-family: "Poppins", sans-serif;
 }
-
+p {
+  margin: 5px 0;
+  text-align: center;
+}
 #controls-bar {
   margin-bottom: 10px;
 }
 
 #controls-bar label {
   margin-right: 10px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  color: #374151;
 }
 
 #controls-bar select {

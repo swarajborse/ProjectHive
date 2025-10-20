@@ -84,7 +84,8 @@ const startGame = (difficulty) => {
 
   if (timerInterval) clearInterval(timerInterval);
   // defensive: if difficulty is invalid, fall back to Medium
-  currentDifficulty = difficultySettings[difficulty] || difficultySettings.Medium;
+  currentDifficulty =
+    difficultySettings[difficulty] || difficultySettings.Medium;
 
   // If the game-over screen was visible, hide it so the game area is interactive again
   if (gameOverScreen) gameOverScreen.style.display = "none";
