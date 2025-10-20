@@ -134,13 +134,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/anfasmhsn.png" width="100" height="100" style="border-radius: 50%;" alt="anfasmhsn"/>
+<img src="https://github.com/shivaji1277.png" width="100" height="100" style="border-radius: 50%;" alt="shivaji1277"/>
 
-**[@anfasmhsn](https://github.com/anfasmhsn)**
+**[@shivaji1277](https://github.com/shivaji1277)**
 
 *Contributions: 1 PRs across 1 domain(s)*
 
-*Domains: Cloud*
+*Domains: Frontend*
 
 </div>
 
