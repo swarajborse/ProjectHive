@@ -1,4 +1,4 @@
-**Contributor:** YourGitHubUsername
+**Contributor:** MeghPatel-007
 
 # 🎮 Rock-Paper-Scissors Game
 
