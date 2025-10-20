@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RPS Game</title>
+    <link rel="shortcut icon" href="./rps icon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- PLAY INTERFACE REMAINING -->
+    <div class="main">
+      <header>
+        <div class="title">
+          <h2>Rock Paper Scissor Game</h2>
+        </div>
+      </header>
+      <div class="scoreBoard">
+        <button class="scoreBox" id="scoreY">You - 0</button>
+        <button class="scoreBox" id="scoreC">Comp - 0</button>
+      </div>
+      <div class="gameBox">
+        <button class="btn" id="Paper"><img src="./paper.png" alt="" /></button>
+        <button class="btn" id="Scissors">
+          <img src="./scissors.png" alt="" />
+        </button>
+        <button class="btn" id="Rock"><img src="./rock.png" alt="" /></button>
+      </div>
+      <div class="display">
+        <div class="comment">"Beat me if you can!!!"</div>
+      </div>
+      <div class="footer">
+        <pre class="p">You -</pre>
+        <div class="optchoiced" id="choicedY"></div>
+        <pre class="p">Comp -</pre>
+        <div class="optchoiced" id="choicedC"></div>
+      </div>
+    </div>
+    <div class="pop-up visible">
+      <button class="cancel">X</button>
+      <div class="text">
+        <h2 class="pop-up-title">Congratulations!!!!</h2>
+      </div>
+      <div class="text">
+        <p class="pop-up-comment">You beat me</p>
+      </div>
+      <button class="resetBtn">Reset Game</button>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
