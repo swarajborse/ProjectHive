@@ -13,9 +13,9 @@ Simple, starter FastAPI application demonstrating CRUD operations backed by SQLA
 - "uv" as the local environment manager (see pyproject.toml)
 
 ## Prerequisites
-- Linux (dev container in this repo is Ubuntu 24.04.2 LTS)
-- Python 3.12+
-- The `uv` tool is used in these instructions as the environment manager. Commands that use `uv` are shown with the `uv` prefix.
+- Linux 
+- Python 3.12+ 
+- The `uv` tool is used in these instructions as the environment manager 
 
 ## Quickstart 
 1. Create and activate the virtual environment
@@ -25,21 +25,15 @@ uv venv --python=3.12 # creates .venv by default
 source .venv/bin/activate
 ```
 
-1. Install dependencies
+2. Install dependencies
 ```sh
 uv pip install -r requirements.txt
 ```
 
-1. Run the server
+3. Run the server
 ```sh
 uv run uvicorn app.main:app --reload
 ```
-
-1. Open the API in your browser
-```sh
-$BROWSER http://127.0.0.1:8000/docs
-```
-The root path returns 404 by default; use the documented endpoints (e.g. /items/).
 
 ## API endpoints
 - GET /items/        — List items
