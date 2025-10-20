@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container" id="app">
+    <header class="header">
+      <h1>Secure Password Generator</h1>
+      <div class="controls-header">
+        <label class="theme-toggle">
+          <input type="checkbox" id="themeToggle" />
+          <span>Dark</span>
+        </label>
+      </div>
+    </header>
+
+    <section class="generator card" aria-labelledby="generator-heading">
+      <h2 id="generator-heading">Create a password</h2>
+
+      <div class="output-row">
+        <input id="passwordOutput" class="password-output" readonly aria-label="Generated password" />
+        <div class="output-actions">
+          <button id="copyBtn" class="btn small" title="Copy password">Copy</button>
+          <button id="saveBtn" class="btn small" title="Save password">Save</button>
+        </div>
+      </div>
+
+      <div class="controls">
+        <div class="control">
+          <label for="lengthRange">Length: <span id="lengthValue">16</span></label>
+          <input id="lengthRange" type="range" min="6" max="64" value="16" />
+        </div>
+
+        <fieldset class="checkboxes" aria-label="Password options">
+          <legend>Include</legend>
+          <label><input type="checkbox" id="upper" checked /> Uppercase (A–Z)</label>
+          <label><input type="checkbox" id="lower" checked /> Lowercase (a–z)</label>
+          <label><input type="checkbox" id="numbers" checked /> Numbers (0–9)</label>
+          <label><input type="checkbox" id="symbols" checked /> Symbols (!@#...)</label>
+        </fieldset>
+
+        <div class="control">
+          <button id="generateBtn" class="btn primary">Generate</button>
+        </div>
+
+        <div class="meter-row">
+          <div class="strength-meter" aria-hidden="true">
+            <div id="meterFill" class="meter-fill"></div>
+          </div>
+          <div id="strengthLabel" class="strength-label">—</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="saved card" aria-labelledby="saved-heading">
+      <h2 id="saved-heading">Saved Passwords</h2>
+      <form id="saveForm" class="save-form" aria-label="Save password">
+        <input id="saveLabel" type="text" placeholder="Label (e.g., Gmail account)" />
+        <button id="saveSubmit" class="btn">Save Current</button>
+      </form>
+      <ul id="savedList" class="saved-list" aria-live="polite"></ul>
+      <div class="saved-actions">
+        <button id="clearAllBtn" class="btn danger">Clear All</button>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <small>Built with ❤️ • HTML • CSS • JavaScript</small>
+    </footer>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+name: Update Leaderboard
+
+on:
+  pull_request_target:
+    types: [closed]
+  workflow_dispatch: # Allow manual trigger for testing
+
+permissions:
+  contents: write
+  pull-requests: read
+
+jobs:
+  update:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository (base branch / safe context)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+          # If this run was triggered by a pull_request_target event, check out the base branch.
+          # For workflow_dispatch, fallback to the workflow ref (github.ref).
+          ref: ${{ github.event.pull_request && github.event.pull_request.base.ref || github.ref }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run leaderboard update script
+        run: node scripts/updateLeaderboard.js
+        env:
+          PR_NUMBER: ${{ github.event.pull_request && github.event.pull_request.number || '' }}
+          PR_AUTHOR: ${{ github.event.pull_request && github.event.pull_request.user.login || '' }}
+
+      - name: Check for changes
+        id: check_changes
+        run: |
+          git diff --quiet DomainsLeaderboards/Overall.md HallOfFame/README.md || echo "changes=true" >> $GITHUB_OUTPUT
+
+      - name: Commit and push changes
+        if: steps.check_changes.outputs.changes == 'true'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add DomainsLeaderboards/Overall.md
+          git add HallOfFame/README.md
+          git commit -m "chore: Update leaderboard and Hall of Fame after PR #${{ github.event.pull_request.number }}" || exit 0
+          # Ensure the git remote uses the authenticated token (actions/checkout normally sets this, but this guarantees it)
+          git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git
+          git push origin HEAD
+
+      - name: Success notification
+        if: steps.check_changes.outputs.changes == 'true'
+        run: echo "✅ Leaderboard and Hall of Fame updated successfully!"
+
+      - name: No changes notification
+        if: steps.check_changes.outputs.changes != 'true'
+        run: echo "ℹ️ No changes detected in leaderboard files."
