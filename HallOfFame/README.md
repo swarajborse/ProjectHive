@@ -42,7 +42,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 **[@Aaditya-2407](https://github.com/Aaditya-2407)**
 
-*Contributions: 5 PRs across 1 domain(s)*
+*Contributions: 7 PRs across 1 domain(s)*
 
 *Domains: Frontend*
 
@@ -51,22 +51,6 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 ---
 
 ### 🥉 Rank 3
-
-<div align="center">
-
-<img src="https://github.com/alisha1510.png" width="100" height="100" style="border-radius: 50%;" alt="alisha1510"/>
-
-**[@alisha1510](https://github.com/alisha1510)**
-
-*Contributions: 2 PRs across 2 domain(s)*
-
-*Domains: CompetitiveProgramming, Frontend*
-
-</div>
-
----
-
-### 🏅 Rank 4
 
 <div align="center">
 
@@ -82,7 +66,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 5
+### 🏅 Rank 4
 
 <div align="center">
 
@@ -98,7 +82,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 6
+### 🏅 Rank 5
 
 <div align="center">
 
@@ -114,7 +98,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 7
+### 🏅 Rank 6
 
 <div align="center">
 
@@ -130,13 +114,29 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 8
+### 🏅 Rank 7
 
 <div align="center">
 
 <img src="https://github.com/Utkarsh-660.png" width="100" height="100" style="border-radius: 50%;" alt="Utkarsh-660"/>
 
 **[@Utkarsh-660](https://github.com/Utkarsh-660)**
+
+*Contributions: 1 PRs across 1 domain(s)*
+
+*Domains: Frontend*
+
+</div>
+
+---
+
+### 🏅 Rank 8
+
+<div align="center">
+
+<img src="https://github.com/alisha1510.png" width="100" height="100" style="border-radius: 50%;" alt="alisha1510"/>
+
+**[@alisha1510](https://github.com/alisha1510)**
 
 *Contributions: 1 PRs across 1 domain(s)*
 
