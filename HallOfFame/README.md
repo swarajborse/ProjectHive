@@ -42,7 +42,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 **[@Aaditya-2407](https://github.com/Aaditya-2407)**
 
-*Contributions: 5 PRs across 1 domain(s)*
+*Contributions: 6 PRs across 1 domain(s)*
 
 *Domains: Frontend*
 
