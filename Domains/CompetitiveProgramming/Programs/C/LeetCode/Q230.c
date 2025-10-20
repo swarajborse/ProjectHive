@@ -6,6 +6,8 @@
 Difficulty: Medium
 Tags: Binary Search Tree, Depth-First Search, Tree, Binary Tree
 
+Contributor: SOHAM-GADEKAR
+
 ---------------------------------------------------------------
 Problem Statement:
 ---------------------------------------------------------------

@@ -6,6 +6,8 @@
 Difficulty: Medium
 Tags: Linked List, Depth-First Search, Doubly Linked List
 
+Contributor: SOHAM-GADEKAR
+
 ---------------------------------------------------------------
 Problem Statement:
 ---------------------------------------------------------------
