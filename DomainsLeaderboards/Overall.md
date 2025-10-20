@@ -10,21 +10,26 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 
 | Rank | Contributor | Total PRs | Domains Contributed | Last Active |
 |------|-------------|-----------|---------------------|-------------|
-| 🥇 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 20 | 14 (CompetitiveProgramming, AI-ML, AR-VR, Backend, Blockchain, Cloud, Cybersecurity, DevOps, Frontend, FullStack, IoT, MLOps, NLP, Robotics-Automation) | Recent |
-| 🥈 | [@Ogagaoghene](https://github.com/Ogagaoghene) | 2 | 1 (Backend) | Recent |
-| 🥉 | [@SanjeevDeori](https://github.com/SanjeevDeori) | 1 | 1 (Frontend) | Recent |
-| 4 | [@snehal492006](https://github.com/snehal492006) | 1 | 1 (Frontend) | Recent |
-| 5 | [@Mansi13-6](https://github.com/Mansi13-6) | 1 | 1 (Frontend) | Recent |
+| 🥇 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 19 | 13 (AI-ML, AR-VR, Backend, Blockchain, Cloud, Cybersecurity, DevOps, Frontend, FullStack, IoT, MLOps, NLP, Robotics-Automation) | Recent |
+| 🥈 | [@alisha1510](https://github.com/alisha1510) | 2 | 1 (Frontend) | Recent |
+| 🥉 | [@Ogagaoghene](https://github.com/Ogagaoghene) | 2 | 1 (Backend) | Recent |
+| 4 | [@SanjeevDeori](https://github.com/SanjeevDeori) | 1 | 1 (Frontend) | Recent |
+| 5 | [@snehal492006](https://github.com/snehal492006) | 1 | 1 (Frontend) | Recent |
+| 6 | [@Mansi13-6](https://github.com/Mansi13-6) | 1 | 1 (Frontend) | Recent |
 
 ---
 
 ## 📊 Domain Breakdown
 
-### CompetitiveProgramming
+### Frontend
 
 | Contributor | Contributions |
 |-------------|---------------|
-| [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 1 |
+| [@alisha1510](https://github.com/alisha1510) | 2 |
+| [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 2 |
+| [@SanjeevDeori](https://github.com/SanjeevDeori) | 1 |
+| [@snehal492006](https://github.com/snehal492006) | 1 |
+| [@Mansi13-6](https://github.com/Mansi13-6) | 1 |
 
 ### AI-ML
 
@@ -68,15 +73,6 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | Contributor | Contributions |
 |-------------|---------------|
 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 1 |
-
-### Frontend
-
-| Contributor | Contributions |
-|-------------|---------------|
-| [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 2 |
-| [@SanjeevDeori](https://github.com/SanjeevDeori) | 1 |
-| [@snehal492006](https://github.com/snehal492006) | 1 |
-| [@Mansi13-6](https://github.com/Mansi13-6) | 1 |
 
 ### FullStack
 
@@ -125,6 +121,6 @@ Top 10 contributors are featured in our [Hall of Fame](../HallOfFame/README.md)!
 
 ---
 
-**Last Updated:** 2025-10-19
+**Last Updated:** 2025-10-20
 
 *Leaderboard updates automatically on every merged PR via GitHub Actions*
