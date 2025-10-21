@@ -26,7 +26,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 **[@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade)**
 
-*Contributions: 19 PRs across 13 domain(s)*
+*Contributions: 20 PRs across 13 domain(s)*
 
 *Domains: AI-ML, AR-VR, Backend, Blockchain, Cloud, Cybersecurity, DevOps, Frontend, FullStack, IoT, MLOps, NLP, Robotics-Automation*
 
@@ -150,13 +150,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/ananyaa0518.png" width="100" height="100" style="border-radius: 50%;" alt="ananyaa0518"/>
+<img src="https://github.com/AksharGoyal.png" width="100" height="100" style="border-radius: 50%;" alt="AksharGoyal"/>
 
-**[@ananyaa0518](https://github.com/ananyaa0518)**
+**[@AksharGoyal](https://github.com/AksharGoyal)**
 
 *Contributions: 1 PRs across 1 domain(s)*
 
-*Domains: Frontend*
+*Domains: Backend*
 
 </div>
 
@@ -166,13 +166,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/AksharGoyal.png" width="100" height="100" style="border-radius: 50%;" alt="AksharGoyal"/>
+<img src="https://github.com/SOHAM-GADEKAR.png" width="100" height="100" style="border-radius: 50%;" alt="SOHAM-GADEKAR"/>
 
-**[@AksharGoyal](https://github.com/AksharGoyal)**
+**[@SOHAM-GADEKAR](https://github.com/SOHAM-GADEKAR)**
 
 *Contributions: 1 PRs across 1 domain(s)*
 
-*Domains: Backend*
+*Domains: Frontend*
 
 </div>
 
