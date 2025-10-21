@@ -7,6 +7,10 @@
 
 ---
 
+<img width="1000" height="1000" alt="Screenshot 2025-10-21 130826" src="https://github.com/user-attachments/assets/beadfe3c-87c5-442f-a300-15bc68fec7a5" />
+
+---
+
 ## 📝 Description
 
 A fun and interactive **Typing Speed Race Game** that challenges players to type as fast and accurately as possible.
