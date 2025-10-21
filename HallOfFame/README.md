@@ -70,6 +70,22 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
+<img src="https://github.com/k4niz.png" width="100" height="100" style="border-radius: 50%;" alt="k4niz"/>
+
+**[@k4niz](https://github.com/k4niz)**
+
+*Contributions: 4 PRs across 4 domain(s)*
+
+*Domains: AI-ML, AR-VR, FullStack, IoT*
+
+</div>
+
+---
+
+### 🏅 Rank 5
+
+<div align="center">
+
 <img src="https://github.com/vatsalgupta2004.png" width="100" height="100" style="border-radius: 50%;" alt="vatsalgupta2004"/>
 
 **[@vatsalgupta2004](https://github.com/vatsalgupta2004)**
@@ -82,33 +98,17 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 5
-
-<div align="center">
-
-<img src="https://github.com/Esavwede.png" width="100" height="100" style="border-radius: 50%;" alt="Esavwede"/>
-
-**[@Esavwede](https://github.com/Esavwede)**
-
-*Contributions: 1 PRs across 1 domain(s)*
-
-*Domains: Backend*
-
-</div>
-
----
-
 ### 🏅 Rank 6
 
 <div align="center">
 
-<img src="https://github.com/MeghPatel-007.png" width="100" height="100" style="border-radius: 50%;" alt="MeghPatel-007"/>
+<img src="https://github.com/Dhiraj201226.png" width="100" height="100" style="border-radius: 50%;" alt="Dhiraj201226"/>
 
-**[@MeghPatel-007](https://github.com/MeghPatel-007)**
+**[@Dhiraj201226](https://github.com/Dhiraj201226)**
 
-*Contributions: 1 PRs across 1 domain(s)*
+*Contributions: 2 PRs across 2 domain(s)*
 
-*Domains: Frontend*
+*Domains: AI-ML, Frontend*
 
 </div>
 
@@ -118,11 +118,11 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/SanjeevDeori.png" width="100" height="100" style="border-radius: 50%;" alt="SanjeevDeori"/>
+<img src="https://github.com/Mansi13-6.png" width="100" height="100" style="border-radius: 50%;" alt="Mansi13-6"/>
 
-**[@SanjeevDeori](https://github.com/SanjeevDeori)**
+**[@Mansi13-6](https://github.com/Mansi13-6)**
 
-*Contributions: 1 PRs across 1 domain(s)*
+*Contributions: 2 PRs across 1 domain(s)*
 
 *Domains: Frontend*
 
@@ -134,11 +134,11 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/snehal492006.png" width="100" height="100" style="border-radius: 50%;" alt="snehal492006"/>
+<img src="https://github.com/alisha1510.png" width="100" height="100" style="border-radius: 50%;" alt="alisha1510"/>
 
-**[@snehal492006](https://github.com/snehal492006)**
+**[@alisha1510](https://github.com/alisha1510)**
 
-*Contributions: 1 PRs across 1 domain(s)*
+*Contributions: 2 PRs across 1 domain(s)*
 
 *Domains: Frontend*
 
@@ -150,13 +150,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/Utkarsh-660.png" width="100" height="100" style="border-radius: 50%;" alt="Utkarsh-660"/>
+<img src="https://github.com/anfasmhsn.png" width="100" height="100" style="border-radius: 50%;" alt="anfasmhsn"/>
 
-**[@Utkarsh-660](https://github.com/Utkarsh-660)**
+**[@anfasmhsn](https://github.com/anfasmhsn)**
 
-*Contributions: 1 PRs across 1 domain(s)*
+*Contributions: 1 PRs across 0 domain(s)*
 
-*Domains: Frontend*
+*Domains: *
 
 </div>
 
@@ -166,13 +166,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/alisha1510.png" width="100" height="100" style="border-radius: 50%;" alt="alisha1510"/>
+<img src="https://github.com/AksharGoyal.png" width="100" height="100" style="border-radius: 50%;" alt="AksharGoyal"/>
 
-**[@alisha1510](https://github.com/alisha1510)**
+**[@AksharGoyal](https://github.com/AksharGoyal)**
 
 *Contributions: 1 PRs across 1 domain(s)*
 
-*Domains: Frontend*
+*Domains: Backend*
 
 </div>
 
@@ -215,7 +215,7 @@ For detailed statistics and domain-specific rankings, check out:
 
 *Rankings are updated automatically with each merged contribution.*
 
-**Last Updated:** 2025-10-20
+**Last Updated:** 2025-10-21
 
 ---
 

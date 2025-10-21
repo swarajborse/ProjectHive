@@ -1,0 +1,13 @@
+This XML file does not appear to have any style information associated with it. The document tree is shown below.
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/10.5/phpunit.xsd" bootstrap="vendor/autoload.php" backupGlobals="false" colors="true" processIsolation="false" stopOnFailure="false" cacheDirectory=".phpunit.cache" backupStaticProperties="false">
+<testsuites>
+<testsuite name="Unit">
+<directory>tests/Unit</directory>
+</testsuite>
+</testsuites>
+<source>
+<include>
+<directory>src/</directory>
+</include>
+</source>
+</phpunit>
