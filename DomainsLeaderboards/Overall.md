@@ -13,11 +13,11 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | 🥇 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 19 | 13 (AI-ML, AR-VR, Backend, Blockchain, Cloud, Cybersecurity, DevOps, Frontend, FullStack, IoT, MLOps, NLP, Robotics-Automation) | Recent |
 | 🥈 | [@Aaditya-2407](https://github.com/Aaditya-2407) | 6 | 1 (Frontend) | Recent |
 | 🥉 | [@Ogagaoghene](https://github.com/Ogagaoghene) | 5 | 1 (Backend) | Recent |
-| 4 | [@k4niz](https://github.com/k4niz) | 3 | 3 (AI-ML, AR-VR, FullStack) | Recent |
+| 4 | [@k4niz](https://github.com/k4niz) | 4 | 4 (AI-ML, AR-VR, FullStack, IoT) | Recent |
 | 5 | [@vatsalgupta2004](https://github.com/vatsalgupta2004) | 2 | 2 (AI-ML, Frontend) | Recent |
 | 6 | [@Mansi13-6](https://github.com/Mansi13-6) | 2 | 1 (Frontend) | Recent |
 | 7 | [@alisha1510](https://github.com/alisha1510) | 2 | 1 (Frontend) | Recent |
-| 8 | [@anfasmhsn](https://github.com/anfasmhsn) | 1 | 1 (Cloud) | Recent |
+| 8 | [@Kanikashreesivakumar](https://github.com/Kanikashreesivakumar) | 1 | 1 (IoT) | Recent |
 | 9 | [@AksharGoyal](https://github.com/AksharGoyal) | 1 | 1 (Backend) | Recent |
 | 10 | [@SOHAM-GADEKAR](https://github.com/SOHAM-GADEKAR) | 1 | 1 (Frontend) | Recent |
 | 11 | [@MeghPatel-007](https://github.com/MeghPatel-007) | 1 | 1 (Frontend) | Recent |
@@ -30,12 +30,13 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 
 ## 📊 Domain Breakdown
 
-### Cloud
+### IoT
 
 | Contributor | Contributions |
 |-------------|---------------|
-| [@anfasmhsn](https://github.com/anfasmhsn) | 1 |
+| [@Kanikashreesivakumar](https://github.com/Kanikashreesivakumar) | 1 |
 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 1 |
+| [@k4niz](https://github.com/k4niz) | 1 |
 
 ### AI-ML
 
@@ -61,6 +62,12 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | [@AksharGoyal](https://github.com/AksharGoyal) | 1 |
 
 ### Blockchain
+
+| Contributor | Contributions |
+|-------------|---------------|
+| [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 1 |
+
+### Cloud
 
 | Contributor | Contributions |
 |-------------|---------------|
@@ -100,12 +107,6 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 |-------------|---------------|
 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 2 |
 | [@k4niz](https://github.com/k4niz) | 1 |
-
-### IoT
-
-| Contributor | Contributions |
-|-------------|---------------|
-| [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 1 |
 
 ### MLOps
 

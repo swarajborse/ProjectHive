@@ -74,9 +74,9 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 **[@k4niz](https://github.com/k4niz)**
 
-*Contributions: 3 PRs across 3 domain(s)*
+*Contributions: 4 PRs across 4 domain(s)*
 
-*Domains: AI-ML, AR-VR, FullStack*
+*Domains: AI-ML, AR-VR, FullStack, IoT*
 
 </div>
 
@@ -134,13 +134,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/anfasmhsn.png" width="100" height="100" style="border-radius: 50%;" alt="anfasmhsn"/>
+<img src="https://github.com/Kanikashreesivakumar.png" width="100" height="100" style="border-radius: 50%;" alt="Kanikashreesivakumar"/>
 
-**[@anfasmhsn](https://github.com/anfasmhsn)**
+**[@Kanikashreesivakumar](https://github.com/Kanikashreesivakumar)**
 
 *Contributions: 1 PRs across 1 domain(s)*
 
-*Domains: Cloud*
+*Domains: IoT*
 
 </div>
 
