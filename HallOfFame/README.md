@@ -70,22 +70,6 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/Dhiraj201226.png" width="100" height="100" style="border-radius: 50%;" alt="Dhiraj201226"/>
-
-**[@Dhiraj201226](https://github.com/Dhiraj201226)**
-
-*Contributions: 4 PRs across 2 domain(s)*
-
-*Domains: AI-ML, Frontend*
-
-</div>
-
----
-
-### 🏅 Rank 5
-
-<div align="center">
-
 <img src="https://github.com/k4niz.png" width="100" height="100" style="border-radius: 50%;" alt="k4niz"/>
 
 **[@k4niz](https://github.com/k4niz)**
@@ -98,13 +82,29 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 6
+### 🏅 Rank 5
 
 <div align="center">
 
 <img src="https://github.com/vatsalgupta2004.png" width="100" height="100" style="border-radius: 50%;" alt="vatsalgupta2004"/>
 
 **[@vatsalgupta2004](https://github.com/vatsalgupta2004)**
+
+*Contributions: 2 PRs across 2 domain(s)*
+
+*Domains: AI-ML, Frontend*
+
+</div>
+
+---
+
+### 🏅 Rank 6
+
+<div align="center">
+
+<img src="https://github.com/Dhiraj201226.png" width="100" height="100" style="border-radius: 50%;" alt="Dhiraj201226"/>
+
+**[@Dhiraj201226](https://github.com/Dhiraj201226)**
 
 *Contributions: 2 PRs across 2 domain(s)*
 
@@ -150,13 +150,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/AksharGoyal.png" width="100" height="100" style="border-radius: 50%;" alt="AksharGoyal"/>
+<img src="https://github.com/anfasmhsn.png" width="100" height="100" style="border-radius: 50%;" alt="anfasmhsn"/>
 
-**[@AksharGoyal](https://github.com/AksharGoyal)**
+**[@anfasmhsn](https://github.com/anfasmhsn)**
 
-*Contributions: 1 PRs across 1 domain(s)*
+*Contributions: 1 PRs across 0 domain(s)*
 
-*Domains: Backend*
+*Domains: *
 
 </div>
 
@@ -166,13 +166,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/SOHAM-GADEKAR.png" width="100" height="100" style="border-radius: 50%;" alt="SOHAM-GADEKAR"/>
+<img src="https://github.com/AksharGoyal.png" width="100" height="100" style="border-radius: 50%;" alt="AksharGoyal"/>
 
-**[@SOHAM-GADEKAR](https://github.com/SOHAM-GADEKAR)**
+**[@AksharGoyal](https://github.com/AksharGoyal)**
 
 *Contributions: 1 PRs across 1 domain(s)*
 
-*Domains: Frontend*
+*Domains: Backend*
 
 </div>
 
