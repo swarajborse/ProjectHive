@@ -150,13 +150,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/anfasmhsn.png" width="100" height="100" style="border-radius: 50%;" alt="anfasmhsn"/>
+<img src="https://github.com/ananyaa0518.png" width="100" height="100" style="border-radius: 50%;" alt="ananyaa0518"/>
 
-**[@anfasmhsn](https://github.com/anfasmhsn)**
+**[@ananyaa0518](https://github.com/ananyaa0518)**
 
 *Contributions: 1 PRs across 1 domain(s)*
 
-*Domains: Cloud*
+*Domains: Frontend*
 
 </div>
 
