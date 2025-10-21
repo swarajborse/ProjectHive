@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+:root {
+    --bg-color: #2c3e50;
+    --text-color: #ecf0f1;
+    --button-bg: #3498db;
+    --button-hover-bg: #2980b9;
+    --win-color: #2ecc71;
+    --lose-color: #e74c3c;
+    --draw-color: #95a5a6;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.scores {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.score-box {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+#player-score, #computer-score {
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+p#action-message {
+    font-size: 1.2rem;
+    height: 25px; /* Reserve space to prevent layout shifts */
+    margin-bottom: 20px;
+}
+
+.choices {
+    margin: 20px 0;
+}
+
+.choices button {
+    font-size: 3rem;
+    padding: 15px;
+    margin: 0 10px;
+    border: 3px solid transparent;
+    border-radius: 50%; /* Make buttons circular */
+    width: 100px;
+    height: 100px;
+    background-color: var(--button-bg);
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    transform: translateY(0);
+}
+
+.choices button:hover {
+    background-color: var(--button-hover-bg);
+    transform: translateY(-5px);
+}
+
+/* Animation for when a button is clicked */
+.choices button:active {
+    transform: translateY(2px) scale(0.95);
+}
+
+.results {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 30px;
+    height: 100px; /* Reserve space */
+}
+
+.choice-display {
+    font-size: 1.2rem;
+    opacity: 0; /* Hidden by default */
+    transform: scale(0.5);
+    transition: all 0.4s ease-in-out;
+}
+
+.choice-display.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.choice-display span {
+    display: block;
+    font-size: 3rem;
+    margin-top: 10px;
+}
+
+h2#result {
+    font-size: 2rem;
+    height: 40px; /* Reserve space */
+    margin-top: 20px;
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.4s ease;
+}
+
+h2#result.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.result-win { color: var(--win-color); }
+.result-lose { color: var(--lose-color); }
+.result-draw { color: var(--draw-color); }
+
+#reset-button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #c0392b;
+    color: white;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
+}
+
+#reset-button.visible {
+    opacity: 1;
+    visibility: visible;
+}
