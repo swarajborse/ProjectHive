@@ -86,22 +86,6 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/SOHAM-GADEKAR.png" width="100" height="100" style="border-radius: 50%;" alt="SOHAM-GADEKAR"/>
-
-**[@SOHAM-GADEKAR](https://github.com/SOHAM-GADEKAR)**
-
-*Contributions: 2 PRs across 1 domain(s)*
-
-*Domains: Frontend*
-
-</div>
-
----
-
-### 🏅 Rank 6
-
-<div align="center">
-
 <img src="https://github.com/vatsalgupta2004.png" width="100" height="100" style="border-radius: 50%;" alt="vatsalgupta2004"/>
 
 **[@vatsalgupta2004](https://github.com/vatsalgupta2004)**
@@ -114,7 +98,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 7
+### 🏅 Rank 6
 
 <div align="center">
 
@@ -130,7 +114,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 8
+### 🏅 Rank 7
 
 <div align="center">
 
@@ -141,6 +125,22 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 *Contributions: 2 PRs across 1 domain(s)*
 
 *Domains: Frontend*
+
+</div>
+
+---
+
+### 🏅 Rank 8
+
+<div align="center">
+
+<img src="https://github.com/anfasmhsn.png" width="100" height="100" style="border-radius: 50%;" alt="anfasmhsn"/>
+
+**[@anfasmhsn](https://github.com/anfasmhsn)**
+
+*Contributions: 1 PRs across 1 domain(s)*
+
+*Domains: Cloud*
 
 </div>
 
@@ -166,9 +166,9 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/MeghPatel-007.png" width="100" height="100" style="border-radius: 50%;" alt="MeghPatel-007"/>
+<img src="https://github.com/SOHAM-GADEKAR.png" width="100" height="100" style="border-radius: 50%;" alt="SOHAM-GADEKAR"/>
 
-**[@MeghPatel-007](https://github.com/MeghPatel-007)**
+**[@SOHAM-GADEKAR](https://github.com/SOHAM-GADEKAR)**
 
 *Contributions: 1 PRs across 1 domain(s)*
 
