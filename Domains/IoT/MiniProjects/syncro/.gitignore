@@ -4,6 +4,7 @@ __pycache__/
 *$py.class
 *.so
 .Python
+**/__pycache__/
 
 # Virtual environments
 venv/
@@ -30,8 +31,10 @@ Thumbs.db
 *.log
 logs/
 
-# YOLOv8 models (optional - uncomment if you don't want to track models)
-# *.pt
+# YOLOv8 models (these are downloaded automatically)
+*.pt
+*.onnx
+*.engine
 
 # Test/temp files
 temp/
