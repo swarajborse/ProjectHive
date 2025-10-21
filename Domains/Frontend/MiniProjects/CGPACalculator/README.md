@@ -7,6 +7,11 @@
 
 ---
 
+<img width="1033" height="1149" alt="image" src="https://github.com/user-attachments/assets/1bbeea12-a796-4973-bd33-0712f99055fb" />
+
+---
+
+
 ## 📝 Description
 
 A modern, responsive web application to calculate Cumulative Grade Point Average (CGPA) for up to 8 semesters (SPPU-style). Enter your SGPAs; the app averages the filled semesters. Perfect for students to track their academic performance!
