@@ -14,10 +14,10 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | 🥈 | [@Aaditya-2407](https://github.com/Aaditya-2407) | 6 | 1 (Frontend) | Recent |
 | 🥉 | [@Ogagaoghene](https://github.com/Ogagaoghene) | 5 | 1 (Backend) | Recent |
 | 4 | [@k4niz](https://github.com/k4niz) | 3 | 3 (AI-ML, AR-VR, FullStack) | Recent |
-| 5 | [@vatsalgupta2004](https://github.com/vatsalgupta2004) | 2 | 2 (AI-ML, Frontend) | Recent |
-| 6 | [@Mansi13-6](https://github.com/Mansi13-6) | 2 | 1 (Frontend) | Recent |
-| 7 | [@alisha1510](https://github.com/alisha1510) | 2 | 1 (Frontend) | Recent |
-| 8 | [@nafasebra](https://github.com/nafasebra) | 1 | 1 (Frontend) | Recent |
+| 5 | [@yashbahadure18](https://github.com/yashbahadure18) | 2 | 2 (AI-ML, Frontend) | Recent |
+| 6 | [@vatsalgupta2004](https://github.com/vatsalgupta2004) | 2 | 2 (AI-ML, Frontend) | Recent |
+| 7 | [@Mansi13-6](https://github.com/Mansi13-6) | 2 | 1 (Frontend) | Recent |
+| 8 | [@alisha1510](https://github.com/alisha1510) | 2 | 1 (Frontend) | Recent |
 | 9 | [@AksharGoyal](https://github.com/AksharGoyal) | 1 | 1 (Backend) | Recent |
 | 10 | [@MeghPatel-007](https://github.com/MeghPatel-007) | 1 | 1 (Frontend) | Recent |
 | 11 | [@SanjeevDeori](https://github.com/SanjeevDeori) | 1 | 1 (Frontend) | Recent |
@@ -29,6 +29,15 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 
 ## 📊 Domain Breakdown
 
+### AI-ML
+
+| Contributor | Contributions |
+|-------------|---------------|
+| [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 2 |
+| [@yashbahadure18](https://github.com/yashbahadure18) | 1 |
+| [@vatsalgupta2004](https://github.com/vatsalgupta2004) | 1 |
+| [@k4niz](https://github.com/k4niz) | 1 |
+
 ### Frontend
 
 | Contributor | Contributions |
@@ -37,21 +46,13 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 2 |
 | [@Mansi13-6](https://github.com/Mansi13-6) | 2 |
 | [@alisha1510](https://github.com/alisha1510) | 2 |
-| [@nafasebra](https://github.com/nafasebra) | 1 |
+| [@yashbahadure18](https://github.com/yashbahadure18) | 1 |
 | [@vatsalgupta2004](https://github.com/vatsalgupta2004) | 1 |
 | [@MeghPatel-007](https://github.com/MeghPatel-007) | 1 |
 | [@SanjeevDeori](https://github.com/SanjeevDeori) | 1 |
 | [@Soham-Gadekar](https://github.com/Soham-Gadekar) | 1 |
 | [@snehal492006](https://github.com/snehal492006) | 1 |
 | [@Utkarsh-660](https://github.com/Utkarsh-660) | 1 |
-
-### AI-ML
-
-| Contributor | Contributions |
-|-------------|---------------|
-| [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 2 |
-| [@vatsalgupta2004](https://github.com/vatsalgupta2004) | 1 |
-| [@k4niz](https://github.com/k4niz) | 1 |
 
 ### AR-VR
 
@@ -140,6 +141,6 @@ Top 10 contributors are featured in our [Hall of Fame](../HallOfFame/README.md)!
 
 ---
 
-**Last Updated:** 2025-10-20
+**Last Updated:** 2025-10-21
 
 *Leaderboard updates automatically on every merged PR via GitHub Actions*
