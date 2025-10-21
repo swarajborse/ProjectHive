@@ -70,6 +70,22 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
+<img src="https://github.com/Dhiraj201226.png" width="100" height="100" style="border-radius: 50%;" alt="Dhiraj201226"/>
+
+**[@Dhiraj201226](https://github.com/Dhiraj201226)**
+
+*Contributions: 4 PRs across 2 domain(s)*
+
+*Domains: AI-ML, Frontend*
+
+</div>
+
+---
+
+### 🏅 Rank 5
+
+<div align="center">
+
 <img src="https://github.com/k4niz.png" width="100" height="100" style="border-radius: 50%;" alt="k4niz"/>
 
 **[@k4niz](https://github.com/k4niz)**
@@ -82,7 +98,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 5
+### 🏅 Rank 6
 
 <div align="center">
 
@@ -98,7 +114,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 6
+### 🏅 Rank 7
 
 <div align="center">
 
@@ -114,7 +130,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 7
+### 🏅 Rank 8
 
 <div align="center">
 
@@ -125,22 +141,6 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 *Contributions: 2 PRs across 1 domain(s)*
 
 *Domains: Frontend*
-
-</div>
-
----
-
-### 🏅 Rank 8
-
-<div align="center">
-
-<img src="https://github.com/Kanikashreesivakumar.png" width="100" height="100" style="border-radius: 50%;" alt="Kanikashreesivakumar"/>
-
-**[@Kanikashreesivakumar](https://github.com/Kanikashreesivakumar)**
-
-*Contributions: 1 PRs across 1 domain(s)*
-
-*Domains: IoT*
 
 </div>
 
