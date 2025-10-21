@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fetch Style Promise Simulator</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --max-w: 720px;
+        --pad: 1.25rem;
+        --gap: 0.75rem;
+        --radius: 8px;
+        --shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+        --accent: #ffffff;
+        --muted: #b44949;
+      }
+
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        font-family: "poppins", Arial;
+        background: #5980ce;
+        color: #111;
+      }
+      .center-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: var(--gap);
+        max-width: var(--max-w);
+        width: calc(100% - 2rem);
+        margin: 0 auto;
+        padding: var(--pad);
+        background: var(--accent);
+        box-shadow: var(--shadow);
+        border-radius: var(--radius);
+        box-sizing: border-box;
+      }
+      .subtitle {
+        color: var(--muted);
+        margin-top: 0;
+        font-size: 16px;
+      }
+      .btn {
+        padding: 10px 20px;
+        border-radius: 20px;
+        border: solid 1px #0b6ef6;
+        background: #0b6ef6;
+        color: white;
+        cursor: pointer;
+        font-size: 1rem;
+        font-weight: 600;
+      }
+      input,
+      select {
+        width: 100%;
+        padding: 0.5rem;
+        border-radius: 6px;
+        border: 1px solid #ddd;
+      }
+      .stats {
+        display: flex;
+        gap: 0.5rem;
+        width: 100%;
+        justify-content: center;
+      }
+      .stat-card {
+        background: #fafafa;
+        padding: 0.5rem 0.75rem;
+        border-radius: 6px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container center-container">
+      <h1>Fetch-Style Promise Simulator</h1>
+      <p class="subtitle">
+        Simulates API calls with Promises (20% failure rate)
+      </p>
+
+      <div class="info-box">
+        <strong>How it works:</strong> creates a fake API call that takes 2
+        seconds to complete. There's a 20% chance it will fail to simulate
+        real-world scenarios!
+      </div>
+
+      <div class="input-group">
+        <label for="url">API Endpoint URL</label>
+        <input
+          type="text"
+          id="url"
+          placeholder="https://api.example.com/users"
+          value="https://api.example.com/users"
+        />
+      </div>
+
+      <div class="input-group">
+        <label for="method">HTTP Method</label>
+        <select id="method">
+          <option value="GET">GET</option>
+          <option value="POST">POST</option>
+          <option value="PUT">PUT</option>
+          <option value="DELETE">DELETE</option>
+        </select>
+      </div>
+
+      <button class="btn" id="fetchBtn">Make Request</button>
+
+      <div id="result" class="result-container">
+        <div class="result-title" id="resultTitle"></div>
+        <div class="result-content" id="resultContent"></div>
+      </div>
+
+      <div class="stats">
+        <div class="stat-card">
+          <div class="stat-value" id="successCount">0</div>
+          <div class="stat-label">✅ Successful</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" id="failCount">0</div>
+          <div class="stat-label">❌ Failed</div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
