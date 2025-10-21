@@ -70,19 +70,35 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/k4niz.png" width="100" height="100" style="border-radius: 50%;" alt="k4niz"/>
+<img src="https://github.com/Dhiraj201226.png" width="100" height="100" style="border-radius: 50%;" alt="Dhiraj201226"/>
 
-**[@k4niz](https://github.com/k4niz)**
+**[@Dhiraj201226](https://github.com/Dhiraj201226)**
 
-*Contributions: 3 PRs across 3 domain(s)*
+*Contributions: 4 PRs across 2 domain(s)*
 
-*Domains: AI-ML, AR-VR, FullStack*
+*Domains: AI-ML, Frontend*
 
 </div>
 
 ---
 
 ### 🏅 Rank 5
+
+<div align="center">
+
+<img src="https://github.com/k4niz.png" width="100" height="100" style="border-radius: 50%;" alt="k4niz"/>
+
+**[@k4niz](https://github.com/k4niz)**
+
+*Contributions: 4 PRs across 4 domain(s)*
+
+*Domains: AI-ML, AR-VR, FullStack, IoT*
+
+</div>
+
+---
+
+### 🏅 Rank 6
 
 <div align="center">
 
@@ -98,7 +114,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 6
+### 🏅 Rank 7
 
 <div align="center">
 
@@ -114,7 +130,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 7
+### 🏅 Rank 8
 
 <div align="center">
 
@@ -123,22 +139,6 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 **[@alisha1510](https://github.com/alisha1510)**
 
 *Contributions: 2 PRs across 1 domain(s)*
-
-*Domains: Frontend*
-
-</div>
-
----
-
-### 🏅 Rank 8
-
-<div align="center">
-
-<img src="https://github.com/nafasebra.png" width="100" height="100" style="border-radius: 50%;" alt="nafasebra"/>
-
-**[@nafasebra](https://github.com/nafasebra)**
-
-*Contributions: 1 PRs across 1 domain(s)*
 
 *Domains: Frontend*
 
@@ -166,9 +166,9 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/MeghPatel-007.png" width="100" height="100" style="border-radius: 50%;" alt="MeghPatel-007"/>
+<img src="https://github.com/SOHAM-GADEKAR.png" width="100" height="100" style="border-radius: 50%;" alt="SOHAM-GADEKAR"/>
 
-**[@MeghPatel-007](https://github.com/MeghPatel-007)**
+**[@SOHAM-GADEKAR](https://github.com/SOHAM-GADEKAR)**
 
 *Contributions: 1 PRs across 1 domain(s)*
 
@@ -215,7 +215,7 @@ For detailed statistics and domain-specific rankings, check out:
 
 *Rankings are updated automatically with each merged contribution.*
 
-**Last Updated:** 2025-10-20
+**Last Updated:** 2025-10-21
 
 ---
 
