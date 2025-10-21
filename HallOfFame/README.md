@@ -150,13 +150,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/anfasmhsn.png" width="100" height="100" style="border-radius: 50%;" alt="anfasmhsn"/>
+<img src="https://github.com/shirshanag.png" width="100" height="100" style="border-radius: 50%;" alt="shirshanag"/>
 
-**[@anfasmhsn](https://github.com/anfasmhsn)**
+**[@shirshanag](https://github.com/shirshanag)**
 
-*Contributions: 1 PRs across 0 domain(s)*
+*Contributions: 1 PRs across 1 domain(s)*
 
-*Domains: *
+*Domains: IoT*
 
 </div>
 
