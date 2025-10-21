@@ -18,7 +18,7 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | 6 | [@Dhiraj201226](https://github.com/Dhiraj201226) | 2 | 2 (AI-ML, Frontend) | Recent |
 | 7 | [@Mansi13-6](https://github.com/Mansi13-6) | 2 | 1 (Frontend) | Recent |
 | 8 | [@alisha1510](https://github.com/alisha1510) | 2 | 1 (Frontend) | Recent |
-| 9 | [@shwetakul2005](https://github.com/shwetakul2005) | 1 | 1 (Cloud) | Recent |
+| 9 | [@anfasmhsn](https://github.com/anfasmhsn) | 1 | 0 () | Recent |
 | 10 | [@AksharGoyal](https://github.com/AksharGoyal) | 1 | 1 (Backend) | Recent |
 | 11 | [@SOHAM-GADEKAR](https://github.com/SOHAM-GADEKAR) | 1 | 1 (Frontend) | Recent |
 | 12 | [@MeghPatel-007](https://github.com/MeghPatel-007) | 1 | 1 (Frontend) | Recent |
@@ -31,13 +31,6 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 ---
 
 ## 📊 Domain Breakdown
-
-### Cloud
-
-| Contributor | Contributions |
-|-------------|---------------|
-| [@shwetakul2005](https://github.com/shwetakul2005) | 1 |
-| [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 1 |
 
 ### AI-ML
 
@@ -64,6 +57,12 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | [@AksharGoyal](https://github.com/AksharGoyal) | 1 |
 
 ### Blockchain
+
+| Contributor | Contributions |
+|-------------|---------------|
+| [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 1 |
+
+### Cloud
 
 | Contributor | Contributions |
 |-------------|---------------|
