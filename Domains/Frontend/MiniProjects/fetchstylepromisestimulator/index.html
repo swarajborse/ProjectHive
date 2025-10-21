@@ -11,6 +11,56 @@
       <h3>Fetch Style Promise Simulator</h3>
       <p>A simulator for demonstrating fetch-style promises.</p>
     </header>
+    <div class="container">
+      <h1>⏳ Fetch Promise Simulator</h1>
+      <p class="subtitle">
+        Simulates API calls with Promises (20% failure rate)
+      </p>
+
+      <div class="info-box">
+        <strong>💡 How it works:</strong> This simulator creates a fake API call
+        that takes 2 seconds to complete. There's a 20% chance it will fail to
+        simulate real-world scenarios!
+      </div>
+
+      <div class="input-group">
+        <label for="url">API Endpoint URL</label>
+        <input
+          type="text"
+          id="url"
+          placeholder="https://api.example.com/users"
+          value="https://api.example.com/users"
+        />
+      </div>
+
+      <div class="input-group">
+        <label for="method">HTTP Method</label>
+        <select id="method">
+          <option value="GET">GET</option>
+          <option value="POST">POST</option>
+          <option value="PUT">PUT</option>
+          <option value="DELETE">DELETE</option>
+        </select>
+      </div>
+
+      <button class="btn" id="fetchBtn">Make Request</button>
+
+      <div id="result" class="result-container">
+        <div class="result-title" id="resultTitle"></div>
+        <div class="result-content" id="resultContent"></div>
+      </div>
+
+      <div class="stats">
+        <div class="stat-card">
+          <div class="stat-value" id="successCount">0</div>
+          <div class="stat-label">✅ Successful</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" id="failCount">0</div>
+          <div class="stat-label">❌ Failed</div>
+        </div>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
