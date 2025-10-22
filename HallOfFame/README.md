@@ -86,22 +86,6 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/Tanmay-Kad.png" width="100" height="100" style="border-radius: 50%;" alt="Tanmay-Kad"/>
-
-**[@Tanmay-Kad](https://github.com/Tanmay-Kad)**
-
-*Contributions: 2 PRs across 1 domain(s)*
-
-*Domains: Frontend*
-
-</div>
-
----
-
-### 🏅 Rank 6
-
-<div align="center">
-
 <img src="https://github.com/Ansh-1019.png" width="100" height="100" style="border-radius: 50%;" alt="Ansh-1019"/>
 
 **[@Ansh-1019](https://github.com/Ansh-1019)**
@@ -114,7 +98,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 7
+### 🏅 Rank 6
 
 <div align="center">
 
@@ -130,7 +114,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 8
+### 🏅 Rank 7
 
 <div align="center">
 
@@ -146,7 +130,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 9
+### 🏅 Rank 8
 
 <div align="center">
 
@@ -162,13 +146,29 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 10
+### 🏅 Rank 9
 
 <div align="center">
 
 <img src="https://github.com/Utkarsh-660.png" width="100" height="100" style="border-radius: 50%;" alt="Utkarsh-660"/>
 
 **[@Utkarsh-660](https://github.com/Utkarsh-660)**
+
+*Contributions: 2 PRs across 1 domain(s)*
+
+*Domains: Frontend*
+
+</div>
+
+---
+
+### 🏅 Rank 10
+
+<div align="center">
+
+<img src="https://github.com/alisha1510.png" width="100" height="100" style="border-radius: 50%;" alt="alisha1510"/>
+
+**[@alisha1510](https://github.com/alisha1510)**
 
 *Contributions: 2 PRs across 1 domain(s)*
 
