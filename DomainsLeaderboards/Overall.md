@@ -14,7 +14,7 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | 🥈 | [@Aaditya-2407](https://github.com/Aaditya-2407) | 6 | 1 (Frontend) | Recent |
 | 🥉 | [@Ogagaoghene](https://github.com/Ogagaoghene) | 5 | 1 (Backend) | Recent |
 | 4 | [@k4niz](https://github.com/k4niz) | 4 | 4 (AI-ML, AR-VR, FullStack, IoT) | Recent |
-| 5 | [@Ansh-1019](https://github.com/Ansh-1019) | 2 | 1 (AI-ML) | Recent |
+| 5 | [@Ansh-1019](https://github.com/Ansh-1019) | 3 | 1 (AI-ML) | Recent |
 | 6 | [@vatsalgupta2004](https://github.com/vatsalgupta2004) | 2 | 2 (AI-ML, Frontend) | Recent |
 | 7 | [@Dhiraj201226](https://github.com/Dhiraj201226) | 2 | 2 (AI-ML, Frontend) | Recent |
 | 8 | [@Mansi13-6](https://github.com/Mansi13-6) | 2 | 1 (Frontend) | Recent |
@@ -37,8 +37,8 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 
 | Contributor | Contributions |
 |-------------|---------------|
+| [@Ansh-1019](https://github.com/Ansh-1019) | 3 |
 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 2 |
-| [@Ansh-1019](https://github.com/Ansh-1019) | 1 |
 | [@vatsalgupta2004](https://github.com/vatsalgupta2004) | 1 |
 | [@Mmadan128](https://github.com/Mmadan128) | 1 |
 | [@Dhiraj201226](https://github.com/Dhiraj201226) | 1 |

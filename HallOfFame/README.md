@@ -90,7 +90,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 **[@Ansh-1019](https://github.com/Ansh-1019)**
 
-*Contributions: 2 PRs across 1 domain(s)*
+*Contributions: 3 PRs across 1 domain(s)*
 
 *Domains: AI-ML*
 
