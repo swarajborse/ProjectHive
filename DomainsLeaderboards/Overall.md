@@ -20,17 +20,18 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | 8 | [@Mansi13-6](https://github.com/Mansi13-6) | 2 | 1 (Frontend) | Recent |
 | 9 | [@Utkarsh-660](https://github.com/Utkarsh-660) | 2 | 1 (Frontend) | Recent |
 | 10 | [@alisha1510](https://github.com/alisha1510) | 2 | 1 (Frontend) | Recent |
-| 11 | [@kronpatel](https://github.com/kronpatel) | 1 | 1 (Frontend) | Recent |
+| 11 | [@Tanvi2307](https://github.com/Tanvi2307) | 1 | 1 (Frontend) | Recent |
 | 12 | [@Mmadan128](https://github.com/Mmadan128) | 1 | 1 (AI-ML) | Recent |
 | 13 | [@AksharGoyal](https://github.com/AksharGoyal) | 1 | 1 (Backend) | Recent |
 | 14 | [@SOHAM-GADEKAR](https://github.com/SOHAM-GADEKAR) | 1 | 1 (Frontend) | Recent |
-| 15 | [@MeghPatel-007](https://github.com/MeghPatel-007) | 1 | 1 (Frontend) | Recent |
-| 16 | [@SanjeevDeori](https://github.com/SanjeevDeori) | 1 | 1 (Frontend) | Recent |
-| 17 | [@Tanmay-Kad](https://github.com/Tanmay-Kad) | 1 | 1 (Frontend) | Recent |
-| 18 | [@Soham-Gadekar](https://github.com/Soham-Gadekar) | 1 | 1 (Frontend) | Recent |
-| 19 | [@snehal492006](https://github.com/snehal492006) | 1 | 1 (Frontend) | Recent |
-| 20 | [@Tanushri1307](https://github.com/Tanushri1307) | 1 | 1 (Frontend) | Recent |
-| 21 | [@Keron](https://github.com/Keron) | 1 | 1 (Frontend) | Recent |
+| 15 | [@GayatriVitkar](https://github.com/GayatriVitkar) | 1 | 1 (Frontend) | Recent |
+| 16 | [@MeghPatel-007](https://github.com/MeghPatel-007) | 1 | 1 (Frontend) | Recent |
+| 17 | [@SanjeevDeori](https://github.com/SanjeevDeori) | 1 | 1 (Frontend) | Recent |
+| 18 | [@Tanmay-Kad](https://github.com/Tanmay-Kad) | 1 | 1 (Frontend) | Recent |
+| 19 | [@Soham-Gadekar](https://github.com/Soham-Gadekar) | 1 | 1 (Frontend) | Recent |
+| 20 | [@snehal492006](https://github.com/snehal492006) | 1 | 1 (Frontend) | Recent |
+| 21 | [@Tanushri1307](https://github.com/Tanushri1307) | 1 | 1 (Frontend) | Recent |
+| 22 | [@Keron](https://github.com/Keron) | 1 | 1 (Frontend) | Recent |
 
 ---
 
@@ -45,10 +46,11 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | [@Mansi13-6](https://github.com/Mansi13-6) | 2 |
 | [@Utkarsh-660](https://github.com/Utkarsh-660) | 2 |
 | [@alisha1510](https://github.com/alisha1510) | 2 |
-| [@kronpatel](https://github.com/kronpatel) | 1 |
+| [@Tanvi2307](https://github.com/Tanvi2307) | 1 |
 | [@vatsalgupta2004](https://github.com/vatsalgupta2004) | 1 |
 | [@Dhiraj201226](https://github.com/Dhiraj201226) | 1 |
 | [@SOHAM-GADEKAR](https://github.com/SOHAM-GADEKAR) | 1 |
+| [@GayatriVitkar](https://github.com/GayatriVitkar) | 1 |
 | [@MeghPatel-007](https://github.com/MeghPatel-007) | 1 |
 | [@SanjeevDeori](https://github.com/SanjeevDeori) | 1 |
 | [@Tanmay-Kad](https://github.com/Tanmay-Kad) | 1 |
