@@ -86,13 +86,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/jeturgavli.png" width="100" height="100" style="border-radius: 50%;" alt="jeturgavli"/>
+<img src="https://github.com/GayatriVitkar.png" width="100" height="100" style="border-radius: 50%;" alt="GayatriVitkar"/>
 
-**[@jeturgavli](https://github.com/jeturgavli)**
+**[@GayatriVitkar](https://github.com/GayatriVitkar)**
 
-*Contributions: 2 PRs across 1 domain(s)*
+*Contributions: 3 PRs across 2 domain(s)*
 
-*Domains: Frontend*
+*Domains: CompetitiveProgramming, Frontend*
 
 </div>
 
