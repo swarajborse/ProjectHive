@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MONEYFY - Transactions</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="transactions.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <span style="color: var(--color-primary);">MONEYFY</span>
+        </div>
+        <nav class="desktop-nav">
+            <a href="index.html">Dashboard</a>
+            <a href="transactions.html" class="active">Transactions</a>
+            <a href="budgets.html">Budgets</a>
+            <a href="analytics.html">Analytics</a>
+            <a href="settings.html">Settings</a>
+        </nav>
+        <div class="user-actions">
+            <input type="search" placeholder="Search..." class="search-input">
+            <i class="fa-solid fa-bell icon-btn" title="Notifications"></i>
+            <i class="fa-solid fa-user-circle icon-btn" title="Profile"></i>
+            <i class="fa-solid fa-bars mobile-menu-toggle"></i>
+        </div>
+    </header>
+
+    <main class="transactions-content">
+        <h1>All Transactions</h1>
+
+        <div class="card filters-container">
+            <div class="filter-bar">
+                <input type="text" placeholder="Search transactions..." class="input-group search-full-width">
+                <button class="btn-secondary filter-btn"><i class="fa-solid fa-calendar"></i> Date Range</button>
+                <button class="btn-secondary filter-btn"><i class="fa-solid fa-layer-group"></i> Category</button>
+                <button class="btn-secondary filter-btn"><i class="fa-solid fa-shuffle"></i> Type</button>
+                <button class="btn-primary" id="add-transaction-btn"><i class="fa-solid fa-plus"></i> Add New</button>
+            </div>
+            <div class="active-filters">
+                <span class="filter-tag">Expense <i class="fa-solid fa-xmark"></i></span>
+                <span class="filter-tag">Oct 2025 <i class="fa-solid fa-xmark"></i></span>
+            </div>
+        </div>
+
+        <div class="card transaction-table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Description</th>
+                        <th>Category</th>
+                        <th class="amount-header">Amount</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="transaction-row-data">
+                        <td>2025-10-20</td>
+                        <td>Monthly Salary</td>
+                        <td><span class="category-tag income-tag"><i class="fa-solid fa-briefcase"></i> Income</span></td>
+                        <td class="amount income-amount">+$4,250.00</td>
+                        <td>
+                            <i class="fa-solid fa-pencil action-icon edit-icon" title="Edit"></i>
+                            <i class="fa-solid fa-trash action-icon delete-icon" title="Delete"></i>
+                        </td>
+                    </tr>
+                    <tr class="transaction-row-data">
+                        <td>2025-10-20</td>
+                        <td>Electricity Bill</td>
+                        <td><span class="category-tag expense-tag"><i class="fa-solid fa-house-crack"></i> Bills</span></td>
+                        <td class="amount expense-amount">-$98.50</td>
+                        <td>
+                            <i class="fa-solid fa-pencil action-icon edit-icon"></i>
+                            <i class="fa-solid fa-trash action-icon delete-icon"></i>
+                        </td>
+                    </tr>
+                    </tbody>
+            </table>
+            <div class="pagination">
+                <a href="#" class="prev-next-btn">Previous</a>
+                <span class="page-number active-page">1</span>
+                <span class="page-number">2</span>
+                <span class="page-number">3</span>
+                <a href="#" class="prev-next-btn">Next</a>
+            </div>
+        </div>
+        
+    </main>
+
+    <div id="transaction-modal" class="modal-overlay hidden">
+        <div class="modal-content card">
+            <h3 style="color: var(--color-primary);">Add New Transaction</h3>
+            <span class="close-btn">&times;</span>
+            <form>
+                <div class="input-group">
+                    <label for="type" style="color: var(--color-text-secondary);">Type</label>
+                    <div class="radio-group">
+                        <input type="radio" id="income" name="type" value="income" checked> <label for="income">Income</label>
+                        <input type="radio" id="expense" name="type" value="expense"> <label for="expense">Expense</label>
+                    </div>
+                </div>
+                <button type="submit" class="btn-primary modal-save-btn">Save Transaction</button>
+            </form>
+        </div>
+    </div>
+    
+    <script src="scripts/transactions.js"></script>
+</body>
+</html>
