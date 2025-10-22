@@ -86,11 +86,11 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/Utkarsh-660.png" width="100" height="100" style="border-radius: 50%;" alt="Utkarsh-660"/>
+<img src="https://github.com/Tanmay-Kad.png" width="100" height="100" style="border-radius: 50%;" alt="Tanmay-Kad"/>
 
-**[@Utkarsh-660](https://github.com/Utkarsh-660)**
+**[@Tanmay-Kad](https://github.com/Tanmay-Kad)**
 
-*Contributions: 3 PRs across 1 domain(s)*
+*Contributions: 2 PRs across 1 domain(s)*
 
 *Domains: Frontend*
 
@@ -150,9 +150,9 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/alisha1510.png" width="100" height="100" style="border-radius: 50%;" alt="alisha1510"/>
+<img src="https://github.com/Utkarsh-660.png" width="100" height="100" style="border-radius: 50%;" alt="Utkarsh-660"/>
 
-**[@alisha1510](https://github.com/alisha1510)**
+**[@Utkarsh-660](https://github.com/Utkarsh-660)**
 
 *Contributions: 2 PRs across 1 domain(s)*
 
@@ -166,13 +166,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/Mmadan128.png" width="100" height="100" style="border-radius: 50%;" alt="Mmadan128"/>
+<img src="https://github.com/alisha1510.png" width="100" height="100" style="border-radius: 50%;" alt="alisha1510"/>
 
-**[@Mmadan128](https://github.com/Mmadan128)**
+**[@alisha1510](https://github.com/alisha1510)**
 
-*Contributions: 1 PRs across 1 domain(s)*
+*Contributions: 2 PRs across 1 domain(s)*
 
-*Domains: AI-ML*
+*Domains: Frontend*
 
 </div>
 
