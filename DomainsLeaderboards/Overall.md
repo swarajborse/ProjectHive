@@ -19,7 +19,7 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | 7 | [@Mansi13-6](https://github.com/Mansi13-6) | 2 | 1 (Frontend) | Recent |
 | 8 | [@Utkarsh-660](https://github.com/Utkarsh-660) | 2 | 1 (Frontend) | Recent |
 | 9 | [@alisha1510](https://github.com/alisha1510) | 2 | 1 (Frontend) | Recent |
-| 10 | [@yashbahadure18](https://github.com/yashbahadure18) | 1 | 1 (Frontend) | Recent |
+| 10 | [@shubhranshu-sahu](https://github.com/shubhranshu-sahu) | 1 | 1 (Frontend) | Recent |
 | 11 | [@Mmadan128](https://github.com/Mmadan128) | 1 | 1 (AI-ML) | Recent |
 | 12 | [@AksharGoyal](https://github.com/AksharGoyal) | 1 | 1 (Backend) | Recent |
 | 13 | [@SOHAM-GADEKAR](https://github.com/SOHAM-GADEKAR) | 1 | 1 (Frontend) | Recent |
@@ -42,7 +42,7 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | [@Mansi13-6](https://github.com/Mansi13-6) | 2 |
 | [@Utkarsh-660](https://github.com/Utkarsh-660) | 2 |
 | [@alisha1510](https://github.com/alisha1510) | 2 |
-| [@yashbahadure18](https://github.com/yashbahadure18) | 1 |
+| [@shubhranshu-sahu](https://github.com/shubhranshu-sahu) | 1 |
 | [@vatsalgupta2004](https://github.com/vatsalgupta2004) | 1 |
 | [@Dhiraj201226](https://github.com/Dhiraj201226) | 1 |
 | [@SOHAM-GADEKAR](https://github.com/SOHAM-GADEKAR) | 1 |
