@@ -19,44 +19,28 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | 7 | [@Mansi13-6](https://github.com/Mansi13-6) | 2 | 1 (Frontend) | Recent |
 | 8 | [@Utkarsh-660](https://github.com/Utkarsh-660) | 2 | 1 (Frontend) | Recent |
 | 9 | [@alisha1510](https://github.com/alisha1510) | 2 | 1 (Frontend) | Recent |
-| 10 | [@yashbahadure18](https://github.com/yashbahadure18) | 1 | 1 (Frontend) | Recent |
-| 11 | [@Mmadan128](https://github.com/Mmadan128) | 1 | 1 (AI-ML) | Recent |
-| 12 | [@AksharGoyal](https://github.com/AksharGoyal) | 1 | 1 (Backend) | Recent |
-| 13 | [@SOHAM-GADEKAR](https://github.com/SOHAM-GADEKAR) | 1 | 1 (Frontend) | Recent |
-| 14 | [@MeghPatel-007](https://github.com/MeghPatel-007) | 1 | 1 (Frontend) | Recent |
-| 15 | [@SanjeevDeori](https://github.com/SanjeevDeori) | 1 | 1 (Frontend) | Recent |
-| 16 | [@Tanmay-Kad](https://github.com/Tanmay-Kad) | 1 | 1 (Frontend) | Recent |
-| 17 | [@Soham-Gadekar](https://github.com/Soham-Gadekar) | 1 | 1 (Frontend) | Recent |
-| 18 | [@snehal492006](https://github.com/snehal492006) | 1 | 1 (Frontend) | Recent |
+| 10 | [@o000SAI000o](https://github.com/o000SAI000o) | 1 | 1 (AI-ML) | Recent |
+| 11 | [@Ansh-1019](https://github.com/Ansh-1019) | 1 | 1 (AI-ML) | Recent |
+| 12 | [@Mmadan128](https://github.com/Mmadan128) | 1 | 1 (AI-ML) | Recent |
+| 13 | [@AksharGoyal](https://github.com/AksharGoyal) | 1 | 1 (Backend) | Recent |
+| 14 | [@SOHAM-GADEKAR](https://github.com/SOHAM-GADEKAR) | 1 | 1 (Frontend) | Recent |
+| 15 | [@MeghPatel-007](https://github.com/MeghPatel-007) | 1 | 1 (Frontend) | Recent |
+| 16 | [@SanjeevDeori](https://github.com/SanjeevDeori) | 1 | 1 (Frontend) | Recent |
+| 17 | [@Tanmay-Kad](https://github.com/Tanmay-Kad) | 1 | 1 (Frontend) | Recent |
+| 18 | [@Soham-Gadekar](https://github.com/Soham-Gadekar) | 1 | 1 (Frontend) | Recent |
+| 19 | [@snehal492006](https://github.com/snehal492006) | 1 | 1 (Frontend) | Recent |
 
 ---
 
 ## 📊 Domain Breakdown
-
-### Frontend
-
-| Contributor | Contributions |
-|-------------|---------------|
-| [@Aaditya-2407](https://github.com/Aaditya-2407) | 6 |
-| [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 2 |
-| [@Mansi13-6](https://github.com/Mansi13-6) | 2 |
-| [@Utkarsh-660](https://github.com/Utkarsh-660) | 2 |
-| [@alisha1510](https://github.com/alisha1510) | 2 |
-| [@yashbahadure18](https://github.com/yashbahadure18) | 1 |
-| [@vatsalgupta2004](https://github.com/vatsalgupta2004) | 1 |
-| [@Dhiraj201226](https://github.com/Dhiraj201226) | 1 |
-| [@SOHAM-GADEKAR](https://github.com/SOHAM-GADEKAR) | 1 |
-| [@MeghPatel-007](https://github.com/MeghPatel-007) | 1 |
-| [@SanjeevDeori](https://github.com/SanjeevDeori) | 1 |
-| [@Tanmay-Kad](https://github.com/Tanmay-Kad) | 1 |
-| [@Soham-Gadekar](https://github.com/Soham-Gadekar) | 1 |
-| [@snehal492006](https://github.com/snehal492006) | 1 |
 
 ### AI-ML
 
 | Contributor | Contributions |
 |-------------|---------------|
 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 2 |
+| [@o000SAI000o](https://github.com/o000SAI000o) | 1 |
+| [@Ansh-1019](https://github.com/Ansh-1019) | 1 |
 | [@vatsalgupta2004](https://github.com/vatsalgupta2004) | 1 |
 | [@Mmadan128](https://github.com/Mmadan128) | 1 |
 | [@Dhiraj201226](https://github.com/Dhiraj201226) | 1 |
@@ -100,6 +84,24 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | Contributor | Contributions |
 |-------------|---------------|
 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 1 |
+
+### Frontend
+
+| Contributor | Contributions |
+|-------------|---------------|
+| [@Aaditya-2407](https://github.com/Aaditya-2407) | 6 |
+| [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 2 |
+| [@Mansi13-6](https://github.com/Mansi13-6) | 2 |
+| [@Utkarsh-660](https://github.com/Utkarsh-660) | 2 |
+| [@alisha1510](https://github.com/alisha1510) | 2 |
+| [@vatsalgupta2004](https://github.com/vatsalgupta2004) | 1 |
+| [@Dhiraj201226](https://github.com/Dhiraj201226) | 1 |
+| [@SOHAM-GADEKAR](https://github.com/SOHAM-GADEKAR) | 1 |
+| [@MeghPatel-007](https://github.com/MeghPatel-007) | 1 |
+| [@SanjeevDeori](https://github.com/SanjeevDeori) | 1 |
+| [@Tanmay-Kad](https://github.com/Tanmay-Kad) | 1 |
+| [@Soham-Gadekar](https://github.com/Soham-Gadekar) | 1 |
+| [@snehal492006](https://github.com/snehal492006) | 1 |
 
 ### FullStack
 

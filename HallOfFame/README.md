@@ -166,13 +166,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/yashbahadure18.png" width="100" height="100" style="border-radius: 50%;" alt="yashbahadure18"/>
+<img src="https://github.com/o000SAI000o.png" width="100" height="100" style="border-radius: 50%;" alt="o000SAI000o"/>
 
-**[@yashbahadure18](https://github.com/yashbahadure18)**
+**[@o000SAI000o](https://github.com/o000SAI000o)**
 
 *Contributions: 1 PRs across 1 domain(s)*
 
-*Domains: Frontend*
+*Domains: AI-ML*
 
 </div>
 
