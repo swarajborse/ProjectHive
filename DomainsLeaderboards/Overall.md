@@ -14,18 +14,19 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | 🥈 | [@Aaditya-2407](https://github.com/Aaditya-2407) | 6 | 1 (Frontend) | Recent |
 | 🥉 | [@Ogagaoghene](https://github.com/Ogagaoghene) | 5 | 1 (Backend) | Recent |
 | 4 | [@k4niz](https://github.com/k4niz) | 4 | 4 (AI-ML, AR-VR, FullStack, IoT) | Recent |
-| 5 | [@Tanmay-Kad](https://github.com/Tanmay-Kad) | 2 | 1 (Frontend) | Recent |
+| 5 | [@Utkarsh-660](https://github.com/Utkarsh-660) | 3 | 1 (Frontend) | Recent |
 | 6 | [@vatsalgupta2004](https://github.com/vatsalgupta2004) | 2 | 2 (AI-ML, Frontend) | Recent |
 | 7 | [@Dhiraj201226](https://github.com/Dhiraj201226) | 2 | 2 (AI-ML, Frontend) | Recent |
 | 8 | [@Mansi13-6](https://github.com/Mansi13-6) | 2 | 1 (Frontend) | Recent |
 | 9 | [@alisha1510](https://github.com/alisha1510) | 2 | 1 (Frontend) | Recent |
-| 10 | [@AksharGoyal](https://github.com/AksharGoyal) | 1 | 1 (Backend) | Recent |
-| 11 | [@SOHAM-GADEKAR](https://github.com/SOHAM-GADEKAR) | 1 | 1 (Frontend) | Recent |
-| 12 | [@MeghPatel-007](https://github.com/MeghPatel-007) | 1 | 1 (Frontend) | Recent |
-| 13 | [@SanjeevDeori](https://github.com/SanjeevDeori) | 1 | 1 (Frontend) | Recent |
-| 14 | [@Soham-Gadekar](https://github.com/Soham-Gadekar) | 1 | 1 (Frontend) | Recent |
-| 15 | [@snehal492006](https://github.com/snehal492006) | 1 | 1 (Frontend) | Recent |
-| 16 | [@Utkarsh-660](https://github.com/Utkarsh-660) | 1 | 1 (Frontend) | Recent |
+| 10 | [@Mmadan128](https://github.com/Mmadan128) | 1 | 1 (AI-ML) | Recent |
+| 11 | [@AksharGoyal](https://github.com/AksharGoyal) | 1 | 1 (Backend) | Recent |
+| 12 | [@SOHAM-GADEKAR](https://github.com/SOHAM-GADEKAR) | 1 | 1 (Frontend) | Recent |
+| 13 | [@MeghPatel-007](https://github.com/MeghPatel-007) | 1 | 1 (Frontend) | Recent |
+| 14 | [@SanjeevDeori](https://github.com/SanjeevDeori) | 1 | 1 (Frontend) | Recent |
+| 15 | [@Tanmay-Kad](https://github.com/Tanmay-Kad) | 1 | 1 (Frontend) | Recent |
+| 16 | [@Soham-Gadekar](https://github.com/Soham-Gadekar) | 1 | 1 (Frontend) | Recent |
+| 17 | [@snehal492006](https://github.com/snehal492006) | 1 | 1 (Frontend) | Recent |
 
 ---
 
@@ -36,7 +37,7 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | Contributor | Contributions |
 |-------------|---------------|
 | [@Aaditya-2407](https://github.com/Aaditya-2407) | 6 |
-| [@Tanmay-Kad](https://github.com/Tanmay-Kad) | 2 |
+| [@Utkarsh-660](https://github.com/Utkarsh-660) | 3 |
 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 2 |
 | [@Mansi13-6](https://github.com/Mansi13-6) | 2 |
 | [@alisha1510](https://github.com/alisha1510) | 2 |
@@ -45,9 +46,9 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | [@SOHAM-GADEKAR](https://github.com/SOHAM-GADEKAR) | 1 |
 | [@MeghPatel-007](https://github.com/MeghPatel-007) | 1 |
 | [@SanjeevDeori](https://github.com/SanjeevDeori) | 1 |
+| [@Tanmay-Kad](https://github.com/Tanmay-Kad) | 1 |
 | [@Soham-Gadekar](https://github.com/Soham-Gadekar) | 1 |
 | [@snehal492006](https://github.com/snehal492006) | 1 |
-| [@Utkarsh-660](https://github.com/Utkarsh-660) | 1 |
 
 ### AI-ML
 
@@ -55,6 +56,7 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 |-------------|---------------|
 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 2 |
 | [@vatsalgupta2004](https://github.com/vatsalgupta2004) | 1 |
+| [@Mmadan128](https://github.com/Mmadan128) | 1 |
 | [@Dhiraj201226](https://github.com/Dhiraj201226) | 1 |
 | [@k4niz](https://github.com/k4niz) | 1 |
 
