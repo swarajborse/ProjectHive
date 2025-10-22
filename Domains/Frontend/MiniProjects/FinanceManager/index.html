@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MONEYFY - Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <span style="color: var(--color-primary);">MONEYFY</span>
+        </div>
+        <nav class="desktop-nav">
+            <a href="index.html" class="active">Dashboard</a>
+            <a href="transactions.html">Transactions</a>
+            <a href="budgets.html">Budgets</a>
+            <a href="analytics.html">Analytics</a>
+            <a href="settings.html">Settings</a>
+        </nav>
+        <div class="user-actions">
+            <input type="search" placeholder="Search..." class="search-input">
+            <i class="fa-solid fa-bell icon-btn" title="Notifications"></i>
+            <i class="fa-solid fa-user-circle icon-btn" title="Profile"></i>
+            <i class="fa-solid fa-bars mobile-menu-toggle"></i>
+        </div>
+    </header>
+
+    <main class="dashboard-content">
+
+        <section class="welcome-section">
+            <h1 style="color: var(--color-primary);">Welcome back, John!</h1>
+            <p class="status-message">Current Date: October 22, 2025 | "Control your money, or it will control you."</p>
+        </section>
+
+        <section class="summary-cards-grid">
+            
+            <div class="card summary-card primary-accent">
+                <i class="fa-solid fa-wallet icon-large" style="color: var(--color-primary);"></i>
+                <p class="label">Total Balance</p>
+                <h2 class="value">$14,580<span class="currency">.92</span></h2>
+            </div>
+            
+            <div class="card summary-card success-accent">
+                <i class="fa-solid fa-arrow-trend-up icon-large" style="color: var(--color-success);"></i>
+                <p class="label">Total Income (Oct)</p>
+                <h2 class="value" style="color: var(--color-success);">$4,250<span class="currency">.00</span></h2>
+            </div>
+
+            <div class="card summary-card danger-accent">
+                <i class="fa-solid fa-arrow-trend-down icon-large" style="color: var(--color-danger);"></i>
+                <p class="label">Total Expenses (Oct)</p>
+                <h2 class="value" style="color: var(--color-danger);">$2,112<span class="currency">.55</span></h2>
+            </div>
+            
+            <div class="card summary-card primary-dark-accent">
+                <i class="fa-solid fa-piggy-bank icon-large" style="color: var(--color-primary-dark);"></i>
+                <p class="label">Savings Rate</p>
+                <div class="savings-rate-display">
+                    <div class="progress-circle" style="--percent: 38;">38%</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="dashboard-widgets-grid">
+            <div class="card chart-section">
+                <h2 style="color: var(--color-primary); font-size: 1.5em;">Expense Distribution</h2>
+                <div class="chart-placeholder">[Doughnut Chart Placeholder]</div>
+                <div class="chart-legend">
+                    <p><span class="legend-dot" style="background-color: var(--color-primary);"></span> Bills: $950</p>
+                    <p><span class="legend-dot" style="background-color: var(--color-danger);"></span> Food: $580</p>
+                    <p><span class="legend-dot" style="background-color: var(--color-success);"></span> Transport: $120</p>
+                    <p><span class="legend-dot" style="background-color: var(--color-warning);"></span> Leisure: $462</p>
+                </div>
+            </div>
+
+            <div class="card recent-transactions">
+                <h2 style="font-size: 1.5em;">Recent Transactions</h2>
+                <div class="transaction-list">
+                    <div class="transaction-row income-row">
+                        <span class="desc">Salary Deposit</span>
+                        <span class="cat">Income</span>
+                        <span class="amount" style="color: var(--color-success);">+$3,500.00</span>
+                    </div>
+                    <div class="transaction-row expense-row">
+                        <span class="desc">Grocery Shopping</span>
+                        <span class="cat">Food</span>
+                        <span class="amount" style="color: var(--color-danger);">-$125.75</span>
+                    </div>
+                    </div>
+                <a href="transactions.html" class="tertiary-link">View All Transactions <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </section>
+
+        <section class="quick-actions">
+            <button class="btn-primary"><i class="fa-solid fa-plus"></i> Add Transaction</button>
+            <button class="btn-secondary"><i class="fa-solid fa-chart-line"></i> New Budget</button>
+            <button class="btn-secondary tertiary-btn"><i class="fa-solid fa-download"></i> Generate Report</button>
+        </section>
+        
+    </main>
+    
+    <script type="module" src="scripts/dashboard.js"></script> 
+</body>
+</html>

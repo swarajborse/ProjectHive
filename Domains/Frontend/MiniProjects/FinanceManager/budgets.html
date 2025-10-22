@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MONEYFY - Budgets</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="budgets.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <span style="color: var(--color-primary);">MONEYFY</span>
+        </div>
+        <nav class="desktop-nav">
+            <a href="index.html">Dashboard</a>
+            <a href="transactions.html">Transactions</a>
+            <a href="budgets.html" class="active">Budgets</a>
+            <a href="analytics.html">Analytics</a>
+            <a href="settings.html">Settings</a>
+        </nav>
+        <div class="user-actions">
+            <input type="search" placeholder="Search..." class="search-input">
+            <i class="fa-solid fa-bell icon-btn" title="Notifications"></i>
+            <i class="fa-solid fa-user-circle icon-btn" title="Profile"></i>
+            <i class="fa-solid fa-bars mobile-menu-toggle"></i>
+        </div>
+    </header>
+
+    <main class="budgets-content">
+        <h1>Monthly Budgets</h1>
+
+        <section class="card budget-summary-header">
+            <div class="summary-details">
+                <p class="label">Total Budget vs. Spent (Oct)</p>
+                <h2 class="value">$2,800.00 / <span class="spent-value">$2,112.55</span></h2>
+                <p class="remaining-value success-text">Remaining: $687.45</p>
+            </div>
+            <div class="overall-progress">
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 75.45%;"></div>
+                </div>
+                <p class="progress-label">75.45% Utilized</p>
+            </div>
+            <button class="add-budget-btn btn-primary"><i class="fa-solid fa-plus"></i> Add New Budget</button>
+        </section>
+
+        <section class="budget-cards-grid">
+            
+            <div class="card budget-card warning-accent">
+                <div class="card-header">
+                    <i class="fa-solid fa-house-crack budget-icon"></i>
+                    <h3>Bills</h3>
+                </div>
+                <div class="budget-amounts">
+                    <p class="spent-limit">$950.00 spent of $1,000.00 limit</p>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill warning-fill" style="width: 95%;"></div>
+                </div>
+                <p class="percentage warning-text">95% Used</p>
+                <p class="remaining-value danger-text">Remaining: $50.00</p>
+
+                <div class="card-actions">
+                    <i class="fa-solid fa-pencil action-icon" title="Edit"></i>
+                    <i class="fa-solid fa-trash action-icon delete-icon" title="Delete"></i>
+                </div>
+            </div>
+
+            <div class="card budget-card primary-accent">
+                <div class="card-header">
+                    <i class="fa-solid fa-burger budget-icon"></i>
+                    <h3>Food & Dining</h3>
+                </div>
+                <div class="budget-amounts">
+                    <p class="spent-limit">$580.00 spent of $800.00 limit</p>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill primary-fill" style="width: 72.5%;"></div>
+                </div>
+                <p class="percentage primary-text">72.5% Used</p>
+                <p class="remaining-value success-text">Remaining: $220.00</p>
+
+                <div class="card-actions">
+                    <i class="fa-solid fa-pencil action-icon" title="Edit"></i>
+                    <i class="fa-solid fa-trash action-icon delete-icon" title="Delete"></i>
+                </div>
+            </div>
+
+            <div class="card budget-card danger-accent">
+                <div class="card-header">
+                    <i class="fa-solid fa-dice budget-icon"></i>
+                    <h3>Leisure & Fun</h3>
+                </div>
+                <div class="budget-amounts">
+                    <p class="spent-limit">$462.55 spent of $400.00 limit</p>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill danger-fill" style="width: 100%;"></div>
+                </div>
+                <p class="percentage danger-text">115.6% Used</p>
+                <p class="remaining-value danger-text">OVERSPENT: $62.55</p>
+
+                <div class="card-actions">
+                    <i class="fa-solid fa-pencil action-icon" title="Edit"></i>
+                    <i class="fa-solid fa-trash action-icon delete-icon" title="Delete"></i>
+                </div>
+            </div>
+
+        </section>
+        
+        <section class="card budget-history">
+            <h2>Budget Insights</h2>
+            <p style="color: var(--color-text-secondary);">Mini-chart trends and recommendations will appear here.</p>
+        </section>
+    </main>
+    
+    <div id="budget-modal" class="modal-overlay hidden">
+        <div class="modal-content card">
+            <h3 style="color: var(--color-primary);">Create New Budget</h3>
+            <span class="close-btn">&times;</span>
+            <form>
+                <div class="input-group">
+                    <label for="budget-category">Category</label>
+                    <select id="budget-category">
+                        <option>Bills</option>
+                        <option>Food & Dining</option>
+                        <option>Leisure & Fun</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label for="budget-limit">Budget Limit ($)</label>
+                    <input type="number" id="budget-limit" placeholder="500.00">
+                </div>
+                <button type="submit" class="btn-primary modal-save-btn">Set Budget</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="scripts/budgets.js"></script>
+</body>
+</html>
