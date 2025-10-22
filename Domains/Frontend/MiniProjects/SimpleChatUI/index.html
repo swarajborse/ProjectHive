@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Chat UI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 flex items-center justify-center min-h-screen">
+
+  <!-- Main Chat Container -->
+  <div class="w-full max-w-md h-[90vh] md:h-[80vh] flex flex-col bg-white dark:bg-gray-800 rounded-2xl shadow-2xl">
+
+    <!-- Header -->
+    <header class="bg-blue-600 text-white p-4 flex items-center justify-between rounded-t-2xl shadow-md">
+      <div class="flex items-center space-x-3">
+        <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+            viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="text-blue-600">
+            <path d="M12 8V4H8"/>
+            <rect width="16" height="12" x="4" y="8" rx="2"/>
+            <path d="M2 14h2"/>
+            <path d="M20 14h2"/>
+            <path d="M15 13v2"/>
+            <path d="M9 13v2"/>
+          </svg>
+        </div>
+        <div>
+          <h1 class="text-lg font-semibold">Chat Bot</h1>
+          <p class="text-xs text-blue-200">Online</p>
+        </div>
+      </div>
+    </header>
+
+    <!-- Messages Area -->
+    <main id="messages" class="flex-1 p-4 overflow-y-auto space-y-4">
+      <div class="flex justify-start">
+        <div class="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 p-3 rounded-xl max-w-xs shadow">
+          <p>Hello! How can I help you today?</p>
+        </div>
+      </div>
+      <div class="flex justify-end">
+        <div class="bg-blue-600 text-white p-3 rounded-xl max-w-xs shadow">
+          <p>Hi, I just wanted to test the chat.</p>
+        </div>
+      </div>
+    </main>
+
+    <!-- Input Area -->
+    <footer class="p-4 border-t dark:border-gray-700">
+      <div class="flex items-center bg-gray-100 dark:bg-gray-700 rounded-xl p-2">
+        <input type="text" id="userInput" placeholder="Type your message..."
+          class="flex-1 bg-transparent px-2 text-gray-800 dark:text-gray-200 focus:outline-none">
+        <button id="sendBtn"
+          class="bg-blue-600 text-white p-2 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors duration-200">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+            viewBox="0 0 24 24" fill="none" stroke="currentColor"
+            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="feather feather-send">
+            <line x1="22" y1="2" x2="11" y2="13"></line>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+          </svg>
+        </button>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
