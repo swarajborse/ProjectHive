@@ -166,9 +166,9 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/shubhranshu-sahu.png" width="100" height="100" style="border-radius: 50%;" alt="shubhranshu-sahu"/>
+<img src="https://github.com/honey-khatri.png" width="100" height="100" style="border-radius: 50%;" alt="honey-khatri"/>
 
-**[@shubhranshu-sahu](https://github.com/shubhranshu-sahu)**
+**[@honey-khatri](https://github.com/honey-khatri)**
 
 *Contributions: 1 PRs across 1 domain(s)*
 
