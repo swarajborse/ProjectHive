@@ -46,7 +46,7 @@ body {
     font-size: 2rem;
     color: #ffffff;
     /* Neon text effect */
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #00ffff, 0 0 30px #00ffff;
+    /* text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #00ffff, 0 0 30px #00ffff; */
 }
 
 #scoreboard {
