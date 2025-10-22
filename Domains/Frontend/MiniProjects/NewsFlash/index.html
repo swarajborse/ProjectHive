@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NewsFlash - Live News Reader</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🗞️ NewsFlash</h1>
+    <input type="text" id="searchInput" placeholder="Search latest news..." />
+  </header>
+
+  <nav>
+    <button class="category" data-category="general">General</button>
+    <button class="category" data-category="technology">Technology</button>
+    <button class="category" data-category="sports">Sports</button>
+    <button class="category" data-category="business">Business</button>
+    <button class="category" data-category="entertainment">Entertainment</button>
+    <button class="category" data-category="science">Science</button>
+    <button class="category" data-category="health">Health</button>
+  </nav>
+
+  <main id="newsContainer"></main>
+
+  <div id="loader" class="hidden">Loading...</div>
+
+  <footer>
+    <p>💙 Built with ❤️ by <strong>Gayatri Vits</strong> | Powered by NewsAPI</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
