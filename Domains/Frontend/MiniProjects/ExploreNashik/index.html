@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Nashik – The Wine Capital of India</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 antialiased">
+
+    <header class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-md">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <a href="#home" class="text-2xl font-bold text-green-800">
+                Explore Nashik
+            </a>
+            
+            <ul class="hidden md:flex space-x-6 lg:space-x-8">
+                <li><a href="#home" class="nav-link" data-section="home">Home</a></li>
+                <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+                <li><a href="#attractions" class="nav-link" data-section="attractions">Attractions</a></li>
+                <li><a href="#festivals" class="nav-link" data-section="festivals">Culture</a></li>
+                <li><a href="#gallery" class="nav-link" data-section="gallery">Gallery</a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+            </ul>
+            
+            <button id="menu-btn" class="md:hidden p-2 rounded-md text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-green-600">
+                <span class="sr-only">Open main menu</span>
+                <svg id="menu-icon-open" class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+                <svg id="menu-icon-close" class="h-6 w-6 hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </nav>
+        
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg border-t border-gray-200">
+            <ul class="flex flex-col py-2">
+                <li><a href="#home" class="nav-link" data-section="home">Home</a></li>
+                <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+                <li><a href="#attractions" class="nav-link" data-section="attractions">Attractions</a></li>
+                <li><a href="#festivals" class="nav-link" data-section="festivals">Culture</a></li>
+                <li><a href="#gallery" class="nav-link" data-section="gallery">Gallery</a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        
+        <section id="home" class="h-screen min-h-[600px] relative flex items-center justify-center text-white text-center">
+            <div class="absolute inset-0">
+                <img src="https://media.istockphoto.com/id/640325190/photo/panoramic-view-of-the-vineyards-fields.jpg?s=612x612&w=0&k=20&c=m_P7Jf_Uy4PuUgYhGCX5E41302iQ4x4eeWnnnREbV6M=" 
+                     alt="Hero image of Sula Vineyards in Nashik"
+                     class="w-full h-full object-cover"
+                     onerror="this.src='https://placehold.co/1920x1080/4F7942/FFFFFF?text=Welcome+to+Nashik'">
+                <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+            </div>
+            
+            <div class="relative z-10 px-4">
+                <h1 class="text-4xl sm:text-5xl md:text-7xl font-extrabold leading-tight" style="text-shadow: 2px 2px 8px rgba(0,0,0,0.7);">
+                    Explore Nashik
+                </h1>
+                <p class="mt-4 text-xl sm:text-2xl md:text-3xl font-medium" style="text-shadow: 1px 1px 4px rgba(0,0,0,0.7);">
+                    Where Culture Meets Nature
+                </p>
+                <a href="#about" class="mt-8 inline-block bg-green-600 text-white font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-green-700 transition-transform transform hover:scale-105 duration-300">
+                    Discover More
+                </a>
+            </div>
+        </section>
+
+        <section id="about" class="py-20 lg:py-28 px-4 sm:px-6 lg:px-8 bg-white">
+            <div class="container mx-auto">
+                <h2 class="section-title">About Nashik</h2>
+                <div class="grid md:grid-cols-2 gap-12 items-center mt-12">
+                    <div class="text-lg leading-relaxed space-y-4">
+                        <p>
+                            Nashik, located in the northwest region of Maharashtra, India, is a city steeped in history and mythology. It is famously known as the <strong>"Wine Capital of India"</strong> due to the presence of numerous vineyards and wineries, including the renowned Sula Vineyards.
+                        </p>
+                        <p>
+                            The city is situated on the banks of the sacred <strong>Godavari River</strong>, which originates from Trimbakeshwar, nearby. Nashik holds immense religious significance as it is one of the four locations where the <strong>Kumbh Mela</strong>, a mass Hindu pilgrimage, is held every 12 years.
+                        </p>
+                        <p>
+                            Its history is deeply connected to the epic Ramayana, with sites like Panchavati believed to be the place where Lord Rama, Sita, and Lakshmana spent their exile. Today, Nashik is a vibrant blend of ancient tradition and modern development, balancing its spiritual heritage with a booming agricultural and industrial economy, especially known for its grapes and onions.
+                        </p>
+                    </div>
+                    <div class="flex justify-center">
+                        <img src="https://media.istockphoto.com/id/1341891081/photo/various-views-of-igatpuri-maharashtra.jpg?s=612x612&w=0&k=20&c=DiiDUtfSLAT1EYYDQfMlzzGz0uxQU21UwkZdIntxykM=" 
+                             alt="View of the Godavari River Ghat in Nashik"
+                             class="rounded-xl shadow-2xl object-cover"
+                             onerror="this.src='https://placehold.co/600x450/A9A9A9/FFFFFF?text=Nashik+Scenery'">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="attractions" class="py-20 lg:py-28 px-4 sm:px-6 lg:px-8 bg-green-50/50">
+            <div class="container mx-auto">
+                <h2 class="section-title">Tourist Attractions</h2>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+                    
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:-translate-y-2 duration-300">
+                        <img src="https://s7ap1.scene7.com/is/image/incredibleindia/1-trimbakeshwar-nashik--maharashtra_-city-hero?qlt=82&ts=1726675387974" 
+                             alt="Trimbakeshwar Temple" 
+                             class="w-full h-56 object-cover"
+                             onerror="this.src='https://placehold.co/400x300/8B4513/FFFFFF?text=Ancient+Temple'">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold text-green-900">Trimbakeshwar Temple</h3>
+                            <p class="mt-2 text-gray-600">An ancient Hindu temple and one of the twelve Jyotirlingas, located at the source of the Godavari River.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:-translate-y-2 duration-300">
+                        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/3f/8e/3d/a-view-from-the-vineyards.jpg?w=1200&h=700&s=1" 
+                             alt="Sula Vineyards" 
+                             class="w-full h-56 object-cover"
+                             onerror="this.src='https://placehold.co/400x300/556B2F/FFFFFF?text=Vineyard'">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold text-green-900">Sula Vineyards</h3>
+                            <p class="mt-2 text-gray-600">India's most famous winery, offering wine-tasting tours and a beautiful view of the surrounding vineyards.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:-translate-y-2 duration-300">
+                        <img src="https://s7ap1.scene7.com/is/image/incredibleindia/pandavleni-caves-nashik-maharashtra-3-attr-hero?qlt=82&ts=1726669905429" 
+                             alt="Pandav Leni Caves" 
+                             class="w-full h-56 object-cover"
+                             onerror="this.src='https://placehold.co/400x300/D2B48C/FFFFFF?text=Ancient+Caves'">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold text-green-900">Pandav Leni Caves</h3>
+                            <p class="mt-2 text-gray-600">A group of 24 rock-cut Buddhist caves dating back to the 1st century BCE, offering panoramic city views.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:-translate-y-2 duration-300">
+                        <img src="https://www.hlimg.com/images/things2do/738X538/Night-Trek-to-Anjaneri-Fort-Weekend-Thrill_1523273229t.jpg" 
+                             alt="Anjaneri Hills" 
+                             class="w-full h-56 object-cover"
+                             onerror="this.src='https://placehold.co/400x300/8FBC8F/FFFFFF?text=Green+Hills'">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold text-green-900">Anjaneri Hills</h3>
+                            <p class="mt-2 text-gray-600">Believed to be the birthplace of Lord Hanuman, this spot is a popular trekking destination with stunning views.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:-translate-y-2 duration-300">
+                        <img src="https://s7ap1.scene7.com/is/image/incredibleindia/muktidham-nashik-maharashtra-1-attr-hero?qlt=82&ts=1726669952558" 
+                             alt="Muktidham Temple" 
+                             class="w-full h-56 object-cover"
+                             onerror="this.src='https://placehold.co/400x300/F5F5DC/000000?text=Marble+Temple'">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold text-green-900">Muktidham Temple</h3>
+                            <p class="mt-2 text-gray-600">A unique temple made of pure white marble, featuring replicas of all 12 Jyotirlingas and verses from the Gita.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform transform hover:-translate-y-2 duration-300">
+                        <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202304/kalaram-mandir-sixteen_nine.jpg?VersionId=q9rmuYH2Lo9wdwo69HjJSxIsYtrBT.P7" 
+                             alt="Kalaram Temple" 
+                             class="w-full h-56 object-cover"
+                             onerror="this.src='https://placehold.co/400x300/36454F/FFFFFF?text=Black+Stone+Temple'">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-semibold text-green-900">Kalaram Temple</h3>
+                            <p class="mt-2 text-gray-600">A prominent Hindu shrine dedicated to Lord Rama, built entirely of black stone in the Panchavati area.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <section id="festivals" class="py-20 lg:py-28 px-4 sm:px-6 lg:px-8 bg-white">
+            <div class="container mx-auto">
+                <h2 class="section-title">Festivals & Culture</h2>
+                <div class="max-w-3xl mx-auto text-lg leading-relaxed space-y-6 text-center">
+                    <p>
+                        Nashik's culture is a rich tapestry of traditions, spirituality, and gastronomy. The primary language spoken is <strong>Marathi</strong>, with Hindi and English widely understood.
+                    </p>
+                    <p>
+                        The city comes alive during its vibrant festivals. The grandest of all is the <strong>Kumbh Mela</strong>, held once every twelve years, attracting millions of devotees. Other major celebrations include <strong>Gudi Padwa</strong> (Marathi New Year) and <strong>Ramnavami</strong>, celebrated with great fervor, especially in the Panchavati area.
+                    </p>
+                    <p>
+                        The local cuisine, or "Nashik food," is known for its unique flavors. Don't miss trying <strong>Misal Pav</strong> (a spicy sprout curry), Vada Pav, and the local specialty, <strong>Chivda</strong>. Being the wine capital, wine tourism and food pairings have also become an integral part of the local culture.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="py-20 lg:py-28 px-4 sm:px-6 lg:px-8 bg-gray-100">
+            <div class="container mx-auto">
+                <h2 class="section-title">Gallery</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-12">
+                    
+                    <div class="rounded-lg overflow-hidden shadow-lg">
+                        <img src="https://pbs.twimg.com/media/EodH4_9VgAEr7xV.jpg" alt="Bunch of green grapes in a vineyard" class="w-full h-full aspect-square object-cover hover:scale-110 transition-transform duration-300">
+                    </div>
+                    <div class="rounded-lg overflow-hidden shadow-lg">
+                        <img src="https://s7ap1.scene7.com/is/image/incredibleindia/1-mangi-tungi-hills-nashik-maharashtra-attr-hero?qlt=82&ts=1726669991786" alt="Intricate carving on an old temple wall" class="w-full h-full aspect-square object-cover hover:scale-110 transition-transform duration-300">
+                    </div>
+                    <div class="rounded-lg overflow-hidden shadow-lg">
+                        <img src="https://www.livemint.com/lm-img/img/2025/01/28/original/India-Mahakumbh-Festival-0_1738038868196.jpg" alt="Devotees at Kumbh Mela" class="w-full h-full aspect-square object-cover hover:scale-110 transition-transform duration-300">
+                    </div>
+                    <div class="rounded-lg overflow-hidden shadow-lg">
+                        <img src="https://content3.jdmagicbox.com/comp/nashik/q7/0253px253.x253.221014205941.d5q7/catalogue/chhatrapati-shivaji-maharaj-statue-deola-nashik-tourist-attraction-2OMYlDVx3c.jpg" alt="Sunset over Anjaneri Hills" class="w-full h-full aspect-square object-cover hover:scale-110 transition-transform duration-300">
+                    </div>
+                    <div class="rounded-lg overflow-hidden shadow-lg">
+                        <img src="https://media.tacdn.com/media/attractions-splice-spp-674x446/0a/ad/e1/c2.jpg" alt="Wine tasting at a vineyard" class="w-full h-full aspect-square object-cover hover:scale-110 transition-transform duration-300">
+                    </div>
+                    <div class="rounded-lg overflow-hidden shadow-lg">
+                        <img src="https://static.toiimg.com/photo/59632162/.jpg" alt="Vibrant local market in Nashik" class="w-full h-full aspect-square object-cover hover:scale-110 transition-transform duration-300">
+                    </div>
+                    <div class="rounded-lg overflow-hidden shadow-lg">
+                        <img src="https://images.picxy.com/cache/2018/12/26/1fe8ef99d1271488ba06621cfdab15e9.jpg" alt="Evening Aarti at Godavari Ghat" class="w-full h-full aspect-square object-cover hover:scale-110 transition-transform duration-300">
+                    </div>
+                    <div class="rounded-lg overflow-hidden shadow-lg">
+                        <img src="https://s7ap1.scene7.com/is/image/incredibleindia/pandavleni-caves-nashik-maharashtra-3-attr-hero?qlt=82&ts=1726669905429" alt="View from Pandav Leni Caves" class="w-full h-full aspect-square object-cover hover:scale-110 transition-transform duration-300">
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+        <section id="contact" class="py-20 lg:py-28 px-4 sm:px-6 lg:px-8 bg-white">
+            <div class="container mx-auto">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="max-w-xl mx-auto mt-12 bg-gray-50 p-8 rounded-xl shadow-lg border border-gray-200">
+                    <form action="#" method="POST" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                            <div class="mt-1">
+                                <input type="text" name="name" id="name" autocomplete="name" required
+                                       class="w-full px-4 py-3 rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                            <div class="mt-1">
+                                <input type="email" name="email" id="email" autocomplete="email" required
+                                       class="w-full px-4 py-3 rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                            <div class="mt-1">
+                                <textarea id="message" name="message" rows="4" required
+                                          class="w-full px-4 py-3 rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500"></textarea>
+                            </div>
+                        </div>
+                        <div>
+                            <button type="submit" 
+                                    class="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-lg font-medium text-white bg-green-700 hover:bg-green-800 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transition-colors duration-300">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer class="bg-gray-800 text-gray-300 text-center py-8">
+        <div class="container mx-auto">
+            <p>&copy; 2025 Explore Nashik. All rights reserved.</p>
+            <p class="mt-2 text-sm text-gray-400">Developed by Tanmay Kad.</p>
+        </div>
+    </footer>
+    
+    <button id="to-top-btn" 
+            class="fixed bottom-6 right-6 p-3 bg-green-700 text-white rounded-full shadow-lg hover:bg-green-800 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transition-all duration-300 opacity-0 transform translate-y-4"
+            aria-label="Scroll to top">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+        </svg>
+    </button>
+    
+    <script src="script.js"></script>
+    
+</body>
+</html>
