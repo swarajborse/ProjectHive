@@ -166,9 +166,9 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/yashbahadure18.png" width="100" height="100" style="border-radius: 50%;" alt="yashbahadure18"/>
+<img src="https://github.com/AbhishekSharma-9.png" width="100" height="100" style="border-radius: 50%;" alt="AbhishekSharma-9"/>
 
-**[@yashbahadure18](https://github.com/yashbahadure18)**
+**[@AbhishekSharma-9](https://github.com/AbhishekSharma-9)**
 
 *Contributions: 1 PRs across 1 domain(s)*
 
