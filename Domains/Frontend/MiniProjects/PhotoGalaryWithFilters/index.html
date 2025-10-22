@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Filterable Photo Gallery</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailwind Config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="bg-gray-100 font-sans antialiased">
+  <div class="container mx-auto px-4 py-12">
+    <!-- Header -->
+    <h1 class="text-4xl font-bold text-center text-gray-800 mb-8">
+      Photo Gallery
+    </h1>
+
+    <!-- Filter Buttons -->
+    <div id="filter-buttons" class="flex flex-wrap justify-center gap-2 md:gap-4 mb-10">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="nature">Nature</button>
+      <button class="filter-btn" data-filter="cars">Cars</button>
+      <button class="filter-btn" data-filter="animals">Animals</button>
+      <button class="filter-btn" data-filter="bikes">Bikes</button>
+    </div>
+
+    <!-- Gallery Grid -->
+    <div id="gallery-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Nature -->
+      <div class="gallery-item" data-category="nature">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1z3WO2y5h7YkHljxIsvwuOxP21OE_8tnedA&s" alt="Nature 1"
+          onerror="this.src='https://placehold.co/600x400/22c55e/ffffff?text=Image+Error'" />
+        <div class="caption">Nature</div>
+      </div>
+
+      <!-- cars -->
+      <div class="gallery-item" data-category="cars">
+        <img src="https://eu-images.contentstack.com/v3/assets/blt0bbd1b20253587c0/blt4bf1a4090380d5b0/651579e1a95ca40cf4969a68/00-Divo_BUGATTI.jpg?width=1280&auto=webp&quality=80&format=jpg&disable=upscale" alt="cars 1"
+          onerror="this.src='https://placehold.co/600x400/3b82f6/ffffff?text=Image+Error'" />
+        <div class="caption">cars</div>
+      </div>
+
+      <!-- Animals -->
+      <div class="gallery-item" data-category="animals">
+        <img src="https://wallpapers.com/images/hd/most-beautiful-animals-1dmrrpn71zcqf3sp.jpg" alt="Animal 1"
+          onerror="this.src='https://placehold.co/600x400/f97316/ffffff?text=Image+Error'" />
+        <div class="caption">Animals</div>
+      </div>
+
+      <!-- bikes -->
+      <div class="gallery-item" data-category="bikes">
+        <img src="https://images.pexels.com/photos/2116475/pexels-photo-2116475.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Bike 1"
+          onerror="this.src='https://placehold.co/600x400/a855f7/ffffff?text=Image+Error'" />
+        <div class="caption">bikes</div>
+      </div>
+
+      <!-- cars -->
+      <div class="gallery-item" data-category="cars">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/McLaren_P1.jpg/500px-McLaren_P1.jpg" alt="cars 2"
+          onerror="this.src='https://placehold.co/600x400/3b82f6/ffffff?text=Image+Error'" />
+        <div class="caption">cars</div>
+      </div>
+
+      <!-- Nature -->
+      <div class="gallery-item" data-category="nature">
+        <img src="https://media.istockphoto.com/id/483724081/photo/yosemite-valley-landscape-and-river-california.jpg?s=612x612&w=0&k=20&c=QQ7rvq0Qbfpkug1Wbd36PGqkOntoPFKWxiE4w4tV-NE=" alt="Nature 2"
+          onerror="this.src='https://placehold.co/600x400/22c55e/ffffff?text=Image+Error'" />
+        <div class="caption">Nature</div>
+      </div>
+
+      <!-- Animals -->
+      <div class="gallery-item" data-category="animals">
+        <img src="https://c4.wallpaperflare.com/wallpaper/429/253/167/prowess-leopard-animal-wallpaper-preview.jpg" alt="Animal 2"
+          onerror="this.src='https://placehold.co/600x400/f97316/ffffff?text=Image+Error'" />
+        <div class="caption">Animals</div>
+      </div>
+
+      <!-- bikes -->
+      <div class="gallery-item" data-category="bikes">
+        <img src="https://tradebrains-wp.s3.ap-south-1.amazonaws.com/wp-content/uploads/2025/08/Untitled-design-2025-08-11T115454.426-1080x675.jpg" alt="Bikes 2"
+          onerror="this.src='https://placehold.co/600x400/a855f7/ffffff?text=Image+Error'" />
+        <div class="caption">bikes</div>
+      </div>
+
+      <!-- Nature -->
+      <div class="gallery-item" data-category="nature">
+        <img src="https://5.imimg.com/data5/SELLER/Default/2023/7/330483018/UU/FJ/LO/6461830/nature-wallpaper.jpg" alt="Nature 3"
+          onerror="this.src='https://placehold.co/600x400/22c55e/ffffff?text=Image+Error'" />
+        <div class="caption">Nature</div>
+      </div>
+
+
+            <!-- Nature -->
+      <div class="gallery-item" data-category="nature">
+        <img src="https://sb.ecobnb.net/app/uploads/sites/3/2022/04/copertina-1.jpg" alt="Nature 1"
+          onerror="this.src='https://placehold.co/600x400/22c55e/ffffff?text=Image+Error'" />
+        <div class="caption">Nature</div>
+      </div>
+
+      <!-- cars -->
+      <div class="gallery-item" data-category="cars">
+        <img src="https://car-images.bauersecure.com/wp-images/3550/best_sportscar_514.jpg" alt="cars 1"
+          onerror="this.src='https://placehold.co/600x400/3b82f6/ffffff?text=Image+Error'" />
+        <div class="caption">cars</div>
+      </div>
+
+      <!-- Animals -->
+      <div class="gallery-item" data-category="animals">
+        <img src="https://i0.wp.com/www.sciencenews.org/wp-content/uploads/2020/01/012220_sm_panda_feat.jpg?fit=1028%2C579&ssl=1" alt="Animal 1"
+          onerror="this.src='https://placehold.co/600x400/f97316/ffffff?text=Image+Error'" />
+        <div class="caption">Animals</div>
+      </div>
+
+      <!-- bikes -->
+      <div class="gallery-item" data-category="bikes">
+        <img src="https://wallpapers.com/images/featured/1920x1080-hd-bikes-vx94hpjc1ase60eu.jpg" alt="bikes 1"
+          onerror="this.src='https://placehold.co/600x400/a855f7/ffffff?text=Image+Error'" />
+        <div class="caption">bikes</div>
+      </div>
+
+      <!-- cars -->
+      <div class="gallery-item" data-category="cars">
+        <img src="https://images.cdn.autocar.co.uk/sites/autocar.co.uk/files/best_sports_cars_-_porsche_911.jpg" alt="cars 2"
+          onerror="this.src='https://placehold.co/600x400/3b82f6/ffffff?text=Image+Error'" />
+        <div class="caption">cars</div>
+      </div>
+
+      <!-- Nature -->
+      <div class="gallery-item" data-category="nature">
+        <img src="https://img.freepik.com/free-photo/beautiful-shot-river-through-village-surrounded-by-hills-mountains-greenery_181624-41644.jpg?semt=ais_hybrid&w=740&q=80" alt="Nature 2"
+          onerror="this.src='https://placehold.co/600x400/22c55e/ffffff?text=Image+Error'" />
+        <div class="caption">Nature</div>
+      </div>
+
+      <!-- Animals -->
+      <div class="gallery-item" data-category="animals">
+        <img src="https://cdn.britannica.com/29/150929-050-547070A1/lion-Kenya-Masai-Mara-National-Reserve.jpg" alt="Animal 2"
+          onerror="this.src='https://placehold.co/600x400/f97316/ffffff?text=Image+Error'" />
+        <div class="caption">Animals</div>
+      </div>
+
+      <!-- bikes -->
+      <div class="gallery-item" data-category="bikes">
+        <img src="https://images.unsplash.com/photo-1629571688673-55436b6c732a?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHJveWFsJTIwZW5maWVsZHxlbnwwfHwwfHx8MA==" alt="Bikes 2"
+          onerror="this.src='https://placehold.co/600x400/a855f7/ffffff?text=Image+Error'" />
+        <div class="caption">bikes</div>
+      </div>
+
+      <!-- Nature -->
+      <div class="gallery-item" data-category="nature">
+        <img src="https://images5.alphacoders.com/336/thumb-1920-336729.jpg" alt="Nature 3"
+          onerror="this.src='https://placehold.co/600x400/22c55e/ffffff?text=Image+Error'" />
+        <div class="caption">Nature</div>
+      </div>
+
+            <!-- Nature -->
+      <div class="gallery-item" data-category="nature">
+        <img src="https://static9.depositphotos.com/1000276/1100/i/450/depositphotos_11008977-stock-photo-mountain-magic-landscape.jpg" alt="Nature 1"
+          onerror="this.src='https://placehold.co/600x400/22c55e/ffffff?text=Image+Error'" />
+        <div class="caption">Nature</div>
+      </div>
+
+      <!-- Cars -->
+      <div class="gallery-item" data-category="cars">
+        <img src="https://cdn.pixabay.com/photo/2017/03/27/14/56/auto-2179220_640.jpg" alt="Cars 1"
+          onerror="this.src='https://placehold.co/600x400/3b82f6/ffffff?text=Image+Error'" />
+        <div class="caption">Cars</div>
+      </div>
+
+      <!-- Animals -->
+      <div class="gallery-item" data-category="animals">
+        <img src="https://png.pngtree.com/thumb_back/fh260/background/20240402/pngtree-arctic-wolf-beautiful-animal-in-the-forest-image_15647760.jpg" alt="Animal 1"
+          onerror="this.src='https://placehold.co/600x400/f97316/ffffff?text=Image+Error'" />
+        <div class="caption">Animals</div>
+      </div>
+
+      <!-- bikes -->
+      <div class="gallery-item" data-category="bikes">
+        <img src="https://c4.wallpaperflare.com/wallpaper/565/558/457/heavy-bike-harley-davidson-harley-davidson-modified-wallpaper-preview.jpg" alt="Bikes 1"
+          onerror="this.src='https://placehold.co/600x400/a855f7/ffffff?text=Image+Error'" />
+        <div class="caption">bikes</div>
+      </div>
+
+      <!-- Cars -->
+      <div class="gallery-item" data-category="cars">
+        <img src="https://images.financialexpressdigital.com/2022/06/Lamborghini-Huracan_Super_Trofeo_EVO2-2022-1024-02.jpg" alt="Cars 2"
+          onerror="this.src='https://placehold.co/600x400/3b82f6/ffffff?text=Image+Error'" />
+        <div class="caption">Cars</div>
+      </div>
+
+      <!-- Nature -->
+      <div class="gallery-item" data-category="nature">
+        <img src="https://www.travelandleisure.com/thmb/EiktqMGpMJuvVmnVK8WK0zgAJdA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/amazon-rainforest-south-america-BEAUTFORESTS0721-709b209381b84d1d960294a5a5a9f778.jpg" alt="Nature 2"
+          onerror="this.src='https://placehold.co/600x400/22c55e/ffffff?text=Image+Error'" />
+        <div class="caption">Nature</div>
+      </div>
+
+      <!-- Animals -->
+      <div class="gallery-item" data-category="animals">
+        <img src="https://a-z-animals.com/media/horse-3.jpg" alt="Animal 2"
+          onerror="this.src='https://placehold.co/600x400/f97316/ffffff?text=Image+Error'" />
+        <div class="caption">Animals</div>
+      </div>
+
+      <!-- bikes -->
+      <div class="gallery-item" data-category="bikes">
+        <img src="https://iamabiker.com/wp-content/uploads/2020/11/Royal-Enfield-Meteor-350-HD-wallpapers-6.jpg" alt="Bikes 2"
+          onerror="this.src='https://placehold.co/600x400/a855f7/ffffff?text=Image+Error'" />
+        <div class="caption">bikes</div>
+      </div>
+
+      <!-- Nature -->
+      <div class="gallery-item" data-category="nature">
+        <img src="https://www.naturalforeststandard.com/wp-content/uploads/2025/04/AdobeStock_111168015-600x403.jpeg" alt="Nature 3"
+          onerror="this.src='https://placehold.co/600x400/22c55e/ffffff?text=Image+Error'" />
+        <div class="caption">Nature</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- External JS -->
+  <script src="script.js"></script>
+</body>
+</html>
