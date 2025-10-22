@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crypto Tracker Dashboard 💹</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>💰 Crypto Tracker Dashboard</h1>
+
+    <div class="controls">
+      <input type="text" id="searchInput" placeholder="Search coin name..." />
+      
+      <select id="currencySelect">
+        <option value="usd">USD</option>
+        <option value="inr">INR</option>
+      </select>
+
+      <button id="themeToggle">🌙 Dark Mode</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="stats"></section>
+    <canvas id="priceChart"></canvas>
+
+    <div id="alertBox" class="hidden"></div>
+  </main>
+
+  <footer>
+    <p>Made with ❤️ by Keron Patel | Data from Coingecko API</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
