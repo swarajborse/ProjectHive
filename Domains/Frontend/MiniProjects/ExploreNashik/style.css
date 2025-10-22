@@ -1,0 +1,54 @@
+/* Apply smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+/* Apply Inter font family */
+body {
+    font-family: "Inter", sans-serif;
+    color: #374151; /* gray-700 */
+}
+/* Custom class for section titles */
+.section-title {
+    font-size: 2rem; /* 32px */
+    font-weight: 700;
+    text-align: center;
+    color: #052e16; /* green-950 */
+    margin-bottom: 3rem; /* mb-12 */
+}
+@media (min-width: 768px) {
+    .section-title {
+        font-size: 2.5rem; /* 40px */
+    }
+}
+
+/* Base styles for nav links */
+.nav-link {
+    display: block;
+    padding: 0.5rem 0;
+    font-weight: 500;
+    color: #374151; /* gray-700 */
+    transition: color 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+.nav-link:hover {
+    color: #166534; /* green-800 */
+}
+/* Active nav link styling (handled by JS) */
+.nav-link.active {
+    color: #15803D; /* green-700 */
+    font-weight: 700;
+    border-bottom-color: #15803D;
+}
+
+/* Mobile nav link styles */
+#mobile-menu .nav-link {
+    padding: 0.75rem 1rem; /* p-3 px-4 */
+    border-bottom: 1px solid #E5E7EB; /* border-gray-200 */
+}
+#mobile-menu .nav-link:last-child {
+    border-bottom: none;
+}
+#mobile-menu .nav-link.active {
+    background-color: #F0FDF4; /* green-50 */
+    border-bottom-color: #E5E7EB; /* border-gray-200 */
+}
