@@ -3,17 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snake Game</title>
-
+    <title> Snake Game</title>
+    <!-- Import a "pro" gaming font -->
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>Snake Game</h1>
-    <p>Use the arrow keys to move the snake and eat the food!</p>
 
-    <div class="container">
-        <p>Score: <span id="score">0</span></p>
-        <canvas id="gameCanvas" width="400" height="400"></canvas>
+    <!-- This wrapper holds the entire game UI -->
+    <div id="game-wrapper">
+        
+        <!-- The header for title and scores -->
+        <header id="game-header">
+            <h1 id="game-title">SNAKE GAME</h1>
+            <div id="scoreboard">
+                <div class="score-item">
+                    SCORE
+                    <span id="score-value">0</span>
+                </div>
+                <div class="score-item">
+                    HIGH SCORE
+                    <span id="high-score-value">0</span>
+                </div>
+            </div>
+        </header>
+        
+        <!-- The game canvas area. Note the new position:relative -->
+        <div id="canvas-container">
+            <canvas id="gameCanvas"></canvas>
+            
+            <!-- Hidden "Start" overlay -->
+            <div id="start-overlay" class="overlay">
+                <div class="overlay-content">
+                    <h2>Press any arrow key to start</h2>
+                </div>
+            </div>
+
+            <!-- Hidden "Game Over" modal -->
+            <div id="game-over-modal" class="overlay">
+                <div class="overlay-content">
+                    <h2>GAME OVER</h2>
+                    <p>Your Score: <span id="final-score">0</span></p>
+                    <button id="play-again-button">Play Again</button>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <script src="script.js"></script>
