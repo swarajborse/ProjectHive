@@ -86,22 +86,6 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/GayatriVitkar.png" width="100" height="100" style="border-radius: 50%;" alt="GayatriVitkar"/>
-
-**[@GayatriVitkar](https://github.com/GayatriVitkar)**
-
-*Contributions: 3 PRs across 1 domain(s)*
-
-*Domains: CompetitiveProgramming*
-
-</div>
-
----
-
-### 🏅 Rank 6
-
-<div align="center">
-
 <img src="https://github.com/Ansh-1019.png" width="100" height="100" style="border-radius: 50%;" alt="Ansh-1019"/>
 
 **[@Ansh-1019](https://github.com/Ansh-1019)**
@@ -114,7 +98,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 7
+### 🏅 Rank 6
 
 <div align="center">
 
@@ -130,7 +114,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 8
+### 🏅 Rank 7
 
 <div align="center">
 
@@ -141,6 +125,22 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 *Contributions: 2 PRs across 2 domain(s)*
 
 *Domains: AI-ML, Frontend*
+
+</div>
+
+---
+
+### 🏅 Rank 8
+
+<div align="center">
+
+<img src="https://github.com/GayatriVitkar.png" width="100" height="100" style="border-radius: 50%;" alt="GayatriVitkar"/>
+
+**[@GayatriVitkar](https://github.com/GayatriVitkar)**
+
+*Contributions: 2 PRs across 1 domain(s)*
+
+*Domains: CompetitiveProgramming*
 
 </div>
 
