@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emoji Mood Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>😊 Emoji Mood Tracker</h1>
+    <p>Select how you feel each day!</p>
+
+    <div class="week">
+      <div class="day" data-day="Mon">Mon</div>
+      <div class="day" data-day="Tue">Tue</div>
+      <div class="day" data-day="Wed">Wed</div>
+      <div class="day" data-day="Thu">Thu</div>
+      <div class="day" data-day="Fri">Fri</div>
+      <div class="day" data-day="Sat">Sat</div>
+      <div class="day" data-day="Sun">Sun</div>
+    </div>
+
+    <div class="emoji-picker hidden">
+      <span>😄</span>
+      <span>🙂</span>
+      <span>😐</span>
+      <span>☹️</span>
+      <span>😭</span>
+    </div>
+
+    <button id="resetBtn">Reset Tracker</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
