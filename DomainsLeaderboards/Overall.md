@@ -24,7 +24,7 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | 12 | [@Keron](https://github.com/Keron) | 2 | 1 (Frontend) | Recent |
 | 13 | [@Utkarsh-660](https://github.com/Utkarsh-660) | 2 | 1 (Frontend) | Recent |
 | 14 | [@alisha1510](https://github.com/alisha1510) | 2 | 1 (Frontend) | Recent |
-| 15 | [@caitlinmalloch](https://github.com/caitlinmalloch) | 1 | 1 (AI-ML) | Recent |
+| 15 | [@SamaKool](https://github.com/SamaKool) | 1 | 1 (CompetitiveProgramming) | Recent |
 | 16 | [@AksharGoyal](https://github.com/AksharGoyal) | 1 | 1 (Backend) | Recent |
 | 17 | [@SOHAM-GADEKAR](https://github.com/SOHAM-GADEKAR) | 1 | 1 (Frontend) | Recent |
 | 18 | [@shr128](https://github.com/shr128) | 1 | 1 (Frontend) | Recent |
@@ -41,6 +41,13 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 
 ## 📊 Domain Breakdown
 
+### CompetitiveProgramming
+
+| Contributor | Contributions |
+|-------------|---------------|
+| [@GayatriVitkar](https://github.com/GayatriVitkar) | 2 |
+| [@SamaKool](https://github.com/SamaKool) | 1 |
+
 ### AI-ML
 
 | Contributor | Contributions |
@@ -48,7 +55,6 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | [@Ansh-1019](https://github.com/Ansh-1019) | 2 |
 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 2 |
 | [@Mmadan128](https://github.com/Mmadan128) | 2 |
-| [@caitlinmalloch](https://github.com/caitlinmalloch) | 1 |
 | [@vatsalgupta2004](https://github.com/vatsalgupta2004) | 1 |
 | [@Dhiraj201226](https://github.com/Dhiraj201226) | 1 |
 | [@k4niz](https://github.com/k4niz) | 1 |
@@ -147,12 +153,6 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | Contributor | Contributions |
 |-------------|---------------|
 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 1 |
-
-### CompetitiveProgramming
-
-| Contributor | Contributions |
-|-------------|---------------|
-| [@GayatriVitkar](https://github.com/GayatriVitkar) | 2 |
 
 ---
 
