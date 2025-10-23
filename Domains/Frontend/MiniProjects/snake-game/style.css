@@ -1,0 +1,159 @@
+/* Import the gaming font */
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+/* --- Basic Setup --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Bungee', cursive;
+    /* A deep, dark gradient background */
+    background: linear-gradient(135deg, #1f003b 0%, #0a0a23 100%);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden; /* Prevents scrollbars */
+}
+
+/* --- Game UI Wrapper --- */
+#game-wrapper {
+    width: 100%;
+    max-width: 640px; /* Slightly wider than the canvas for padding */
+    padding: 20px;
+    background: #0d0d2e; /* Dark inner background */
+    border-radius: 16px;
+    /* The "Neon" glow effect */
+    border: 2px solid #00ffff;
+    box-shadow: 0 0 10px #00ffff, 0 0 15px #00ffff, inset 0 0 7px rgba(0, 255, 255, 0.3);
+}
+
+/* --- Game Header (Title & Score) --- */
+#game-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #00ffff;
+    padding-bottom: 15px;
+}
+
+#game-title {
+    font-size: 2rem;
+    color: #ffffff;
+    /* Neon text effect */
+    /* text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #00ffff, 0 0 30px #00ffff; */
+}
+
+#scoreboard {
+    display: flex;
+    gap: 20px;
+    text-align: right;
+}
+
+.score-item {
+    font-size: 0.9rem;
+    color: #00ffff; /* Cyan text */
+    line-height: 1.3;
+}
+
+.score-item span {
+    display: block;
+    font-size: 1.5rem;
+    color: #00ff00; /* Neon green for the number */
+    text-shadow: 0 0 5px #00ff00;
+}
+
+/* --- Canvas Container --- */
+#canvas-container {
+    position: relative; /* Crucial for placing overlays */
+    /* This ensures the canvas itself stays centered if wrapper is wider */
+    display: flex; 
+    justify-content: center;
+}
+
+#gameCanvas {
+    display: block;
+    border-radius: 8px;
+    /* We will draw the grid in JS, but set a base color */
+    background: #050510;
+    /* A subtle inner glow for the play area */
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+    
+    /* Responsive size */
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    aspect-ratio: 3 / 2; /* 600x400 ratio */
+}
+
+/* --- Overlays (Game Over / Start) --- */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Dark, semi-transparent background */
+    background: rgba(0, 0, 0, 0.85);
+    border-radius: 8px; /* Match canvas */
+    
+    /* Center content inside */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    /* Hide by default */
+    display: none;
+    
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 10px #fff;
+}
+
+.overlay-content h2 {
+    font-size: 3rem;
+    color: #ff0040; /* Neon Red/Pink */
+    /* text-shadow: 0 0 10px #ff0040, 0 0 20px #ff0040; */
+    margin-bottom: 1rem;
+}
+
+.overlay-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+#start-overlay h2 {
+    color: #00ff00; /* Neon Green */
+    font-size: 1.5rem;
+    /* text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00; */
+}
+
+/* --- Neon Button --- */
+#play-again-button {
+    font-family: 'Bungee', cursive;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    color: #fff;
+    background: #1e003b;
+    border: 2px solid #00ffff;
+    border-radius: 8px;
+    cursor: pointer;
+    text-shadow: 0 0 5px #00ffff;
+    /* box-shadow: 0 0 10px #00ffff, inset 0 0 5px rgba(0, 255, 255, 0.5); */
+    transition: all 0.3s ease;
+}
+
+#play-again-button:hover {
+    background: #00ffff;
+    color: #0a0a23;
+    text-shadow: none;
+    /* box-shadow: 0 0 20px #00ffff, 0 0 40px #00ffff; */
+    transform: scale(1.05);
+}
+

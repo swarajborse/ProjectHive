@@ -1,0 +1,151 @@
+/* budgets.css */
+.budgets-content {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 90px 40px var(--spacing-2xl) 40px;
+}
+
+/* Budget Summary Header */
+.budget-summary-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-xl);
+    margin-bottom: var(--spacing-xl);
+}
+
+.summary-details .label {
+    color: var(--color-text-secondary);
+}
+
+.summary-details .value {
+    font-size: 2.2em;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin: 5px 0;
+}
+.summary-details .spent-value {
+    color: var(--color-text-primary);
+}
+.remaining-value {
+    font-weight: 500;
+}
+
+.overall-progress {
+    width: 40%;
+}
+
+.progress-bar {
+    background-color: var(--color-bg-hover);
+    height: 12px;
+    border-radius: 6px;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: var(--color-primary);
+    transition: width 0.5s ease-out;
+}
+
+.progress-label {
+    text-align: right;
+    color: var(--color-text-secondary);
+}
+
+.add-budget-btn {
+    min-width: 150px;
+}
+
+/* Budget Cards Grid */
+.budget-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-xl);
+}
+
+.budget-card {
+    padding: var(--spacing-lg);
+    position: relative;
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--spacing-md);
+}
+
+.budget-icon {
+    font-size: 1.5em;
+    color: var(--color-primary);
+    margin-right: 15px;
+}
+
+.budget-card h3 {
+    margin: 0;
+    font-size: 1.5em;
+    color: var(--color-text-primary);
+}
+
+.budget-amounts {
+    margin: var(--spacing-md) 0;
+}
+
+.spent-limit {
+    color: var(--color-text-secondary);
+    font-size: 0.9em;
+}
+
+.primary-fill { background-color: var(--color-primary); }
+.warning-fill { background-color: var(--color-warning); }
+.danger-fill { background-color: var(--color-danger); }
+
+.primary-text { color: var(--color-primary); }
+.warning-text { color: var(--color-warning); }
+.success-text { color: var(--color-success); }
+.danger-text { color: var(--color-danger); }
+
+.percentage {
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+.card-actions {
+    position: absolute;
+    top: var(--spacing-lg);
+    right: var(--spacing-lg);
+}
+
+/* Budget Card Hover Effect */
+.budget-card:hover {
+    transform: scale(1.03);
+    border-color: var(--color-primary);
+    box-shadow: 0 10px 30px rgba(0, 217, 255, 0.2);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 1024px) {
+    .budget-summary-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-lg);
+    }
+    .overall-progress {
+        width: 100%;
+        order: 3;
+    }
+    .add-budget-btn {
+        width: 100%;
+    }
+    .budget-cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .budget-cards-grid {
+        grid-template-columns: 1fr;
+    }
+}

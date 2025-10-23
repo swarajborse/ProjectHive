@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinFlow Tracker</title>
+    
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <script src="https://unpkg.com/lucide-static@latest/dist/lucide.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        // NEW THEME: Emerald, Sky, Yellow
+                        primary: colors.emerald,
+                        secondary: colors.sky,
+                        tertiary: colors.yellow,
+                        gray: colors.gray,
+                    },
+                    boxShadow: {
+                        // Updated shadow to match new primary color
+                        'lg-primary': '0 10px 15px -3px rgba(16, 185, 129, 0.3), 0 4px 6px -4px rgba(16, 185, 129, 0.3)',
+                    }
+                }
+            },
+            plugins: [
+                require('@tailwindcss/forms'),
+            ],
+        }
+    </script>
+    
+    <style>
+        body::-webkit-scrollbar { display: none; }
+        body { -ms-overflow-style: none; scrollbar-width: none; }
+        .main-container {
+            max-width: 640px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+        @media (min-width: 768px) {
+            .main-container {
+                padding-left: 2rem;
+                padding-right: 2rem;
+            }
+        }
+        /* Simple toggle styling */
+        input:checked + .dot { transform: translateX(100%); }
+        input[type="range"]::-webkit-slider-thumb {
+            @apply bg-primary-500;
+        }
+        input[type="range"]::-moz-range-thumb {
+            @apply bg-primary-500;
+        }
+    </style>
+</head>
+<body class="font-inter bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-200 transition-colors duration-200">
+    
+    <div class="relative min-h-screen pb-20">
+
+        <header class="sticky top-0 z-40 bg-white/80 dark:bg-gray-800/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-700 transition-colors">
+            <div class="main-container flex items-center justify-between h-16">
+                <div classs="flex items-center">
+                    <i data-lucide="line-chart" class="w-6 h-6 mr-2 text-primary-500"></i>
+                    <h1 id="page-title" class="text-xl font-bold text-gray-800 dark:text-gray-100">Dashboard</h1>
+                </div>
+
+                <div class="flex items-center space-x-2">
+                    <button id="date-prev" class="p-1 text-gray-500 hover:text-primary-500"><i data-lucide="chevron-left" class="w-5 h-5"></i></button>
+                    <h2 id="current-date" class="text-sm font-semibold text-primary-600 dark:text-primary-400">Today</h2>
+                    <button id="date-next" class="p-1 text-gray-500 hover:text-primary-500"><i data-lucide="chevron-right" class="w-5 h-5"></i></button>
+                </div>
+                
+                <label for="dark-mode-switch" class="flex items-center cursor-pointer">
+                    <div class="relative">
+                        <input type="checkbox" id="dark-mode-switch" class="sr-only">
+                        <div class="block bg-gray-200 dark:bg-gray-700 w-12 h-7 rounded-full"></div>
+                        <div class="dot absolute left-1 top-1 bg-white dark:bg-gray-900 w-5 h-5 rounded-full transition-transform"></div>
+                    </div>
+                    <i data-lucide="moon" class="w-5 h-5 ml-2 text-gray-500 dark:text-yellow-400"></i>
+                </label>
+            </div>
+        </header>
+
+        <main class="main-container py-6 space-y-6">
+
+            <div data-page="home" class="page-view space-y-6">
+                
+                <section class="bg-white p-4 rounded-xl shadow-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+                    <h3 class="font-bold text-gray-800 dark:text-gray-100 mb-3 flex items-center">
+                        <i data-lucide="pie-chart" class="w-5 h-5 text-primary-500 mr-2"></i> Today's Summary
+                    </h3>
+                    <div class="flex flex-col md:flex-row items-center gap-4">
+                        <div class="relative w-40 h-40 flex-shrink-0">
+                            <canvas id="calorieProgressChart"></canvas>
+                            <div class="absolute inset-0 flex flex-col items-center justify-center">
+                                <span id="dash-cal-consumed" class="text-3xl font-bold text-gray-800 dark:text-gray-100">0</span>
+                                <span class="text-sm text-gray-500">kcal</span>
+                            </div>
+                        </div>
+                        <div class="w-full space-y-2">
+                            <div class="flex justify-between items-baseline">
+                                <span class="text-sm font-medium text-gray-600 dark:text-gray-400">Goal:</span>
+                                <span id="dash-cal-goal" class="text-lg font-semibold text-gray-800 dark:text-gray-200">2,000 kcal</span>
+                            </div>
+                            <div class="flex justify-between items-baseline">
+                                <span class="text-sm font-medium text-gray-600 dark:text-gray-400">Activity:</span>
+                                <span id="dash-cal-burned" class="text-lg font-semibold text-secondary-600 dark:text-secondary-400">- 0 kcal</span>
+                            </div>
+                            <hr class="border-gray-200 dark:border-gray-700"/>
+                            <div class="flex justify-between items-baseline">
+                                <span class="text-sm font-bold text-gray-600 dark:text-gray-400">Remaining:</span>
+                                <span id="dash-cal-remaining" class="text-lg font-bold text-primary-600 dark:text-primary-400">2,000 kcal</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-3 gap-2 text-center mt-4 pt-4 border-t border-gray-200 dark:border-gray-700">
+                        <div>
+                            <p class="text-xs text-gray-500">Protein</p>
+                            <p id="dash-macro-p" class="font-bold text-gray-700 dark:text-gray-200">0g / 0g</p>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-500">Carbs</p>
+                            <p id="dash-macro-c" class="font-bold text-gray-700 dark:text-gray-200">0g / 0g</p>
+                        </div>
+                        <div>
+                            <p class="text-xs text-gray-500">Fat</p>
+                            <p id="dash-macro-f" class="font-bold text-gray-700 dark:text-gray-200">0g / 0g</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="bg-white p-4 rounded-xl shadow-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+                    <div class="flex justify-between items-center mb-2">
+                         <h3 class="font-bold text-gray-800 dark:text-gray-100 flex items-center">
+                            <i data-lucide="glass-water" class="w-5 h-5 text-secondary-500 mr-2"></i> Water Intake
+                        </h3>
+                        <span id="dash-water-total" class="font-bold text-secondary-600 dark:text-secondary-400">0 ml</span>
+                    </div>
+                    <div class="grid grid-cols-4 gap-2">
+                        <button data-amount="250" class="quick-add-water w-full bg-gray-100 text-gray-700 py-2 rounded-lg font-medium hover:bg-gray-200 transition-colors dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600">+250ml</button>
+                        <button data-amount="500" class="quick-add-water w-full bg-gray-100 text-gray-700 py-2 rounded-lg font-medium hover:bg-gray-200 transition-colors dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600">+500ml</button>
+                        <button data-amount="750" class="quick-add-water w-full bg-gray-100 text-gray-700 py-2 rounded-lg font-medium hover:bg-gray-200 transition-colors dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600">+750ml</button>
+                        <button data-amount="-250" class="quick-add-water w-full bg-gray-100 text-gray-700 py-2 rounded-lg font-medium hover:bg-gray-200 transition-colors dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600">Undo</button>
+                    </div>
+                </section>
+
+                <section class="bg-white p-4 rounded-xl shadow-lg border border-gray-200 mb-6 dark:bg-gray-800 dark:border-gray-700 space-y-3">
+                    <h3 class="font-bold text-gray-800 dark:text-white mb-3 flex items-center">
+                        <i data-lucide="download" class="w-5 h-5 text-tertiary-500 mr-2"></i> Data Export
+                    </h3>
+                    <button class="w-full bg-gray-100 text-gray-700 py-2 rounded-lg font-medium hover:bg-gray-200 transition-colors dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600">Export as CSV (Placeholder)</button>
+                    <button class="w-full bg-gray-100 text-gray-700 py-2 rounded-lg font-medium hover:bg-gray-200 transition-colors dark:bg-gray-700 dark:text-gray-300 dark:hover:bg-gray-600">Export as PDF (Placeholder)</button>
+                </section>
+
+                <section class="bg-primary-50 p-4 rounded-xl shadow-inner border border-primary-200 dark:bg-gray-700 dark:border-primary-500/30">
+                    <h3 class="font-bold text-primary-600 dark:text-primary-400 mb-2 flex items-center"><i data-lucide="crown" class="w-5 h-5 mr-2"></i> Go Premium!</h3>
+                    <p class="text-sm text-gray-700 dark:text-gray-300">Unlock AI photo logging, detailed micronutrient tracking, and expert reports.</p>
+                    <button class="mt-3 bg-primary-500 text-white py-2 px-4 rounded-lg text-sm font-semibold hover:bg-primary-600 transition-colors">Start Free Trial</button>
+                </section>
+            </div>
+
+            <div data-page="log" class="page-view hidden space-y-4">
+                <section id="log-breakfast" class="bg-white p-4 rounded-xl shadow-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+                    <div class="flex justify-between items-center mb-3">
+                        <h3 class="font-bold text-gray-800 dark:text-gray-100 text-lg">Breakfast</h3>
+                        <span id="log-breakfast-total" class="font-semibold text-gray-600 dark:text-gray-300">0 kcal</span>
+                    </div>
+                    <ul id="log-breakfast-list" class="space-y-3 mb-3"></ul>
+                    <button data-meal="breakfast" class="btn-add-food-to-meal w-full bg-gray-100 text-primary-600 dark:text-primary-400 py-2 rounded-lg font-medium hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 transition-colors">Add Food</button>
+                </section>
+                
+                <section id="log-lunch" class="bg-white p-4 rounded-xl shadow-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+                    <div class="flex justify-between items-center mb-3">
+                        <h3 class="font-bold text-gray-800 dark:text-gray-100 text-lg">Lunch</h3>
+                        <span id="log-lunch-total" class="font-semibold text-gray-600 dark:text-gray-300">0 kcal</span>
+                    </div>
+                    <ul id="log-lunch-list" class="space-y-3 mb-3"></ul>
+                    <button data-meal="lunch" class="btn-add-food-to-meal w-full bg-gray-100 text-primary-600 dark:text-primary-400 py-2 rounded-lg font-medium hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 transition-colors">Add Food</button>
+                </section>
+
+                <section id="log-dinner" class="bg-white p-4 rounded-xl shadow-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+                    <div class="flex justify-between items-center mb-3">
+                        <h3 class="font-bold text-gray-800 dark:text-gray-100 text-lg">Dinner</h3>
+                        <span id="log-dinner-total" class="font-semibold text-gray-600 dark:text-gray-300">0 kcal</span>
+                    </div>
+                    <ul id="log-dinner-list" class="space-y-3 mb-3"></ul>
+                    <button data-meal="dinner" class="btn-add-food-to-meal w-full bg-gray-100 text-primary-600 dark:text-primary-400 py-2 rounded-lg font-medium hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 transition-colors">Add Food</button>
+                </section>
+                
+                <section id="log-snacks" class="bg-white p-4 rounded-xl shadow-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+                    <div class="flex justify-between items-center mb-3">
+                        <h3 class="font-bold text-gray-800 dark:text-gray-100 text-lg">Snacks</h3>
+                        <span id="log-snacks-total" class="font-semibold text-gray-600 dark:text-gray-300">0 kcal</span>
+                    </div>
+                    <ul id="log-snacks-list" class="space-y-3 mb-3"></ul>
+                    <button data-meal="snacks" class="btn-add-food-to-meal w-full bg-gray-100 text-primary-600 dark:text-primary-400 py-2 rounded-lg font-medium hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 transition-colors">Add Food</button>
+                </section>
+            </div>
+
+            <div data-page="analytics" class="page-view hidden space-y-6">
+                <section class="bg-white p-4 rounded-xl shadow-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+                    <h3 class="font-bold text-gray-800 dark:text-gray-100 mb-3">Weekly Calorie Trend</h3>
+                    <div class="h-64"><canvas id="weeklyCalorieTrendChart"></canvas></div>
+                </section>
+                
+                <section class="bg-white p-4 rounded-xl shadow-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+                    <h3 class="font-bold text-gray-800 dark:text-gray-100 mb-3">Average Macro Split (Last 7 Days)</h3>
+                    <div class="h-64"><canvas id="macroDonutChart"></canvas></div>
+                </section>
+                
+                <section class="bg-white p-4 rounded-xl shadow-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+                    <h3 class="font-bold text-gray-800 dark:text-gray-100 mb-3">Daily Intake vs. Burn (Last 7 Days)</h3>
+                    <div class="h-64"><canvas id="intakeBurnChart"></canvas></div>
+                </section>
+
+                <section class="bg-white p-4 rounded-xl shadow-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+                    <h3 class="font-bold text-gray-800 dark:text-gray-100 mb-3">Weight Trend (Placeholder)</h3>
+                    <div class="h-64"><canvas id="weightTrendChart"></canvas></div>
+                </section>
+            </div>
+
+            <div data-page="goals" class="page-view hidden space-y-6">
+                <form id="goals-form">
+                    <section class="bg-white p-4 rounded-xl shadow-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+                        <label for="goal-calories" class="block font-bold text-gray-800 dark:text-gray-100 mb-2">Daily Calorie Goal</label>
+                        <input id="goal-calories" type="number" value="2000" class="w-full p-2 border border-gray-300 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+                    </section>
+                    
+                    <section class="bg-white p-4 mt-6 rounded-xl shadow-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700 space-y-3">
+                        <h3 class="font-bold text-gray-800 dark:text-gray-100 mb-2">Macronutrient Goals (grams)</h3>
+                        <div>
+                            <label for="goal-protein" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Protein (g)</label>
+                            <input id="goal-protein" type="number" value="150" class="w-full p-2 border border-gray-300 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+                        </div>
+                        <div>
+                            <label for="goal-carbs" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Carbs (g)</label>
+                            <input id="goal-carbs" type="number" value="200" class="w-full p-2 border border-gray-300 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+                        </div>
+                        <div>
+                            <label for="goal-fat" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Fat (g)</label>
+                            <input id="goal-fat" type="number" value="60" class="w-full p-2 border border-gray-300 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white">
+                        </div>
+                    </section>
+                    
+                    <button type="submit" class="w-full mt-6 bg-primary-500 text-white py-3 rounded-xl font-semibold hover:bg-primary-600 transition-colors">Save Goals</button>
+                </form>
+            </div>
+
+            <div data-page="activity" class="page-view hidden space-y-6">
+                <form id="log-activity-form">
+                    <section class="bg-white p-4 rounded-xl shadow-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700 space-y-3">
+                        <h3 class="font-bold text-gray-800 dark:text-gray-100 text-lg mb-2">Log Activity</h3>
+                        <input id="activity-name" type="text" placeholder="e.g., Running, 30 minutes" class="w-full p-2 border border-gray-300 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white" required>
+                        <input id="activity-calories" type="number" placeholder="Calories Burned" class="w-full p-2 border border-gray-300 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white" required>
+                        <button type="submit" class="w-full bg-secondary-500 text-white py-2 rounded-xl font-semibold hover:bg-secondary-600 transition-colors">Log Workout</button>
+                    </section>
+                </form>
+
+                <section class="bg-white p-4 rounded-xl shadow-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700">
+                    <h3 class="font-bold text-gray-800 dark:text-gray-100 text-lg mb-3">Recent Activity (Today)</h3>
+                    <ul id="activity-log-list" class="space-y-3">
+                        <p id="no-activity-msg" class="text-sm text-gray-500">No activity logged for today.</p>
+                    </ul>
+                </section>
+            </div>
+
+            <div data-page="profile" class="page-view hidden space-y-6">
+                <section class="bg-white p-4 rounded-xl shadow-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700 flex items-center space-x-4">
+                    <img src="https://ui-avatars.com/api/?name=Alex+Johnson&background=10b981&color=fff&rounded=true" alt="Profile Picture" class="w-16 h-16 rounded-full">
+                    <div>
+                        <h3 class="font-bold text-gray-800 dark:text-gray-100 text-lg">Alex Johnson</h3>
+                        <p class="text-gray-600 dark:text-gray-400">alex.j@example.com</p>
+                    </div>
+                </section>
+                
+                <section class="bg-white p-4 rounded-xl shadow-lg border border-gray-200 dark:bg-gray-800 dark:border-gray-700 space-y-3">
+                    <h3 class="font-bold text-gray-800 dark:text-gray-100 mb-2">My Foods Database</h3>
+                    <p class="text-sm text-gray-600 dark:text-gray-400">Add your own foods here to log them easily.</p>
+                    <button id="btn-show-add-food-db" class="w-full bg-gray-100 text-primary-600 dark:text-primary-400 py-2 rounded-lg font-medium hover:bg-gray-200 dark:bg-gray-700 dark:hover:bg-gray-600 transition-colors">Add New Food</button>
+                    <div id="food-db-list" class="space-y-2 max-h-60 overflow-y-auto"></div>
+                </section>
+                
+                <button class="w-full bg-red-500 text-white py-2 rounded-xl font-semibold hover:bg-red-600 transition-colors">Log Out (Placeholder)</button>
+            </div>
+
+        </main>
+
+        <button id="fab" class="fixed bottom-20 right-8 md:right-[calc(50vw-270px)] bg-primary-500 text-white p-4 rounded-full shadow-lg shadow-primary-500/50 hover:bg-primary-600 transition-colors z-30">
+            <i data-lucide="plus" class="w-6 h-6"></i>
+        </button>
+
+        <nav class="fixed bottom-0 left-0 right-0 z-30 bg-white border-t border-gray-200 transition-colors dark:bg-gray-800 dark:border-gray-700">
+            <div class="flex justify-around items-center main-container h-16">
+                <button data-target="home" class="nav-item text-primary-500 flex flex-col items-center text-xs font-medium focus:outline-none">
+                    <i data-lucide="home" class="w-6 h-6"></i><span class="mt-1">Home</span>
+                </button>
+                <button data-target="log" class="nav-item text-gray-500 flex flex-col items-center text-xs font-medium focus:outline-none hover:text-primary-500 dark:text-gray-400 dark:hover:text-primary-500">
+                    <i data-lucide="book-open" class="w-6 h-6"></i><span class="mt-1">Log</span>
+                </button>
+                <button data-target="analytics" class="nav-item text-gray-500 flex flex-col items-center text-xs font-medium focus:outline-none hover:text-primary-500 dark:text-gray-400 dark:hover:text-primary-500">
+                    <i data-lucide="bar-chart-3" class="w-6 h-6"></i><span class="mt-1">Analytics</span>
+                </button>
+                <button data-target="goals" class="nav-item text-gray-500 flex flex-col items-center text-xs font-medium focus:outline-none hover:text-primary-500 dark:text-gray-400 dark:hover:text-primary-500">
+                    <i data-lucide="target" class="w-6 h-6"></i><span class="mt-1">Goals</span>
+                </button>
+                <button data-target="activity" class="nav-item text-gray-500 flex flex-col items-center text-xs font-medium focus:outline-none hover:text-primary-500 dark:text-gray-400 dark:hover:text-primary-500">
+                    <i data-lucide="activity" class="w-6 h-6"></i><span class="mt-1">Activity</span>
+                </button>
+                <button data-target="profile" class="nav-item text-gray-500 flex flex-col items-center text-xs font-medium focus:outline-none hover:text-primary-500 dark:text-gray-400 dark:hover:text-primary-500">
+                    <i data-lucide="user-circle" class="w-6 h-6"></i><span class="mt-1">Profile</span>
+                </button>
+            </div>
+        </nav>
+    </div>
+
+    <div id="quickAddModal" class="fixed inset-0 bg-gray-900/70 z-50 flex items-center justify-center hidden" onclick="app.ui.closeModal('quickAddModal')">
+        <div class="bg-white p-6 rounded-xl shadow-2xl w-11/12 max-w-sm dark:bg-gray-800" onclick="event.stopPropagation()">
+            <h3 class="text-xl font-bold mb-4 text-gray-800 dark:text-white">Quick Add</h3>
+            <div class="space-y-4">
+                <button id="btn-quick-add-food" class="w-full text-center py-3 border border-primary-500 text-primary-600 rounded-xl font-medium hover:bg-primary-500 hover:text-white transition-colors dark:text-primary-400 dark:border-primary-400 dark:hover:bg-primary-400 dark:hover:text-white">Log Food</button>
+                <button id="btn-quick-add-workout" class="w-full text-center py-3 border border-secondary-500 text-secondary-600 rounded-xl font-medium hover:bg-secondary-500 hover:text-white transition-colors dark:text-secondary-400 dark:border-secondary-400 dark:hover:bg-secondary-400 dark:hover:text-white">Log Workout</button>
+            </div>
+            <button class="mt-4 w-full text-center py-2 text-gray-500 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-100" onclick="app.ui.closeModal('quickAddModal')">Close</button>
+        </div>
+    </div>
+    
+    <div id="logFoodModal" class="fixed inset-0 bg-gray-900/70 z-50 flex items-center justify-center hidden" onclick="app.ui.closeModal('logFoodModal')">
+        <div class="bg-white p-6 rounded-xl shadow-2xl w-11/12 max-w-md dark:bg-gray-800" onclick="event.stopPropagation()">
+            <h3 id="log-food-modal-title" class="text-xl font-bold mb-4 text-gray-800 dark:text-white">Log Food</h3>
+            <input type="hidden" id="log-food-meal-name" />
+            
+            <div class="relative">
+                <input type="text" id="log-food-search" placeholder="Search your foods..." class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white focus:ring-primary-500 focus:border-primary-500">
+                <i data-lucide="search" class="w-5 h-5 absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"></i>
+            </div>
+
+            <div id="log-food-search-results" class="mt-3 max-h-60 overflow-y-auto space-y-2"></div>
+            
+            <button class="mt-4 w-full text-center py-2 text-gray-500 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-100" onclick="app.ui.closeModal('logFoodModal')">Cancel</button>
+        </div>
+    </div>
+
+    <div id="addFoodToDBModal" class="fixed inset-0 bg-gray-900/70 z-50 flex items-center justify-center hidden" onclick="app.ui.closeModal('addFoodToDBModal')">
+        <div class="bg-white p-6 rounded-xl shadow-2xl w-11/12 max-w-lg dark:bg-gray-800" onclick="event.stopPropagation()">
+            <h3 class="text-xl font-bold mb-4 text-gray-800 dark:text-white">Add Custom Food</h3>
+            <form id="add-food-db-form" class="space-y-3">
+                <input type="text" id="db-food-name" placeholder="Food Name (e.g., Apple)" class="w-full p-2 border border-gray-300 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white" required>
+                
+                <div class="grid grid-cols-2 gap-2">
+                    <input type="number" id="db-food-serving-size" placeholder="Serving Size" class="w-full p-2 border border-gray-300 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white" required>
+                    <input type="text" id="db-food-serving-unit" placeholder="Unit (e.g., g, ml, 1 slice)" class="w-full p-2 border border-gray-300 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white" required>
+                </div>
+
+                <div class="grid grid-cols-2 gap-2">
+                    <input type="number" id="db-food-calories" placeholder="Calories" class="w-full p-2 border border-gray-300 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white" required>
+                    <input type="number" id="db-food-protein" placeholder="Protein (g)" class="w-full p-2 border border-gray-300 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white" required>
+                </div>
+                 <div class="grid grid-cols-2 gap-2">
+                    <input type="number" id="db-food-carbs" placeholder="Carbs (g)" class="w-full p-2 border border-gray-300 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white" required>
+                    <input type="number" id="db-food-fat" placeholder="Fat (g)" class="w-full p-2 border border-gray-300 rounded-lg dark:bg-gray-700 dark:border-gray-600 dark:text-white" required>
+                </div>
+                
+                <button type="submit" class="w-full bg-primary-500 text-white py-2 rounded-xl font-semibold hover:bg-primary-600 transition-colors">Save Food</button>
+            </form>
+            <button class="mt-4 w-full text-center py-2 text-gray-500 hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-100" onclick="app.ui.closeModal('addFoodToDBModal')">Cancel</button>
+        </div>
+    </div>
+
+
+    <script>
+        // Global object to manage the app state and logic
+        const app = {
+            state: {
+                selectedDate: null,
+                goals: {},
+                foodDB: [],
+                dailyLogs: {},
+                activeChartInstances: {},
+                currentPage: 'home',
+            },
+
+            // --- DATABASE (localStorage) ---
+            db: {
+                load() {
+                    app.state.goals = JSON.parse(localStorage.getItem('finflow_goals')) || { calories: 2000, protein: 150, carbs: 200, fat: 60 };
+                    app.state.foodDB = JSON.parse(localStorage.getItem('finflow_foodDB')) || [];
+                    app.state.dailyLogs = JSON.parse(localStorage.getItem('finflow_dailyLogs')) || {};
+                },
+                save() {
+                    localStorage.setItem('finflow_goals', JSON.stringify(app.state.goals));
+                    localStorage.setItem('finflow_foodDB', JSON.stringify(app.state.foodDB));
+                    localStorage.setItem('finflow_dailyLogs', JSON.stringify(app.state.dailyLogs));
+                },
+                getLog(dateKey) {
+                    if (!app.state.dailyLogs[dateKey]) {
+                        app.state.dailyLogs[dateKey] = {
+                            food: { breakfast: [], lunch: [], dinner: [], snacks: [] },
+                            activity: [],
+                            water: 0
+                        };
+                    }
+                    return app.state.dailyLogs[dateKey];
+                },
+                addFoodToLog(dateKey, meal, foodEntry) {
+                    const log = this.getLog(dateKey);
+                    log.food[meal].push(foodEntry);
+                    this.save();
+                },
+                removeFoodFromLog(dateKey, meal, entryId) {
+                    const log = this.getLog(dateKey);
+                    log.food[meal] = log.food[meal].filter(entry => entry.id !== entryId);
+                    this.save();
+                },
+                addActivityToLog(dateKey, activityEntry) {
+                    const log = this.getLog(dateKey);
+                    log.activity.push(activityEntry);
+                    this.save();
+                },
+                removeActivityFromLog(dateKey, entryId) {
+                    const log = this.getLog(dateKey);
+                    log.activity = log.activity.filter(entry => entry.id !== entryId);
+                    this.save();
+                },
+                updateWater(dateKey, amount) {
+                    const log = this.getLog(dateKey);
+                    log.water += amount;
+                    if (log.water < 0) log.water = 0;
+                    this.save();
+                },
+                addFoodToDB(food) {
+                    app.state.foodDB.push(food);
+                    this.save();
+                },
+                removeFoodFromDB(foodId) {
+                    app.state.foodDB = app.state.foodDB.filter(food => food.id !== foodId);
+                    this.save();
+                }
+            },
+
+            // --- CORE LOGIC ---
+            logic: {
+                initDate() {
+                    app.state.selectedDate = new Date();
+                },
+                getSelectedDateKey() {
+                    return app.state.selectedDate.toISOString().split('T')[0];
+                },
+                formatDateForHeader(date) {
+                    const today = new Date();
+                    const yesterday = new Date(today);
+                    yesterday.setDate(today.getDate() - 1);
+                    if (date.toDateString() === today.toDateString()) return 'Today';
+                    if (date.toDateString() === yesterday.toDateString()) return 'Yesterday';
+                    return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+                },
+                changeDay(days) {
+                    app.state.selectedDate.setDate(app.state.selectedDate.getDate() + days);
+                    app.ui.updateAllUI();
+                },
+                calculateDayTotals(dateKey) {
+                    const log = app.db.getLog(dateKey);
+                    const totals = { calories: 0, protein: 0, carbs: 0, fat: 0, caloriesBurned: 0 };
+                    for (const meal in log.food) {
+                        for (const entry of log.food[meal]) {
+                            totals.calories += entry.calories;
+                            totals.protein += entry.protein;
+                            totals.carbs += entry.carbs;
+                            totals.fat += entry.fat;
+                        }
+                    }
+                    for (const entry of log.activity) {
+                        totals.caloriesBurned += entry.calories;
+                    }
+                    return totals;
+                }
+            },
+
+            // --- UI (RENDERING & EVENTS) ---
+            ui: {
+                initEventListeners() {
+                    document.getElementById('dark-mode-switch').addEventListener('change', this.toggleTheme);
+                    document.querySelectorAll('.nav-item').forEach(btn => {
+                        btn.addEventListener('click', () => this.navigateToPage(btn.dataset.target));
+                    });
+                    document.getElementById('date-prev').addEventListener('click', () => app.logic.changeDay(-1));
+                    document.getElementById('date-next').addEventListener('click', () => app.logic.changeDay(1));
+                    document.getElementById('fab').addEventListener('click', () => this.showModal('quickAddModal'));
+                    document.getElementById('btn-quick-add-food').addEventListener('click', () => {
+                        this.closeModal('quickAddModal');
+                        this.navigateToPage('log');
+                        this.showLogFoodModal('breakfast');
+                    });
+                    document.getElementById('btn-quick-add-workout').addEventListener('click', () => {
+                        this.closeModal('quickAddModal');
+                        this.navigateToPage('activity');
+                    });
+                    document.querySelectorAll('.quick-add-water').forEach(btn => {
+                        btn.addEventListener('click', () => {
+                            const amount = parseInt(btn.dataset.amount, 10);
+                            app.db.updateWater(app.logic.getSelectedDateKey(), amount);
+                            this.renderDashboard();
+                        });
+                    });
+                    document.querySelectorAll('.btn-add-food-to-meal').forEach(btn => {
+                        btn.addEventListener('click', () => this.showLogFoodModal(btn.dataset.meal));
+                    });
+                    document.getElementById('log-food-search').addEventListener('input', this.renderLogFoodSearchResults);
+                    document.getElementById('goals-form').addEventListener('submit', (e) => {
+                        e.preventDefault();
+                        app.state.goals.calories = parseInt(document.getElementById('goal-calories').value, 10);
+                        app.state.goals.protein = parseInt(document.getElementById('goal-protein').value, 10);
+                        app.state.goals.carbs = parseInt(document.getElementById('goal-carbs').value, 10);
+                        app.state.goals.fat = parseInt(document.getElementById('goal-fat').value, 10);
+                        app.db.save();
+                        this.showToast('Goals Updated!');
+                        this.updateAllUI();
+                    });
+                    document.getElementById('log-activity-form').addEventListener('submit', (e) => {
+                        e.preventDefault();
+                        const name = document.getElementById('activity-name').value;
+                        const calories = parseInt(document.getElementById('activity-calories').value, 10);
+                        if (name && calories > 0) {
+                            const entry = { id: `act_${new Date().getTime()}`, name: name, calories: calories };
+                            app.db.addActivityToLog(app.logic.getSelectedDateKey(), entry);
+                            this.renderActivityLog();
+                            this.renderDashboard();
+                            document.getElementById('log-activity-form').reset();
+                        }
+                    });
+                    document.getElementById('btn-show-add-food-db').addEventListener('click', () => this.showModal('addFoodToDBModal'));
+                    document.getElementById('add-food-db-form').addEventListener('submit', (e) => {
+                        e.preventDefault();
+                        const food = {
+                            id: `food_${new Date().getTime()}`,
+                            name: document.getElementById('db-food-name').value,
+                            servingSize: parseFloat(document.getElementById('db-food-serving-size').value),
+                            servingUnit: document.getElementById('db-food-serving-unit').value,
+                            calories: parseInt(document.getElementById('db-food-calories').value, 10),
+                            protein: parseInt(document.getElementById('db-food-protein').value, 10),
+                            carbs: parseInt(document.getElementById('db-food-carbs').value, 10),
+                            fat: parseInt(document.getElementById('db-food-fat').value, 10),
+                        };
+                        app.db.addFoodToDB(food);
+                        this.renderFoodDB();
+                        this.closeModal('addFoodToDBModal');
+                        document.getElementById('add-food-db-form').reset();
+                    });
+                },
+
+                updateAllUI() {
+                    document.getElementById('current-date').textContent = app.logic.formatDateForHeader(app.state.selectedDate);
+                    switch(app.state.currentPage) {
+                        case 'home': this.renderDashboard(); break;
+                        case 'log': this.renderLogPage(); break;
+                        case 'analytics': this.renderAnalyticsPage(); break;
+                        case 'goals': this.renderGoalsPage(); break;
+                        case 'activity': this.renderActivityLog(); break;
+                        case 'profile': this.renderFoodDB(); break;
+                    }
+                },
+                
+                renderDashboard() {
+                    const dateKey = app.logic.getSelectedDateKey();
+                    const totals = app.logic.calculateDayTotals(dateKey);
+                    const log = app.db.getLog(dateKey);
+                    const goals = app.state.goals;
+                    const remaining = goals.calories - totals.calories + totals.caloriesBurned;
+                    const consumed = totals.calories;
+                    document.getElementById('dash-cal-consumed').textContent = consumed;
+                    document.getElementById('dash-cal-goal').textContent = `${goals.calories} kcal`;
+                    document.getElementById('dash-cal-burned').textContent = `- ${totals.caloriesBurned} kcal`;
+                    document.getElementById('dash-cal-remaining').textContent = `${remaining} kcal`;
+                    document.getElementById('dash-macro-p').textContent = `${Math.round(totals.protein)}g / ${goals.protein}g`;
+                    document.getElementById('dash-macro-c').textContent = `${Math.round(totals.carbs)}g / ${goals.carbs}g`;
+                    document.getElementById('dash-macro-f').textContent = `${Math.round(totals.fat)}g / ${goals.fat}g`;
+                    document.getElementById('dash-water-total').textContent = `${log.water} ml`;
+                    this.renderCalorieProgressChart(consumed, Math.max(0, remaining - totals.caloriesBurned));
+                },
+
+                renderLogPage() {
+                    const dateKey = app.logic.getSelectedDateKey();
+                    const log = app.db.getLog(dateKey);
+                    for (const meal of ['breakfast', 'lunch', 'dinner', 'snacks']) {
+                        const listEl = document.getElementById(`log-${meal}-list`);
+                        const totalEl = document.getElementById(`log-${meal}-total`);
+                        listEl.innerHTML = '';
+                        let mealTotal = 0;
+                        if (log.food[meal].length === 0) {
+                            listEl.innerHTML = `<li class="text-sm text-gray-500 italic">No food logged.</li>`;
+                        }
+                        for (const entry of log.food[meal]) {
+                            mealTotal += entry.calories;
+                            const li = document.createElement('li');
+                            li.className = 'flex justify-between items-center';
+                            li.innerHTML = `
+                                <div>
+                                    <p class="font-medium text-gray-700 dark:text-gray-200">${entry.name}</p>
+                                    <p class="text-sm text-gray-500 dark:text-gray-400">${entry.calories} kcal (${entry.servings} x ${entry.servingUnit})</p>
+                                </div>
+                                <button class="btn-remove-food text-gray-400 hover:text-red-500" data-id="${entry.id}" data-meal="${meal}">
+                                    <i data-lucide="trash-2" class="w-5 h-5"></i>
+                                </button>
+                            `;
+                            listEl.appendChild(li);
+                        }
+                        totalEl.textContent = `${mealTotal} kcal`;
+                    }
+                    document.querySelectorAll('.btn-remove-food').forEach(btn => {
+                        btn.onclick = () => {
+                            app.db.removeFoodFromLog(dateKey, btn.dataset.meal, btn.dataset.id);
+                            this.renderLogPage();
+                            this.renderDashboard();
+                        };
+                    });
+                    lucide.createIcons();
+                },
+
+                renderAnalyticsPage() {
+                    this.renderWeeklyCalorieTrendChart();
+                    this.renderMacroDonutChart();
+                    this.renderIntakeBurnChart();
+                    this.renderWeightTrendChart();
+                },
+                
+                renderGoalsPage() {
+                    const goals = app.state.goals;
+                    document.getElementById('goal-calories').value = goals.calories;
+                    document.getElementById('goal-protein').value = goals.protein;
+                    document.getElementById('goal-carbs').value = goals.carbs;
+                    document.getElementById('goal-fat').value = goals.fat;
+                },
+                
+                renderActivityLog() {
+                    const dateKey = app.logic.getSelectedDateKey();
+                    const log = app.db.getLog(dateKey);
+                    const listEl = document.getElementById('activity-log-list');
+                    const msgEl = document.getElementById('no-activity-msg');
+                    listEl.innerHTML = '';
+                    if (log.activity.length === 0) {
+                        msgEl.classList.remove('hidden');
+                        return;
+                    }
+                    msgEl.classList.add('hidden');
+                    for (const entry of log.activity) {
+                        const li = document.createElement('li');
+                        li.className = 'flex justify-between items-center';
+                        li.innerHTML = `
+                            <div>
+                                <p class="font-medium text-gray-700 dark:text-gray-200">${entry.name}</p>
+                            </div>
+                            <div class="flex items-center space-x-2">
+                                <span class="font-medium text-tertiary-600 dark:text-tertiary-400">${entry.calories} kcal</span>
+                                <button class="btn-remove-activity text-gray-400 hover:text-red-500" data-id="${entry.id}">
+                                    <i data-lucide="trash-2" class="w-5 h-5"></i>
+                                </button>
+                            </div>
+                        `;
+                        listEl.appendChild(li);
+                    }
+                    document.querySelectorAll('.btn-remove-activity').forEach(btn => {
+                        btn.onclick = () => {
+                            app.db.removeActivityFromLog(dateKey, btn.dataset.id);
+                            this.renderActivityLog();
+                            this.renderDashboard();
+                        };
+                    });
+                    lucide.createIcons();
+                },
+                
+                renderFoodDB() {
+                    const listEl = document.getElementById('food-db-list');
+                    listEl.innerHTML = '';
+                    if (app.state.foodDB.length === 0) {
+                        listEl.innerHTML = `<p class="text-sm text-gray-500 italic">No custom foods added yet.</p>`;
+                        return;
+                    }
+                    for (const food of app.state.foodDB) {
+                        const div = document.createElement('div');
+                        div.className = 'p-2 bg-gray-100 dark:bg-gray-700 rounded-lg flex justify-between items-center';
+                        div.innerHTML = `
+                            <div>
+                                <p class="font-medium text-gray-700 dark:text-gray-200">${food.name}</p>
+                                <p class="text-sm text-gray-500 dark:text-gray-400">${food.calories} kcal per ${food.servingSize} ${food.servingUnit}</p>
+                            </div>
+                            <button class="btn-remove-db-food text-gray-400 hover:text-red-500" data-id="${food.id}">
+                                <i data-lucide="trash-2" class="w-5 h-5"></i>
+                            </button>
+                        `;
+                        listEl.appendChild(div);
+                    }
+                    document.querySelectorAll('.btn-remove-db-food').forEach(btn => {
+                        btn.onclick = () => {
+                            app.db.removeFoodFromDB(btn.dataset.id);
+                            this.renderFoodDB();
+                        };
+                    });
+                    lucide.createIcons();
+                },
+                
+                showModal(id) {
+                    document.getElementById(id).classList.remove('hidden');
+                    document.body.style.overflow = 'hidden';
+                },
+                closeModal(id) {
+                    document.getElementById(id).classList.add('hidden');
+                    document.body.style.overflow = '';
+                },
+
+                showLogFoodModal(meal) {
+                    document.getElementById('log-food-meal-name').value = meal;
+                    document.getElementById('log-food-modal-title').textContent = `Add to ${meal.charAt(0).toUpperCase() + meal.slice(1)}`;
+                    this.renderLogFoodSearchResults();
+                    this.showModal('logFoodModal');
+                },
+
+                renderLogFoodSearchResults() {
+                    const query = document.getElementById('log-food-search').value.toLowerCase();
+                    const resultsEl = document.getElementById('log-food-search-results');
+                    resultsEl.innerHTML = '';
+                    const results = app.state.foodDB.filter(food => food.name.toLowerCase().includes(query));
+                    if (results.length === 0) {
+                        resultsEl.innerHTML = `<p class="text-sm text-gray-500 italic text-center">No foods found. Add some in the Profile tab!</p>`;
+                        return;
+                    }
+                    for (const food of results) {
+                        const div = document.createElement('div');
+                        div.className = 'p-3 bg-gray-50 dark:bg-gray-700 rounded-lg flex justify-between items-center';
+                        div.innerHTML = `
+                            <div>
+                                <p class="font-medium text-gray-700 dark:text-gray-200">${food.name}</p>
+                                <p class="text-sm text-gray-500 dark:text-gray-400">${food.calories} kcal (${food.servingSize} ${food.servingUnit})</p>
+                            </div>
+                            <form class="flex space-x-2 items-center btn-log-food-form" data-food-id="${food.id}">
+                                <input type="number" value="1" step="0.25" class="w-16 p-1 text-sm border-gray-300 rounded dark:bg-gray-600 dark:border-gray-500" required>
+                                <button type="submit" class="p-1 bg-primary-500 text-white rounded-full hover:bg-primary-600">
+                                    <i data-lucide="plus" class="w-4 h-4"></i>
+                                </button>
+                            </form>
+                        `;
+                        resultsEl.appendChild(div);
+                    }
+                    document.querySelectorAll('.btn-log-food-form').forEach(form => {
+                        form.onsubmit = (e) => {
+                            e.preventDefault();
+                            const foodId = form.dataset.foodId;
+                            const servings = parseFloat(form.querySelector('input').value);
+                            const food = app.state.foodDB.find(f => f.id === foodId);
+                            const meal = document.getElementById('log-food-meal-name').value;
+                            const entry = {
+                                id: `entry_${new Date().getTime()}`,
+                                foodId: food.id,
+                                name: food.name,
+                                servings: servings,
+                                servingUnit: food.servingUnit,
+                                calories: Math.round(food.calories * servings),
+                                protein: Math.round(food.protein * servings),
+                                carbs: Math.round(food.carbs * servings),
+                                fat: Math.round(food.fat * servings),
+                            };
+                            app.db.addFoodToLog(app.logic.getSelectedDateKey(), meal, entry);
+                            this.closeModal('logFoodModal');
+                            this.renderLogPage();
+                            this.renderDashboard();
+                        };
+                    });
+                    lucide.createIcons();
+                },
+
+                navigateToPage(target) {
+                    app.state.currentPage = target;
+                    document.querySelectorAll('.page-view').forEach(view => view.classList.add('hidden'));
+                    const targetView = document.querySelector(`[data-page="${target}"]`);
+                    if (targetView) targetView.classList.remove('hidden');
+                    document.querySelectorAll('.nav-item').forEach(item => {
+                        const isTarget = item.dataset.target === target;
+                        item.classList.toggle('text-primary-500', isTarget);
+                        item.classList.toggle('text-gray-500', !isTarget);
+                        item.classList.toggle('dark:text-gray-400', !isTarget);
+                    });
+                    const titleMap = { 'home': 'Dashboard', 'log': 'Food Log', 'analytics': 'Analytics', 'goals': 'Goals', 'activity': 'Activity', 'profile': 'Profile' };
+                    document.getElementById('page-title').textContent = titleMap[target] || 'FinFlow Tracker';
+                    this.updateAllUI();
+                    lucide.createIcons();
+                },
+
+                toggleTheme() {
+                    const isDarkMode = document.body.classList.toggle('dark');
+                    localStorage.setItem('theme', isDarkMode ? 'dark' : 'light');
+                    document.getElementById('dark-mode-switch').checked = isDarkMode;
+                    app.ui.updateAllUI(); // Re-renders charts with new colors
+                },
+                loadTheme() {
+                    const savedTheme = localStorage.getItem('theme') || 'light';
+                    if (savedTheme === 'dark') {
+                        document.body.classList.add('dark');
+                        document.getElementById('dark-mode-switch').checked = true;
+                    } else {
+                        document.body.classList.remove('dark');
+                        document.getElementById('dark-mode-switch').checked = false;
+                    }
+                },
+                
+                showToast(message) {
+                    const toast = document.createElement('div');
+                    toast.className = 'fixed bottom-24 left-1/2 -translate-x-1/2 bg-gray-800 text-white px-4 py-2 rounded-lg shadow-lg z-50';
+                    toast.textContent = message;
+                    document.body.appendChild(toast);
+                    setTimeout(() => { toast.remove(); }, 2000);
+                },
+
+                // --- Chart.js ---
+                
+                getChartColors() {
+                    const isDark = document.body.classList.contains('dark');
+                    return {
+                        // NEW THEME: Emerald, Sky, Yellow
+                        primary: isDark ? '#34d399' : '#10b981',   // emerald-400 / emerald-500
+                        secondary: isDark ? '#7dd3fc' : '#38bdf8', // sky-300 / sky-400
+                        tertiary: isDark ? '#fde047' : '#facc15',  // yellow-300 / yellow-400
+                        background: isDark ? '#374151' : '#f9fafb', // gray-700 / gray-50
+                        text: isDark ? '#d1d5db' : '#374151',       // gray-300 / gray-700
+                        line: isDark ? '#4b5563' : '#e5e7eb',       // gray-600 / gray-200
+                    };
+                },
+                
+                baseChartConfig(type, data, options) {
+                    const colors = this.getChartColors();
+                    return {
+                        type: type, data: data,
+                        options: {
+                            responsive: true, maintainAspectRatio: false,
+                            plugins: { legend: { labels: { color: colors.text, font: { family: 'Inter' } } } },
+                            scales: {
+                                x: { grid: { color: colors.line, borderColor: colors.line }, ticks: { color: colors.text } },
+                                y: { grid: { color: colors.line, borderColor: colors.line }, ticks: { color: colors.text } }
+                            },
+                            ...options
+                        }
+                    };
+                },
+                
+                destroyChart(chartId) {
+                    if (app.state.activeChartInstances[chartId]) {
+                        app.state.activeChartInstances[chartId].destroy();
+                    }
+                },
+                
+                renderCalorieProgressChart(consumed, remaining) {
+                    const ctx = document.getElementById('calorieProgressChart');
+                    if (!ctx) return;
+                    this.destroyChart('calorieProgressChart');
+                    const colors = this.getChartColors();
+                    app.state.activeChartInstances.calorieProgressChart = new Chart(ctx, this.baseChartConfig('doughnut', {
+                        labels: ['Consumed', 'Remaining'],
+                        datasets: [{
+                            data: [consumed, Math.max(0, remaining)],
+                            backgroundColor: [colors.primary, colors.background],
+                            borderWidth: 0,
+                        }]
+                    }, {
+                        cutout: '80%',
+                        plugins: { legend: { display: false }, tooltip: { enabled: false } }
+                    }));
+                },
+                
+                renderWeeklyCalorieTrendChart() {
+                    const ctx = document.getElementById('weeklyCalorieTrendChart');
+                    if (!ctx) return;
+                    this.destroyChart('weeklyCalorieTrendChart');
+                    const colors = this.getChartColors();
+                    const labels = [];
+                    const data = [];
+                    for (let i = 6; i >= 0; i--) {
+                        const date = new Date();
+                        date.setDate(date.getDate() - i);
+                        const dateKey = date.toISOString().split('T')[0];
+                        labels.push(date.toLocaleDateString('en-US', { weekday: 'short' }));
+                        const totals = app.logic.calculateDayTotals(dateKey);
+                        data.push(totals.calories);
+                    }
+                    app.state.activeChartInstances.weeklyCalorieTrendChart = new Chart(ctx, this.baseChartConfig('line', {
+                        labels: labels,
+                        datasets: [{
+                            label: 'Calorie Intake (kcal)',
+                            data: data,
+                            borderColor: colors.primary,
+                            backgroundColor: colors.primary + '33',
+                            tension: 0.4,
+                            fill: true,
+                        }, {
+                            label: 'Goal',
+                            data: labels.map(() => app.state.goals.calories),
+                            borderColor: colors.line,
+                            borderDash: [5, 5],
+                            pointRadius: 0,
+                        }]
+                    }, { scales: { y: { beginAtZero: false } } }));
+                },
+                
+                renderMacroDonutChart() {
+                    const ctx = document.getElementById('macroDonutChart');
+                    if (!ctx) return;
+                    this.destroyChart('macroDonutChart');
+                    const colors = this.getChartColors();
+                    let totalP = 0, totalC = 0, totalF = 0;
+                    for (let i = 6; i >= 0; i--) {
+                        const date = new Date();
+                        date.setDate(date.getDate() - i);
+                        const dateKey = date.toISOString().split('T')[0];
+                        const totals = app.logic.calculateDayTotals(dateKey);
+                        totalP += totals.protein;
+                        totalC += totals.carbs;
+                        totalF += totals.fat;
+                    }
+                    const totalGrams = totalP + totalC + totalF;
+                    const data = (totalGrams === 0) ? [33, 34, 33] : [ (totalP / totalGrams) * 100, (totalC / totalGrams) * 100, (totalF / totalGrams) * 100 ];
+                    app.state.activeChartInstances.macroDonutChart = new Chart(ctx, this.baseChartConfig('doughnut', {
+                        labels: ['Protein', 'Carbs', 'Fat'],
+                        datasets: [{
+                            data: data,
+                            backgroundColor: [colors.primary, colors.secondary, colors.tertiary],
+                            hoverOffset: 4
+                        }]
+                    }, {
+                        cutout: '70%',
+                        plugins: { legend: { position: 'right' } }
+                    }));
+                },
+                
+                renderIntakeBurnChart() {
+                    const ctx = document.getElementById('intakeBurnChart');
+                    if (!ctx) return;
+                    this.destroyChart('intakeBurnChart');
+                    const colors = this.getChartColors();
+                    const labels = [];
+                    const intakeData = [];
+                    const burnData = [];
+                    for (let i = 6; i >= 0; i--) {
+                        const date = new Date();
+                        date.setDate(date.getDate() - i);
+                        const dateKey = date.toISOString().split('T')[0];
+                        labels.push(date.toLocaleDateString('en-US', { weekday: 'short' }));
+                        const totals = app.logic.calculateDayTotals(dateKey);
+                        intakeData.push(totals.calories);
+                        burnData.push(totals.caloriesBurned);
+                    }
+                    app.state.activeChartInstances.intakeBurnChart = new Chart(ctx, this.baseChartConfig('bar', {
+                        labels: labels,
+                        datasets: [
+                            { label: 'Intake (kcal)', data: intakeData, backgroundColor: colors.primary },
+                            { label: 'Burn (kcal)', data: burnData, backgroundColor: colors.secondary },
+                        ]
+                    }, { scales: { y: { beginAtZero: false } } }));
+                },
+
+                renderWeightTrendChart() {
+                    const ctx = document.getElementById('weightTrendChart');
+                    if (!ctx) return;
+                    this.destroyChart('weightTrendChart');
+                    const colors = this.getChartColors();
+                    const DUMMY_DATA = {
+                        labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4', 'Week 5'],
+                        data: [80.5, 80.1, 79.8, 79.2, 78.9],
+                    };
+                    app.state.activeChartInstances.weightTrendChart = new Chart(ctx, this.baseChartConfig('line', {
+                        labels: DUMMY_DATA.labels,
+                        datasets: [{
+                            label: 'Weight (kg)',
+                            data: DUMMY_DATA.data,
+                            borderColor: colors.tertiary,
+                            backgroundColor: colors.tertiary + '33',
+                            tension: 0.3,
+                            fill: true,
+                        }]
+                    }, { scales: { y: { beginAtZero: false } } }));
+                },
+            },
+
+            // --- INITIALIZATION ---
+            init() {
+                app.ui.loadTheme();
+                app.logic.initDate();
+                app.db.load();
+                app.ui.initEventListeners();
+                app.ui.navigateToPage('home'); // Load home page
+                lucide.createIcons();
+            }
+        };
+
+        // Run the app
+        window.onload = app.init;
+    </script>
+</body>
+</html>
