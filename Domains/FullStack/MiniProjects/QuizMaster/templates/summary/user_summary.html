@@ -1,0 +1,92 @@
+{% extends 'layout.html' %}
+
+{% block title %} User Summary {% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <h1 class="text-center text-primary">User Summary</h1>
+
+    <div class="mt-5">
+        <h4 class="text-center">Average Percentage by Subject</h4>
+        <div class="d-flex justify-content-center">
+            <canvas id="subjectChart" class="shadow-lg p-3 bg-white rounded"></canvas>
+        </div>
+    </div>
+
+    <div class="mt-5">
+        <h4 class="text-center">Quiz Attempts Per Month</h4>
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover shadow-sm mt-3">
+                <thead class="table-dark text-center">
+                    <tr>
+                        <th>Month</th>
+                        <th>Attempts</th>
+                    </tr>
+                </thead>
+                <tbody class="text-center">
+                    {% for entry in quiz_attempts %}
+                    <tr>
+                        <td class="fw-bold">{{ entry.month }}</td>
+                        <td>{{ entry.attempts }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const ctx = document.getElementById("subjectChart").getContext("2d");
+        const subjectLabels = {{ subject_stats | map(attribute='subject_name') | list | tojson }};
+        const avgPercentages = {{ subject_stats | map(attribute='avg_percentage') | list | tojson }};
+
+        new Chart(ctx, {
+            type: "bar",
+            data: {
+                labels: subjectLabels,
+                datasets: [{
+                    label: "Average Percentage",
+                    data: avgPercentages,
+                    backgroundColor: "rgba(54, 162, 235, 0.6)",
+                    borderColor: "rgba(54, 162, 235, 1)",
+                    borderWidth: 1,
+                    borderRadius: 8
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 100,
+                        grid: {
+                            color: "rgba(0, 0, 0, 0.1)"
+                        }
+                    },
+                    x: {
+                        grid: {
+                            display: false
+                        }
+                    }
+                },
+                plugins: {
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                return context.raw.toFixed(2) + '%';
+                            }
+                        }
+                    },
+                    legend: {
+                        display: false
+                    }
+                }
+            }
+        });
+    });
+</script>
+{% endblock %}

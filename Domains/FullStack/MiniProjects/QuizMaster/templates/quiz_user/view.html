@@ -1,0 +1,45 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    {{ quiz.quiz_name }} - Quiz Details
+{% endblock %}
+
+{% block content %}
+    <div class="container mt-5">
+        <div class="card shadow-lg p-4">
+            <div class="card-body">
+                <h1 class="display-4 text-center mb-4">
+                    <i class="fa fa-book text-primary"></i> {{ quiz.quiz_name }}
+                </h1>
+                <p class="text-muted text-center">Quiz Details</p>
+
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <p><i class="fa fa-sticky-note"></i> <strong>Remarks:</strong> {{ quiz.remarks or "No remarks provided" }}</p>
+                        <p><i class="fa fa-graduation-cap"></i> <strong>Subject:</strong> {{ subject.subject_name }}</p>
+                        <p><i class="fa fa-bookmark"></i> <strong>Chapter:</strong> {{ chapter.chapter_name }}</p>
+                    </div>
+                    <div class="col-md-6">
+                        <p><i class="fa fa-calendar"></i> <strong>Date:</strong> {{ quiz.date_of_quiz.strftime('%Y-%m-%d') }}</p>
+                        <p><i class="fa fa-clock"></i> <strong>Time Duration:</strong> {{ quiz.time_duration }}</p>
+                        <p><i class="fa fa-list-ol"></i> <strong>Number of Questions:</strong> {{ quiz.questions|length }}</p>
+                    </div>
+                </div>
+
+                <div class="text-center mt-4">
+                    {% if quiz.date_of_quiz <= current_date %}
+                        <a href="{{ url_for('start_quiz', id=quiz.id)}}" class="btn btn-success btn-lg">
+                            <i class="fa fa-play-circle"></i> Start Quiz
+                        </a>
+                    {% else %}
+                        <p class="text-muted">This quiz is not available yet.</p>
+                    {% endif %}
+                   
+                    <a href="{{ url_for('index') }}" class="btn btn-secondary btn-lg">
+                        <i class="fa fa-arrow-left"></i> Back to Quizzes
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
