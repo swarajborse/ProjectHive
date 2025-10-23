@@ -1,0 +1,194 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#833A1D"
+    tools:context=".IndianActivity">
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/chefLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Chef Logo" />
+
+    <!-- Scrollable Recipes List -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/chefLogo"
+        android:layout_above="@id/homeButton"
+        android:fillViewport="true"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Recipe Item 1: Chicken Biryani -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="#A95E40"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/chicken_biryani"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Chicken Biryani" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chicken Biryani\nIngredients:\n- Chicken: 500g\n- Rice: 2 cups\n- Onion: 1 large, sliced\n- Ginger-garlic paste: 1 tbsp\n- Yogurt: ½ cup\n- Biryani spices\n- Fresh coriander\n\nInstructions:\n1. Marinate chicken with yogurt and spices.\n2. Cook rice and layer with chicken.\n3. Cook on low heat and garnish with coriander."
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- Recipe Item 2: Paneer Tikka -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="#A95E40"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/paneer_tikka"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Paneer Tikka" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Paneer Tikka\nIngredients:\n- Paneer: 250g\n- Yogurt: 1 cup\n- Red chili powder: 1 tsp\n- Lemon juice: 1 tbsp\n- Garam masala: 1 tsp\n\nInstructions:\n1. Marinate paneer cubes with yogurt and spices.\n2. Skewer and grill or roast paneer.\n3. Serve with mint chutney."
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- Recipe Item 3: Aloo Gobi -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="#A95E40"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/aloo_gobi"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Aloo Gobi" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aloo Gobi\nIngredients:\n- Potato: 2 medium\n- Cauliflower: 1 medium head\n- Turmeric: ½ tsp\n- Cumin seeds: 1 tsp\n- Garam masala: 1 tsp\n\nInstructions:\n1. Heat oil, add cumin seeds, turmeric, and veggies.\n2. Cook until tender.\n3. Garnish and serve hot."
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- Recipe Item 4: Butter Chicken -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="#A95E40"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/butter_chicken"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Butter Chicken" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Butter Chicken\nIngredients:\n- Chicken: 500g\n- Butter: 2 tbsp\n- Tomato puree: 1 cup\n- Cream: ½ cup\n- Garam masala: 1 tsp\n\nInstructions:\n1. Cook chicken in butter and spices.\n2. Add tomato puree and cream, cook further.\n3. Serve with naan or rice."
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- Recipe Item 5: Samosa -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="#A95E40"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/samosa"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Samosa" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Samosa\nIngredients:\n- Potato: 2 large\n- Green peas: 1 cup\n- Cumin seeds: 1 tsp\n- Garam masala: 1 tsp\n- Samosa wrappers\n\nInstructions:\n1. Prepare stuffing with potatoes, peas, and spices.\n2. Fill the wrappers and deep fry.\n3. Serve with chutney."
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- Recipe Item 6: Dal Tadka -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="#A95E40"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/dal_tadka"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Dal Tadka" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dal Tadka\nIngredients:\n- Lentils: 1 cup\n- Garlic: 3 cloves\n- Cumin seeds: 1 tsp\n- Tomato: 1\n- Ghee: 1 tbsp\n\nInstructions:\n1. Cook lentils in water.\n2. Temper with garlic, cumin, and spices.\n3. Mix and serve hot."
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Home Button -->
+    <ImageButton
+        android:id="@+id/homeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:contentDescription="Home Button"
+        android:padding="16dp"
+        android:src="@drawable/ic_home"/>
+</RelativeLayout>

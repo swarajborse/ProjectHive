@@ -1,0 +1,194 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#833A1D"
+    tools:context=".ChineseActivity">
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/chefLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Chef Logo" />
+
+    <!-- Scrollable Recipes List -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/chefLogo"
+        android:layout_above="@id/homeButton"
+        android:fillViewport="true"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Recipe Item 1: Sweet and Sour Chicken -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="#A95E40"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/sweet_and_sour_chicken"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Sweet and Sour Chicken" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sweet and Sour Chicken\nIngredients:\n- Chicken: 500g\n- Bell peppers: 2\n- Pineapple: 1 cup\n- Soy sauce: 2 tbsp\n- Vinegar: 2 tbsp\n- Sugar: 1 tbsp\n\nInstructions:\n1. Stir fry chicken and vegetables.\n2. Add pineapple, sauce, and simmer for 5 minutes."
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- Recipe Item 2: Kung Pao Chicken -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="#A95E40"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/kung_pao_chicken"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Kung Pao Chicken" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kung Pao Chicken\nIngredients:\n- Chicken: 500g\n- Cashews: 1/2 cup\n- Red chilies: 2\n- Soy sauce: 2 tbsp\n- Garlic: 2 cloves\n- Ginger: 1 tbsp\n\nInstructions:\n1. Stir fry chicken and garlic.\n2. Add cashews and sauces and cook for 3 minutes."
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- Recipe Item 3: Dumplings -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="#A95E40"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/dumplings"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Dumplings" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dumplings\nIngredients:\n- Ground pork: 200g\n- Cabbage: 1 cup\n- Garlic: 1 clove\n- Soy sauce: 2 tbsp\n- Dumpling wrappers\n\nInstructions:\n1. Mix ground pork, cabbage, and seasonings.\n2. Wrap the mixture in dumpling wrappers and steam for 10 minutes."
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- Recipe Item 4: Fried Rice -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="#A95E40"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/fried_rice"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Fried Rice" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fried Rice\nIngredients:\n- Rice: 2 cups\n- Eggs: 2\n- Carrots: 1\n- Soy sauce: 3 tbsp\n- Green peas: 1/2 cup\n\nInstructions:\n1. Stir fry vegetables, add rice, and scramble eggs.\n2. Stir in soy sauce and cook for 5 minutes."
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- Recipe Item 5: Mapo Tofu -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="#A95E40"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/mapo_tofu"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Mapo Tofu" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mapo Tofu\nIngredients:\n- Tofu: 500g\n- Ground pork: 150g\n- Garlic: 2 cloves\n- Doubanjiang: 2 tbsp\n- Soy sauce: 2 tbsp\n\nInstructions:\n1. Stir fry pork and garlic, add tofu and sauce.\n2. Simmer for 10 minutes and serve."
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- Recipe Item 6: Hot and Sour Soup -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="#A95E40"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/hot_and_sour_soup"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Hot and Sour Soup" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hot and Sour Soup\nIngredients:\n- Tofu: 200g\n- Mushrooms: 1/2 cup\n- Bamboo shoots: 1/2 cup\n- Soy sauce: 3 tbsp\n- Vinegar: 2 tbsp\n\nInstructions:\n1. Boil tofu, mushrooms, and shoots.\n2. Add soy sauce, vinegar, and pepper; simmer for 10 minutes."
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Home Button -->
+    <ImageButton
+        android:id="@+id/homeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:contentDescription="Home Button"
+        android:padding="16dp"
+        android:src="@drawable/ic_home"/>
+</RelativeLayout>

@@ -1,0 +1,194 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#833A1D"
+    tools:context=".ItalianActivity">
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/chefLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Chef Logo" />
+
+    <!-- Scrollable Recipes List -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/chefLogo"
+        android:layout_above="@id/homeButton"
+        android:fillViewport="true"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Recipe Item 1: Spaghetti Aglio e Olio -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="#A95E40"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/spaghetti_aglio_olio"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Spaghetti Aglio e Olio" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Spaghetti Aglio e Olio\nIngredients:\n- Spaghetti: 200g\n- Garlic: 4 cloves, sliced\n- Olive oil: 4 tbsp\n- Red chili flakes: ½ tsp\n- Parsley: 2 tbsp, chopped\n- Salt: To taste\n\nInstructions:\n1. Cook spaghetti until al dente. Reserve pasta water.\n2. Sauté garlic in olive oil. Add chili flakes.\n3. Toss spaghetti with parsley and reserved water."
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- Recipe Item 2: Caprese Salad -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="#A95E40"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/caprese_salad"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Caprese Salad" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Caprese Salad\nIngredients:\n- Mozzarella: 200g, sliced\n- Tomatoes: 2, sliced\n- Fresh basil leaves\n- Olive oil: 2 tbsp\n- Balsamic vinegar (optional): 1 tbsp\n- Salt and pepper: To taste\n\nInstructions:\n1. Layer tomatoes, mozzarella, and basil.\n2. Drizzle olive oil and balsamic vinegar. Season to taste."
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- Recipe Item 3: Bruschetta -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="#A95E40"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/bruschetta"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Bruschetta" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bruschetta\nIngredients:\n- Bread slices\n- Tomatoes: 2, diced\n- Garlic: 2 cloves, minced\n- Olive oil: 2 tbsp\n- Basil leaves, chopped\n- Salt and pepper: To taste\n\nInstructions:\n1. Toast bread slices.\n2. Mix tomatoes, garlic, olive oil, basil, salt, and pepper.\n3. Spoon mixture over toast."
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- Recipe Item 4: Margherita Pizza -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="#A95E40"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/margherita_pizza"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Margherita Pizza" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Margherita Pizza\nIngredients:\n- Pizza dough\n- Tomato sauce: ½ cup\n- Mozzarella: 200g\n- Basil leaves\n- Olive oil: 1 tbsp\n\nInstructions:\n1. Preheat oven to 250°C.\n2. Spread tomato sauce on dough.\n3. Top with mozzarella and bake for 10 minutes.\n4. Add basil and drizzle olive oil."
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- Recipe Item 5: Penne Arrabbiata -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="#A95E40"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/penne_arrabbiata"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Penne Arrabbiata" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Penne Arrabbiata\nIngredients:\n- Penne: 200g\n- Olive oil: 2 tbsp\n- Garlic: 3 cloves, minced\n- Chili flakes: 1 tsp\n- Tomato puree: 1 cup\n- Parsley: 2 tbsp\n- Salt: To taste\n\nInstructions:\n1. Cook penne.\n2. Sauté garlic and chili flakes in oil.\n3. Add tomato puree, cook, then toss with penne and parsley."
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- Recipe Item 6: Tiramisu -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="#A95E40"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/tiramisu"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Tiramisu" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tiramisu\nIngredients:\n- Ladyfinger biscuits: 200g\n- Mascarpone cheese: 250g\n- Heavy cream: 200ml\n- Coffee: 1 cup\n- Cocoa powder\n- Sugar: 3 tbsp\n\nInstructions:\n1. Whisk mascarpone, cream, and sugar.\n2. Dip ladyfingers in coffee and layer.\n3. Spread mascarpone mixture, dust with cocoa, and refrigerate."
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Home Button -->
+    <ImageButton
+        android:id="@+id/homeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:contentDescription="Home Button"
+        android:padding="16dp"
+        android:src="@drawable/ic_home"/>
+</RelativeLayout>
