@@ -1,0 +1,47 @@
+{% extends 'layout.html' %}
+
+{% block title %} My Scores {% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <h1 class="text-center mb-4"><i class="fas fa-poll"></i> My Quiz Scores</h1>
+
+    {% if user_scores %}
+        <div class="table-responsive">
+            <table class="table table-hover text-center align-middle">
+                <thead class="bg-light text-dark">
+                    <tr>
+                        <th><i class="fas fa-file-alt"></i> Quiz Name</th>
+                        <th><i class="far fa-calendar-alt"></i> Date Attempted</th>
+                        <th><i class="fas fa-star"></i> Score</th>
+                        <th><i class="fas fa-info-circle"></i> Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for score in user_scores|sort(attribute="time_stamp_of_event", reverse=True) %}
+                        <tr>
+                            <td class="fw-bold">{{ quizzes[score.quiz_id]["name"] }}</td>
+                            <td>{{ score.time_stamp_of_event.strftime('%Y-%m-%d %H:%M') }}</td>
+                            <td>
+                                <span class="badge bg-primary p-2">
+                                    {{ score.total_scored }} / {{ quizzes[score.quiz_id]["total_score"] }}
+                                </span>
+                            </td>
+                            <td>
+                                <a href="{{ url_for('score_details', id=score.id) }}" class="btn btn-sm btn-outline-primary">
+                                    <i class="fas fa-chart-bar"></i> View Details
+                                </a>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    {% else %}
+        <div class="text-center text-muted mt-4">
+            <h4><i class="fas fa-exclamation-circle"></i> No quiz attempts yet!</h4>
+            <p>Take a quiz to see your scores here.</p>
+        </div>
+    {% endif %}
+</div>
+{% endblock %}

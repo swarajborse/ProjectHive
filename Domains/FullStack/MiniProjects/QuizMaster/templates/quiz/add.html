@@ -1,0 +1,94 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    Add Quiz
+{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="card shadow-lg border-primary">
+        <div class="card-header bg-primary text-white">
+            <h2 class="h4 mb-0"><i class="fas fa-plus-circle"></i> Add Quiz</h2>
+        </div>
+        <div class="card-body">
+            <form action="{{ url_for('add_quiz_post') }}" method="POST">
+                <div class="mb-3">
+                    <label for="name" class="form-label"><i class="fas fa-pencil-alt"></i> Quiz Name</label>
+                    <input type="text" name="name" id="name" class="form-control" required placeholder="Enter Quiz Name">
+                </div>
+
+                <div class="mb-3">
+                    <label for="remarks" class="form-label"><i class="fas fa-comment-dots"></i> Remarks</label>
+                    <input type="text" name="remarks" id="remarks" class="form-control" placeholder="Enter Quiz Remarks">
+                </div>
+
+                <div class="mb-3">
+                    <label for="subject_id" class="form-label"><i class="fas fa-book"></i> Select Subject</label>
+                    <select name="subject_id" id="subjectDropdown" class="form-control" required>
+                        <option value="" disabled selected>Select a subject</option>
+                        {% for subject in subjects %}
+                            <option value="{{ subject.id }}">{{ subject.subject_name }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="chapter_id" class="form-label"><i class="fas fa-chalkboard"></i> Select Chapter</label>
+                    <select name="chapter_id" id="chapterDropdown" class="form-control" required disabled>
+                        <option value="" disabled selected>Select a chapter</option>
+                        {% for chapter in chapters %}
+                            <option value="{{ chapter.id }}" data-subject="{{ chapter.subject_id }}">{{ chapter.chapter_name }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="date_of_quiz" class="form-label"><i class="fas fa-calendar-alt"></i> Date of Quiz</label>
+                    <input type="date" name="date_of_quiz" id="date_of_quiz" required class="form-control">
+                </div>
+
+                <div class="mb-3">
+                    <label for="time_duration" class="form-label"><i class="fas fa-clock"></i> Time Duration (HH:MM:SS)</label>
+                    <input type="text" name="time_duration" placeholder="00:30:00" required class="form-control">
+                </div>
+
+                <div class="d-flex justify-content-start mt-3">
+                    <button type="submit" class="btn btn-primary me-2">
+                        <i class="fa fa-plus"></i> Add Quiz
+                    </button>
+                    <a href="{{ url_for('quiz') }}" class="btn btn-secondary">
+                        <i class="fa fa-times"></i> Cancel
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var subjectDropdown = document.getElementById("subjectDropdown");
+        var chapterDropdown = document.getElementById("chapterDropdown");
+        var chapterOptions = chapterDropdown.querySelectorAll("option");
+    
+        var today = new Date().toISOString().split('T')[0];
+        document.getElementById("date_of_quiz").setAttribute("min", today);
+
+        subjectDropdown.addEventListener("change", function() {
+            var selectedSubject = this.value;
+            chapterDropdown.innerHTML = '<option value="" selected disabled>Select a chapter</option>';
+    
+            if (selectedSubject) {
+                chapterDropdown.disabled = false;
+                chapterOptions.forEach(function(option) {
+                    if (option.getAttribute("data-subject") === selectedSubject) {
+                        chapterDropdown.appendChild(option.cloneNode(true));
+                    }
+                });
+            } else {
+                chapterDropdown.disabled = true;
+            }
+        });
+    });
+</script>
+{% endblock %}
