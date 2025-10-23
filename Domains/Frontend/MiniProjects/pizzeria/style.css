@@ -1,0 +1,98 @@
+
+.c-item{
+    height: 630px;
+}
+.c-img{
+    height:100%
+
+}
+body{
+    background-color: black;
+}
+
+h1{
+    color: #fff;
+    margin-left: 500px;
+}
+i{
+    color: #fff;
+    margin-top: 10px;
+    font-size: 20px;
+    margin-right: 0px;
+}
+.navbar-nav .nav-item{
+    margin-right: 15px;
+}
+
+.offer-section{
+    color: black;
+}
+
+.card-img-top{
+    border-radius: 50px;
+    padding: 20px;
+}
+.card{
+    border-radius: 30px;
+    height: auto;
+}
+.card-body{
+    padding: 25px;
+    margin-top: -15px;
+}
+.btn-primary{
+    border-radius: 50px;
+    width: 120px;
+}
+.card-title{
+    color: #ffc107;
+}
+.btn-primary:hover{
+    background-color: black;
+}
+ h5{
+    color:#fff;
+}
+
+@media (max-width: 768px)
+{
+    h1{
+        color: #fff;
+        margin-left: 100px;
+    }
+    .card{
+        margin-left: 20px;
+        width: 90%;
+    }
+    .col-md-5{
+        width: 80%;
+    }
+    .col-md-5{
+        width: 80%;
+    }
+
+}
+
+.col-md-7{
+    padding: 20px;
+    background-color: #212529;
+}
+.form-label{
+    color: #fff;
+}
+.col-md-5{
+    background: #ffc107;
+    padding: 20px;
+} 
+.form-control {
+    height: 52px;
+    background: #fff;
+    color: #000;
+    font-size: 14px;
+    border-radius: 2px;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
