@@ -1,6 +1,6 @@
 # 💰 Salary Calculator - CTC to In-Hand Salary
 
-**Contributor:** ProjectHive  
+**Contributor:** SOHAM-GADEKAR 
 **Domain:** Frontend  
 **Difficulty:** Intermediate  
 **Tech Stack:** HTML, CSS, JavaScript

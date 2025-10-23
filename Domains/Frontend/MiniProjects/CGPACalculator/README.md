@@ -1,6 +1,6 @@
 # 🎓 CGPA Calculator
 
-**Contributor:** SOHAM-GADEKAR  
+**Contributor:** SOHAM-GADEKAR 
 **Domain:** Frontend  
 **Difficulty:** Beginner  
 **Tech Stack:** HTML, CSS, JavaScript
