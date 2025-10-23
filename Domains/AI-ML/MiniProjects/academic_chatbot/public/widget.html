@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Campus Assistant Widget</title>
+    <style>
+      #chatbox{position:fixed;bottom:20px;right:20px;width:320px;background:#fff;border:1px solid #ddd;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,.1);font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial}
+      #header{padding:8px 12px;background:#0a66c2;color:#fff;border-radius:8px 8px 0 0;font-weight:600}
+      #messages{height:280px;overflow:auto;padding:10px;font-size:14px}
+      #input{display:flex;border-top:1px solid #eee}
+      #input input{flex:1;padding:10px;border:0;outline:none}
+      #input button{padding:10px 12px;border:0;background:#0a66c2;color:#fff;cursor:pointer}
+      .msg{margin:6px 0}
+      .user{font-weight:600}
+    </style>
+  </head>
+  <body>
+    <div id="chatbox">
+      <div id="header">Campus Assistant</div>
+      <div id="messages"></div>
+      <div id="input">
+        <input id="text" placeholder="Type your question..." />
+        <button id="send">Send</button>
+      </div>
+    </div>
+    <script>
+      const apiBase = (window.CAMPUS_ASSISTANT_API||'http://localhost:8000');
+      const sessionId = Math.random().toString(36).slice(2);
+      const messages = document.getElementById('messages');
+      function add(role, text){
+        const div=document.createElement('div');
+        div.className='msg';
+        div.innerHTML = '<span class="'+role+'">'+role+':</span> '+text;
+        messages.appendChild(div);messages.scrollTop=messages.scrollHeight;
+      }
+      document.getElementById('send').onclick = async ()=>{
+        const input=document.getElementById('text');
+        const q=input.value.trim(); if(!q) return; input.value=''; add('user', q);
+        const res = await fetch(apiBase+'/chat',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({session_id:sessionId,message:q})});
+        const data = await res.json(); add('assistant', data.answer);
+      };
+    </script>
+  </body>
+</html>
