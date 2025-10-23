@@ -1,58 +1,74 @@
-// script.js
+// Wait for the DOM to be fully loaded
+document.addEventListener("DOMContentLoaded", () => {
 
-const weightInput = document.getElementById("weight");
-const heightInput = document.getElementById("height");
-const calculateBtn = document.getElementById("calculateBtn");
-const bmiValue = document.getElementById("bmiValue");
-const bmiCategory = document.getElementById("bmiCategory");
-const resultDiv = document.getElementById("result");
-const themeToggle = document.getElementById("themeToggle");
+    // Get all necessary elements from the DOM
+    const bmiForm = document.getElementById("bmi-form");
+    const weightInput = document.getElementById("weight");
+    const heightInput = document.getElementById("height");
+    const errorMessage = document.getElementById("error-message");
+    
+    const resultCard = document.getElementById("result-card");
+    const bmiValueEl = document.getElementById("bmi-value");
+    const bmiCategoryEl = document.getElementById("bmi-category");
 
-// Dark/Light mode
-function initTheme() {
-  const saved = localStorage.getItem("bmi_theme");
-  if(saved==="dark") document.body.classList.add("dark"), themeToggle.checked=true;
-}
-initTheme();
+    // Listen for the form submission
+    bmiForm.addEventListener("submit", (event) => {
+        // Prevent the form from actually submitting (which reloads the page)
+        event.preventDefault();
 
-themeToggle.addEventListener("change", () => {
-  if(themeToggle.checked){
-    document.body.classList.add("dark");
-    localStorage.setItem("bmi_theme","dark");
-  }else{
-    document.body.classList.remove("dark");
-    localStorage.setItem("bmi_theme","light");
-  }
+        // Get and parse the values
+        const weight = parseFloat(weightInput.value);
+        const height = parseFloat(heightInput.value);
+
+        // --- Input Validation ---
+        // Check if values are not numbers, or are less than or equal to zero
+        if (isNaN(weight) || isNaN(height) || weight <= 0 || height <= 0) {
+            // Show the error message
+            errorMessage.textContent = "Please enter valid positive numbers for weight and height.";
+            errorMessage.classList.remove("d-none");
+            
+            // Hide the result card
+            resultCard.classList.add("d-none");
+            return; // Stop the function
+        }
+
+        // If validation passes, hide the error message
+        errorMessage.classList.add("d-none");
+
+        // --- BMI Calculation ---
+        const heightInMeters = height / 100;
+        const bmi = weight / (heightInMeters * heightInMeters);
+        const roundedBMI = bmi.toFixed(1); // Round to one decimal place
+
+        // --- Determine Category ---
+        let category = "";
+        let categoryClass = "";
+
+        if (bmi < 18.5) {
+            category = "Underweight";
+            categoryClass = "text-underweight"; // Custom class from styles.css
+        } else if (bmi < 25) {
+            category = "Normal";
+            categoryClass = "text-normal";
+        } else if (bmi < 30) {
+            category = "Overweight";
+            categoryClass = "text-overweight";
+        } else {
+            category = "Obese";
+            categoryClass = "text-obese";
+        }
+
+        // --- Display Results ---
+        bmiValueEl.textContent = roundedBMI;
+        bmiCategoryEl.textContent = category;
+        
+        // Update the category element's classes
+        // We reset the class list and add the new ones
+        bmiCategoryEl.className = "h4"; // Base class
+        bmiCategoryEl.classList.add(categoryClass);
+
+        // Show the result card
+        resultCard.classList.remove("d-none");
+    });
 });
 
-// BMI Calculation
-function calculateBMI(){
-  const weight = parseFloat(weightInput.value);
-  const heightCm = parseFloat(heightInput.value);
-  if(!weight || !heightCm){
-    alert("Please enter valid weight and height");
-    return;
-  }
-
-  const heightM = heightCm / 100;
-  const bmi = weight / (heightM * heightM);
-  const roundedBMI = bmi.toFixed(1);
-  bmiValue.textContent = roundedBMI;
-
-  let category = "";
-  let color = "";
-
-  if(bmi<18.5){category="Underweight"; color="#ffd86b";}
-  else if(bmi<25){category="Normal"; color="#7cf59b";}
-  else if(bmi<30){category="Overweight"; color="#ffb86b";}
-  else{category="Obese"; color="#ff5f5f";}
-
-  bmiCategory.textContent = category;
-  resultDiv.style.color = color;
-
-  // Simple animation
-  resultDiv.style.transform="scale(1.1)";
-  setTimeout(()=>resultDiv.style.transform="scale(1)",300);
-}
-
-calculateBtn.addEventListener("click", calculateBMI);
