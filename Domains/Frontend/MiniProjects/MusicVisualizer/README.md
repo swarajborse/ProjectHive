@@ -1,6 +1,6 @@
 # 🎵 Music Visualizer
 
-**Contributer:** shr128 
+**Contributor:** shr128 
 **Domain:** Frontend  
 **Difficulty:** Intermediate  
 **Tech Stack:** HTML5, CSS3, JavaScript (ES6+), Web Audio API, Canvas API
