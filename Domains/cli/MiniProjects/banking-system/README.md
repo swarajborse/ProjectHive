@@ -24,6 +24,17 @@ Dependency mapping (from Cargo.toml):
 - Rust toolchain (rustc + cargo) installed
   - Install from https://rustup.rs if needed
 
+## Tech stack
+
+- Language: Rust
+- Build / package manager: cargo
+- CLI parsing: clap
+- Random generation: rand
+- Persistence: rusqlite
+- Testing: cargo test
+- Formatting: rustfmt (cargo fmt)
+- Linting: clippy (cargo clippy)
+
 ## Quickstart
 
 1. Change into the project directory:
