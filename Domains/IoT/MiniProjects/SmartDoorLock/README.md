@@ -1,6 +1,6 @@
 # 🔐 Smart Door Lock - RFID/NFC Access Control
 
-**Contributor:** SOHAM-GADEKAE  
+**Contributor:** SOHAM-GADEKAR 
 **Domain:** IoT  
 **Difficulty:** Intermediate  
 **Tech Stack:** Arduino, RFID, Servo, LCD, C++
