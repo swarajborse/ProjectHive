@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Simple Expense Tracker</title>
+  <style>
+    :root{
+      --bg:#0f1724;
+      --card:#0b1220;
+      --accent:#7c3aed;
+      --muted:#94a3b8;
+      --glass: rgba(255,255,255,0.03);
+      --success:#10b981;
+      --danger:#ef4444;
+      --radius:12px;
+      --gap:14px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+
+    * {box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      background: linear-gradient(180deg,#071023 0%, #071a2b 60%);
+      color:#e6eef8;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:28px;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+
+    .container{
+      width:980px;
+      max-width:100%;
+      display:grid;
+      grid-template-columns: 360px 1fr;
+      gap:var(--gap);
+      align-items:start;
+    }
+
+    .card{
+      background:linear-gradient(180deg,var(--card), rgba(11,18,32,0.9));
+      border-radius:var(--radius);
+      padding:18px;
+      box-shadow: 0 6px 30px rgba(2,6,23,0.6);
+      border: 1px solid rgba(255,255,255,0.03);
+    }
+
+    /* Left column */
+    .profile{
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+    }
+    .header{
+      display:flex;
+      align-items:center;
+      gap:12px;
+    }
+    .avatar{
+      width:64px;
+      height:64px;
+      border-radius:12px;
+      background:linear-gradient(135deg,var(--accent), #3b82f6);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:700;
+      font-size:20px;
+      color:white;
+      box-shadow: 0 6px 18px rgba(124,58,237,0.16);
+    }
+    h1{font-size:18px;margin:0}
+    p.sub{margin:0;color:var(--muted);font-size:13px}
+
+    label{font-size:13px;color:var(--muted);display:block;margin-bottom:6px}
+    input[type="text"], input[type="number"], select{
+      width:100%;
+      padding:10px 12px;
+      border-radius:10px;
+      border:1px solid rgba(255,255,255,0.04);
+      background:var(--glass);
+      color:inherit;
+      outline:none;
+      font-size:14px;
+    }
+    .form-row{margin-bottom:12px}
+
+    button{
+      display:inline-flex;
+      gap:8px;
+      align-items:center;
+      border:0;
+      cursor:pointer;
+      padding:10px 14px;
+      border-radius:10px;
+      font-weight:600;
+      font-size:14px;
+    }
+    .btn-primary{background:linear-gradient(90deg,var(--accent),#4f46e5); color:white; box-shadow: 0 8px 20px rgba(79,70,229,0.14)}
+    .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.04);color:var(--muted)}
+
+    .stats{
+      margin-top:8px;
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+    .stat{
+      flex:1 1 100%;
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      padding:12px;
+      border-radius:10px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+    }
+    .stat strong{font-size:18px}
+    .stat small{color:var(--muted)}
+
+    /* Right column */
+    .transactions-list{
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+    }
+
+    .list-header{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      margin-bottom:6px;
+    }
+    .list{
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+      max-height:420px;
+      overflow:auto;
+      padding-right:6px;
+    }
+
+    .txn{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      padding:10px;
+      border-radius:10px;
+      background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.00));
+      border:1px solid rgba(255,255,255,0.02);
+    }
+    .txn .info{flex:1}
+    .txn .title{font-weight:600}
+    .txn .meta{font-size:13px;color:var(--muted)}
+    .txn .amount{font-weight:700}
+
+    .amount.plus{color:var(--success)}
+    .amount.minus{color:var(--danger)}
+
+    .empty{
+      text-align:center;
+      color:var(--muted);
+      padding:40px 12px;
+      border-radius:8px;
+      background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent);
+    }
+
+    .row{
+      display:flex;
+      gap:10px;
+    }
+    .row > *{flex:1}
+
+    .controls{display:flex;gap:8px;align-items:center}
+    .small{font-size:13px;color:var(--muted)}
+
+    /* Responsive */
+    @media (max-width:860px){
+      .container{grid-template-columns:1fr; padding:0 6px}
+    }
+  </style>
+</head>
+<body>
+  <main class="container" role="main">
+    <!-- LEFT: Add expense -->
+    <section class="card profile" aria-label="Add Expense">
+      <div class="header">
+        <div class="avatar">ER</div>
+        <div>
+          <h1>Expense Tracker</h1>
+          <p class="sub">Track your daily expenses quickly</p>
+        </div>
+      </div>
+
+      <form id="expense-form" aria-label="Expense form" autocomplete="off">
+        <div class="form-row">
+          <label for="description">Description</label>
+          <input id="description" type="text" placeholder="e.g., Lunch, Grocery" required />
+        </div>
+
+        <div class="form-row row">
+          <div>
+            <label for="amount">Amount (₹)</label>
+            <input id="amount" type="number" placeholder="0.00" step="0.01" required />
+          </div>
+          <div>
+            <label for="type">Type</label>
+            <select id="type">
+              <option value="expense">Expense</option>
+              <option value="income">Income</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <label for="category">Category (optional)</label>
+          <input id="category" type="text" placeholder="Food, Transport, Salary..." />
+        </div>
+
+        <div style="display:flex;gap:8px;margin-top:8px">
+          <button class="btn-primary" type="submit">+ Add</button>
+          <button class="btn-ghost" id="clear-all" type="button">Clear All</button>
+        </div>
+
+        <div class="stats" style="margin-top:12px">
+          <div class="stat">
+            <div>
+              <small>Balance</small>
+              <div><strong id="balance">₹0.00</strong></div>
+            </div>
+            <div class="small">Overview</div>
+          </div>
+
+          <div class="stat">
+            <div>
+              <small>Total Income</small>
+              <div><strong id="total-income">₹0.00</strong></div>
+            </div>
+            <div class="small">Inflow</div>
+          </div>
+
+          <div class="stat">
+            <div>
+              <small>Total Expense</small>
+              <div><strong id="total-expense">₹0.00</strong></div>
+            </div>
+            <div class="small">Outflow</div>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <!-- RIGHT: Transactions -->
+    <section class="card transactions-list" aria-label="Transactions">
+      <div class="list-header">
+        <h2 style="margin:0;font-size:16px">Transactions</h2>
+        <div class="controls">
+          <input id="search" type="text" placeholder="Search description or category" style="padding:8px;border-radius:8px;border:1px solid rgba(255,255,255,0.03);background:var(--glass);color:inherit;font-size:13px" />
+        </div>
+      </div>
+
+      <div id="list" class="list" aria-live="polite">
+        <div class="empty">No transactions yet — add one using the form.</div>
+      </div>
+
+    </section>
+  </main>
+
+  <script>
+    // Simple expense tracker logic using localStorage
+    const form = document.getElementById('expense-form');
+    const descEl = document.getElementById('description');
+    const amtEl = document.getElementById('amount');
+    const typeEl = document.getElementById('type');
+    const catEl = document.getElementById('category');
+    const listEl = document.getElementById('list');
+    const balanceEl = document.getElementById('balance');
+    const incomeEl = document.getElementById('total-income');
+    const expenseEl = document.getElementById('total-expense');
+    const clearBtn = document.getElementById('clear-all');
+    const searchEl = document.getElementById('search');
+
+    const STORAGE_KEY = 'simple_expenses_v1';
+
+    // Load from storage or start empty
+    let items = JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
+
+    function formatCurrency(n){
+      // Format number to Indian rupee style with 2 decimals
+      const num = Number(n) || 0;
+      return '₹' + num.toFixed(2);
+    }
+
+    function save(){
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(items));
+    }
+
+    function render(filterText = ''){
+      listEl.innerHTML = '';
+      const filtered = items.filter(i => {
+        const text = (i.description + ' ' + (i.category||'')).toLowerCase();
+        return text.includes(filterText.toLowerCase());
+      });
+
+      if(filtered.length === 0){
+        const empty = document.createElement('div');
+        empty.className = 'empty';
+        empty.textContent = 'No transactions match. Try adding one.';
+        listEl.appendChild(empty);
+        return;
+      }
+
+      filtered.forEach(item => {
+        const div = document.createElement('div');
+        div.className = 'txn';
+        const info = document.createElement('div');
+        info.className = 'info';
+        const title = document.createElement('div');
+        title.className = 'title';
+        title.textContent = item.description;
+        const meta = document.createElement('div');
+        meta.className = 'meta';
+        meta.textContent = item.category ? `${item.category} • ${new Date(item.date).toLocaleString()}` : new Date(item.date).toLocaleString();
+        info.appendChild(title);
+        info.appendChild(meta);
+
+        const amt = document.createElement('div');
+        amt.className = 'amount ' + (item.type === 'income' ? 'plus' : 'minus');
+        amt.textContent = (item.type === 'income' ? '+' : '-') + formatCurrency(item.amount);
+
+        const del = document.createElement('button');
+        del.className = 'btn-ghost';
+        del.style.padding = '6px 8px';
+        del.textContent = 'Remove';
+        del.onclick = () => {
+          if(confirm('Delete this transaction?')) {
+            items = items.filter(i => i.id !== item.id);
+            save();
+            compute();
+            render(searchEl.value);
+          }
+        };
+
+        div.appendChild(info);
+        div.appendChild(amt);
+        div.appendChild(del);
+
+        listEl.appendChild(div);
+      });
+    }
+
+    function compute(){
+      let income = 0, expense = 0;
+      items.forEach(i => {
+        const amount = Number(i.amount) || 0;
+        if(i.type === 'income') income += amount;
+        else expense += amount;
+      });
+      const balance = income - expense;
+      incomeEl.textContent = formatCurrency(income);
+      expenseEl.textContent = formatCurrency(expense);
+      balanceEl.textContent = formatCurrency(balance);
+    }
+
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      const desc = descEl.value.trim();
+      const amtRaw = amtEl.value;
+      const amount = Number(amtRaw);
+      const type = typeEl.value;
+      const category = catEl.value.trim();
+
+      if(!desc || isNaN(amount) || amount <= 0){
+        alert('Please enter a valid description and positive amount.');
+        return;
+      }
+
+      // Create item
+      const item = {
+        id: 'id_' + Date.now() + '_' + Math.floor(Math.random()*9999),
+        description: desc,
+        amount: Math.round(amount*100)/100, // store 2 decimals
+        type,
+        category,
+        date: new Date().toISOString()
+      };
+
+      items.unshift(item); // newest first
+      save();
+      compute();
+      render(searchEl.value);
+
+      // reset form
+      descEl.value = '';
+      amtEl.value = '';
+      catEl.value = '';
+      typeEl.value = 'expense';
+      descEl.focus();
+    });
+
+    clearBtn.addEventListener('click', () => {
+      if(items.length === 0) return;
+      if(confirm('Clear all transactions? This cannot be undone.')){
+        items = [];
+        save();
+        compute();
+        render();
+      }
+    });
+
+    searchEl.addEventListener('input', () => {
+      render(searchEl.value);
+    });
+
+    // Init
+    compute();
+    // show list or empty message
+    if(items.length === 0){
+      listEl.innerHTML = '<div class="empty">No transactions yet — add one using the form.</div>';
+    } else {
+      render();
+    }
+  </script>
+</body>
+</html>
