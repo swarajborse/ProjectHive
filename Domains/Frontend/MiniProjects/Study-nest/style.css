@@ -1,0 +1,371 @@
+/* Color Palette */
+:root {
+    --color-primary: #0F9D58;    /* Main Green */
+    --color-accent: #34A853;     /* Button/Highlight Green */
+    --color-bg-light: #E8F5E9;   /* Light Green Background */
+    --color-text-dark: #212121;  /* Dark Text */
+    --color-text-gray: #555;
+    --shadow-subtle: 0 4px 12px rgba(0, 0, 0, 0.08);
+    --shadow-hover: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Typography */
+.font-heading { font-family: 'Poppins', sans-serif; }
+.font-content { font-family: 'Roboto', sans-serif; }
+
+/* Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    line-height: 1.6;
+    color: var(--color-text-dark);
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+a {
+    text-decoration: none;
+    color: var(--color-text-dark);
+    transition: color 0.2s;
+}
+
+/* === SPA Simulation & Page Hiding === */
+.page-section {
+    display: none; /* Default state: hidden */
+    padding-top: 40px;
+    padding-bottom: 40px;
+    animation: fadeIn 0.4s ease-out;
+}
+.page-section.active-page {
+    display: block; /* Active state: visible */
+}
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.page-heading {
+    font-size: 36px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 20px;
+    border-bottom: 3px solid var(--color-bg-light);
+    padding-bottom: 10px;
+}
+.text-gray {
+    color: var(--color-text-gray);
+    margin-bottom: 30px;
+}
+.mt-4 { margin-top: 1rem; }
+.mt-5 { margin-top: 1.25rem; }
+/* === HEADER & NAVIGATION (Existing styles maintained) === */
+.sticky-header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-top: 4px solid var(--color-primary);
+}
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+.logo-text {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--color-primary);
+    font-family: 'Poppins', sans-serif;
+}
+.tagline {
+    font-size: 11px;
+    color: var(--color-text-gray);
+    display: none;
+}
+.nav-bar a {
+    margin-left: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 5px 0;
+}
+.nav-bar a:hover, .nav-bar a.active {
+    color: var(--color-primary);
+    border-bottom: 2px solid var(--color-primary);
+}
+
+/* === SEARCH BAR (Existing styles maintained) === */
+.search-section {
+    background-color: var(--color-bg-light);
+    padding: 15px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+.search-box {
+    position: relative;
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.search-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+}
+.search-input {
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+.search-btn {
+    background-color: var(--color-accent);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s;
+    flex-shrink: 0;
+    display: none;
+}
+.search-btn:hover {
+    background-color: var(--color-primary);
+}
+
+/* === HOME/SECTION STYLES (Existing styles maintained) === */
+.section-container {
+    margin-bottom: 50px;
+}
+.section-title {
+    font-size: 28px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    margin-bottom: 25px;
+    border-left: 4px solid var(--color-accent);
+    padding-left: 15px;
+}
+.icon-highlight {
+    color: var(--color-accent);
+    margin-right: 10px;
+}
+
+/* === CARD GRID & CARD STYLES (Existing styles maintained) === */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+}
+.branch-card, .pattern-card, .year-filter-btn { /* Added year filter class for generic style */
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    border-top: 4px solid var(--color-primary);
+    box-shadow: var(--shadow-subtle);
+    transition: all 0.3s ease;
+    text-align: center;
+    cursor: pointer;
+    display: block; /* Ensure 'a' and 'div' elements act as blocks */
+}
+.branch-card:hover, .pattern-card:hover, .year-filter-btn:hover {
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-4px);
+}
+.card-icon-container {
+    width: 50px;
+    height: 50px;
+    background-color: var(--color-bg-light);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 10px;
+    border: 1px solid var(--color-primary);
+}
+.card-icon {
+    font-size: 24px;
+    color: var(--color-primary);
+}
+.card-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--color-text-dark);
+    margin-bottom: 5px;
+}
+.card-description {
+    font-size: 13px;
+    color: var(--color-text-gray);
+}
+
+/* === YEAR LINKS (Quick Filter) === */
+.year-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.year-btn {
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 30px;
+    background-color: var(--color-bg-light);
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.year-btn:hover, .filter-group .filter-active {
+    background-color: var(--color-accent);
+    color: white;
+    border-color: var(--color-accent);
+}
+
+/* === PAPERS DISPLAY LAYOUT & FILTERS (New) === */
+.papers-layout {
+    display: grid;
+    grid-template-columns: 1fr; /* Mobile: Single column */
+    gap: 30px;
+}
+.sidebar-filters {
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    background-color: #fcfcfc;
+}
+.sidebar-filters h3 {
+    font-size: 20px;
+    color: var(--color-primary);
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--color-bg-light);
+}
+.filter-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.filter-group label {
+    font-weight: 500;
+    color: var(--color-text-dark);
+    width: 100%;
+    margin-bottom: 5px;
+}
+.year-filter-btn {
+    padding: 8px 15px;
+    font-size: 14px;
+    border-top: 2px solid var(--color-primary);
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+.paper-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+.paper-item {
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-left: 5px solid var(--color-accent);
+    border-radius: 8px;
+    background-color: white;
+}
+.paper-subject {
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--color-text-dark);
+}
+.paper-meta {
+    font-size: 12px;
+    color: var(--color-text-gray);
+    margin-bottom: 10px;
+}
+.download-btn {
+    background-color: var(--color-accent);
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background-color 0.2s;
+    cursor: pointer;
+    display: inline-block;
+}
+.download-btn:hover {
+    background-color: var(--color-primary);
+}
+
+/* === CONTACT FORM (New) === */
+.contact-form-container input, .contact-form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 16px;
+}
+.contact-form-container textarea {
+    resize: vertical;
+}
+.submit-btn {
+    background-color: var(--color-accent);
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.submit-btn:hover {
+    background-color: var(--color-primary);
+}
+
+/* === FOOTER (Existing styles maintained) === */
+footer {
+    background-color: var(--color-text-dark);
+    color: white;
+    padding: 20px 0;
+    font-size: 14px;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/* ... (Footer social icons and other styles omitted for brevity) ... */
+
+
+/* === RESPONSIVENESS === */
+@media (min-width: 600px) {
+    .tagline { display: block; }
+    .search-btn { display: block; }
+    .papers-layout {
+        grid-template-columns: 250px 1fr; /* Desktop: Sidebar and main content */
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-bar { display: none; }
+    .header-content { justify-content: center; }
+    .logo-area { text-align: center; }
+    .card-grid { grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); }
+    .footer-content { 
+        flex-direction: column;
+        text-align: center;
+    }
+}
