@@ -1,0 +1,554 @@
+/* Reset */
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  min-height: 100%;
+  font-family: "Zen Dots", sans-serif;
+  color: white;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+} 
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5); 
+  z-index: 1000;
+  padding: 8px 48px;
+}
+
+.navbar .main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .main .one{
+  text-align: center;
+}
+
+.navbar .main .one .home{
+  margin: 0px 20px;
+  padding: 0px 16px;
+}
+
+.navbar .main .one .event{
+  padding: 0px 16px;
+} 
+
+
+/* Left section */
+ .navbar .one {
+  display: flex;
+  gap: 30px;
+}
+
+.navbar .one a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.navbar .one a:hover {
+  opacity: 0.6;
+} 
+
+/* Center logo */
+.navbar .two img {
+  height: 55px;
+  margin-left: 32px;
+}
+
+/* Right section */
+ .navbar .three {
+  display: flex;
+  gap: 30px;
+}
+
+.navbar .main .three .schedule{
+  margin: 0px 20px;
+  padding: 0px 16px;
+}
+
+.navbar .main .three .about-link{
+  padding: 0px 16px;
+}
+
+.navbar .three a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+
+
+.navbar .three a:hover {
+  opacity: 0.6;
+}  
+
+/* Hero Section */
+ .hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+} 
+
+/* Background Video */
+ .hero video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;      
+  display: block;
+  filter: brightness(70%);
+} 
+
+/* Hero Content */
+
+  .hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hero-content h1 {
+  font-size: 6rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin: 0px 0px 40px;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+} 
+
+
+/* ---------------- About ---------------- */
+ .about {
+  background: #000;
+  min-height: 100vh;
+  padding: 100px 20px;
+  text-align: center;
+  display: flex;              
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.about h2::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  background: linear-gradient(90deg, #ff0080, #7928ca, #00d2ff);
+  margin: 15px auto 0;
+}
+
+.about p {
+  margin-top: 20px;
+  line-height: 1.8;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #ccc;
+}
+
+
+/* ---------------- Events ---------------- */
+
+.events {
+  background: #000; 
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.events .head{
+  width: 100%;
+  height: 13.75rem;
+  padding: 48px 0px 32px;
+}
+
+.events .head h2 {
+  height: 6.25rem;
+  font-size: 3.75rem;
+  margin: 40px 0px 0px;
+  padding: 0px 0px 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color:white; 
+}
+
+/* Container for cards */
+.events-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 15px;
+  row-gap: 80px;
+  width: 100%;
+  height: 1408px;
+  margin: 28px 24px;
+  padding: 0px 32px 48px;
+}
+
+.events-container .main {
+  width: 19.5rem;
+  height: 27rem;
+  padding: 16px;
+  text-align: center;
+}
+
+/* Event cards */
+.event-card {
+  width: 19rem;
+  width: 100%;
+  height: 25rem;
+  background: #111;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.event-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+}
+
+.event-card img {
+  width: 17.5rem;
+  height: 25rem;
+  object-fit: cover;
+  display: block;
+}
+
+/* ===== Schedule Section ===== */
+.schedule {
+  background: #000;
+  padding: 80px 20px;
+  font-family: "Zen Dots", sans-serif;
+  color: #fff;
+}
+
+/* Header */
+.schedule .head {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.schedule-title {
+  font-size: 3rem;
+  letter-spacing: 3px;
+  color: #ccc;
+  font-weight: bold;
+}
+
+.schedule-date {
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 1.2rem;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.7);
+}
+
+/* Day */
+.day {
+  border: 2px solid indigo;
+  border-radius: 2rem ;
+  overflow: hidden;
+  margin:0px 100px 40px 100px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+}
+
+.day-header {
+  background: linear-gradient(90deg, #2a1f68, #104f76);
+  padding: 15px 25px;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.day .header{
+  padding: 1.5rem;
+}
+
+/* Event box */
+.event-box {
+  background: rgba(15, 15, 35, 0.9);
+  margin: 15px 20px;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  box-shadow: inset 0 0 8px rgba(0, 255, 255, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+}
+
+/* Event info */
+.event-info h3 {
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+  color: #0ef;
+}
+
+.event-info p {
+  font-size: 0.95rem;
+  color: #bbb;
+  line-height: 1.4;
+}
+
+/* Event time */
+.event-time {
+  font-size: 0.9rem;
+  background: #021f2e;
+  color: #0ef;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  white-space: nowrap;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.4);
+}
+
+
+
+/* Sponsors Section */
+.sponsors {
+  background: #000;
+  text-align: center;
+  padding: 80px 20px;
+  font-family: "Zen Dots", sans-serif;
+  color: white;
+}
+
+.sponsors-head h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.sponsors-head p {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 60px;
+}
+
+.sponsor-cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.sponsor-card {
+  background: #0d1626;
+  padding: 40px 20px;
+  border-radius: 15px;
+  width: 280px;
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sponsor-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+}
+
+.sponsor-card img {
+  max-width: 180px;
+  max-height: 120px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.sponsor-card h3 {
+  font-size: 1.2rem;
+  margin-top: auto;
+}
+
+
+/* Legacy Section */
+
+.legacy {
+  background: #000;
+  color: white;
+  text-align: center;
+  padding: 48px 32px;
+  font-family: "Zen Dots", sans-serif;
+}
+
+.legacy h2 {
+  width: 100%;
+  height: 72px;
+  font-size: 2.25rem;
+  margin: 0px 0px 32px;
+  padding: 16px 0px;
+}
+
+.legacy-cards {
+  width: 100%;
+  height: 496px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 0px 0px 16px;
+}
+
+.legacy-card {
+  width: 362.66px;
+  height: 440px;
+  font-weight: 1rem;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  background: #111;
+}
+
+.legacy-card video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* Footer */
+
+.legacy-footer {
+  width: 100%;
+  height: 17.1rem;
+  background: #000;
+  color: #bbb;
+  padding:20px;
+  font-family: "Zen Dots", sans-serif;
+  text-align: center;
+}
+
+.legacy-footer > div:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1216px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.legacy-footer .legacy-footers{
+  width: 1216px;
+  height: 10rem;
+  padding: 20px;
+}
+
+/* Left */
+.footer-left h3 {
+  width: 454px;
+  height: 40px;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 36px;
+  
+}
+
+.footer-left p {
+  width: 454px;
+  height: 24px;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/* Center */
+.footer-center {
+  flex: 1;
+  text-align: center;
+}
+
+.footer-center img {
+  max-width: 100px;
+  height: 100px;
+}
+
+/* Right */
+.footer-right p {
+  width: 454px;
+  height: 28px;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 20px;
+}
+
+.social-icons {
+  height: 52px;
+  width: 452px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.social-icons img {
+  margin-top: 10px;
+  height: 28px;
+  width: 28px;
+  filter: brightness(0) invert(1);
+  transition: 0.3s;
+}
+
+
+/* Bottom copyright */
+.bottom {
+  width: 100%;
+  height: 22.5px;
+  margin-top: 70px;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.75);
+  text-align: center;
+}
+
+/* ---------------- Bottom Logo ---------------- */
+.bottom-logo {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 100;
+}
+
+.bottom-logo img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
