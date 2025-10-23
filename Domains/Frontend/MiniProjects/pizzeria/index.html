@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Home</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body>
+<header class="header">
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-dark bg-dark">
+
+    <div class="container-fluid">
+      
+      <a class="navbar-brand" href="#">
+        <img src="logo.png" alt="" width="40" height="30" class="d-inline-block align-text-top">
+        <span style="color:#ffcd01; font-size: 30px;">P</span>izzeria
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="item">
+            <i class='bx bxs-home' ></i>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="item">
+            <i class='bx bxs-cart' ></i>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Cart</a>
+          </li>
+          <li class="item">
+            <i class='bx bxs-offer'></i>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="order.html" target="_blank">Offers</a>
+        </li>
+          <li class="item">
+            <i class='bx bxs-phone-call' ></i>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html" target="_blank">Contact Us</a>
+          </li>
+
+          <li class="nav-item">
+            <form class="d-flex">
+              <button type="button" class="btn btn-warning">Order Now</button>
+            </form>
+      
+          </li>
+        </ul>
+      </div> 
+    </div>
+  </nav>
+</header>  
+
+<!--Carousel-->
+<section>
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active c-item">
+        <img src="s1.jpg" class="d-block w-100 c-img" alt="...">
+        <div class="carousel-caption d-md-block">
+          <h5>Found The Best Pizza</h5>
+          <p>Loaded With Xtra Cheese</p>
+        </div>
+      </div>
+      <div class="carousel-item c-item">
+        <img src="s2.jpg" class="d-block w-100 c-img" alt="...">
+        <div class="carousel-caption d-md-block">
+          <h5>Buy 1 Get 1 free!</h5>
+          <p>The tastiest pizza on the planet</p>
+        </div>
+      </div>
+      <div class="carousel-item c-item">
+        <img src="s3.jpg" class="d-block w-100 c-img" alt="...">
+        <div class="carousel-caption  d-md-block">
+          <h5>Delicious Italian Cuizine</h5>
+          <p>Pizza That make your mood fresh</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+    
+</section>
+
+<section class="offer-section" style="background-color: black;">
+  <div class="container py-5">
+    <h1 style="color: #fff;">Popular Pizza's</h1>
+         <div class="row row-cols-1 row-cols-md-3 g-4 py-5">
+             <div class="col">
+                <div class="card text-white bg-dark mb-3">
+                     <img src="greek.jpg" class="card-img-top" alt="">
+                     <div class="card-body">
+                         <h5 class="card-title">Greek Pizza</h5>
+                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. .</p>
+                     </div>
+                     <div class="d-flex justify-content-around mb-5">
+                         <h3>200 RS</h3>
+                         <button type="button" class="btn btn-warning">Order Now</button>
+                     </div>
+                 </div>
+             </div>
+ 
+             <div class="col">
+                <div class="card text-white bg-dark mb-3">
+                     <img src="sicilian.jpg" class="card-img-top" alt="">
+                     <div class="card-body">
+                         <h5 class="card-title">Sicilian Pizza</h5>
+                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. .</p>
+                     </div>
+                     <div class="d-flex justify-content-around mb-5">
+                         <h3>200 RS</h3>
+                         <button type="button" class="btn btn-warning">Order Now</button>
+                     </div>
+                 </div>
+             </div>
+ 
+             <div class="col">
+                <div class="card text-white bg-dark mb-3">
+                     <img src="Hawaiian.jpg" class="card-img-top" alt="">
+                     <div class="card-body">
+                         <h5 class="card-title">Hawaiian Pizza</h5>
+                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. .</p>
+                     </div>
+                     <div class="d-flex justify-content-around mb-5">
+                         <h3>200 RS</h3>
+                         <button type="button" class="btn btn-warning">Order Now</button>
+                     </div>
+                 </div>
+             </div>
+ 
+             <div class="col">
+                <div class="card text-white bg-dark mb-3">
+                     <img src="tuna and sweet corn .jpg" class="card-img-top" alt="">
+                     <div class="card-body">
+                         <h5 class="card-title">Tuna & sweet corn Pizza</h5>
+                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. .</p>
+                     </div>
+                     <div class="d-flex justify-content-around mb-5">
+                         <h3>200 RS</h3>
+                         <button type="button" class="btn btn-warning">Order Now</button>
+                     </div>
+                 </div>
+             </div>
+ 
+             <div class="col">
+                <div class="card text-white bg-dark mb-3">
+                     <img src="Margherita.jpg" class="card-img-top" alt="">
+                     <div class="card-body">
+                         <h5 class="card-title">Margherita Pizza</h5>
+                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. .</p>
+                     </div>
+                     <div class="d-flex justify-content-around mb-5">
+                         <h3>200 RS</h3>
+                         <button type="button" class="btn btn-warning">Order Now</button>
+                     </div>
+                 </div>
+             </div>
+             <div class="col">
+                <div class="card text-white bg-dark mb-3">
+                     <img src="newyork.jpg" class="card-img-top" alt="">
+                     <div class="card-body">
+                         <h5 class="card-title">New York Pizza</h5>
+                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. .</p>
+                     </div>
+                     <div class="d-flex justify-content-around mb-5">
+                         <h3>200 RS</h3>
+                         <button type="button" class="btn btn-warning">Order Now</button>
+                     </div>
+                 </div>
+             </div>
+             <div class="col">
+                <div class="card text-white bg-dark mb-3">
+                     <img src="Pepperoni Pizza.jpg" class="card-img-top" alt="">
+                     <div class="card-body">
+                         <h5 class="card-title">Pepperoni Pizza</h5>
+                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. .</p>
+                     </div>
+                     <div class="d-flex justify-content-around mb-5">
+                         <h3>200 RS</h3>
+                         <button type="button" class="btn btn-warning">Order Now</button>
+                     </div>
+                 </div>
+             </div>
+             <div class="col">
+                <div class="card text-white bg-dark mb-3">
+                     <img src="Neapolitan.jpg" class="card-img-top" alt="">
+                     <div class="card-body">
+                         <h5 class="card-title">Neapolitan Pizza</h5>
+                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. .</p>
+                     </div>
+                     <div class="d-flex justify-content-around mb-5">
+                         <h3>200 RS</h3>
+                         <button type="button" class="btn btn-warning">Order Now</button>
+                     </div>
+                 </div>
+             </div>
+             <div class="col">
+                <div class="card text-white bg-dark mb-3">
+                     <img src="cali.jpg" class="card-img-top" alt="">
+                     <div class="card-body">
+                         <h5 class="card-title">California Pizza</h5>
+                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. .</p>
+                     </div>
+                     <div class="d-flex justify-content-around mb-5">
+                         <h3>200 RS</h3>
+                         <button type="button" class="btn btn-warning">Order Now</button>
+                     </div>
+                 </div>
+             </div>
+             
+         </div>
+     </div>
+</section>
+
+<section style="background-color: black;">
+  <div class="container">
+    <div class="row">
+        <div class="col-md-7">
+          <h4 style="color: #fff;">Get in touch</h4>
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Name</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter your name">
+              </div>
+              <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Email</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Enter your email">
+              </div>
+              <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Contact Number</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Enter your number">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <button class="btn btn-warning">Submit</button>
+        </div>
+        <div class="col-md-5 ">
+          <h4 style="color: #000;">Contact us</h4><hr>
+          <div class="mt-4">
+              <div class="d-flex">
+                <i class="bi bi-geo-alt-fill" style="color: #000; font-size: 20px; margin-bottom: 20px; margin-right: 5px;"></i>
+                <p style=" margin-top: 10px;">Address: 198 West 21th Street, Suite 721 New York NY 10016</p>
+              </div><hr>
+              <div class="d-flex">
+                <i class="bi bi-telephone-fill" style="color: #000; font-size: 20px; margin-bottom: 20px; margin-right: 5px;"></i>
+                <p style=" margin-top: 10px;">Contact :- 8888888888</p>
+              </div><hr>
+              <div class="d-flex">
+                <i class="bi bi-envelope-fill" style="color: #000; font-size: 20px; margin-bottom: 20px; margin-right: 5px;"></i>
+                <p style=" margin-top: 10px;">Email:- Contact@gmail.com</p>
+              </div><hr>
+              <div class="d-flex">
+                <i class="bi bi-browser-chrome" style="color: #000; font-size: 20px; margin-bottom: 20px; margin-right: 5px;"></i>
+                <p style=" margin-top: 10px;">Website: www.contact.com</p>
+              </div><hr>
+          </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
