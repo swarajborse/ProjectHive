@@ -1,0 +1,52 @@
+p{
+    font-family: Roboto, Arial;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+body{
+    /* this style below will be inherited*/
+    font-family:Roboto, arial;
+    margin: 0;
+    padding-top: 80px;
+    padding-left: 96px;
+    padding-right: 24px;
+    background-color: light rgb(248, 248, 248);
+}
+.sidebar
+{
+    position: fixed;
+    left:0;
+    bottom:0;
+    top:55px;
+    background-color:white;
+    width: 72px;
+    z-index:200 ;
+    padding-top: 5px;
+}
+.sidebar-link
+{
+    height: 74px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    cursor: pointer;
+}
+.sidebar-link:hover
+{
+    background-color: gray;
+
+}
+
+.sidebar-link img
+{
+    height:25px;
+    margin-bottom: 4px;
+    
+}
+.sidebar-link div
+{
+    
+    font-size: 10px;
+
+}
