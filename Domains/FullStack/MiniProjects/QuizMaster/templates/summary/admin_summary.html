@@ -1,0 +1,95 @@
+{% extends 'layout.html' %}
+
+{% block title %} Admin Summary {% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <h1 class="text-center text-primary">
+        <i class="fas fa-chart-line"></i> Admin Dashboard - Summary
+    </h1>
+
+    <div class="table-responsive mt-4">
+        <table class="table table-bordered table-hover shadow-sm">
+            <thead class="table-dark text-center">
+                <tr>
+                    <th>Subject</th>
+                    <th>Top Scorer</th>
+                    <th>Top Percentage</th>
+                    <th>Average Percentage</th>
+                </tr>
+            </thead>
+            <tbody class="text-center">
+                {% for subject in subject_stats %}
+                <tr>
+                    <td class="fw-bold">{{ subject.subject_name }}</td>
+                    <td>{{ subject.top_scorer or 'N/A' }}</td>
+                    <td>{{ subject.top_percentage | round(2) }}%</td>
+                    <td>{{ subject.avg_percentage | round(2) }}%</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <div class="mt-5">
+        <h4 class="text-center">Average Percentage by Subject</h4>
+        <div class="d-flex justify-content-center">
+            <canvas id="summaryChart" class="shadow-lg p-3 bg-white rounded"></canvas>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const ctx = document.getElementById('summaryChart').getContext('2d');
+        const subjectLabels = {{ subject_labels | tojson }};
+        const avgPercentages = {{ subject_stats | map(attribute='avg_percentage') | list | tojson }};
+
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: subjectLabels,
+                datasets: [{
+                    label: 'Average Percentage',
+                    data: avgPercentages,
+                    backgroundColor: 'rgba(54, 162, 235, 0.6)',
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    borderWidth: 1,
+                    borderRadius: 8
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 100,
+                        grid: {
+                            color: "rgba(0, 0, 0, 0.1)"
+                        }
+                    },
+                    x: {
+                        grid: {
+                            display: false
+                        }
+                    }
+                },
+                plugins: {
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                return context.raw.toFixed(2) + '%';
+                            }
+                        }
+                    },
+                    legend: {
+                        display: false
+                    }
+                }
+            }
+        });
+    });
+</script>
+{% endblock %}

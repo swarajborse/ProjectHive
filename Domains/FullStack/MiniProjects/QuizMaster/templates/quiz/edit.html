@@ -1,0 +1,131 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    Edit Quiz
+{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="card shadow-lg">
+        <div class="card-header bg-warning text-white">
+            <h2 class="h4 mb-0"><i class="fas fa-edit"></i> Edit Quiz</h2>
+        </div>
+        <div class="card-body">
+            <form action="{{ url_for('edit_quiz', id=quiz.id) }}" method="POST">
+                <div class="mb-3">
+                    <label for="name" class="form-label"><i class="fas fa-pencil-alt"></i> Quiz Name</label>
+                    <input type="text" name="name" id="name" class="form-control" value="{{ quiz.quiz_name }}" required placeholder="Enter Quiz Name">
+                </div>
+
+                <div class="mb-3">
+                    <label for="remarks" class="form-label"><i class="fas fa-comment-dots"></i> Remarks</label>
+                    <input type="text" name="remarks" id="remarks" class="form-control" value="{{ quiz.remarks }}" placeholder="Enter Quiz Remarks">
+                </div>
+
+                <div class="mb-3">
+                    <label for="subject_id" class="form-label"><i class="fas fa-book"></i> Subject</label>
+                    <select name="subject_id" id="subject_id" class="form-control" required onchange="filterChapters()">
+                        <option value="" disabled>Select a subject</option>
+                        {% for subject in subjects %}
+                            <option value="{{ subject.id }}" {% if subject.id == quiz.chapter.subject_id %} selected {% endif %}>{{ subject.subject_name }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="chapter_id" class="form-label"><i class="fas fa-chalkboard"></i> Chapter</label>
+                    <select name="chapter_id" id="chapter_id" class="form-control" required>
+                        <option value="" disabled>Select a chapter</option>
+                        {% for chapter in chapters %}
+                            <option value="{{ chapter.id }}" 
+                                    data-subject="{{ chapter.subject_id }}" 
+                                    {% if chapter.id == quiz.chapter_id %} selected {% endif %}>
+                                {{ chapter.chapter_name }}
+                            </option>
+                        {% endfor %}
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="date_of_quiz" class="form-label"><i class="fas fa-calendar-alt"></i> Date of Quiz</label>
+                    <input type="date" name="date_of_quiz" id="date_of_quiz" class="form-control" value="{{ quiz.date_of_quiz.strftime('%Y-%m-%d') }}" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="time_duration" class="form-label"><i class="fas fa-clock"></i> Time Duration (HH:MM:SS)</label>
+                    <input type="text" name="time_duration" class="form-control" value="{{ quiz.time_duration }}" placeholder="00:30:00" required>
+                </div>
+
+                <div class="d-flex justify-content-start mt-3">
+                    <button type="submit" class="btn btn-warning me-2">
+                        <i class="fa fa-edit"></i> Update Quiz
+                    </button>
+                    <a href="{{ url_for('quiz') }}" class="btn btn-secondary">
+                        <i class="fa fa-times"></i> Cancel
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    function filterChapters() {
+        var subjectId = document.getElementById('subject_id').value;
+        var chapterSelect = document.getElementById('chapter_id');
+        var chapterOptions = chapterSelect.querySelectorAll('option');
+        
+        var hasValidSelection = false;
+        
+        chapterOptions.forEach(function(option) {
+            if (option.value === "") {
+                option.style.display = "";
+            } else {
+                if (option.dataset.subject === subjectId) {
+                    option.style.display = "";
+                    hasValidSelection = true;
+                } else {
+                    option.style.display = "none";
+                    if (option.selected) {
+                        option.selected = false;
+                    }
+                }
+            }
+        });
+        
+        if (!hasValidSelection) {
+            chapterSelect.value = "";
+            for (var i = 0; i < chapterOptions.length; i++) {
+                var option = chapterOptions[i];
+                if (option.value !== "" && option.dataset.subject === subjectId) {
+                    option.selected = true;
+                    break;
+                }
+            }
+        }
+    }
+    
+    function setMinDate() {
+        var today = new Date();
+        var month = today.getMonth() + 1;
+        var day = today.getDate();
+        var year = today.getFullYear();
+        
+        if (month < 10) month = '0' + month;
+        if (day < 10) day = '0' + day;
+        
+        var formattedDate = year + '-' + month + '-' + day;
+        document.getElementById('date_of_quiz').min = formattedDate;
+        
+        var currentValue = document.getElementById('date_of_quiz').value;
+        if (currentValue < formattedDate) {
+            document.getElementById('date_of_quiz').value = formattedDate;
+        }
+    }
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        filterChapters();
+        setMinDate();
+    });
+</script>
+{% endblock %}
