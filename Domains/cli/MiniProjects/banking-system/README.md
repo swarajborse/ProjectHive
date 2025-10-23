@@ -1,4 +1,4 @@
-# Simple Banking App (banking-system)
+# Simple Banking App (rust)
 
 A small CLI banking system written in Rust for learning and demo purposes.  
 Provides account creation, login, simple operations and account deletion via a single binary.
@@ -25,7 +25,6 @@ Dependency mapping (from Cargo.toml):
   - Install from https://rustup.rs if needed
 
 ## Tech stack
-
 - Language: Rust
 - Build / package manager: cargo
 - CLI parsing: clap
@@ -36,7 +35,6 @@ Dependency mapping (from Cargo.toml):
 - Linting: clippy (cargo clippy)
 
 ## Quickstart
-
 1. Change into the project directory:
    ```sh
    cd ./Domains/cli/MiniProjects/banking-system # Assuming you are in ProjectHive repo
