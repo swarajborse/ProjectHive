@@ -1,3 +1,4 @@
+# Contributor- siddhi-wadekar
 # TastyGuide – Android App
 
 TastyGuide is a simple Android application designed to help users explore four different cuisines: Indian, Italian, Chinese, and Mexican. Built as a microproject, this app offers users a smooth experience to browse recipe options with intuitive navigation.
