@@ -1,0 +1,30 @@
+p{
+    font-family: Roboto, Arial;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+body{
+    margin: 0;
+    padding-top: 80px;
+    padding-left: 80px;
+}
+.sidebar
+{
+    position: fixed;
+    left:0;
+    bottom:0;
+    top:55px;
+    background-color:white;
+    width: 72px;
+}
+.sidebar-link
+{
+    
+    height: 75px;
+    margin-bottom: 1px;
+}
+.sidebar-link:hover
+{
+    background-color: gray;
+}
+
