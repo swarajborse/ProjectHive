@@ -86,6 +86,22 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
+<img src="https://github.com/Mmadan128.png" width="100" height="100" style="border-radius: 50%;" alt="Mmadan128"/>
+
+**[@Mmadan128](https://github.com/Mmadan128)**
+
+*Contributions: 3 PRs across 1 domain(s)*
+
+*Domains: AI-ML*
+
+</div>
+
+---
+
+### 🏅 Rank 6
+
+<div align="center">
+
 <img src="https://github.com/Ansh-1019.png" width="100" height="100" style="border-radius: 50%;" alt="Ansh-1019"/>
 
 **[@Ansh-1019](https://github.com/Ansh-1019)**
@@ -98,7 +114,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 6
+### 🏅 Rank 7
 
 <div align="center">
 
@@ -114,7 +130,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 7
+### 🏅 Rank 8
 
 <div align="center">
 
@@ -130,7 +146,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 8
+### 🏅 Rank 9
 
 <div align="center">
 
@@ -146,29 +162,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 9
+### 🏅 Rank 10
 
 <div align="center">
 
 <img src="https://github.com/Mansi13-6.png" width="100" height="100" style="border-radius: 50%;" alt="Mansi13-6"/>
 
 **[@Mansi13-6](https://github.com/Mansi13-6)**
-
-*Contributions: 2 PRs across 1 domain(s)*
-
-*Domains: Frontend*
-
-</div>
-
----
-
-### 🏅 Rank 10
-
-<div align="center">
-
-<img src="https://github.com/MeghPatel-007.png" width="100" height="100" style="border-radius: 50%;" alt="MeghPatel-007"/>
-
-**[@MeghPatel-007](https://github.com/MeghPatel-007)**
 
 *Contributions: 2 PRs across 1 domain(s)*
 
