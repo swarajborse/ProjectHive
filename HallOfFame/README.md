@@ -70,13 +70,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/k4niz.png" width="100" height="100" style="border-radius: 50%;" alt="k4niz"/>
+<img src="https://github.com/SOHAM-GADEKAR.png" width="100" height="100" style="border-radius: 50%;" alt="SOHAM-GADEKAR"/>
 
-**[@k4niz](https://github.com/k4niz)**
+**[@SOHAM-GADEKAR](https://github.com/SOHAM-GADEKAR)**
 
-*Contributions: 4 PRs across 4 domain(s)*
+*Contributions: 4 PRs across 2 domain(s)*
 
-*Domains: AI-ML, AR-VR, FullStack, IoT*
+*Domains: Frontend, IoT*
 
 </div>
 
@@ -86,13 +86,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/SOHAM-GADEKAR.png" width="100" height="100" style="border-radius: 50%;" alt="SOHAM-GADEKAR"/>
+<img src="https://github.com/k4niz.png" width="100" height="100" style="border-radius: 50%;" alt="k4niz"/>
 
-**[@SOHAM-GADEKAR](https://github.com/SOHAM-GADEKAR)**
+**[@k4niz](https://github.com/k4niz)**
 
-*Contributions: 3 PRs across 2 domain(s)*
+*Contributions: 4 PRs across 4 domain(s)*
 
-*Domains: IoT, Frontend*
+*Domains: AI-ML, AR-VR, FullStack, IoT*
 
 </div>
 
