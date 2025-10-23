@@ -4,8 +4,8 @@ use std::path::PathBuf;
 
 use crate::luhn::AccountNumber;
 
-use rand::rng;
 use rand::prelude::*;
+use rand::rng;
 use rusqlite::{Connection, Result};
 
 #[derive(Debug)]
