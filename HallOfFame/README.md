@@ -38,6 +38,22 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
+<img src="https://github.com/snehal492006.png" width="100" height="100" style="border-radius: 50%;" alt="snehal492006"/>
+
+**[@snehal492006](https://github.com/snehal492006)**
+
+*Contributions: 6 PRs across 3 domain(s)*
+
+*Domains: Frontend, AI-ML, CompetitiveProgramming*
+
+</div>
+
+---
+
+### 🥉 Rank 3
+
+<div align="center">
+
 <img src="https://github.com/shr128.png" width="100" height="100" style="border-radius: 50%;" alt="shr128"/>
 
 **[@shr128](https://github.com/shr128)**
@@ -50,7 +66,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🥉 Rank 3
+### 🏅 Rank 4
 
 <div align="center">
 
@@ -66,7 +82,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 4
+### 🏅 Rank 5
 
 <div align="center">
 
@@ -77,22 +93,6 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 *Contributions: 5 PRs across 4 domain(s)*
 
 *Domains: AI-ML, AR-VR, FullStack, IoT*
-
-</div>
-
----
-
-### 🏅 Rank 5
-
-<div align="center">
-
-<img src="https://github.com/snehal492006.png" width="100" height="100" style="border-radius: 50%;" alt="snehal492006"/>
-
-**[@snehal492006](https://github.com/snehal492006)**
-
-*Contributions: 5 PRs across 3 domain(s)*
-
-*Domains: AI-ML, CompetitiveProgramming, Frontend*
 
 </div>
 
