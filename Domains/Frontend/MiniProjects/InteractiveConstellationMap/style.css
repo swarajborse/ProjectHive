@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom, #0a0a2a, #1a1a3a, #2a2a4a);
+    color: #e0e0ff;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background: rgba(10, 10, 40, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(100, 100, 255, 0.2);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    background: linear-gradient(to right, #aaccff, #7799ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 10px rgba(100, 150, 255, 0.5);
+}
+
+header p {
+    font-size: 1.1rem;
+    opacity: 0.8;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 15px;
+    background: rgba(15, 15, 45, 0.7);
+    border-radius: 8px;
+}
+
+button {
+    background: linear-gradient(to bottom, #3a3a7a, #2a2a5a);
+    color: #e0e0ff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(100, 100, 255, 0.3);
+}
+
+button:hover {
+    background: linear-gradient(to bottom, #4a4a8a, #3a3a7a);
+    box-shadow: 0 0 15px rgba(120, 120, 255, 0.5);
+    transform: translateY(-2px);
+}
+
+.constellation-select {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+select {
+    background: #2a2a5a;
+    color: #e0e0ff;
+    border: 1px solid #4a4a8a;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.sky-map {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background: #0a0a1a;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 30px rgba(0, 0, 50, 0.8);
+    margin-bottom: 20px;
+}
+
+#starCanvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.info-panel {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 300px;
+    background: rgba(10, 10, 40, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(100, 100, 255, 0.3);
+    border: 1px solid #4a4a8a;
+    backdrop-filter: blur(5px);
+}
+
+.info-panel h3 {
+    margin-bottom: 10px;
+    color: #aaccff;
+    font-size: 1.5rem;
+}
+
+.info-panel p {
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.hidden {
+    display: none;
+}
+
+.instructions {
+    text-align: center;
+    padding: 15px;
+    background: rgba(15, 15, 45, 0.7);
+    border-radius: 8px;
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+/* Twinkling stars effect */
+@keyframes twinkle {
+    0%, 100% { opacity: 0.5; }
+    50% { opacity: 1; }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .constellation-select {
+        justify-content: space-between;
+    }
+    
+    .info-panel {
+        width: calc(100% - 40px);
+        right: 20px;
+        left: 20px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .sky-map {
+        height: 500px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .sky-map {
+        height: 400px;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+}
