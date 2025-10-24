@@ -54,6 +54,22 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
+<img src="https://github.com/k4niz.png" width="100" height="100" style="border-radius: 50%;" alt="k4niz"/>
+
+**[@k4niz](https://github.com/k4niz)**
+
+*Contributions: 5 PRs across 4 domain(s)*
+
+*Domains: AI-ML, AR-VR, FullStack, IoT*
+
+</div>
+
+---
+
+### 🏅 Rank 4
+
+<div align="center">
+
 <img src="https://github.com/Ogagaoghene.png" width="100" height="100" style="border-radius: 50%;" alt="Ogagaoghene"/>
 
 **[@Ogagaoghene](https://github.com/Ogagaoghene)**
@@ -66,33 +82,17 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 4
-
-<div align="center">
-
-<img src="https://github.com/k4niz.png" width="100" height="100" style="border-radius: 50%;" alt="k4niz"/>
-
-**[@k4niz](https://github.com/k4niz)**
-
-*Contributions: 4 PRs across 4 domain(s)*
-
-*Domains: AI-ML, AR-VR, FullStack, IoT*
-
-</div>
-
----
-
 ### 🏅 Rank 5
 
 <div align="center">
 
-<img src="https://github.com/SOHAM-GADEKAR.png" width="100" height="100" style="border-radius: 50%;" alt="SOHAM-GADEKAR"/>
+<img src="https://github.com/Ansh-1019.png" width="100" height="100" style="border-radius: 50%;" alt="Ansh-1019"/>
 
-**[@SOHAM-GADEKAR](https://github.com/SOHAM-GADEKAR)**
+**[@Ansh-1019](https://github.com/Ansh-1019)**
 
-*Contributions: 3 PRs across 2 domain(s)*
+*Contributions: 4 PRs across 2 domain(s)*
 
-*Domains: Frontend, IoT*
+*Domains: AI-ML, Backend*
 
 </div>
 
@@ -102,13 +102,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/Ansh-1019.png" width="100" height="100" style="border-radius: 50%;" alt="Ansh-1019"/>
+<img src="https://github.com/snehal492006.png" width="100" height="100" style="border-radius: 50%;" alt="snehal492006"/>
 
-**[@Ansh-1019](https://github.com/Ansh-1019)**
+**[@snehal492006](https://github.com/snehal492006)**
 
-*Contributions: 2 PRs across 1 domain(s)*
+*Contributions: 4 PRs across 3 domain(s)*
 
-*Domains: AI-ML*
+*Domains: AI-ML, CompetitiveProgramming, Frontend*
 
 </div>
 
@@ -118,13 +118,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/vatsalgupta2004.png" width="100" height="100" style="border-radius: 50%;" alt="vatsalgupta2004"/>
+<img src="https://github.com/SOHAM-GADEKAR.png" width="100" height="100" style="border-radius: 50%;" alt="SOHAM-GADEKAR"/>
 
-**[@vatsalgupta2004](https://github.com/vatsalgupta2004)**
+**[@SOHAM-GADEKAR](https://github.com/SOHAM-GADEKAR)**
 
-*Contributions: 2 PRs across 2 domain(s)*
+*Contributions: 4 PRs across 2 domain(s)*
 
-*Domains: AI-ML, Frontend*
+*Domains: Frontend, IoT*
 
 </div>
 
@@ -166,13 +166,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/GayatriVitkar.png" width="100" height="100" style="border-radius: 50%;" alt="GayatriVitkar"/>
+<img src="https://github.com/vatsalgupta2004.png" width="100" height="100" style="border-radius: 50%;" alt="vatsalgupta2004"/>
 
-**[@GayatriVitkar](https://github.com/GayatriVitkar)**
+**[@vatsalgupta2004](https://github.com/vatsalgupta2004)**
 
-*Contributions: 2 PRs across 1 domain(s)*
+*Contributions: 2 PRs across 2 domain(s)*
 
-*Domains: CompetitiveProgramming*
+*Domains: AI-ML, Frontend*
 
 </div>
 
@@ -215,7 +215,7 @@ For detailed statistics and domain-specific rankings, check out:
 
 *Rankings are updated automatically with each merged contribution.*
 
-**Last Updated:** 2025-10-23
+**Last Updated:** 2025-10-24
 
 ---
 
