@@ -134,13 +134,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/Mmadan128.png" width="100" height="100" style="border-radius: 50%;" alt="Mmadan128"/>
+<img src="https://github.com/Tanmay-Kad.png" width="100" height="100" style="border-radius: 50%;" alt="Tanmay-Kad"/>
 
-**[@Mmadan128](https://github.com/Mmadan128)**
+**[@Tanmay-Kad](https://github.com/Tanmay-Kad)**
 
-*Contributions: 3 PRs across 1 domain(s)*
+*Contributions: 2 PRs across 1 domain(s)*
 
-*Domains: AI-ML*
+*Domains: Frontend*
 
 </div>
 
@@ -166,13 +166,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/Dhiraj201226.png" width="100" height="100" style="border-radius: 50%;" alt="Dhiraj201226"/>
+<img src="https://github.com/Mmadan128.png" width="100" height="100" style="border-radius: 50%;" alt="Mmadan128"/>
 
-**[@Dhiraj201226](https://github.com/Dhiraj201226)**
+**[@Mmadan128](https://github.com/Mmadan128)**
 
-*Contributions: 2 PRs across 2 domain(s)*
+*Contributions: 2 PRs across 1 domain(s)*
 
-*Domains: AI-ML, Frontend*
+*Domains: AI-ML*
 
 </div>
 
