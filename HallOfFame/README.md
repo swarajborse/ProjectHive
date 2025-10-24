@@ -134,13 +134,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/AksharGoyal.png" width="100" height="100" style="border-radius: 50%;" alt="AksharGoyal"/>
+<img src="https://github.com/khyati262.png" width="100" height="100" style="border-radius: 50%;" alt="khyati262"/>
 
-**[@AksharGoyal](https://github.com/AksharGoyal)**
+**[@khyati262](https://github.com/khyati262)**
 
-*Contributions: 3 PRs across 2 domain(s)*
+*Contributions: 3 PRs across 1 domain(s)*
 
-*Domains: Backend, cli*
+*Domains: Frontend*
 
 </div>
 
