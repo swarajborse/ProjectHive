@@ -1,1 +1,10 @@
-.vscode
+.DS_Store
+
+# macOS system files
+.DS_Store
+
+# node modules (if you ever use Node)
+node_modules/
+
+# log files
+*.log
