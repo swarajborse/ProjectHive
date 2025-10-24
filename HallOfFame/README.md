@@ -54,13 +54,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/snehal492006.png" width="100" height="100" style="border-radius: 50%;" alt="snehal492006"/>
+<img src="https://github.com/Ansh-1019.png" width="100" height="100" style="border-radius: 50%;" alt="Ansh-1019"/>
 
-**[@snehal492006](https://github.com/snehal492006)**
+**[@Ansh-1019](https://github.com/Ansh-1019)**
 
-*Contributions: 5 PRs across 3 domain(s)*
+*Contributions: 5 PRs across 2 domain(s)*
 
-*Domains: AI-ML, CompetitiveProgramming, Frontend*
+*Domains: AI-ML, Backend*
 
 </div>
 
@@ -102,13 +102,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/Ansh-1019.png" width="100" height="100" style="border-radius: 50%;" alt="Ansh-1019"/>
+<img src="https://github.com/snehal492006.png" width="100" height="100" style="border-radius: 50%;" alt="snehal492006"/>
 
-**[@Ansh-1019](https://github.com/Ansh-1019)**
+**[@snehal492006](https://github.com/snehal492006)**
 
-*Contributions: 4 PRs across 2 domain(s)*
+*Contributions: 4 PRs across 3 domain(s)*
 
-*Domains: AI-ML, Backend*
+*Domains: AI-ML, CompetitiveProgramming, Frontend*
 
 </div>
 
