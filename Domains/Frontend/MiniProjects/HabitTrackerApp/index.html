@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit Tracker - Build Better Habits</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="app-title">📊 Habit Tracker</h1>
+                <p class="app-subtitle">Build better habits, one day at a time</p>
+            </div>
+            <div class="header-stats">
+                <div class="stat-card">
+                    <div class="stat-value" id="totalHabits">0</div>
+                    <div class="stat-label">Total Habits</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="currentStreak">0</div>
+                    <div class="stat-label">Current Streak</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-value" id="completionRate">0%</div>
+                    <div class="stat-label">Completion Rate</div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Add Habit Section -->
+        <section class="add-habit-section">
+            <div class="add-habit-card">
+                <h2>➕ Add New Habit</h2>
+                <div class="input-group">
+                    <input type="text" id="habitName" class="habit-input"
+                        placeholder="Enter habit name (e.g., Drink water, Exercise)" maxlength="50">
+                    <select id="habitCategory" class="habit-select">
+                        <option value="health">💪 Health</option>
+                        <option value="productivity">⚡ Productivity</option>
+                        <option value="mindfulness">🧘 Mindfulness</option>
+                        <option value="learning">📚 Learning</option>
+                        <option value="social">👥 Social</option>
+                        <option value="other">🎯 Other</option>
+                    </select>
+                    <select id="habitFrequency" class="habit-select">
+                        <option value="daily">Daily</option>
+                        <option value="weekly">Weekly</option>
+                    </select>
+                    <button id="addHabitBtn" class="btn btn-primary">Add Habit</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Date Navigator -->
+        <section class="date-navigator">
+            <button class="nav-btn" id="prevWeek">◀</button>
+            <div class="week-display" id="weekDisplay"></div>
+            <button class="nav-btn" id="nextWeek">▶</button>
+            <button class="today-btn" id="todayBtn">Today</button>
+        </section>
+
+        <!-- Habits Grid -->
+        <section class="habits-section">
+            <div class="habits-header">
+                <h2>Your Habits</h2>
+                <div class="view-toggle">
+                    <button class="toggle-btn active" data-view="week">Week View</button>
+                    <button class="toggle-btn" data-view="list">List View</button>
+                </div>
+            </div>
+
+            <div id="habitsContainer" class="habits-container">
+                <div class="empty-state">
+                    <div class="empty-icon">📋</div>
+                    <h3>No habits yet</h3>
+                    <p>Start building better habits by adding your first one above!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section class="achievements-section">
+            <h2>🏆 Achievements</h2>
+            <div class="achievements-grid" id="achievementsGrid">
+                <div class="achievement-card locked">
+                    <div class="achievement-icon">🔥</div>
+                    <div class="achievement-info">
+                        <h4>First Streak</h4>
+                        <p>Complete a habit for 3 days</p>
+                    </div>
+                </div>
+                <div class="achievement-card locked">
+                    <div class="achievement-icon">⚡</div>
+                    <div class="achievement-info">
+                        <h4>Week Warrior</h4>
+                        <p>Complete a habit for 7 days</p>
+                    </div>
+                </div>
+                <div class="achievement-card locked">
+                    <div class="achievement-icon">💎</div>
+                    <div class="achievement-info">
+                        <h4>Diamond Habit</h4>
+                        <p>Complete a habit for 30 days</p>
+                    </div>
+                </div>
+                <div class="achievement-card locked">
+                    <div class="achievement-icon">🎯</div>
+                    <div class="achievement-info">
+                        <h4>Perfect Week</h4>
+                        <p>Complete all habits for a week</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Delete Confirmation Modal -->
+        <div id="deleteModal" class="modal hidden">
+            <div class="modal-overlay"></div>
+            <div class="modal-content">
+                <h3>Delete Habit?</h3>
+                <p>Are you sure you want to delete this habit? This action cannot be undone.</p>
+                <div class="modal-actions">
+                    <button class="btn btn-secondary" id="cancelDelete">Cancel</button>
+                    <button class="btn btn-danger" id="confirmDelete">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
