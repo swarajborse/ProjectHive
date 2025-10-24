@@ -29,7 +29,7 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | 17 | [@Keron](https://github.com/Keron) | 2 | 1 (Frontend) | Recent |
 | 18 | [@Utkarsh-660](https://github.com/Utkarsh-660) | 2 | 1 (Frontend) | Recent |
 | 19 | [@alisha1510](https://github.com/alisha1510) | 2 | 1 (Frontend) | Recent |
-| 20 | [@siddhi-wadekar](https://github.com/siddhi-wadekar) | 1 | 0 () | Recent |
+| 20 | [@Anushka2726](https://github.com/Anushka2726) | 1 | 0 () | Recent |
 | 21 | [@mahir-m01](https://github.com/mahir-m01) | 1 | 1 (Frontend) | Recent |
 | 22 | [@GayatriVitkarcd](https://github.com/GayatriVitkarcd) | 1 | 1 (Frontend) | Recent |
 | 23 | [@SanjeevDeori](https://github.com/SanjeevDeori) | 1 | 1 (Frontend) | Recent |
