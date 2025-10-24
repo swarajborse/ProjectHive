@@ -11,10 +11,10 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | Rank | Contributor | Total PRs | Domains Contributed | Last Active |
 |------|-------------|-----------|---------------------|-------------|
 | 🥇 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 19 | 13 (AI-ML, AR-VR, Backend, Blockchain, Cloud, Cybersecurity, DevOps, Frontend, FullStack, IoT, MLOps, NLP, Robotics-Automation) | Recent |
-| 🥈 | [@snehal492006](https://github.com/snehal492006) | 6 | 3 (Frontend, AI-ML, CompetitiveProgramming) | Recent |
-| 🥉 | [@shr128](https://github.com/shr128) | 6 | 1 (Frontend) | Recent |
-| 4 | [@Aaditya-2407](https://github.com/Aaditya-2407) | 6 | 1 (Frontend) | Recent |
-| 5 | [@k4niz](https://github.com/k4niz) | 5 | 4 (AI-ML, AR-VR, FullStack, IoT) | Recent |
+| 🥈 | [@shr128](https://github.com/shr128) | 7 | 1 (Frontend) | Recent |
+| 🥉 | [@Aaditya-2407](https://github.com/Aaditya-2407) | 6 | 1 (Frontend) | Recent |
+| 4 | [@k4niz](https://github.com/k4niz) | 5 | 4 (AI-ML, AR-VR, FullStack, IoT) | Recent |
+| 5 | [@snehal492006](https://github.com/snehal492006) | 5 | 3 (AI-ML, CompetitiveProgramming, Frontend) | Recent |
 | 6 | [@Ogagaoghene](https://github.com/Ogagaoghene) | 5 | 1 (Backend) | Recent |
 | 7 | [@Ansh-1019](https://github.com/Ansh-1019) | 4 | 2 (AI-ML, Backend) | Recent |
 | 8 | [@SOHAM-GADEKAR](https://github.com/SOHAM-GADEKAR) | 4 | 2 (Frontend, IoT) | Recent |
@@ -48,9 +48,9 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 |-------------|---------------|
 | [@shr128](https://github.com/shr128) | 6 |
 | [@Aaditya-2407](https://github.com/Aaditya-2407) | 6 |
-| [@snehal492006](https://github.com/snehal492006) | 3 |
 | [@SOHAM-GADEKAR](https://github.com/SOHAM-GADEKAR) | 3 |
 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 2 |
+| [@snehal492006](https://github.com/snehal492006) | 2 |
 | [@Mansi13-6](https://github.com/Mansi13-6) | 2 |
 | [@MeghPatel-007](https://github.com/MeghPatel-007) | 2 |
 | [@khyati262](https://github.com/khyati262) | 2 |
@@ -78,13 +78,6 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | [@snehal492006](https://github.com/snehal492006) | 1 |
 | [@vatsalgupta2004](https://github.com/vatsalgupta2004) | 1 |
 | [@Dhiraj201226](https://github.com/Dhiraj201226) | 1 |
-
-### CompetitiveProgramming
-
-| Contributor | Contributions |
-|-------------|---------------|
-| [@snehal492006](https://github.com/snehal492006) | 2 |
-| [@GayatriVitkar](https://github.com/GayatriVitkar) | 2 |
 
 ### AR-VR
 
@@ -159,6 +152,13 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | Contributor | Contributions |
 |-------------|---------------|
 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 1 |
+
+### CompetitiveProgramming
+
+| Contributor | Contributions |
+|-------------|---------------|
+| [@snehal492006](https://github.com/snehal492006) | 2 |
+| [@GayatriVitkar](https://github.com/GayatriVitkar) | 2 |
 
 ### cli
 
