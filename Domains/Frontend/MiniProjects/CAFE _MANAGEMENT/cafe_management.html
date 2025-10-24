@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Café Management System (Demo)</title>
+  <style>
+    :root{--accent:#8b5e3c;--muted:#f3f3f3;--dark:#222;--card:#fff}
+    *{box-sizing:border-box;font-family:Inter,system-ui,Segoe UI,Arial}
+    body{margin:0;background:linear-gradient(180deg,#fff,#f7f5f3);color:var(--dark)}
+    header{background:var(--card);display:flex;align-items:center;justify-content:space-between;padding:12px 18px;box-shadow:0 2px 6px rgba(0,0,0,0.05);position:sticky;top:0;z-index:10}
+    header .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:46px;height:46px;border-radius:10px;background:var(--accent);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700}
+    nav a{margin:0 8px;color:var(--dark);text-decoration:none}
+    .controls{display:flex;gap:8px;align-items:center}
+    main{max-width:1180px;margin:18px auto;padding:12px}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:18px}
+    .card{background:var(--card);padding:14px;border-radius:12px;box-shadow:0 6px 18px rgba(11,11,11,0.04)}
+    .menu-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+    .menu-item{display:flex;gap:10px;align-items:flex-start;border:1px solid #eee;padding:8px;border-radius:8px}
+    .menu-item img{width:80px;height:80px;border-radius:8px;object-fit:cover}
+    .menu-item h4{margin:0 0 6px 0}
+    .filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
+    .btn{background:var(--accent);color:#fff;padding:8px 12px;border-radius:8px;border:none;cursor:pointer}
+    .btn.secondary{background:#eee;color:var(--dark)}
+    .cart-list{max-height:420px;overflow:auto}
+    footer{margin-top:18px;text-align:center;color:#666;padding:22px}
+    /* admin modal & forms */
+    .modal{position:fixed;inset:0;background:rgba(0,0,0,0.3);display:none;align-items:center;justify-content:center;padding:18px}
+    .modal.open{display:flex}
+    .modal .panel{width:100%;max-width:880px;background:#fff;border-radius:10px;padding:16px}
+    label{display:block;margin:8px 0 4px;font-size:13px}
+    input,select,textarea{width:100%;padding:10px;border-radius:8px;border:1px solid #ddd}
+    table{width:100%;border-collapse:collapse}
+    th,td{padding:8px;border-bottom:1px solid #eee;text-align:left}
+    .small{font-size:13px;color:#444}
+    .inline{display:inline-flex;gap:6px;align-items:center}
+    .lang-switch{padding:6px 8px;border-radius:8px;border:1px solid #ddd;background:#fff}
+    @media (max-width:900px){.grid{grid-template-columns:1fr}.controls .hide-sm{display:none}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="logo">C</div>
+      <div>
+        <div style="font-weight:700">The Cozy Café</div>
+        <div class="small">Fresh coffee • Local flavors • Good vibes</div>
+      </div>
+    </div>
+    <nav class="hide-sm">
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="controls">
+      <select id="branchSelect" class="lang-switch" title="Choose branch"></select>
+      <select id="lang" class="lang-switch">
+        <option value="en">English</option>
+        <option value="hi">हिंदी</option>
+        <option value="mr">मराठी</option>
+      </select>
+      <button class="btn secondary" onclick="openModal('loginModal')">Login</button>
+      <button class="btn" onclick="openModal('registerModal')">Register</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="card">
+      <h2 id="welcomeTitle">Welcome to The Cozy Café</h2>
+      <p id="welcomeText">Handcrafted coffees & seasonal treats. Order online, book a table or visit us.</p>
+      <div style="display:flex;gap:16px;margin-top:12px;flex-wrap:wrap">
+        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=60" alt="ambience" style="height:160px;border-radius:10px;object-fit:cover">
+        <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?w=800&q=60" alt="coffee" style="height:160px;border-radius:10px;object-fit:cover">
+        <div class="card" style="flex:1;min-width:220px">
+          <h4>Today's Highlights</h4>
+          <ul id="offersList">
+            <!-- JS populates offers -->
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="grid" style="margin-top:14px">
+      <section class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center">
+          <h3 id="menuTitle">Menu</h3>
+          <div class="inline">
+            <input id="search" placeholder="Search items..." style="padding:8px;border-radius:8px;border:1px solid #ddd">
+            <select id="categoryFilter" class="lang-switch">
+              <option value="all">All</option>
+            </select>
+            <select id="sortBy" class="lang-switch">
+              <option value="popular">Popular</option>
+              <option value="price_asc">Price ↑</option>
+              <option value="price_desc">Price ↓</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="filters small" id="categoryChips"></div>
+        <div id="menuGrid" class="menu-grid"></div>
+      </section>
+
+      <aside class="card">
+        <h4>Cart</h4>
+        <div class="cart-list" id="cartList"></div>
+        <hr>
+        <div class="small">GST (5%) + Service (2%) applied</div>
+        <div style="display:flex;justify-content:space-between;margin-top:10px"><strong>Total:</strong><strong id="cartTotal">₹0.00</strong></div>
+        <div style="display:flex;gap:8px;margin-top:12px">
+          <button class="btn" onclick="checkout()">Checkout</button>
+          <button class="btn secondary" onclick="clearCart()">Clear</button>
+        </div>
+        <hr>
+        <h4>Table Booking</h4>
+        <form id="bookingForm" onsubmit="return bookTable(event)">
+          <label>Name</label><input id="bkName" required>
+          <label>Phone</label><input id="bkPhone" required>
+          <label>Guests</label><input id="bkGuests" type="number" value="2" required>
+          <label>Date & Time</label><input id="bkDatetime" type="datetime-local" required>
+          <div style="display:flex;gap:8px;margin-top:8px"><button class="btn" type="submit">Reserve</button><button class="btn secondary" type="button" onclick="viewBookings()">View</button></div>
+        </form>
+      </aside>
+    </div>
+
+    <section id="about" class="card" style="margin-top:14px">
+      <h3>About Us</h3>
+      <p>We are a neighborhood café that sources locally and prepares fresh food daily. Open 8:00 AM - 10:00 PM.</p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap">
+        <div style="flex:1;min-width:260px">
+          <h4>Contact</h4>
+          <p>Phone: +91 98765 43210</p>
+          <p>Email: hello@cozycafe.example</p>
+          <div id="mapWrap">
+            <!-- Google Maps embed (replace with your embed key / place) -->
+            <iframe width="100%" height="220" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.602875678493!2d72.82583341537611!3d19.06747898708978!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c8b3a9e2a1a9%3A0x7b7f2f0f3f3c1!2sMumbai!5e0!3m2!1sen!2sin!4v1600000000000!5m2!1sen!2sin"></iframe>
+          </div>
+        </div>
+        <div style="flex:1;min-width:260px">
+          <h4>Branches</h4>
+          <div id="branchesList" class="small"></div>
+          <h4 style="margin-top:12px">Social</h4>
+          <div class="small">Instagram • Facebook • X</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="card" style="margin-top:14px">
+      <h3>Contact / Feedback</h3>
+      <form id="feedbackForm" onsubmit="return submitFeedback(event)">
+        <label>Name</label><input id="fbName" required>
+        <label>Email / Phone</label><input id="fbContact" required>
+        <label>Message</label><textarea id="fbMsg" rows="3" required></textarea>
+        <div style="margin-top:8px"><button class="btn">Send Feedback</button></div>
+      </form>
+    </section>
+
+    <section class="card" style="margin-top:14px">
+      <h3>Admin / Staff Dashboard (Demo)</h3>
+      <div class="small">Login as <strong>admin@example.com</strong> / password: <strong>admin123</strong> to access admin features.</div>
+      <div style="display:flex;gap:8px;margin-top:10px">
+        <button class="btn secondary" onclick="openModal('adminModal')">Open Admin Console</button>
+        <button class="btn" onclick="simulateSwiggyZomato()">Simulate Swiggy/Zomato Integration</button>
+        <button class="btn secondary" onclick="downloadSampleData()">Export Sample Data</button>
+      </div>
+    </section>
+
+    <footer>
+      © The Cozy Café — Demo system. Built for learning & prototyping.
+    </footer>
+  </main>
+
+  <!-- Modals -->
+  <div id="loginModal" class="modal">
+    <div class="panel">
+      <h3>Login</h3>
+      <form onsubmit="return login(event)">
+        <label>Email</label><input id="loginEmail" required>
+        <label>Password</label><input id="loginPass" type="password" required>
+        <div style="display:flex;gap:8px;margin-top:10px"><button class="btn">Login</button><button type="button" class="btn secondary" onclick="openModal('otpModal')">Login with OTP</button></div>
+      </form>
+    </div>
+  </div>
+
+  <div id="registerModal" class="modal">
+    <div class="panel">
+      <h3>Register</h3>
+      <form onsubmit="return register(event)">
+        <label>Name</label><input id="regName" required>
+        <label>Email</label><input id="regEmail" required>
+        <label>Phone</label><input id="regPhone" required>
+        <label>Password</label><input id="regPass" type="password" required>
+        <div style="display:flex;gap:8px;margin-top:10px"><button class="btn">Register</button><button type="button" class="btn secondary" onclick="closeModal('registerModal')">Cancel</button></div>
+      </form>
+    </div>
+  </div>
+
+  <div id="otpModal" class="modal">
+    <div class="panel">
+      <h3>OTP Login (Demo)</h3>
+      <form onsubmit="return otpLogin(event)">
+        <label>Phone</label><input id="otpPhone" required>
+        <div style="display:flex;gap:8px;margin-top:10px"><button class="btn">Send OTP</button><button type="button" class="btn secondary" onclick="closeModal('otpModal')">Close</button></div>
+      </form>
+    </div>
+  </div>
+
+  <div id="adminModal" class="modal">
+    <div class="panel">
+      <h3>Admin Console</h3>
+      <div style="display:flex;gap:8px;flex-wrap:wrap">
+        <button class="btn" onclick="openSection('manageMenu')">Manage Menu</button>
+        <button class="btn" onclick="openSection('orders')">Orders</button>
+        <button class="btn" onclick="openSection('reports')">Reports</button>
+        <button class="btn" onclick="openSection('inventory')">Inventory</button>
+        <button class="btn secondary" onclick="closeModal('adminModal')">Close</button>
+      </div>
+      <div id="adminArea" style="margin-top:12px"></div>
+    </div>
+  </div>
+
+  <script>
+    /************* Demo data & helpers *************/
+    const DATA_KEY='cafe_demo_v1'
+    const defaultData = {
+      branches:[{id:1,name:'Main Street, Mumbai',address:'Downtown',lat:19.07,lng:72.87},{id:2,name:'Pune Branch',address:'Baner'}],
+      menu:[
+        {id:1,name:'Espresso',category:'Coffee',price:80,desc:'Strong espresso shot',img:'https://images.unsplash.com/photo-1510627498534-cf7e9002facc?w=800&q=60',stock:50},
+        {id:2,name:'Cappuccino',category:'Coffee',price:120,desc:'Espresso with steamed milk',img:'https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&q=60',stock:40},
+        {id:3,name:'Masala Chai',category:'Tea',price:50,desc:'Indian spiced tea',img:'https://images.unsplash.com/photo-1508804185872-d7badad00f7d?w=800&q=60',stock:60},
+        {id:4,name:'Veg Sandwich',category:'Snacks',price:140,desc:'Fresh veggies and sauces',img:'https://images.unsplash.com/photo-1546069901-eacef0df6022?w=800&q=60',stock:30},
+        {id:5,name:'Chocolate Brownie',category:'Desserts',price:90,desc:'Warm chocolate brownie',img:'https://images.unsplash.com/photo-1606756793255-9b1390f7a9f2?w=800&q=60',stock:25}
+      ],
+      offers:[{id:1,title:'Flat 20% off on Cappuccino',valid:'Today'},{id:2,title:'Buy 2 Brownies, get 1 free',valid:'This week'}],
+      users:[{email:'admin@example.com',name:'Administrator',password:'admin123',role:'admin'}],
+      bookings:[],
+      orders:[],
+      feedback:[],
+      inventory:{ingredients:{coffeeBeans:1000,milk:2000,sugar:1000,flour:500}}
+    }
+
+    function loadData(){
+      const raw = localStorage.getItem(DATA_KEY)
+      if(raw) return JSON.parse(raw)
+      localStorage.setItem(DATA_KEY,JSON.stringify(defaultData))
+      return JSON.parse(localStorage.getItem(DATA_KEY))
+    }
+    function saveData(d){localStorage.setItem(DATA_KEY,JSON.stringify(d))}
+    let state = loadData()
+
+    // session
+    let currentUser = null
+    let cart = []
+
+    /*********** init UI ***********/
+    function populateBranches(){
+      const sel = document.getElementById('branchSelect')
+      sel.innerHTML=''
+      state.branches.forEach(b=>{
+        const opt = document.createElement('option');opt.value=b.id;opt.textContent=b.name;sel.appendChild(opt)
+      })
+      const bl = document.getElementById('branchesList')
+      bl.innerHTML = state.branches.map(b=>`<div>${b.name}<div class="small">${b.address||''}</div></div>`).join('')
+    }
+
+    function populateOffers(){
+      const ol = document.getElementById('offersList')
+      ol.innerHTML = state.offers.map(o=>`<li>${o.title} <span class="small">(${o.valid})</span></li>`).join('')
+    }
+
+    function populateCategories(){
+      const cats = ['all',...new Set(state.menu.map(m=>m.category))]
+      const cf = document.getElementById('categoryFilter')
+      cf.innerHTML = cats.map(c=>`<option value="${c}">${c}</option>`).join('')
+      const chips = document.getElementById('categoryChips')
+      chips.innerHTML = cats.filter(c=>c!=='all').map(c=>`<button class="btn secondary" onclick="filterByCategory('${c}')">${c}</button>`).join('')
+    }
+
+    function renderMenu(filterText='',category='all',sortBy='popular'){
+      const grid = document.getElementById('menuGrid')
+      let list = [...state.menu]
+      if(category!=='all') list=list.filter(i=>i.category===category)
+      if(filterText) list=list.filter(i=>i.name.toLowerCase().includes(filterText.toLowerCase())||i.desc.toLowerCase().includes(filterText.toLowerCase()))
+      if(sortBy==='price_asc') list.sort((a,b)=>a.price-b.price)
+      if(sortBy==='price_desc') list.sort((a,b)=>b.price-a.price)
+      grid.innerHTML = list.map(item=>`
+        <div class="menu-item card">
+          <img src="${item.img}" alt="${item.name}">
+          <div style="flex:1">
+            <h4>${item.name} — ₹${item.price}</h4>
+            <div class="small">${item.desc}</div>
+            <div style="margin-top:8px;display:flex;gap:8px;align-items:center">
+              <input type="number" min="1" value="1" id="qty_${item.id}" style="width:72px;padding:6px;border-radius:8px;border:1px solid #ddd">
+              <button class="btn" onclick="addToCart(${item.id})">Add to cart</button>
+              <button class="btn secondary" onclick="showDetails(${item.id})">Details</button>
+            </div>
+          </div>
+        </div>
+      `).join('')
+    }
+
+    function filterByCategory(c){document.getElementById('categoryFilter').value=c;renderMenu(document.getElementById('search').value,c,document.getElementById('sortBy').value)}
+
+    document.getElementById('search').addEventListener('input',e=>renderMenu(e.target.value,document.getElementById('categoryFilter').value,document.getElementById('sortBy').value))
+    document.getElementById('categoryFilter').addEventListener('change',e=>renderMenu(document.getElementById('search').value,e.target.value,document.getElementById('sortBy').value))
+    document.getElementById('sortBy').addEventListener('change',e=>renderMenu(document.getElementById('search').value,document.getElementById('categoryFilter').value,e.target.value))
+
+    function showDetails(id){const it=state.menu.find(m=>m.id===id);alert(`${it.name} - ₹${it.price}\n\n${it.desc}\nStock: ${it.stock}`)}
+
+    /*********** cart & checkout ***********/
+    function addToCart(id){
+      const qty = parseInt(document.getElementById('qty_'+id).value)||1
+      const item = state.menu.find(m=>m.id===id)
+      if(item.stock < qty){alert('Not enough stock');return}
+      const existing = cart.find(c=>c.id===id)
+      if(existing) existing.qty += qty; else cart.push({id,qty,price:item.price,name:item.name})
+      renderCart()
+    }
+    function renderCart(){
+      const el = document.getElementById('cartList')
+      if(cart.length===0){el.innerHTML='<div class="small">Cart is empty</div>';document.getElementById('cartTotal').textContent='₹0.00';return}
+      el.innerHTML = cart.map(c=>{
+        const subtotal=c.qty*c.price
+        return `<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px"><div><strong>${c.name}</strong><div class="small">${c.qty} × ₹${c.price}</div></div><div style="text-align:right"><div>₹${subtotal.toFixed(2)}</div><div style="margin-top:6px"><button class='btn secondary' onclick='decreaseQty(${c.id})'>-</button><button class='btn' onclick='increaseQty(${c.id})'>+</button><button class='btn secondary' onclick='removeItem(${c.id})'>Remove</button></div></div></div>`
+      }).join('')
+      const subtotal = cart.reduce((s,c)=>s+c.qty*c.price,0)
+      const gst = subtotal*0.05
+      const service = subtotal*0.02
+      const total = subtotal+gst+service
+      document.getElementById('cartTotal').textContent = `₹${total.toFixed(2)}`
+    }
+    function decreaseQty(id){const it=cart.find(c=>c.id===id);if(!it)return;it.qty--; if(it.qty<=0) cart=cart.filter(c=>c.id!==id);renderCart()}
+    function increaseQty(id){const menuItem=state.menu.find(m=>m.id===id);const it=cart.find(c=>c.id===id);if(it.qty+1>menuItem.stock){alert('Not enough stock')}else{it.qty++;renderCart()}}
+    function removeItem(id){cart=cart.filter(c=>c.id!==id);renderCart()}
+    function clearCart(){cart=[];renderCart()}
+
+    function checkout(){
+      if(cart.length===0){alert('Cart is empty');return}
+      // show simple payment options
+      const method = prompt('Choose payment: UPI / Card / COD','UPI')
+      if(!method) return
+      // reduce stock
+      cart.forEach(ci=>{const m=state.menu.find(mm=>mm.id===ci.id);m.stock-=ci.qty})
+      const order = {id:'ORD'+Date.now(),items:cart,total:cart.reduce((s,c)=>s+c.qty*c.price,0),method,date:new Date().toISOString(),status:'Placed'}
+      state.orders.push(order); saveData(state)
+      // clear and show invoice
+      const subtotal = order.total
+      const gst=subtotal*0.05;const service=subtotal*0.02;const grand=subtotal+gst+service
+      const inv = `Invoice - ${order.id}\nTotal: ₹${grand.toFixed(2)}\nPayment: ${method}\nThank you!`;
+      alert('Order placed: '+order.id+"\n\n"+inv)
+      cart=[]
+      renderCart();renderMenu();
+    }
+
+    /*********** bookings & feedback ***********/
+    function bookTable(e){e.preventDefault();const name=document.getElementById('bkName').value;const phone=document.getElementById('bkPhone').value;const guests=document.getElementById('bkGuests').value;const dt=document.getElementById('bkDatetime').value;state.bookings.push({id:'BK'+Date.now(),name,phone,guests,datetime:dt,branch:document.getElementById('branchSelect').value});saveData(state);alert('Reserved!');document.getElementById('bookingForm').reset();return false}
+    function viewBookings(){const list = state.bookings.map(b=>`${b.id} - ${b.name} - ${b.datetime} - ${b.guests} guests`).join('\n')||'No bookings';alert(list)}
+    function submitFeedback(e){e.preventDefault();state.feedback.push({name:document.getElementById('fbName').value,contact:document.getElementById('fbContact').value,msg:document.getElementById('fbMsg').value,date:new Date().toISOString()});saveData(state);alert('Thanks for feedback!');document.getElementById('feedbackForm').reset();return false}
+
+    /*********** simple auth ***********/
+    function login(e){e.preventDefault();const em=document.getElementById('loginEmail').value;const pw=document.getElementById('loginPass').value;const u=state.users.find(u=>u.email===em && u.password===pw);if(!u){alert('Invalid');return false}currentUser=u;closeModal('loginModal');alert('Logged in as '+u.name);return false}
+    function register(e){e.preventDefault();const name=document.getElementById('regName').value;const em=document.getElementById('regEmail').value;const phone=document.getElementById('regPhone').value;const pw=document.getElementById('regPass').value;state.users.push({email:em,name,phone,password:pw,role:'customer'});saveData(state);closeModal('registerModal');alert('Registered!');return false}
+    function otpLogin(e){e.preventDefault();const phone=document.getElementById('otpPhone').value;closeModal('otpModal');alert('OTP sent (demo). Logged in as '+phone);currentUser={name:phone,role:'customer'};return false}
+
+    /*********** admin area functions ***********/
+    function openModal(id){document.getElementById(id).classList.add('open')}
+    function closeModal(id){document.getElementById(id).classList.remove('open')}
+
+    function openSection(section){const area=document.getElementById('adminArea');
+      if(section==='manageMenu'){
+        area.innerHTML = `<h4>Manage Menu</h4><div style="display:flex;gap:12px"><div style="flex:1"><table><thead><tr><th>Item</th><th>Category</th><th>Price</th><th>Stock</th><th>Actions</th></tr></thead><tbody>${state.menu.map(m=>`<tr><td>${m.name}</td><td>${m.category}</td><td>₹${m.price}</td><td>${m.stock}</td><td><button class='btn' onclick='editMenu(${m.id})'>Edit</button><button class="btn secondary" onclick='deleteMenu(${m.id})'>Delete</button></td></tr>`).join('')}</tbody></table></div><div style="width:320px"><h5>Add Item</h5><label>Name</label><input id='am_name'><label>Category</label><input id='am_cat'><label>Price</label><input id='am_price' type='number'><label>Stock</label><input id='am_stock' type='number' value='10'><label>Img URL</label><input id='am_img'><label>Description</label><textarea id='am_desc' rows='3'></textarea><div style="margin-top:8px"><button class='btn' onclick='addMenuItem()'>Add</button></div></div></div>`
+      }
+      if(section==='orders'){
+        area.innerHTML = `<h4>Orders</h4><table><thead><tr><th>Order</th><th>Items</th><th>Total</th><th>Date</th><th>Status</th><th>Actions</th></tr></thead><tbody>${state.orders.map(o=>`<tr><td>${o.id}</td><td>${o.items.map(i=>i.name+" x"+i.qty).join(', ')}</td><td>₹${o.total.toFixed(2)}</td><td>${new Date(o.date).toLocaleString()}</td><td>${o.status}</td><td><button class='btn' onclick='updateOrder("${o.id}")'>Mark Ready</button></td></tr>`).join('')}</tbody></table>`
+      }
+      if(section==='reports'){
+        const sales = state.orders.reduce((s,o)=>s+o.total,0)
+        const most = (()=>{const map={};state.orders.flatMap(o=>o.items).forEach(i=>map[i.id]=(map[i.id]||0)+i.qty);const pairs=Object.entries(map);if(pairs.length===0) return '—';pairs.sort((a,b)=>b[1]-a[1]);const id=pairs[0][0];const it=state.menu.find(m=>m.id==id);return it?it.name:'—'})()
+        area.innerHTML = `<h4>Reports</h4><div class='small'>Total Sales: ₹${sales.toFixed(2)}</div><div class='small'>Most ordered item: ${most}</div><div style="margin-top:8px"><button class='btn' onclick='downloadReport()'>Download Report</button></div>`
+      }
+      if(section==='inventory'){
+        area.innerHTML = `<h4>Inventory</h4><div class='small'>${Object.entries(state.inventory.ingredients).map(([k,v])=>`<div>${k}: ${v}</div>`).join('')}<div style="margin-top:8px"><button class='btn' onclick='restock()'>Restock (demo)</button></div></div>`
+      }
+    }
+
+    function addMenuItem(){
+      const name=document.getElementById('am_name').value;const cat=document.getElementById('am_cat').value;const price=parseFloat(document.getElementById('am_price').value)||0;const stock=parseInt(document.getElementById('am_stock').value)||10;const img=document.getElementById('am_img').value || 'https://images.unsplash.com/photo-1498804103079-a6351b050096?w=800&q=60';const desc=document.getElementById('am_desc').value
+      const id = Math.max(0,...state.menu.map(m=>m.id))+1
+      state.menu.push({id,name,category:cat,price,stock,img,desc});saveData(state);alert('Added');openSection('manageMenu');renderMenu()
+    }
+    function editMenu(id){const item=state.menu.find(m=>m.id===id);const name=prompt('Name',item.name);if(!name) return;item.name=name;item.price=parseFloat(prompt('Price',item.price))||item.price;item.stock=parseInt(prompt('Stock',item.stock))||item.stock;saveData(state);openSection('manageMenu');renderMenu()}
+    function deleteMenu(id){if(!confirm('Delete?')) return;state.menu=state.menu.filter(m=>m.id!==id);saveData(state);openSection('manageMenu');renderMenu()}
+    function updateOrder(id){const o=state.orders.find(x=>x.id===id);if(o){o.status='Ready';saveData(state);openSection('orders');alert('Order marked ready')}}
+    function downloadReport(){const data = {sales: state.orders,menu: state.menu};const a=document.createElement('a');a.href='data:application/json;charset=utf-8,'+encodeURIComponent(JSON.stringify(data,null,2));a.download='report.json';a.click();}
+    function restock(){Object.keys(state.inventory.ingredients).forEach(k=>state.inventory.ingredients[k]+=500);saveData(state);alert('Restocked!');openSection('inventory')}
+
+    /*********** misc utilities ***********/
+    function simulateSwiggyZomato(){alert('This is a demo placeholder. In production you would call Swiggy/Zomato partner APIs to push menu and receive orders.')}    
+    function downloadSampleData(){const a=document.createElement('a');a.href='data:application/json;charset=utf-8,'+encodeURIComponent(JSON.stringify(state,null,2));a.download='cafe-data.json';a.click();}
+
+    function updateLanguage(){const lang=document.getElementById('lang').value;
+      const map = {
+        en:{welcome:'Welcome to The Cozy Café',menu:'Menu',offers:'Today\'s Highlights'},
+        hi:{welcome:'कोज़ी कैफ़े में आपका स्वागत है',menu:'मेनू',offers:'आज के ऑफर'},
+        mr:{welcome:'कोजी कॅफे मध्ये आपले स्वागत आहे',menu:'मेनू',offers:'आजचे ऑफर'}
+      }
+      const m = map[lang]||map.en
+      document.getElementById('welcomeTitle').textContent = m.welcome
+      document.getElementById('menuTitle').textContent = m.menu
+      // offers heading kept simple
+    }
+    document.getElementById('lang').addEventListener('change',updateLanguage)
+
+    // small helpers
+    function editMenuItemInPlace(id,changes){const it=state.menu.find(m=>m.id===id);Object.assign(it,changes);saveData(state)}
+    function openAdminIfAuth(){if(currentUser && currentUser.role==='admin') openModal('adminModal'); else alert('Please login as admin@example.com')}
+
+    /*********** on load ***********/
+    populateBranches();populateOffers();populateCategories();renderMenu();renderCart();updateLanguage();
+
+  </script>
+</body>
+</html>
