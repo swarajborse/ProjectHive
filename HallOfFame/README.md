@@ -134,6 +134,22 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
+<img src="https://github.com/Mmadan128.png" width="100" height="100" style="border-radius: 50%;" alt="Mmadan128"/>
+
+**[@Mmadan128](https://github.com/Mmadan128)**
+
+*Contributions: 3 PRs across 1 domain(s)*
+
+*Domains: AI-ML*
+
+</div>
+
+---
+
+### 🏅 Rank 9
+
+<div align="center">
+
 <img src="https://github.com/shr128.png" width="100" height="100" style="border-radius: 50%;" alt="shr128"/>
 
 **[@shr128](https://github.com/shr128)**
@@ -146,7 +162,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 9
+### 🏅 Rank 10
 
 <div align="center">
 
@@ -157,22 +173,6 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 *Contributions: 2 PRs across 2 domain(s)*
 
 *Domains: AI-ML, Frontend*
-
-</div>
-
----
-
-### 🏅 Rank 10
-
-<div align="center">
-
-<img src="https://github.com/Mmadan128.png" width="100" height="100" style="border-radius: 50%;" alt="Mmadan128"/>
-
-**[@Mmadan128](https://github.com/Mmadan128)**
-
-*Contributions: 2 PRs across 1 domain(s)*
-
-*Domains: AI-ML*
 
 </div>
 
