@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <style>
+    form {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Registration Form</h1>
+
+  <form id="myForm">
+    <div>
+      <label for="textInput">Name</label>
+      <input type="text" id="textInput" name="textInput" placeholder="Enter text" required>
+    </div>
+
+    <div>
+      <label for="emailInput">Email</label>
+      <input type="email" id="emailInput" name="emailInput" placeholder="Enter email" required>
+    </div>
+
+    <div>
+      <label for="passwordInput">Password</label>
+      <input type="password" id="passwordInput" name="passwordInput" placeholder="Enter password" required>
+    </div>
+
+
+    <div>
+      <label for="textareaInput">Address</label>
+      <textarea id="textareaInput" name="textareaInput" rows="4" placeholder="Enter your address"></textarea>
+    </div>
+
+    <div>
+       <label for="phoneInput">Phone Number</label>
+      
+      <input type="tel" id="phoneInput" name="phoneInput" placeholder="Enter phone number" 
+        pattern="^\d{10}$|^\d{3}-\d{3}-\d{4}$" required>
+      <small>Format: 1234567890 or 123-456-7890</small>
+    </div>
+
+    <div>
+      <label for="birthdateInput">Birthdate</label>
+      <input type="date" id="birthdateInput" name="birthdateInput" required>
+    </div>
+
+
+    <div>
+      <label for="radioInput">Select Gender</label>
+      <input type="radio" id="male" name="gender" value="male"> Male
+      <input type="radio" id="female" name="gender" value="female"> Female
+    </div>
+
+    <div>
+     <label for="dropdown">Choose an Option</label>
+      <select id="dropdown" name="dropdown">
+        <option value="">Select Div</option>
+        <option value="option1">N3</option>
+        <option value="option2">G3</option>
+        <option value="option3">H3</option>
+<option value="option4">H2</option>
+<option value="option5">N2</option>
+<option value="option6">G2</option>
+      </select>
+    </div>
+
+    <div>
+      <label for="fileInput">Upload File</label>
+      <input type="file" id="fileInput" name="fileInput">
+    </div>
+ <div>
+      <label for="checkboxInput"> I Accept all the Terms & Conditions</label>
+      <input type="checkbox" id="checkboxInput" name="checkboxInput">
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+  
+    const form = document.getElementById('myForm');
+    const textInput = document.getElementById('textInput');
+    const emailInput = document.getElementById('emailInput');
+    const passwordInput = document.getElementById('passwordInput');
+    const phoneInput = document.getElementById('phoneInput');
+    const birthdateInput = document.getElementById('birthdateInput');
+    const checkboxInput = document.getElementById('checkboxInput');
+    const radioInputs = document.querySelectorAll('input[name="gender"]');
+    const dropdown = document.getElementById('dropdown');
+    const textareaInput = document.getElementById('textareaInput');
+    const fileInput = document.getElementById('fileInput');
+
+
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();  // Prevent default form submission
+      validateForm();
+    });
+
+ 
+    textInput.addEventListener('input', function() {
+      console.log('Text Input Changed:', textInput.value);
+    });
+
+    emailInput.addEventListener('input', function() {
+      console.log('Email Input Changed:', emailInput.value);
+    });
+
+    passwordInput.addEventListener('input', function() {
+      console.log('Password Input Changed:', passwordInput.value);
+    });
+
+    phoneInput.addEventListener('input', function() {
+      console.log('Phone Input Changed:', phoneInput.value);
+    });
+
+    birthdateInput.addEventListener('input', function() {
+      console.log('Birthdate Input Changed:', birthdateInput.value);
+    });
+
+    checkboxInput.addEventListener('change', function() {
+      console.log('Checkbox Changed:', checkboxInput.checked);
+    });
+
+    radioInputs.forEach(function(radio) {
+      radio.addEventListener('change', function() {
+        console.log('Radio Input Changed:', radio.value);
+      });
+    });
+
+    dropdown.addEventListener('change', function() {
+      console.log('Dropdown Changed:', dropdown.value);
+    });
+
+    textareaInput.addEventListener('input', function() {
+      console.log('Textarea Input Changed:', textareaInput.value);
+    });
+
+    fileInput.addEventListener('change', function() {
+      console.log('File Input Changed:', fileInput.files);
+    });
+
+    
+    function validateForm() {
+      let isValid = true;
+      const errors = [];
+
+     
+      if (!textInput.value.trim()) {
+        isValid = false;
+        errors.push('Text input is required.');
+      }
+
+    
+      const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+      if (!emailPattern.test(emailInput.value)) {
+        isValid = false;
+        errors.push('Please enter a valid email address.');
+      }
+
+   
+      if (passwordInput.value.length < 6) {
+        isValid = false;
+        errors.push('Password must be at least 6 characters long.');
+      }
+
+    
+       const phonePattern = /^\d{10}$|^\d{3}-\d{3}-\d{4}$/;
+      if (!phonePattern.test(phoneInput.value)) {
+        isValid = false;
+        errors.push('Phone number must be in the format: 1234567890 or 123-456-7890.');
+      }
+
+      const birthdate = new Date(birthdateInput.value);
+      const today = new Date();
+      if (birthdate > today) {
+        isValid = false;
+        errors.push('Birthdate must be a past date.');
+      }
+
+      if (!checkboxInput.checked) {
+        isValid = false;
+        errors.push('You must accept the terms.');
+      }
+
+      if (!document.querySelector('input[name="gender"]:checked')) {
+        isValid = false;
+        errors.push('You must select a gender.');
+      }
+
+     
+      if (dropdown.value === "") {
+        isValid = false;
+        errors.push('You must select an option.');
+      }
+
+    
+      if (!textareaInput.value.trim()) {
+        isValid = false;
+        errors.push('Message cannot be empty.');
+      }
+
+  
+      if (!isValid) {
+        alert('Form validation failed:\n' + errors.join('\n'));
+      } else {
+        alert('Form successfully submitted!');
+        form.reset(); 
+
+window.location.href = "index.html"; 
+      }
+    }
+  </script>
+
+</body>
+</html>

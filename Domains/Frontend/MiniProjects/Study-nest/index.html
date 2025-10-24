@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDY NEST - SPPU Engineering PYQs</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-content bg-white min-h-screen">
+
+    <header class="sticky-header">
+        <div class="container header-content">
+            <div class="logo-area">
+                <h1 class="logo-text">STUDY NEST</h1>
+                <p class="tagline">Your One Stop Solution for SPPU Engineering PYQs</p>
+            </div>
+            <nav class="nav-bar" id="main-nav">
+                <a href="#" data-page="home" class="nav-link active">Home</a>
+                <a href="#" data-page="branches" class="nav-link">Branches</a>
+                <a href="#" data-page="patterns" class="nav-link">Patterns</a>
+                <a href="#" data-page="years" class="nav-link">Years</a>
+                <a href="#" data-page="about" class="nav-link">About</a>
+                <a href="#" data-page="contact" class="nav-link">Contact</a>
+            </nav>
+        </div>
+        
+        <div class="search-section">
+            <div class="container search-container">
+                <div class="search-box">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="search" id="search-input" 
+                           placeholder="Search for your question papers by branch, year, or pattern..." 
+                           class="search-input">
+                    <button class="search-btn">Search</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container main-content">
+        
+        <section id="page-home" class="page-section active-page">
+            <section id="branches" class="section-container">
+                <h2 class="section-title"><i class="fas fa-book-open icon-highlight"></i> Browse by Branch</h2>
+                <div class="card-grid" id="branch-cards"></div>
+            </section>
+            
+            <section id="patterns" class="section-container">
+                <h2 class="section-title"><i class="fas fa-file-alt icon-highlight"></i> Choose Exam Pattern</h2>
+                <div class="card-grid pattern-grid" id="pattern-cards"></div>
+            </section>
+
+            <section id="years" class="section-container">
+                <h2 class="section-title"><i class="fas fa-calendar-alt icon-highlight"></i> Select Academic Year</h2>
+                <div class="year-links" id="year-links"></div>
+            </section>
+
+            <section class="download-placeholder">
+                <h2 class="placeholder-title"><i class="fas fa-star icon-highlight"></i> Most Downloaded Papers</h2>
+                <p>Data would be loaded here dynamically showing the top 5 papers across all branches.</p>
+                <a href="#" data-page="papers" class="link-primary nav-link">Browse All Papers <i class="fas fa-arrow-right"></i></a>
+            </section>
+        </section>
+
+        <section id="page-branches" class="page-section">
+            <h1 class="page-heading">Branch Selection</h1>
+            <p class="text-gray">Click on a branch below to see its available papers and subjects.</p>
+            <div id="branch-grid-full" class="card-grid section-container">
+                </div>
+        </section>
+
+        <section id="page-papers" class="page-section">
+            <h1 class="page-heading">PYQ Papers for <span id="papers-title">All Branches & Patterns</span></h1>
+            <p class="text-gray">Use the filters below to refine your search.</p>
+            
+            <div class="papers-layout">
+                <aside class="sidebar-filters">
+                    <h3>Refine Results</h3>
+                    <div id="filter-patterns" class="filter-group"></div>
+                    <div id="filter-years" class="filter-group"></div>
+                    <div id="filter-subjects" class="filter-group mt-5"></div>
+                </aside>
+                <div class="paper-list" id="paper-list">
+                    </div>
+            </div>
+            
+            <div id="dynamic-content-area" class="section-container mt-8">
+                </div>
+        </section>
+
+        <section id="page-about" class="page-section">
+            <h1 class="page-heading">About STUDY NEST 💡</h1>
+            <div class="about-content">
+                <p>STUDY NEST is your dedicated, hassle-free resource for accessing **SPPU Engineering Previous Year Question Papers (PYQs)**. Built by students, for students, we aim to minimize study stress by providing a clean, fast, and comprehensive platform.</p>
+                <h3 class="mt-4">Our Vision</h3>
+                <p>To be the single, most reliable source for all SPPU engineering students, ensuring every paper is available for every branch and every pattern (2012, 2019, 2024).</p>
+                <h3 class="mt-4">Inspiration</h3>
+                <p>Our design and commitment to quality content are inspired by the excellent user experience of GeeksforGeeks—clean, readable, and content-first.</p>
+            </div>
+        </section>
+
+        <section id="page-contact" class="page-section">
+            <h1 class="page-heading">Get in Touch 📞</h1>
+            <div class="contact-form-container">
+                <p>Have a question, suggestion, or a paper you want to submit? We'd love to hear from you!</p>
+                <form id="contact-form" class="mt-4">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your SPPU Email" required>
+                    <textarea placeholder="Your Message or Paper Request..." rows="5" required></textarea>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+    
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2024 STUDY NEST. All rights reserved. | SPPU PYQs.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>

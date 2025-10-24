@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="particles" id="particles"></div>
+
+    <div class="container">
+        <h1>🎵 Music Visualizer</h1>
+        <p class="subtitle">Experience your music in a whole new way</p>
+
+        <div class="visualizer-container">
+            <canvas id="canvas"></canvas>
+
+            <div class="visualizer-modes">
+                <button class="mode-btn active" data-mode="bars">Bars</button>
+                <button class="mode-btn" data-mode="wave">Wave</button>
+                <button class="mode-btn" data-mode="circular">Circular</button>
+                <button class="mode-btn" data-mode="spectrum">Spectrum</button>
+            </div>
+
+            <div class="controls">
+                <div class="file-input-wrapper">
+                    <button class="btn btn-primary">Choose Audio File</button>
+                    <input type="file" id="audioFile" accept="audio/*">
+                </div>
+                <button class="btn btn-secondary" id="playPause" disabled>Play</button>
+                <button class="btn btn-secondary" id="generateTone">Generate Tone</button>
+            </div>
+
+            <div class="info" id="info">Upload an audio file or generate a tone to start</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

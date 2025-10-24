@@ -1,0 +1,180 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    Start {{ quiz.quiz_name }}
+{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <h1 class="text-center">{{ quiz.quiz_name }}</h1>
+
+    <div class="d-flex justify-content-between my-3">
+        <div class="timer-box p-2 px-3">
+            <strong>Time Left:</strong> <span id="timer" class="text-danger fw-bold"></span>
+        </div>
+        <div class="question-tracker p-2 px-3">
+            <strong>Question:</strong> <span id="current-question">1</span> / <span id="total-questions"></span>
+        </div>
+    </div>
+
+    <form id="quiz-form" method="POST" action="{{ url_for('submit_quiz', id=quiz.id) }}">
+        <div id="question_container">
+            {% for question in questions %}
+            <div class="question p-3 shadow-sm rounded" id="question-{{ loop.index0 }}"
+                style="display: {% if loop.first %}block{% else %}none{% endif %}; animation: fadeIn 0.5s;">
+                <p class="fw-bold"><strong>Q{{ loop.index }}:</strong> {{ question.question_statement }}</p>
+            
+                <div class="options">
+                    <label class="option-box">
+                        <input type="radio" name="q{{ question.id }}" value="a">
+                        {{ question.option1 }}
+                    </label>
+
+                    <label class="option-box">
+                        <input type="radio" name="q{{ question.id }}" value="b">
+                        {{ question.option2 }}
+                    </label>
+
+                    <label class="option-box">
+                        <input type="radio" name="q{{ question.id }}" value="c">
+                        {{ question.option3 }}
+                    </label>
+
+                    <label class="option-box">
+                        <input type="radio" name="q{{ question.id }}" value="d">
+                        {{ question.option4 }}
+                    </label>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <div class="d-flex justify-content-between mt-4">
+            <button type="button" id="prev-btn" class="btn btn-secondary" style="display: none;">Previous</button>
+            <button type="button" id="next-btn" class="btn btn-primary">Next</button>
+        </div>
+        
+        <div class="submit-container">
+            <button type="submit" id="submit-btn" class="btn btn-success w-100">Submit</button>
+        </div>
+    </form>
+</div>
+
+{% endblock %}
+
+{% block script %}
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var duration = {{ quiz.time_duration }};
+        var timerDisplay = document.getElementById("timer");
+
+        var questions = document.querySelectorAll(".question");
+        var totalQuestions = questions.length;
+        var currentQuestion = 0;
+
+        document.getElementById("total-questions").textContent = totalQuestions;
+        document.getElementById("current-question").textContent = currentQuestion + 1;
+
+        function updateTimer() {
+            var minutes = Math.floor(duration / 60);
+            var seconds = duration % 60;
+            timerDisplay.textContent = minutes + ":" + (seconds < 10 ? "0" : "") + seconds;
+
+            if (duration <= 0) {
+                document.getElementById("quiz-form").submit();
+            } else {
+                duration--;
+                setTimeout(updateTimer, 1000);
+            }
+        }
+
+        function showQuestion(index) {
+            for(var i = 0; i < questions.length; i++) {
+                questions[i].style.display = i === index ? "block" : "none";
+            }
+
+            document.getElementById("prev-btn").style.display = index === 0 ? "none" : "inline-block";
+            document.getElementById("next-btn").style.display = index === totalQuestions - 1 ? "none" : "inline-block";
+
+            document.getElementById("current-question").textContent = index + 1;
+        }
+
+        document.getElementById("next-btn").addEventListener("click", function () {
+            if (currentQuestion < totalQuestions - 1) {
+                currentQuestion++;
+                showQuestion(currentQuestion);
+            }
+        });
+
+        document.getElementById("prev-btn").addEventListener("click", function () {
+            if (currentQuestion > 0) {
+                currentQuestion--;
+                showQuestion(currentQuestion);
+            }
+        });
+
+        updateTimer();
+        showQuestion(0);
+    });
+</script>
+
+<style>
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    .timer-box{
+        background: #ffeded;
+        border-radius: 8px;
+        font-size: 1.2rem;
+        display: inline-block;
+    }
+
+    .question-tracker{
+        background: #bab9f3;
+        border-radius: 8px;
+        font-size: 1.2rem;
+        display: inline-block;
+    }
+
+    .question {
+        background: #fff;
+        border-radius: 10px;
+        border-left: 5px solid #007bff;
+    }
+
+    .options {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .option-box {
+        padding: 10px;
+        background: #f8f9fa;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+    }
+
+    .option-box:hover {
+        background: #e9ecef;
+    }
+
+    .submit-container {
+        position: fixed;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        max-width: 400px;
+        padding: 10px;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+    }
+</style>
+
+{% endblock %}

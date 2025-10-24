@@ -14,22 +14,26 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | 🥈 | [@Aaditya-2407](https://github.com/Aaditya-2407) | 6 | 1 (Frontend) | Recent |
 | 🥉 | [@Ogagaoghene](https://github.com/Ogagaoghene) | 5 | 1 (Backend) | Recent |
 | 4 | [@k4niz](https://github.com/k4niz) | 4 | 4 (AI-ML, AR-VR, FullStack, IoT) | Recent |
-| 5 | [@Ansh-1019](https://github.com/Ansh-1019) | 2 | 1 (AI-ML) | Recent |
-| 6 | [@vatsalgupta2004](https://github.com/vatsalgupta2004) | 2 | 2 (AI-ML, Frontend) | Recent |
-| 7 | [@Dhiraj201226](https://github.com/Dhiraj201226) | 2 | 2 (AI-ML, Frontend) | Recent |
-| 8 | [@Mansi13-6](https://github.com/Mansi13-6) | 2 | 1 (Frontend) | Recent |
-| 9 | [@Utkarsh-660](https://github.com/Utkarsh-660) | 2 | 1 (Frontend) | Recent |
-| 10 | [@alisha1510](https://github.com/alisha1510) | 2 | 1 (Frontend) | Recent |
-| 11 | [@honey-khatri](https://github.com/honey-khatri) | 1 | 1 (CompetitiveProgramming) | Recent |
-| 12 | [@Mmadan128](https://github.com/Mmadan128) | 1 | 1 (AI-ML) | Recent |
-| 13 | [@AksharGoyal](https://github.com/AksharGoyal) | 1 | 1 (Backend) | Recent |
-| 14 | [@SOHAM-GADEKAR](https://github.com/SOHAM-GADEKAR) | 1 | 1 (Frontend) | Recent |
-| 15 | [@MeghPatel-007](https://github.com/MeghPatel-007) | 1 | 1 (Frontend) | Recent |
-| 16 | [@SanjeevDeori](https://github.com/SanjeevDeori) | 1 | 1 (Frontend) | Recent |
-| 17 | [@Tanmay-Kad](https://github.com/Tanmay-Kad) | 1 | 1 (Frontend) | Recent |
-| 18 | [@Soham-Gadekar](https://github.com/Soham-Gadekar) | 1 | 1 (Frontend) | Recent |
-| 19 | [@snehal492006](https://github.com/snehal492006) | 1 | 1 (Frontend) | Recent |
-| 20 | [@Tanushri1307](https://github.com/Tanushri1307) | 1 | 1 (Frontend) | Recent |
+| 5 | [@SOHAM-GADEKAR](https://github.com/SOHAM-GADEKAR) | 3 | 2 (Frontend, IoT) | Recent |
+| 6 | [@Ansh-1019](https://github.com/Ansh-1019) | 2 | 1 (AI-ML) | Recent |
+| 7 | [@vatsalgupta2004](https://github.com/vatsalgupta2004) | 2 | 2 (AI-ML, Frontend) | Recent |
+| 8 | [@Mmadan128](https://github.com/Mmadan128) | 2 | 1 (AI-ML) | Recent |
+| 9 | [@Dhiraj201226](https://github.com/Dhiraj201226) | 2 | 2 (AI-ML, Frontend) | Recent |
+| 10 | [@GayatriVitkar](https://github.com/GayatriVitkar) | 2 | 1 (CompetitiveProgramming) | Recent |
+| 11 | [@Mansi13-6](https://github.com/Mansi13-6) | 2 | 1 (Frontend) | Recent |
+| 12 | [@MeghPatel-007](https://github.com/MeghPatel-007) | 2 | 1 (Frontend) | Recent |
+| 13 | [@Keron](https://github.com/Keron) | 2 | 1 (Frontend) | Recent |
+| 14 | [@Utkarsh-660](https://github.com/Utkarsh-660) | 2 | 1 (Frontend) | Recent |
+| 15 | [@alisha1510](https://github.com/alisha1510) | 2 | 1 (Frontend) | Recent |
+| 16 | [@SamaKool](https://github.com/SamaKool) | 1 | 1 (CompetitiveProgramming) | Recent |
+| 17 | [@AksharGoyal](https://github.com/AksharGoyal) | 1 | 1 (Backend) | Recent |
+| 18 | [@shr128](https://github.com/shr128) | 1 | 1 (Frontend) | Recent |
+| 19 | [@GayatriVitkarcd](https://github.com/GayatriVitkarcd) | 1 | 1 (Frontend) | Recent |
+| 20 | [@SanjeevDeori](https://github.com/SanjeevDeori) | 1 | 1 (Frontend) | Recent |
+| 21 | [@Tanmay-Kad](https://github.com/Tanmay-Kad) | 1 | 1 (Frontend) | Recent |
+| 22 | [@jeturgavli](https://github.com/jeturgavli) | 1 | 1 (Frontend) | Recent |
+| 23 | [@snehal492006](https://github.com/snehal492006) | 1 | 1 (Frontend) | Recent |
+| 24 | [@Tanushri1307](https://github.com/Tanushri1307) | 1 | 1 (Frontend) | Recent |
 
 ---
 
@@ -39,7 +43,8 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 
 | Contributor | Contributions |
 |-------------|---------------|
-| [@honey-khatri](https://github.com/honey-khatri) | 1 |
+| [@GayatriVitkar](https://github.com/GayatriVitkar) | 2 |
+| [@SamaKool](https://github.com/SamaKool) | 1 |
 
 ### AI-ML
 
@@ -47,8 +52,8 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 |-------------|---------------|
 | [@Ansh-1019](https://github.com/Ansh-1019) | 2 |
 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 2 |
+| [@Mmadan128](https://github.com/Mmadan128) | 2 |
 | [@vatsalgupta2004](https://github.com/vatsalgupta2004) | 1 |
-| [@Mmadan128](https://github.com/Mmadan128) | 1 |
 | [@Dhiraj201226](https://github.com/Dhiraj201226) | 1 |
 | [@k4niz](https://github.com/k4niz) | 1 |
 
@@ -97,16 +102,19 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 |-------------|---------------|
 | [@Aaditya-2407](https://github.com/Aaditya-2407) | 6 |
 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 2 |
+| [@SOHAM-GADEKAR](https://github.com/SOHAM-GADEKAR) | 2 |
 | [@Mansi13-6](https://github.com/Mansi13-6) | 2 |
+| [@MeghPatel-007](https://github.com/MeghPatel-007) | 2 |
+| [@Keron](https://github.com/Keron) | 2 |
 | [@Utkarsh-660](https://github.com/Utkarsh-660) | 2 |
 | [@alisha1510](https://github.com/alisha1510) | 2 |
 | [@vatsalgupta2004](https://github.com/vatsalgupta2004) | 1 |
 | [@Dhiraj201226](https://github.com/Dhiraj201226) | 1 |
-| [@SOHAM-GADEKAR](https://github.com/SOHAM-GADEKAR) | 1 |
-| [@MeghPatel-007](https://github.com/MeghPatel-007) | 1 |
+| [@shr128](https://github.com/shr128) | 1 |
+| [@GayatriVitkarcd](https://github.com/GayatriVitkarcd) | 1 |
 | [@SanjeevDeori](https://github.com/SanjeevDeori) | 1 |
 | [@Tanmay-Kad](https://github.com/Tanmay-Kad) | 1 |
-| [@Soham-Gadekar](https://github.com/Soham-Gadekar) | 1 |
+| [@jeturgavli](https://github.com/jeturgavli) | 1 |
 | [@snehal492006](https://github.com/snehal492006) | 1 |
 | [@Tanushri1307](https://github.com/Tanushri1307) | 1 |
 
@@ -123,6 +131,7 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 |-------------|---------------|
 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 1 |
 | [@k4niz](https://github.com/k4niz) | 1 |
+| [@SOHAM-GADEKAR](https://github.com/SOHAM-GADEKAR) | 1 |
 
 ### MLOps
 
@@ -159,6 +168,6 @@ Top 10 contributors are featured in our [Hall of Fame](../HallOfFame/README.md)!
 
 ---
 
-**Last Updated:** 2025-10-22
+**Last Updated:** 2025-10-23
 
 *Leaderboard updates automatically on every merged PR via GitHub Actions*

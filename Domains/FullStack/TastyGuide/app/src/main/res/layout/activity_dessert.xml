@@ -1,0 +1,194 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#833A1D"
+    tools:context=".DessertActivity">
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/chefLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Chef Logo" />
+
+    <!-- Scrollable Recipes List -->
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/chefLogo"
+        android:layout_above="@id/homeButton"
+        android:fillViewport="true"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Recipe Item 1: Chocolate Cake -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="#A95E40"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/chocolate_cake"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Chocolate Cake" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chocolate Cake\nIngredients:\n- Flour: 2 cups\n- Cocoa powder: 1 cup\n- Baking powder: 1 tsp\n- Sugar: 1 ½ cups\n- Eggs: 3\n- Butter: 1 cup\n- Milk: 1 cup\n- Vanilla extract: 1 tsp\n\nInstructions:\n1. Preheat the oven to 350°F (175°C).\n2. Mix dry ingredients and wet ingredients separately, then combine.\n3. Bake for 30-35 minutes and cool."
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- Recipe Item 2: Apple Pie -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="#A95E40"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/apple_pie"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Apple Pie" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Apple Pie\nIngredients:\n- Apples: 4, peeled and sliced\n- Sugar: ¾ cup\n- Cinnamon: 1 tsp\n- Butter: 2 tbsp\n- Pie crust: 1 package\n\nInstructions:\n1. Preheat oven to 375°F (190°C).\n2. Layer apples and sprinkle with sugar and cinnamon.\n3. Cover with pie crust and bake for 45 minutes."
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- Recipe Item 3: Tiramisu -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="#A95E40"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/tiramisu"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Tiramisu" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tiramisu\nIngredients:\n- Ladyfinger biscuits: 200g\n- Mascarpone cheese: 250g\n- Heavy cream: 200ml\n- Coffee: 1 cup\n- Cocoa powder\n- Sugar: 3 tbsp\n\nInstructions:\n1. Whisk mascarpone, cream, and sugar.\n2. Dip ladyfingers in coffee and layer.\n3. Spread mascarpone mixture, dust with cocoa, and refrigerate."
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- Recipe Item 4: Lemon Meringue Pie -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="#A95E40"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/lemon_meringue_pie"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Lemon Meringue Pie" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lemon Meringue Pie\nIngredients:\n- Pie crust: 1\n- Eggs: 4\n- Sugar: 1 cup\n- Lemon juice: ½ cup\n- Cornstarch: 2 tbsp\n\nInstructions:\n1. Bake pie crust.\n2. Make lemon filling with sugar, lemon juice, cornstarch, and eggs.\n3. Add meringue and bake."
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- Recipe Item 5: Cheesecake -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="#A95E40"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/cheesecake"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Cheesecake" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cheesecake\nIngredients:\n- Cream cheese: 500g\n- Sugar: 1 cup\n- Eggs: 3\n- Sour cream: 200g\n- Graham cracker crust\n\nInstructions:\n1. Mix ingredients for filling and pour into crust.\n2. Bake for 50 minutes and chill."
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- Recipe Item 6: Strawberry Shortcake -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="#A95E40"
+                android:layout_marginBottom="8dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/strawberry_shortcake"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="Strawberry Shortcake" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Strawberry Shortcake\nIngredients:\n- Strawberries: 2 cups\n- Whipped cream: 1 cup\n- Shortcake biscuits\n- Sugar: ½ cup\n\nInstructions:\n1. Slice strawberries and mix with sugar.\n2. Layer with biscuits and top with whipped cream."
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Home Button -->
+    <ImageButton
+        android:id="@+id/homeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:contentDescription="Home Button"
+        android:padding="16dp"
+        android:src="@drawable/ic_home"/>
+</RelativeLayout>

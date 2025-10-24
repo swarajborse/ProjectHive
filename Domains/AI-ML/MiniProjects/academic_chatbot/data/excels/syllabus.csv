@@ -1,0 +1,46 @@
+Category,Group,Code,Paper,L,P,Credits,Notes
+First Semester,,,,,,,
+Theory Papers,,,,,,,
+,ES,ES-101,Programming in 'C',3,-,3,"*Any one of the following"
+,BS,"BS-103/BS-121#",Applied Chemistry / Basic Chemistry#,3,-,3,"*Any one of the following"
+,BS,BS-105,Applied Physics – I,3,-,3,
+,ES,ES-107,Electrical Science,3,-,3,"*Any one of the following"
+,BS,BS-109,Environmental Studies,3,-,3,"*Any one of the following"
+,BS,BS-111,Applied Mathematics – I,4,-,4,
+,HS,HS-113,"Group 1: Communications Skills",3,-,3,"**Group 1 or Group 2 shall be offered"
+,HS,HS-113,"OR Group 2: Indian Constitution***",2,-,2,
+,HS,HS-117,Human Values and Ethics***,1,-,1,
+,ES,ES-119,Manufacturing Process,4,-,4,
+Practical/Viva Voce,,,,,,,
+,BS,BS-151,Physics-I Lab,-,2,1,
+,ES,ES-153,Programming in ‘C’ Lab,-,2,1,"Any of the following corresponding to the theory paper offered"
+,BS,BS-155,Applied Chemistry Lab,-,2,1,"Any of the following corresponding to the theory paper offered"
+,ES,ES-157,Engineering Graphics-I,-,4,2,"Any of the following corresponding to the theory paper offered"
+,ES,ES-159,Electrical Science Lab,-,2,1,"Any of the following corresponding to the theory paper offered"
+,BS,BS-161,Environmental Studies Lab,-,2,1,"Any of the following corresponding to the theory paper offered"
+,,,,,,,
+Total,,,,20,10,25,
+
+Category,Group,Paper Code,Paper,L,P,Credits,Notes
+Second Semester,,,,,,,
+Theory Papers,,,,,,,
+,ES,ES-102,"Programming in 'C'",3,-,3,"*Any one of the following"
+,BS,"BS-104/BS-120#","Applied Chemistry / Basic Chemistry#",3,-,3,"*Any one of the following"
+,BS,BS-106,Applied Physics – II,3,-,3,
+,ES,ES-108,Electrical Science,3,-,3,"*Any one of the following"
+,BS,BS-110,Environmental Studies,3,-,3,"*Any one of the following"
+,BS,BS-112,Applied Mathematics – II,4,-,4,
+,HS,HS-114,"Group 1: Communications Skills",3,-,3,"**Group 1 or Group 2 shall be offered"
+,HS,HS-114,"OR Group 2: Indian Constitution***",2,-,2,"**Group 1 or Group 2 shall be offered"
+,HS,HS-118,Human Values and Ethics***,1,-,1,
+,ES,ES-114,Engineering Mechanics,3,-,3,
+Practical/Viva Voce,,,,,,,
+,BS,BS-152,Physics-II Lab,-,2,1,
+,ES,ES-154,"Programming in 'C' Lab",-,2,1,"*Any of the following corresponding to the theory paper offered"
+,BS,BS-156,Applied Chemistry,-,2,1,"*Any of the following corresponding to the theory paper offered"
+,ES,ES-158,Engineering Graphics-II,-,2,1,
+,ES,ES-160,Electrical Science Lab,-,2,1,"*Any of the following corresponding to the theory paper offered"
+,BS,BS-162,Environmental Studies Lab,-,2,1,"*Any of the following corresponding to the theory paper offered"
+,ES,ES-164,Workshop Practice,-,4,2,
+,,,,,,,
+Total,,,,19,12,25,

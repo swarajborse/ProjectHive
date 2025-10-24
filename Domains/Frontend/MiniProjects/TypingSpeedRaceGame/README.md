@@ -1,6 +1,6 @@
 # 🏁 Typing Speed Race Game
 
-**Contributor:** Soham-Gadekar
+**Contributor:** SOHAM-GADEKAR
 **Domain:** Frontend
 **Difficulty:** Intermediate
 **Tech Stack:** HTML, CSS, JavaScript (ES6+), LocalStorage API
