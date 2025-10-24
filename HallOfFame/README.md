@@ -42,7 +42,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 **[@shr128](https://github.com/shr128)**
 
-*Contributions: 7 PRs across 1 domain(s)*
+*Contributions: 6 PRs across 1 domain(s)*
 
 *Domains: Frontend*
 
