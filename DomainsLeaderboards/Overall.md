@@ -29,7 +29,7 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | 17 | [@Keron](https://github.com/Keron) | 2 | 1 (Frontend) | Recent |
 | 18 | [@Utkarsh-660](https://github.com/Utkarsh-660) | 2 | 1 (Frontend) | Recent |
 | 19 | [@alisha1510](https://github.com/alisha1510) | 2 | 1 (Frontend) | Recent |
-| 20 | [@Prathmax45](https://github.com/Prathmax45) | 1 | 0 () | Recent |
+| 20 | [@bigturtle679](https://github.com/bigturtle679) | 1 | 1 (CompetitiveProgramming) | Recent |
 | 21 | [@anujaugale617](https://github.com/anujaugale617) | 1 | 1 (Frontend) | Recent |
 | 22 | [@mahir-m01](https://github.com/mahir-m01) | 1 | 1 (Frontend) | Recent |
 | 23 | [@GayatriVitkarcd](https://github.com/GayatriVitkarcd) | 1 | 1 (Frontend) | Recent |
@@ -43,6 +43,14 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 ---
 
 ## 📊 Domain Breakdown
+
+### CompetitiveProgramming
+
+| Contributor | Contributions |
+|-------------|---------------|
+| [@snehal492006](https://github.com/snehal492006) | 2 |
+| [@GayatriVitkar](https://github.com/GayatriVitkar) | 2 |
+| [@bigturtle679](https://github.com/bigturtle679) | 1 |
 
 ### AI-ML
 
@@ -155,13 +163,6 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | Contributor | Contributions |
 |-------------|---------------|
 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 1 |
-
-### CompetitiveProgramming
-
-| Contributor | Contributions |
-|-------------|---------------|
-| [@snehal492006](https://github.com/snehal492006) | 2 |
-| [@GayatriVitkar](https://github.com/GayatriVitkar) | 2 |
 
 ### cli
 
