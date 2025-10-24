@@ -76,25 +76,33 @@ function addPRAuthor() {
 
 // Scan all domains and count contributions
 function scanContributions() {
+  // Ensure the Domains directory exists
+  if (!fs.existsSync(domainsDir)) {
+    console.warn(`Domains directory not found at ${domainsDir}, skipping scan.`);
+    return;
+  }
+
   const domains = fs.readdirSync(domainsDir);
-  
+
   domains.forEach(domain => {
-    // Skip non-directory files
+    // Skip non-directory files or missing paths
     const domainPath = path.join(domainsDir, domain);
-    if (!fs.statSync(domainPath).isDirectory()) return;
-    
+    if (!fs.existsSync(domainPath)) return;
+    const domainStat = fs.statSync(domainPath);
+    if (!domainStat.isDirectory()) return;
+
     // Check MiniProjects folder
     const miniDir = path.join(domainPath, 'MiniProjects');
     if (fs.existsSync(miniDir)) {
       scanDirectory(miniDir, domain);
     }
-    
+
     // Check Starter-Templates folder
     const templatesDir = path.join(domainPath, 'Starter-Templates');
     if (fs.existsSync(templatesDir)) {
       scanDirectory(templatesDir, domain);
     }
-    
+
     // Check Programs folder (for Competitive Programming)
     const programsDir = path.join(domainPath, 'Programs');
     if (fs.existsSync(programsDir)) {
@@ -105,14 +113,23 @@ function scanContributions() {
 
 // Recursively scan directories for contributor mentions
 function scanDirectory(dir, domain) {
+  // Guard: directory might not exist (race conditions, removed paths)
+  if (!fs.existsSync(dir)) return;
+
   const items = fs.readdirSync(dir);
-  
+
   items.forEach(item => {
     const itemPath = path.join(dir, item);
+
+    // Skip missing paths and common virtualenv / metadata folders
+    const skipNames = ['venv', '.git', 'node_modules', '__pycache__'];
+    if (skipNames.includes(item)) return;
+    if (!fs.existsSync(itemPath)) return;
+
     const stat = fs.statSync(itemPath);
-    
+
     if (stat.isDirectory()) {
-      // Recursively scan subdirectories
+      // Recursively scan subdirectories (skip venvs)
       scanDirectory(itemPath, domain);
     } else if (stat.isFile() && (item.endsWith('.md') || item.endsWith('.txt'))) {
       // Read file and find contributors
