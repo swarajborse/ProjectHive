@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   update:
-    if: github.event.pull_request.merged == true
+    if: github.event_name == 'workflow_dispatch' || github.event.pull_request.merged == true
     runs-on: ubuntu-latest
 
     steps:
@@ -23,6 +23,7 @@ jobs:
           # If this run was triggered by a pull_request_target event, check out the base branch.
           # For workflow_dispatch, fallback to the workflow ref (github.ref).
           ref: ${{ github.event.pull_request && github.event.pull_request.base.ref || github.ref }}
+          submodules: false  # Explicitly disable submodules to avoid warnings
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -34,6 +35,21 @@ jobs:
         env:
           PR_NUMBER: ${{ github.event.pull_request && github.event.pull_request.number || '' }}
           PR_AUTHOR: ${{ github.event.pull_request && github.event.pull_request.user.login || '' }}
+        continue-on-error: false  # Fail the workflow if script fails
+
+      - name: Verify leaderboard files were generated
+        run: |
+          if [ ! -f "DomainsLeaderboards/Overall.md" ]; then
+            echo "❌ Error: Overall.md was not generated!"
+            exit 1
+          fi
+          if [ ! -f "HallOfFame/README.md" ]; then
+            echo "❌ Error: Hall of Fame README.md was not generated!"
+            exit 1
+          fi
+          echo "✅ Leaderboard files generated successfully"
+          echo "📊 Contributors in Overall.md:"
+          grep -c "@" DomainsLeaderboards/Overall.md || echo "0"
 
       - name: Check for changes
         id: check_changes
@@ -49,10 +65,23 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git add DomainsLeaderboards/Overall.md
           git add HallOfFame/README.md
+          
+          # Show what's being committed
+          echo "📝 Changes to be committed:"
+          git diff --cached --stat
+          
           git commit -m "chore: Update leaderboard and Hall of Fame after PR #${{ github.event.pull_request.number }}" || exit 0
-          # Ensure the git remote uses the authenticated token (actions/checkout normally sets this, but this guarantees it)
+          
+          # Ensure the git remote uses the authenticated token
           git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git
-          git push origin HEAD
+          
+          # Push with error handling
+          if git push origin HEAD; then
+            echo "✅ Successfully pushed leaderboard updates"
+          else
+            echo "❌ Failed to push changes"
+            exit 1
+          fi
 
       - name: Success notification
         if: steps.check_changes.outputs.changes == 'true'
