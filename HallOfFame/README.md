@@ -134,11 +134,11 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/Laikokwui.png" width="100" height="100" style="border-radius: 50%;" alt="Laikokwui"/>
+<img src="https://github.com/shr128.png" width="100" height="100" style="border-radius: 50%;" alt="shr128"/>
 
-**[@Laikokwui](https://github.com/Laikokwui)**
+**[@shr128](https://github.com/shr128)**
 
-*Contributions: 2 PRs across 1 domain(s)*
+*Contributions: 3 PRs across 1 domain(s)*
 
 *Domains: Frontend*
 
