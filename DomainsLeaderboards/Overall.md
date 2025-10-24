@@ -10,14 +10,14 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 
 | Rank | Contributor | Total PRs | Domains Contributed | Last Active |
 |------|-------------|-----------|---------------------|-------------|
-| 🥇 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 23 | 13 (AI-ML, Cloud, Frontend, FullStack, AR-VR, Backend, Blockchain, Cybersecurity, DevOps, IoT, MLOps, NLP, Robotics-Automation) | Recent |
+| 🥇 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 19 | 13 (AI-ML, AR-VR, Backend, Blockchain, Cloud, Cybersecurity, DevOps, Frontend, FullStack, IoT, MLOps, NLP, Robotics-Automation) | Recent |
 | 🥈 | [@Aaditya-2407](https://github.com/Aaditya-2407) | 6 | 1 (Frontend) | Recent |
-| 🥉 | [@k4niz](https://github.com/k4niz) | 5 | 4 (AI-ML, AR-VR, FullStack, IoT) | Recent |
-| 4 | [@Ogagaoghene](https://github.com/Ogagaoghene) | 5 | 1 (Backend) | Recent |
-| 5 | [@Ansh-1019](https://github.com/Ansh-1019) | 4 | 2 (AI-ML, Backend) | Recent |
-| 6 | [@snehal492006](https://github.com/snehal492006) | 4 | 3 (AI-ML, CompetitiveProgramming, Frontend) | Recent |
-| 7 | [@SOHAM-GADEKAR](https://github.com/SOHAM-GADEKAR) | 4 | 2 (Frontend, IoT) | Recent |
-| 8 | [@shr128](https://github.com/shr128) | 3 | 1 (Frontend) | Recent |
+| 🥉 | [@shr128](https://github.com/shr128) | 5 | 1 (Frontend) | Recent |
+| 4 | [@k4niz](https://github.com/k4niz) | 5 | 4 (AI-ML, AR-VR, FullStack, IoT) | Recent |
+| 5 | [@Ogagaoghene](https://github.com/Ogagaoghene) | 5 | 1 (Backend) | Recent |
+| 6 | [@Ansh-1019](https://github.com/Ansh-1019) | 4 | 2 (AI-ML, Backend) | Recent |
+| 7 | [@snehal492006](https://github.com/snehal492006) | 4 | 3 (AI-ML, CompetitiveProgramming, Frontend) | Recent |
+| 8 | [@SOHAM-GADEKAR](https://github.com/SOHAM-GADEKAR) | 4 | 2 (Frontend, IoT) | Recent |
 | 9 | [@vatsalgupta2004](https://github.com/vatsalgupta2004) | 2 | 2 (AI-ML, Frontend) | Recent |
 | 10 | [@Mmadan128](https://github.com/Mmadan128) | 2 | 1 (AI-ML) | Recent |
 | 11 | [@Dhiraj201226](https://github.com/Dhiraj201226) | 2 | 2 (AI-ML, Frontend) | Recent |
@@ -42,32 +42,14 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 
 ## 📊 Domain Breakdown
 
-### AI-ML
-
-| Contributor | Contributions |
-|-------------|---------------|
-| [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 3 |
-| [@Ansh-1019](https://github.com/Ansh-1019) | 3 |
-| [@k4niz](https://github.com/k4niz) | 2 |
-| [@Mmadan128](https://github.com/Mmadan128) | 2 |
-| [@snehal492006](https://github.com/snehal492006) | 1 |
-| [@vatsalgupta2004](https://github.com/vatsalgupta2004) | 1 |
-| [@Dhiraj201226](https://github.com/Dhiraj201226) | 1 |
-
-### Cloud
-
-| Contributor | Contributions |
-|-------------|---------------|
-| [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 2 |
-
 ### Frontend
 
 | Contributor | Contributions |
 |-------------|---------------|
 | [@Aaditya-2407](https://github.com/Aaditya-2407) | 6 |
-| [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 3 |
+| [@shr128](https://github.com/shr128) | 5 |
 | [@SOHAM-GADEKAR](https://github.com/SOHAM-GADEKAR) | 3 |
-| [@shr128](https://github.com/shr128) | 3 |
+| [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 2 |
 | [@snehal492006](https://github.com/snehal492006) | 2 |
 | [@Mansi13-6](https://github.com/Mansi13-6) | 2 |
 | [@MeghPatel-007](https://github.com/MeghPatel-007) | 2 |
@@ -85,20 +67,40 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | [@Tanushri1307](https://github.com/Tanushri1307) | 1 |
 | [@Laikokwui](https://github.com/Laikokwui) | 1 |
 
-### FullStack
+### AI-ML
 
 | Contributor | Contributions |
 |-------------|---------------|
-| [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 3 |
-| [@k4niz](https://github.com/k4niz) | 1 |
-| [@ekxnsh22005](https://github.com/ekxnsh22005) | 1 |
+| [@Ansh-1019](https://github.com/Ansh-1019) | 3 |
+| [@k4niz](https://github.com/k4niz) | 2 |
+| [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 2 |
+| [@Mmadan128](https://github.com/Mmadan128) | 2 |
+| [@snehal492006](https://github.com/snehal492006) | 1 |
+| [@vatsalgupta2004](https://github.com/vatsalgupta2004) | 1 |
+| [@Dhiraj201226](https://github.com/Dhiraj201226) | 1 |
 
 ### AR-VR
 
 | Contributor | Contributions |
 |-------------|---------------|
-| [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 1 |
 | [@k4niz](https://github.com/k4niz) | 1 |
+| [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 1 |
+
+### FullStack
+
+| Contributor | Contributions |
+|-------------|---------------|
+| [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 2 |
+| [@k4niz](https://github.com/k4niz) | 1 |
+| [@ekxnsh22005](https://github.com/ekxnsh22005) | 1 |
+
+### IoT
+
+| Contributor | Contributions |
+|-------------|---------------|
+| [@k4niz](https://github.com/k4niz) | 1 |
+| [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 1 |
+| [@SOHAM-GADEKAR](https://github.com/SOHAM-GADEKAR) | 1 |
 
 ### Backend
 
@@ -115,6 +117,12 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 |-------------|---------------|
 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 1 |
 
+### Cloud
+
+| Contributor | Contributions |
+|-------------|---------------|
+| [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 1 |
+
 ### Cybersecurity
 
 | Contributor | Contributions |
@@ -126,14 +134,6 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | Contributor | Contributions |
 |-------------|---------------|
 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 1 |
-
-### IoT
-
-| Contributor | Contributions |
-|-------------|---------------|
-| [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 1 |
-| [@k4niz](https://github.com/k4niz) | 1 |
-| [@SOHAM-GADEKAR](https://github.com/SOHAM-GADEKAR) | 1 |
 
 ### MLOps
 

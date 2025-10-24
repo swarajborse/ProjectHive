@@ -26,9 +26,9 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 **[@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade)**
 
-*Contributions: 23 PRs across 13 domain(s)*
+*Contributions: 19 PRs across 13 domain(s)*
 
-*Domains: AI-ML, Cloud, Frontend, FullStack, AR-VR, Backend, Blockchain, Cybersecurity, DevOps, IoT, MLOps, NLP, Robotics-Automation*
+*Domains: AI-ML, AR-VR, Backend, Blockchain, Cloud, Cybersecurity, DevOps, Frontend, FullStack, IoT, MLOps, NLP, Robotics-Automation*
 
 </div>
 
@@ -54,6 +54,22 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
+<img src="https://github.com/shr128.png" width="100" height="100" style="border-radius: 50%;" alt="shr128"/>
+
+**[@shr128](https://github.com/shr128)**
+
+*Contributions: 5 PRs across 1 domain(s)*
+
+*Domains: Frontend*
+
+</div>
+
+---
+
+### 🏅 Rank 4
+
+<div align="center">
+
 <img src="https://github.com/k4niz.png" width="100" height="100" style="border-radius: 50%;" alt="k4niz"/>
 
 **[@k4niz](https://github.com/k4niz)**
@@ -66,7 +82,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 4
+### 🏅 Rank 5
 
 <div align="center">
 
@@ -82,7 +98,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 5
+### 🏅 Rank 6
 
 <div align="center">
 
@@ -98,7 +114,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 6
+### 🏅 Rank 7
 
 <div align="center">
 
@@ -114,7 +130,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 7
+### 🏅 Rank 8
 
 <div align="center">
 
@@ -125,22 +141,6 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 *Contributions: 4 PRs across 2 domain(s)*
 
 *Domains: Frontend, IoT*
-
-</div>
-
----
-
-### 🏅 Rank 8
-
-<div align="center">
-
-<img src="https://github.com/shr128.png" width="100" height="100" style="border-radius: 50%;" alt="shr128"/>
-
-**[@shr128](https://github.com/shr128)**
-
-*Contributions: 3 PRs across 1 domain(s)*
-
-*Domains: Frontend*
 
 </div>
 
