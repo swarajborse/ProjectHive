@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Picker Game</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .container {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            text-align: center;
+            max-width: 500px;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .score {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .color-display {
+            background: #f0f0f0;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            font-size: 36px;
+            font-weight: bold;
+            color: #333;
+            letter-spacing: 2px;
+        }
+
+        .options {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .option {
+            width: 100%;
+            height: 100px;
+            border: 3px solid transparent;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .option:hover {
+            transform: scale(1.05);
+            border-color: #333;
+        }
+
+        .message {
+            font-size: 20px;
+            font-weight: bold;
+            height: 30px;
+            margin-bottom: 20px;
+        }
+
+        .correct {
+            color: #27ae60;
+        }
+
+        .wrong {
+            color: #e74c3c;
+        }
+
+        button {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            font-size: 18px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #764ba2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎨 Color Picker Game</h1>
+        <div class="score">Score: <span id="score">0</span></div>
+        
+        <div class="color-display" id="colorDisplay">RGB(?, ?, ?)</div>
+        
+        <div class="message" id="message"></div>
+        
+        <div class="options" id="options"></div>
+        
+        <button onclick="newRound()">New Round</button>
+    </div>
+
+    <script>
+        let score = 0;
+        let correctColor;
+
+        function randomColor() {
+            const r = Math.floor(Math.random() * 256);
+            const g = Math.floor(Math.random() * 256);
+            const b = Math.floor(Math.random() * 256);
+            return { r, g, b };
+        }
+
+        function colorToString(color) {
+            return `rgb(${color.r}, ${color.g}, ${color.b})`;
+        }
+
+        function colorToRGB(color) {
+            return `RGB(${color.r}, ${color.g}, ${color.b})`;
+        }
+
+        function newRound() {
+            document.getElementById('message').textContent = '';
+            document.getElementById('message').className = 'message';
+            
+            correctColor = randomColor();
+            document.getElementById('colorDisplay').textContent = colorToRGB(correctColor);
+            
+            const colors = [correctColor];
+            for (let i = 0; i < 5; i++) {
+                colors.push(randomColor());
+            }
+            
+            colors.sort(() => Math.random() - 0.5);
+            
+            const optionsDiv = document.getElementById('options');
+            optionsDiv.innerHTML = '';
+            
+            colors.forEach(color => {
+                const div = document.createElement('div');
+                div.className = 'option';
+                div.style.backgroundColor = colorToString(color);
+                div.onclick = () => checkAnswer(color);
+                optionsDiv.appendChild(div);
+            });
+        }
+
+        function checkAnswer(selectedColor) {
+            const message = document.getElementById('message');
+            
+            if (selectedColor.r === correctColor.r && 
+                selectedColor.g === correctColor.g && 
+                selectedColor.b === correctColor.b) {
+                message.textContent = '✓ Correct!';
+                message.className = 'message correct';
+                score++;
+                document.getElementById('score').textContent = score;
+                setTimeout(newRound, 1000);
+            } else {
+                message.textContent = '✗ Wrong! Try again';
+                message.className = 'message wrong';
+                if (score > 0) score--;
+                document.getElementById('score').textContent = score;
+            }
+        }
+
+        newRound();
+    </script>
+</body>
+</html>
