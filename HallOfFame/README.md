@@ -54,22 +54,6 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/Ansh-1019.png" width="100" height="100" style="border-radius: 50%;" alt="Ansh-1019"/>
-
-**[@Ansh-1019](https://github.com/Ansh-1019)**
-
-*Contributions: 5 PRs across 2 domain(s)*
-
-*Domains: AI-ML, Backend*
-
-</div>
-
----
-
-### 🏅 Rank 4
-
-<div align="center">
-
 <img src="https://github.com/k4niz.png" width="100" height="100" style="border-radius: 50%;" alt="k4niz"/>
 
 **[@k4niz](https://github.com/k4niz)**
@@ -82,7 +66,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 5
+### 🏅 Rank 4
 
 <div align="center">
 
@@ -93,6 +77,22 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 *Contributions: 5 PRs across 1 domain(s)*
 
 *Domains: Backend*
+
+</div>
+
+---
+
+### 🏅 Rank 5
+
+<div align="center">
+
+<img src="https://github.com/Ansh-1019.png" width="100" height="100" style="border-radius: 50%;" alt="Ansh-1019"/>
+
+**[@Ansh-1019](https://github.com/Ansh-1019)**
+
+*Contributions: 4 PRs across 2 domain(s)*
+
+*Domains: AI-ML, Backend*
 
 </div>
 
