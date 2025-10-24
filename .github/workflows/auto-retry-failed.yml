@@ -1,0 +1,123 @@
+name: Auto Retry All Failed Workflows
+
+on:
+  workflow_run:
+    workflows: 
+      - "Update Leaderboard"
+    types:
+      - completed
+  schedule:
+    # Run every 6 hours to catch any missed failures
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+    inputs:
+      max_retries:
+        description: 'Maximum number of retries per workflow'
+        required: false
+        default: '3'
+
+permissions:
+  actions: write
+  contents: read
+
+jobs:
+  auto-retry-failed:
+    runs-on: ubuntu-latest
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'failure' }}
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        
+      - name: Wait before retry (avoid rate limiting)
+        run: sleep 15
+        
+      - name: Retry specific failed workflow (from workflow_run trigger)
+        if: github.event_name == 'workflow_run'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+          RUN_ID: ${{ github.event.workflow_run.id }}
+          WORKFLOW_NAME: ${{ github.event.workflow_run.name }}
+        run: |
+          echo "🔄 Auto-retry triggered for: $WORKFLOW_NAME"
+          echo "📊 Run ID: $RUN_ID"
+          echo "📅 Failed at: ${{ github.event.workflow_run.updated_at }}"
+          
+          # Check if this run has already been retried
+          attempt_number=$(gh run view $RUN_ID --repo $REPO --json attempt --jq '.attempt')
+          echo "🔢 Attempt number: $attempt_number"
+          
+          if [ "$attempt_number" -ge 3 ]; then
+            echo "⚠️ Maximum retry attempts (3) reached. Skipping retry."
+            echo "Please investigate the issue manually at: https://github.com/$REPO/actions/runs/$RUN_ID"
+            exit 0
+          fi
+          
+          echo "🚀 Triggering retry (attempt $((attempt_number + 1)))"
+          gh run rerun $RUN_ID --repo $REPO --failed
+          
+          if [ $? -eq 0 ]; then
+            echo "✅ Successfully triggered retry for workflow run #$RUN_ID"
+          else
+            echo "❌ Failed to retry workflow run #$RUN_ID"
+            exit 1
+          fi
+          
+      - name: Find and retry all recent failed workflows (scheduled/manual trigger)
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+          MAX_RETRIES: ${{ github.event.inputs.max_retries || '3' }}
+        run: |
+          echo "🔍 Searching for failed workflow runs in the last 24 hours..."
+          
+          # Get failed runs from the last 24 hours
+          failed_runs=$(gh run list \
+            --repo $REPO \
+            --status failure \
+            --limit 50 \
+            --json databaseId,name,workflowName,conclusion,createdAt,attempt \
+            --jq '.[] | select(.attempt < '$MAX_RETRIES') | select(.workflowName == "Update Leaderboard") | .databaseId')
+          
+          if [ -z "$failed_runs" ]; then
+            echo "✅ No failed workflows found that need retry"
+            exit 0
+          fi
+          
+          echo "📋 Found failed workflows to retry:"
+          echo "$failed_runs"
+          
+          retry_count=0
+          for run_id in $failed_runs; do
+            echo ""
+            echo "🔄 Retrying workflow run #$run_id"
+            
+            if gh run rerun $run_id --repo $REPO --failed; then
+              echo "✅ Successfully triggered retry for run #$run_id"
+              retry_count=$((retry_count + 1))
+            else
+              echo "⚠️ Failed to retry run #$run_id (may already be running or deleted)"
+            fi
+            
+            # Add delay between retries to avoid rate limiting
+            sleep 5
+          done
+          
+          echo ""
+          echo "📊 Summary: Retried $retry_count workflow(s)"
+          
+      - name: Summary
+        if: always()
+        run: |
+          echo "## 🔄 Auto-Retry Workflow Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- **Trigger**: ${{ github.event_name }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Repository**: ${{ github.repository }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Run Time**: $(date -u)" >> $GITHUB_STEP_SUMMARY
+          
+          if [ "${{ github.event_name }}" == "workflow_run" ]; then
+            echo "- **Failed Workflow**: ${{ github.event.workflow_run.name }}" >> $GITHUB_STEP_SUMMARY
+            echo "- **Run ID**: ${{ github.event.workflow_run.id }}" >> $GITHUB_STEP_SUMMARY
+          fi

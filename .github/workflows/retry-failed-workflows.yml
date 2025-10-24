@@ -1,0 +1,39 @@
+name: Retry Failed Workflows
+
+on:
+  workflow_run:
+    workflows: ["Update Leaderboard"]
+    types:
+      - completed
+
+permissions:
+  actions: write
+  contents: read
+
+jobs:
+  rerun-failed:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'failure' }}
+    steps:
+      - name: Wait before retry
+        run: sleep 10
+        
+      - name: Re-run failed workflow
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+          RUN_ID: ${{ github.event.workflow_run.id }}
+        run: |
+          echo "🔄 Retrying failed workflow run #$RUN_ID"
+          gh run rerun $RUN_ID --repo $REPO --failed
+          
+      - name: Notify retry
+        if: success()
+        run: |
+          echo "✅ Successfully triggered retry for workflow run #${{ github.event.workflow_run.id }}"
+          
+      - name: Notify failure
+        if: failure()
+        run: |
+          echo "❌ Failed to retry workflow run #${{ github.event.workflow_run.id }}"
+          echo "Please check manually at: https://github.com/${{ github.repository }}/actions/runs/${{ github.event.workflow_run.id }}"
