@@ -26,9 +26,9 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 **[@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade)**
 
-*Contributions: 19 PRs across 13 domain(s)*
+*Contributions: 23 PRs across 13 domain(s)*
 
-*Domains: AI-ML, AR-VR, Backend, Blockchain, Cloud, Cybersecurity, DevOps, Frontend, FullStack, IoT, MLOps, NLP, Robotics-Automation*
+*Domains: AI-ML, Cloud, Frontend, FullStack, AR-VR, Backend, Blockchain, Cybersecurity, DevOps, IoT, MLOps, NLP, Robotics-Automation*
 
 </div>
 
@@ -134,9 +134,9 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/khyati262.png" width="100" height="100" style="border-radius: 50%;" alt="khyati262"/>
+<img src="https://github.com/shr128.png" width="100" height="100" style="border-radius: 50%;" alt="shr128"/>
 
-**[@khyati262](https://github.com/khyati262)**
+**[@shr128](https://github.com/shr128)**
 
 *Contributions: 3 PRs across 1 domain(s)*
 
@@ -150,13 +150,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/shr128.png" width="100" height="100" style="border-radius: 50%;" alt="shr128"/>
+<img src="https://github.com/vatsalgupta2004.png" width="100" height="100" style="border-radius: 50%;" alt="vatsalgupta2004"/>
 
-**[@shr128](https://github.com/shr128)**
+**[@vatsalgupta2004](https://github.com/vatsalgupta2004)**
 
-*Contributions: 3 PRs across 1 domain(s)*
+*Contributions: 2 PRs across 2 domain(s)*
 
-*Domains: Frontend*
+*Domains: AI-ML, Frontend*
 
 </div>
 
@@ -166,13 +166,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/vatsalgupta2004.png" width="100" height="100" style="border-radius: 50%;" alt="vatsalgupta2004"/>
+<img src="https://github.com/Mmadan128.png" width="100" height="100" style="border-radius: 50%;" alt="Mmadan128"/>
 
-**[@vatsalgupta2004](https://github.com/vatsalgupta2004)**
+**[@Mmadan128](https://github.com/Mmadan128)**
 
-*Contributions: 2 PRs across 2 domain(s)*
+*Contributions: 2 PRs across 1 domain(s)*
 
-*Domains: AI-ML, Frontend*
+*Domains: AI-ML*
 
 </div>
 
