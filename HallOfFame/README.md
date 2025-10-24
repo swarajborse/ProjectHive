@@ -134,11 +134,11 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/SanjeevDeori.png" width="100" height="100" style="border-radius: 50%;" alt="SanjeevDeori"/>
+<img src="https://github.com/khyati262.png" width="100" height="100" style="border-radius: 50%;" alt="khyati262"/>
 
-**[@SanjeevDeori](https://github.com/SanjeevDeori)**
+**[@khyati262](https://github.com/khyati262)**
 
-*Contributions: 2 PRs across 1 domain(s)*
+*Contributions: 3 PRs across 1 domain(s)*
 
 *Domains: Frontend*
 
