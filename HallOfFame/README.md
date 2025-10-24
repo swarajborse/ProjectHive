@@ -150,13 +150,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/mahir-m01.png" width="100" height="100" style="border-radius: 50%;" alt="mahir-m01"/>
+<img src="https://github.com/vatsalgupta2004.png" width="100" height="100" style="border-radius: 50%;" alt="vatsalgupta2004"/>
 
-**[@mahir-m01](https://github.com/mahir-m01)**
+**[@vatsalgupta2004](https://github.com/vatsalgupta2004)**
 
-*Contributions: 2 PRs across 1 domain(s)*
+*Contributions: 2 PRs across 2 domain(s)*
 
-*Domains: Frontend*
+*Domains: AI-ML, Frontend*
 
 </div>
 
@@ -166,13 +166,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/vatsalgupta2004.png" width="100" height="100" style="border-radius: 50%;" alt="vatsalgupta2004"/>
+<img src="https://github.com/Mmadan128.png" width="100" height="100" style="border-radius: 50%;" alt="Mmadan128"/>
 
-**[@vatsalgupta2004](https://github.com/vatsalgupta2004)**
+**[@Mmadan128](https://github.com/Mmadan128)**
 
-*Contributions: 2 PRs across 2 domain(s)*
+*Contributions: 2 PRs across 1 domain(s)*
 
-*Domains: AI-ML, Frontend*
+*Domains: AI-ML*
 
 </div>
 
