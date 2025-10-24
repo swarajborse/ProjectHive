@@ -29,7 +29,7 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | 17 | [@Keron](https://github.com/Keron) | 2 | 1 (Frontend) | Recent |
 | 18 | [@Utkarsh-660](https://github.com/Utkarsh-660) | 2 | 1 (Frontend) | Recent |
 | 19 | [@alisha1510](https://github.com/alisha1510) | 2 | 1 (Frontend) | Recent |
-| 20 | [@adrika-mandal-tech](https://github.com/adrika-mandal-tech) | 1 | 1 (Frontend) | Recent |
+| 20 | [@ArnabNath1](https://github.com/ArnabNath1) | 1 | 1 (Frontend) | Recent |
 | 21 | [@mahir-m01](https://github.com/mahir-m01) | 1 | 1 (Frontend) | Recent |
 | 22 | [@GayatriVitkarcd](https://github.com/GayatriVitkarcd) | 1 | 1 (Frontend) | Recent |
 | 23 | [@SanjeevDeori](https://github.com/SanjeevDeori) | 1 | 1 (Frontend) | Recent |
@@ -58,7 +58,7 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | [@Keron](https://github.com/Keron) | 2 |
 | [@Utkarsh-660](https://github.com/Utkarsh-660) | 2 |
 | [@alisha1510](https://github.com/alisha1510) | 2 |
-| [@adrika-mandal-tech](https://github.com/adrika-mandal-tech) | 1 |
+| [@ArnabNath1](https://github.com/ArnabNath1) | 1 |
 | [@vatsalgupta2004](https://github.com/vatsalgupta2004) | 1 |
 | [@Dhiraj201226](https://github.com/Dhiraj201226) | 1 |
 | [@mahir-m01](https://github.com/mahir-m01) | 1 |
