@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Resume Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🤖 AI Resume Analyzer</h1>
+            <p>Upload your resume and get instant feedback</p>
+        </div>
+
+        <div class="content">
+            <div id="uploadSection" class="upload-section">
+                <div class="upload-icon">📄</div>
+                <h2>Upload Your Resume</h2>
+                <p>Drag and drop your resume here or click to browse</p>
+                <button class="btn" onclick="document.getElementById('fileInput').click()">Choose File</button>
+                <input type="file" id="fileInput" class="file-input" accept=".pdf,.doc,.docx">
+            </div>
+
+            <div id="analyzingSection" class="analyzing" style="display: none;">
+                <div class="spinner"></div>
+                <h2>Analyzing Your Resume...</h2>
+                <p>Please wait while our AI reviews your document</p>
+            </div>
+
+            <div id="analysisSection" class="analysis-section">
+                <div class="file-info">
+                    <div class="file-icon">📋</div>
+                    <div class="file-details">
+                        <h3 id="fileName">Resume.pdf</h3>
+                        <p id="fileSize">2.3 MB</p>
+                    </div>
+                </div>
+
+                <div class="score-card">
+                    <div class="score-label">Overall Score</div>
+                    <div class="score-value" id="overallScore">0</div>
+                    <div class="score-label">out of 100</div>
+                </div>
+
+                <div class="ratings-grid">
+                    <div class="rating-item">
+                        <div class="rating-header">
+                            <span class="rating-title">📝 Content Quality</span>
+                            <span class="rating-score" id="contentScore">0</span>
+                        </div>
+                        <div class="rating-bar-bg">
+                            <div class="rating-bar-fill" id="contentBar"></div>
+                        </div>
+                        <div class="rating-feedback" id="contentFeedback"></div>
+                    </div>
+
+                    <div class="rating-item">
+                        <div class="rating-header">
+                            <span class="rating-title">🎨 Formatting</span>
+                            <span class="rating-score" id="formatScore">0</span>
+                        </div>
+                        <div class="rating-bar-bg">
+                            <div class="rating-bar-fill" id="formatBar"></div>
+                        </div>
+                        <div class="rating-feedback" id="formatFeedback"></div>
+                    </div>
+
+                    <div class="rating-item">
+                        <div class="rating-header">
+                            <span class="rating-title">💼 Experience</span>
+                            <span class="rating-score" id="experienceScore">0</span>
+                        </div>
+                        <div class="rating-bar-bg">
+                            <div class="rating-bar-fill" id="experienceBar"></div>
+                        </div>
+                        <div class="rating-feedback" id="experienceFeedback"></div>
+                    </div>
+
+                    <div class="rating-item">
+                        <div class="rating-header">
+                            <span class="rating-title">🎓 Education</span>
+                            <span class="rating-score" id="educationScore">0</span>
+                        </div>
+                        <div class="rating-bar-bg">
+                            <div class="rating-bar-fill" id="educationBar"></div>
+                        </div>
+                        <div class="rating-feedback" id="educationFeedback"></div>
+                    </div>
+
+                    <div class="rating-item">
+                        <div class="rating-header">
+                            <span class="rating-title">🔧 Skills</span>
+                            <span class="rating-score" id="skillsScore">0</span>
+                        </div>
+                        <div class="rating-bar-bg">
+                            <div class="rating-bar-fill" id="skillsBar"></div>
+                        </div>
+                        <div class="rating-feedback" id="skillsFeedback"></div>
+                    </div>
+
+                    <div class="rating-item">
+                        <div class="rating-header">
+                            <span class="rating-title">🔍 Keywords & ATS</span>
+                            <span class="rating-score" id="keywordsScore">0</span>
+                        </div>
+                        <div class="rating-bar-bg">
+                            <div class="rating-bar-fill" id="keywordsBar"></div>
+                        </div>
+                        <div class="rating-feedback" id="keywordsFeedback"></div>
+                    </div>
+                </div>
+
+                <button class="btn reset-btn" onclick="resetAnalyzer()">Upload Another Resume</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
