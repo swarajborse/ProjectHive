@@ -14,17 +14,17 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | 🥈 | [@Aaditya-2407](https://github.com/Aaditya-2407) | 6 | 1 (Frontend) | Recent |
 | 🥉 | [@k4niz](https://github.com/k4niz) | 5 | 4 (AI-ML, AR-VR, FullStack, IoT) | Recent |
 | 4 | [@Ogagaoghene](https://github.com/Ogagaoghene) | 5 | 1 (Backend) | Recent |
-| 5 | [@Ansh-1019](https://github.com/Ansh-1019) | 4 | 2 (AI-ML, Backend) | Recent |
-| 6 | [@snehal492006](https://github.com/snehal492006) | 4 | 3 (AI-ML, CompetitiveProgramming, Frontend) | Recent |
-| 7 | [@SOHAM-GADEKAR](https://github.com/SOHAM-GADEKAR) | 4 | 2 (Frontend, IoT) | Recent |
-| 8 | [@MeghPatel-007](https://github.com/MeghPatel-007) | 3 | 1 (Frontend) | Recent |
-| 9 | [@shr128](https://github.com/shr128) | 3 | 1 (Frontend) | Recent |
-| 10 | [@vatsalgupta2004](https://github.com/vatsalgupta2004) | 2 | 2 (AI-ML, Frontend) | Recent |
-| 11 | [@Mmadan128](https://github.com/Mmadan128) | 2 | 1 (AI-ML) | Recent |
-| 12 | [@Dhiraj201226](https://github.com/Dhiraj201226) | 2 | 2 (AI-ML, Frontend) | Recent |
-| 13 | [@AksharGoyal](https://github.com/AksharGoyal) | 2 | 2 (Backend, cli) | Recent |
-| 14 | [@GayatriVitkar](https://github.com/GayatriVitkar) | 2 | 1 (CompetitiveProgramming) | Recent |
-| 15 | [@Mansi13-6](https://github.com/Mansi13-6) | 2 | 1 (Frontend) | Recent |
+| 5 | [@shr128](https://github.com/shr128) | 4 | 1 (Frontend) | Recent |
+| 6 | [@Ansh-1019](https://github.com/Ansh-1019) | 4 | 2 (AI-ML, Backend) | Recent |
+| 7 | [@snehal492006](https://github.com/snehal492006) | 4 | 3 (AI-ML, CompetitiveProgramming, Frontend) | Recent |
+| 8 | [@SOHAM-GADEKAR](https://github.com/SOHAM-GADEKAR) | 4 | 2 (Frontend, IoT) | Recent |
+| 9 | [@vatsalgupta2004](https://github.com/vatsalgupta2004) | 2 | 2 (AI-ML, Frontend) | Recent |
+| 10 | [@Mmadan128](https://github.com/Mmadan128) | 2 | 1 (AI-ML) | Recent |
+| 11 | [@Dhiraj201226](https://github.com/Dhiraj201226) | 2 | 2 (AI-ML, Frontend) | Recent |
+| 12 | [@AksharGoyal](https://github.com/AksharGoyal) | 2 | 2 (Backend, cli) | Recent |
+| 13 | [@GayatriVitkar](https://github.com/GayatriVitkar) | 2 | 1 (CompetitiveProgramming) | Recent |
+| 14 | [@Mansi13-6](https://github.com/Mansi13-6) | 2 | 1 (Frontend) | Recent |
+| 15 | [@MeghPatel-007](https://github.com/MeghPatel-007) | 2 | 1 (Frontend) | Recent |
 | 16 | [@khyati262](https://github.com/khyati262) | 2 | 1 (Frontend) | Recent |
 | 17 | [@Keron](https://github.com/Keron) | 2 | 1 (Frontend) | Recent |
 | 18 | [@Utkarsh-660](https://github.com/Utkarsh-660) | 2 | 1 (Frontend) | Recent |
@@ -47,12 +47,12 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | Contributor | Contributions |
 |-------------|---------------|
 | [@Aaditya-2407](https://github.com/Aaditya-2407) | 6 |
-| [@SOHAM-GADEKAR](https://github.com/SOHAM-GADEKAR) | 3 |
 | [@shr128](https://github.com/shr128) | 3 |
-| [@MeghPatel-007](https://github.com/MeghPatel-007) | 2 |
+| [@SOHAM-GADEKAR](https://github.com/SOHAM-GADEKAR) | 3 |
 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 2 |
 | [@snehal492006](https://github.com/snehal492006) | 2 |
 | [@Mansi13-6](https://github.com/Mansi13-6) | 2 |
+| [@MeghPatel-007](https://github.com/MeghPatel-007) | 2 |
 | [@khyati262](https://github.com/khyati262) | 2 |
 | [@Keron](https://github.com/Keron) | 2 |
 | [@Utkarsh-660](https://github.com/Utkarsh-660) | 2 |
