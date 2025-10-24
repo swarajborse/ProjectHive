@@ -1,0 +1,648 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #6366f1;
+    --primary-dark: #4f46e5;
+    --secondary: #8b5cf6;
+    --success: #10b981;
+    --danger: #ef4444;
+    --warning: #f59e0b;
+    --dark: #1f2937;
+    --dark-light: #374151;
+    --light: #f3f4f6;
+    --white: #ffffff;
+    --border: #e5e7eb;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+    color: var(--dark);
+}
+
+.app-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+.header {
+    background: var(--white);
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 25px;
+    box-shadow: var(--shadow-lg);
+    animation: fadeInDown 0.6s ease;
+}
+
+.header-content {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.app-title {
+    font-size: 2.8em;
+    color: var(--primary);
+    margin-bottom: 8px;
+}
+
+.app-subtitle {
+    font-size: 1.2em;
+    color: var(--dark-light);
+}
+
+.header-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.stat-card {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    color: var(--white);
+    transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.stat-value {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    font-size: 0.95em;
+    opacity: 0.9;
+}
+
+/* Add Habit Section */
+.add-habit-section {
+    margin-bottom: 25px;
+    animation: fadeInUp 0.6s ease;
+}
+
+.add-habit-card {
+    background: var(--white);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: var(--shadow-lg);
+}
+
+.add-habit-card h2 {
+    font-size: 1.8em;
+    color: var(--dark);
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr auto;
+    gap: 15px;
+}
+
+.habit-input,
+.habit-select {
+    padding: 15px 20px;
+    font-size: 1em;
+    border: 2px solid var(--border);
+    border-radius: 12px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.habit-input:focus,
+.habit-select:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+.btn {
+    padding: 15px 30px;
+    font-size: 1em;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: var(--white);
+}
+
+.btn-primary:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+}
+
+.btn-secondary {
+    background: var(--light);
+    color: var(--dark);
+}
+
+.btn-secondary:hover {
+    background: var(--border);
+}
+
+.btn-danger {
+    background: var(--danger);
+    color: var(--white);
+}
+
+.btn-danger:hover {
+    background: #dc2626;
+}
+
+/* Date Navigator */
+.date-navigator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 25px;
+    background: var(--white);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+}
+
+.nav-btn {
+    background: var(--primary);
+    color: var(--white);
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+    background: var(--primary-dark);
+    transform: scale(1.1);
+}
+
+.week-display {
+    display: flex;
+    gap: 10px;
+}
+
+.day-cell {
+    text-align: center;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background: var(--light);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    min-width: 80px;
+}
+
+.day-cell:hover {
+    background: var(--border);
+}
+
+.day-cell.today {
+    background: var(--primary);
+    color: var(--white);
+}
+
+.day-name {
+    font-size: 0.85em;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.day-date {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.today-btn {
+    background: var(--secondary);
+    color: var(--white);
+    border: none;
+    padding: 12px 25px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.today-btn:hover {
+    background: #7c3aed;
+    transform: translateY(-2px);
+}
+
+/* Habits Section */
+.habits-section {
+    background: var(--white);
+    border-radius: 20px;
+    padding: 30px;
+    margin-bottom: 25px;
+    box-shadow: var(--shadow-lg);
+}
+
+.habits-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.habits-header h2 {
+    font-size: 2em;
+    color: var(--dark);
+}
+
+.view-toggle {
+    display: flex;
+    gap: 10px;
+}
+
+.toggle-btn {
+    padding: 10px 20px;
+    background: var(--light);
+    border: 2px solid transparent;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.toggle-btn:hover {
+    background: var(--border);
+}
+
+.toggle-btn.active {
+    background: var(--primary);
+    color: var(--white);
+    border-color: var(--primary);
+}
+
+.habits-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.habit-row {
+    background: var(--light);
+    border-radius: 15px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    gap: 20px;
+    align-items: center;
+    transition: all 0.3s ease;
+    animation: slideIn 0.4s ease;
+}
+
+.habit-row:hover {
+    transform: translateX(5px);
+    box-shadow: var(--shadow);
+}
+
+.habit-category-icon {
+    font-size: 2em;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--white);
+    border-radius: 12px;
+}
+
+.habit-info h3 {
+    font-size: 1.3em;
+    color: var(--dark);
+    margin-bottom: 5px;
+}
+
+.habit-meta {
+    display: flex;
+    gap: 15px;
+    color: var(--dark-light);
+    font-size: 0.9em;
+}
+
+.habit-meta span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.habit-streak {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background: var(--white);
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.streak-number {
+    font-size: 1.4em;
+    color: var(--warning);
+}
+
+.habit-checkboxes {
+    display: flex;
+    gap: 8px;
+}
+
+.day-checkbox {
+    width: 45px;
+    height: 45px;
+    border: 3px solid var(--border);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: var(--white);
+    font-size: 1.3em;
+}
+
+.day-checkbox:hover {
+    border-color: var(--primary);
+    transform: scale(1.1);
+}
+
+.day-checkbox.completed {
+    background: var(--success);
+    border-color: var(--success);
+    color: var(--white);
+}
+
+.day-checkbox.today-checkbox {
+    border-color: var(--primary);
+    border-width: 3px;
+}
+
+.habit-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.icon-btn {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.delete-btn {
+    background: var(--danger);
+    color: var(--white);
+}
+
+.delete-btn:hover {
+    background: #dc2626;
+    transform: scale(1.1);
+}
+
+/* Empty State */
+.empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--dark-light);
+}
+
+.empty-icon {
+    font-size: 5em;
+    margin-bottom: 20px;
+    opacity: 0.5;
+}
+
+.empty-state h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    color: var(--dark);
+}
+
+/* Achievements Section */
+.achievements-section {
+    background: var(--white);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: var(--shadow-lg);
+    margin-bottom: 25px;
+}
+
+.achievements-section h2 {
+    font-size: 2em;
+    color: var(--dark);
+    margin-bottom: 20px;
+}
+
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.achievement-card {
+    background: var(--light);
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: all 0.3s ease;
+}
+
+.achievement-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow);
+}
+
+.achievement-card.unlocked {
+    background: linear-gradient(135deg, var(--success), #059669);
+    color: var(--white);
+}
+
+.achievement-card.locked {
+    opacity: 0.5;
+}
+
+.achievement-icon {
+    font-size: 3em;
+}
+
+.achievement-info h4 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.achievement-info p {
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    position: relative;
+    background: var(--white);
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 500px;
+    box-shadow: var(--shadow-lg);
+    animation: slideUp 0.3s ease;
+}
+
+.modal-content h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: var(--dark);
+}
+
+.modal-content p {
+    margin-bottom: 25px;
+    color: var(--dark-light);
+    line-height: 1.6;
+}
+
+.modal-actions {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end;
+}
+
+/* Utility Classes */
+.hidden {
+    display: none !important;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .input-group {
+        grid-template-columns: 1fr;
+    }
+
+    .habit-row {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .habit-checkboxes {
+        justify-content: center;
+    }
+
+    .habit-actions {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .app-title {
+        font-size: 2em;
+    }
+
+    .week-display {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .day-cell {
+        min-width: 60px;
+    }
+
+    .achievements-grid {
+        grid-template-columns: 1fr;
+    }
+}
