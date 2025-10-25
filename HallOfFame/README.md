@@ -150,11 +150,11 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/star-lord1234.png" width="100" height="100" style="border-radius: 50%;" alt="star-lord1234"/>
+<img src="https://github.com/anujaugale617.png" width="100" height="100" style="border-radius: 50%;" alt="anujaugale617"/>
 
-**[@star-lord1234](https://github.com/star-lord1234)**
+**[@anujaugale617](https://github.com/anujaugale617)**
 
-*Contributions: 2 PRs across 1 domain(s)*
+*Contributions: 3 PRs across 1 domain(s)*
 
 *Domains: Frontend*
 

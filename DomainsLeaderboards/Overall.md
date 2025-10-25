@@ -18,7 +18,7 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | 6 | [@Ogagaoghene](https://github.com/Ogagaoghene) | 5 | 1 (Backend) | Recent |
 | 7 | [@Ansh-1019](https://github.com/Ansh-1019) | 4 | 2 (AI-ML, Backend) | Recent |
 | 8 | [@SOHAM-GADEKAR](https://github.com/SOHAM-GADEKAR) | 4 | 2 (Frontend, IoT) | Recent |
-| 9 | [@star-lord1234](https://github.com/star-lord1234) | 2 | 1 (Frontend) | Recent |
+| 9 | [@anujaugale617](https://github.com/anujaugale617) | 3 | 1 (Frontend) | Recent |
 | 10 | [@vatsalgupta2004](https://github.com/vatsalgupta2004) | 2 | 2 (AI-ML, Frontend) | Recent |
 | 11 | [@Mmadan128](https://github.com/Mmadan128) | 2 | 1 (AI-ML) | Recent |
 | 12 | [@Dhiraj201226](https://github.com/Dhiraj201226) | 2 | 2 (AI-ML, Frontend) | Recent |
@@ -30,15 +30,16 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | 18 | [@Keron](https://github.com/Keron) | 2 | 1 (Frontend) | Recent |
 | 19 | [@Utkarsh-660](https://github.com/Utkarsh-660) | 2 | 1 (Frontend) | Recent |
 | 20 | [@alisha1510](https://github.com/alisha1510) | 2 | 1 (Frontend) | Recent |
-| 21 | [@anujaugale617](https://github.com/anujaugale617) | 1 | 1 (Frontend) | Recent |
-| 22 | [@mahir-m01](https://github.com/mahir-m01) | 1 | 1 (Frontend) | Recent |
-| 23 | [@GayatriVitkarcd](https://github.com/GayatriVitkarcd) | 1 | 1 (Frontend) | Recent |
-| 24 | [@SanjeevDeori](https://github.com/SanjeevDeori) | 1 | 1 (Frontend) | Recent |
-| 25 | [@Tanmay-Kad](https://github.com/Tanmay-Kad) | 1 | 1 (Frontend) | Recent |
-| 26 | [@jeturgavli](https://github.com/jeturgavli) | 1 | 1 (Frontend) | Recent |
-| 27 | [@Tanushri1307](https://github.com/Tanushri1307) | 1 | 1 (Frontend) | Recent |
-| 28 | [@Laikokwui](https://github.com/Laikokwui) | 1 | 1 (Frontend) | Recent |
-| 29 | [@ekxnsh22005](https://github.com/ekxnsh22005) | 1 | 1 (FullStack) | Recent |
+| 21 | [@Samikshaa-A](https://github.com/Samikshaa-A) | 1 | 1 (Frontend) | Recent |
+| 22 | [@star-lord1234](https://github.com/star-lord1234) | 1 | 1 (Frontend) | Recent |
+| 23 | [@mahir-m01](https://github.com/mahir-m01) | 1 | 1 (Frontend) | Recent |
+| 24 | [@GayatriVitkarcd](https://github.com/GayatriVitkarcd) | 1 | 1 (Frontend) | Recent |
+| 25 | [@SanjeevDeori](https://github.com/SanjeevDeori) | 1 | 1 (Frontend) | Recent |
+| 26 | [@Tanmay-Kad](https://github.com/Tanmay-Kad) | 1 | 1 (Frontend) | Recent |
+| 27 | [@jeturgavli](https://github.com/jeturgavli) | 1 | 1 (Frontend) | Recent |
+| 28 | [@Tanushri1307](https://github.com/Tanushri1307) | 1 | 1 (Frontend) | Recent |
+| 29 | [@Laikokwui](https://github.com/Laikokwui) | 1 | 1 (Frontend) | Recent |
+| 30 | [@ekxnsh22005](https://github.com/ekxnsh22005) | 1 | 1 (FullStack) | Recent |
 
 ---
 
@@ -51,6 +52,7 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | [@shr128](https://github.com/shr128) | 6 |
 | [@Aaditya-2407](https://github.com/Aaditya-2407) | 6 |
 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 3 |
+| [@anujaugale617](https://github.com/anujaugale617) | 3 |
 | [@SOHAM-GADEKAR](https://github.com/SOHAM-GADEKAR) | 3 |
 | [@snehal492006](https://github.com/snehal492006) | 2 |
 | [@Mansi13-6](https://github.com/Mansi13-6) | 2 |
@@ -59,10 +61,10 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | [@Keron](https://github.com/Keron) | 2 |
 | [@Utkarsh-660](https://github.com/Utkarsh-660) | 2 |
 | [@alisha1510](https://github.com/alisha1510) | 2 |
-| [@star-lord1234](https://github.com/star-lord1234) | 1 |
+| [@Samikshaa-A](https://github.com/Samikshaa-A) | 1 |
 | [@vatsalgupta2004](https://github.com/vatsalgupta2004) | 1 |
 | [@Dhiraj201226](https://github.com/Dhiraj201226) | 1 |
-| [@anujaugale617](https://github.com/anujaugale617) | 1 |
+| [@star-lord1234](https://github.com/star-lord1234) | 1 |
 | [@mahir-m01](https://github.com/mahir-m01) | 1 |
 | [@GayatriVitkarcd](https://github.com/GayatriVitkarcd) | 1 |
 | [@SanjeevDeori](https://github.com/SanjeevDeori) | 1 |
