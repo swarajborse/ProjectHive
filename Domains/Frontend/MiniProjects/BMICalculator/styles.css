@@ -1,0 +1,82 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* --- Custom Variables & Base --- */
+:root {
+    /* Customizing Bootstrap's theme colors for a "healthy" feel */
+    --bs-primary: #198754; /* A nice, healthy green */
+    --bs-primary-rgb: 25, 135, 84;
+    --bs-body-font-family: 'Inter', sans-serif;
+    --bs-body-bg: #f4f9f4; /* A very light, fresh green background */
+    --bs-card-border-radius: 1rem; /* Softer, rounded cards */
+    --bs-card-border-width: 0;
+}
+
+body {
+    font-family: var(--bs-body-font-family);
+    background-color: var(--bs-body-bg);
+    color: #333;
+}
+
+/* --- Card Styling --- */
+.card {
+    border-radius: var(--bs-card-border-radius);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.08) !important;
+}
+
+/* --- Input Group Styling --- */
+.input-group-text {
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+    color: var(--bs-primary);
+}
+
+.form-control:focus {
+    border-color: var(--bs-primary);
+    box-shadow: 0 0 0 0.25rem rgba(var(--bs-primary-rgb), 0.25);
+}
+
+/* --- Result Category Colors --- */
+/* We use Bootstrap's built-in text color classes */
+.text-underweight {
+    color: var(--bs-warning-dark) !important;
+}
+
+.text-normal {
+    color: var(--bs-success-dark) !important;
+}
+
+.text-overweight {
+    color: var(--bs-warning-dark) !important;
+}
+
+.text-obese {
+    color: var(--bs-danger-dark) !important;
+}
+
+/* --- Accordion Styling --- */
+.accordion-button {
+    font-weight: 600;
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--bs-primary);
+    background-color: #e8f3ee;
+}
+
+.accordion-item {
+    border: 1px solid #dee2e6;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+    overflow: hidden; /* For border-radius */
+}
+
+.accordion-item:first-of-type,
+.accordion-item:last-of-type {
+    border-radius: 0.5rem;
+}

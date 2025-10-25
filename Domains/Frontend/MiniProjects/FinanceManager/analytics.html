@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MONEYFY - Analytics</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="analytics.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <span style="color: var(--color-primary);">MONEYFY</span>
+        </div>
+        <nav class="desktop-nav">
+            <a href="index.html">Dashboard</a>
+            <a href="transactions.html">Transactions</a>
+            <a href="budgets.html">Budgets</a>
+            <a href="analytics.html" class="active">Analytics</a>
+            <a href="settings.html">Settings</a>
+        </nav>
+        <div class="user-actions">
+            <input type="search" placeholder="Search..." class="search-input">
+            <i class="fa-solid fa-bell icon-btn" title="Notifications"></i>
+            <i class="fa-solid fa-user-circle icon-btn" title="Profile"></i>
+            <i class="fa-solid fa-bars mobile-menu-toggle"></i>
+        </div>
+    </header>
+
+    <main class="analytics-content">
+        <h1>Financial Analytics & Reports</h1>
+
+        <section class="time-selector-card card">
+            <div class="tabs-container">
+                <a href="#" class="tab-btn">This Week</a>
+                <a href="#" class="tab-btn active">This Month</a>
+                <a href="#" class="tab-btn">This Year</a>
+                <a href="#" class="tab-btn">Custom Range</a>
+            </div>
+            <button class="btn-primary download-btn"><i class="fa-solid fa-download"></i> Download Report</button>
+        </section>
+
+        <section class="statistics-grid">
+            <div class="card stat-card">
+                <p class="label">Avg. Daily Spending</p>
+                <h3 class="stat-value" style="color: var(--color-danger);">$68.15</h3>
+            </div>
+            <div class="card stat-card">
+                <p class="label">Highest Spending Category</p>
+                <h3 class="stat-value" style="color: var(--color-primary);">Bills</h3>
+            </div>
+            <div class="card stat-card">
+                <p class="label">Savings Goal Progress</p>
+                <h3 class="stat-value" style="color: var(--color-success);">62%</h3>
+            </div>
+        </section>
+
+        <section class="charts-grid">
+            <div class="card chart-card full-width">
+                <h2>Income vs. Expense Comparison</h2>
+                <div class="chart-placeholder bar-chart-mock">
+                    <div class="bar-set">
+                        <div class="income-bar" style="height: 70%;"></div>
+                        <div class="expense-bar" style="height: 40%;"></div>
+                        <span class="label">Jan</span>
+                    </div>
+                    <div class="bar-set">
+                        <div class="income-bar" style="height: 60%;"></div>
+                        <div class="expense-bar" style="height: 55%;"></div>
+                        <span class="label">Feb</span>
+                    </div>
+                    <div class="bar-set">
+                        <div class="income-bar" style="height: 90%;"></div>
+                        <div class="expense-bar" style="height: 75%;"></div>
+                        <span class="label">Mar</span>
+                    </div>
+                    </div>
+            </div>
+
+            <div class="card chart-card">
+                <h2>Spending by Category</h2>
+                <div class="chart-placeholder pie-chart-mock">
+                    [Pie Chart Placeholder]
+                    <div class="legend-dot" style="background-color: var(--color-primary);"></div> Bills
+                    <div class="legend-dot" style="background-color: var(--color-danger);"></div> Food
+                </div>
+            </div>
+
+            <div class="card chart-card">
+                <h2>Net Income Over Time</h2>
+                <div class="chart-placeholder line-chart-mock">
+                    [Line Chart Placeholder]
+                </div>
+            </div>
+            
+            <div class="card chart-card full-width">
+                <h2>Savings Rate Trend</h2>
+                <div class="chart-placeholder line-chart-mock" style="height: 200px;">
+                    [Savings Line Chart Placeholder]
+                </div>
+            </div>
+
+        </section>
+    </main>
+    
+    <script src="scripts/analytics.js"></script>
+</body>
+</html>

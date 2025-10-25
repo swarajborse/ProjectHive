@@ -1,0 +1,115 @@
+# 🌦️ Weather App (Python + Tkinter)
+
+A simple **Python Weather App** that shows real-time weather information using the **OpenWeatherMap API**.  
+The app is built with **Tkinter** for the GUI and **Requests** for API integration.
+
+---
+
+## 🚀 Features
+
+- 🌍 Fetches **live weather data** for any city
+- 🌡️ Displays **temperature, humidity, and wind speed**
+- ☁️ Shows **weather description** (e.g., Clear Sky, Rain)
+- 💻 Built using **Python Tkinter GUI**
+- 🔗 Uses **OpenWeatherMap API**
+
+---
+
+## 🧰 Tech Stack
+
+| Component | Technology |
+|------------|-------------|
+| Language | Python |
+| GUI Library | Tkinter |
+| API | OpenWeatherMap |
+| HTTP Requests | Requests module |
+
+---
+
+## 🧑‍💻 Installation & Setup
+
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/yourusername/weather-app-python.git
+cd weather-app-python
+2️⃣ Install Dependencies
+bash
+Copy code
+pip install requests
+3️⃣ Get Your API Key
+Go to OpenWeatherMap API
+
+Sign up and generate your free API key
+
+Copy your API key and replace "YOUR_API_KEY" in the code
+
+💡 Usage
+Run the script:
+
+bash
+Copy code
+python weather_app.py
+Then:
+Enter your city name (e.g., Mumbai)
+
+Click Get Weather
+
+View current weather info instantly!
+
+🖼️ GUI Preview
+yaml
+Copy code
+-----------------------------------
+| 🌦️  Weather App                |
+|---------------------------------|
+| Enter City Name: [__________]   |
+| [ Get Weather ]                 |
+|                                 |
+| City: Mumbai                    |
+| Temperature: 30°C               |
+| Humidity: 65%                   |
+| Wind Speed: 4.5 m/s             |
+| Weather: Clear Sky              |
+-----------------------------------
+🧾 Code
+python
+Copy code
+import requests
+from tkinter import *
+
+def get_weather():
+    city = city_entry.get()
+    api_key = "YOUR_API_KEY"
+    base_url = "http://api.openweathermap.org/data/2.5/weather"
+
+    params = {'q': city, 'appid': api_key, 'units': 'metric'}
+    response = requests.get(base_url, params=params)
+    data = response.json()
+
+    if response.status_code == 200:
+        weather_info = (
+            f"City: {data['name']}\n"
+            f"Temperature: {data['main']['temp']}°C\n"
+            f"Humidity: {data['main']['humidity']}%\n"
+            f"Wind Speed: {data['wind']['speed']} m/s\n"
+            f"Weather: {data['weather'][0]['description'].title()}"
+        )
+    else:
+        weather_info = "City not found!"
+
+    result_label.config(text=weather_info)
+
+# GUI setup
+root = Tk()
+root.title("🌦️ Weather App")
+root.geometry("300x300")
+
+Label(root, text="Enter City Name:", font=("Arial", 12)).pack(pady=5)
+city_entry = Entry(root, width=25)
+city_entry.pack(pady=5)
+
+Button(root, text="Get Weather", command=get_weather, bg="skyblue").pack(pady=10)
+result_label = Label(root, text="", font=("Arial", 11), justify=LEFT)
+result_label.pack(pady=10)
+
+root.mainloop()

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <!-- Custom Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                
+                <!-- Title -->
+                <header class="text-center mb-4">
+                    <h1 class="display-5 fw-bold text-primary">
+                        <i class="bi bi-heart-pulse-fill"></i> BMI Calculator
+                    </h1>
+                    <p class="lead text-muted">Track your body mass index to stay in good health.</p>
+                </header>
+
+                <div class="row">
+                    <!-- Calculator Card -->
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100 shadow-sm border-0">
+                            <div class="card-body p-4">
+                                <h2 class="h4 card-title fw-semibold mb-3">Calculate Your BMI</h2>
+                                <form id="bmi-form">
+                                    <!-- Weight Input -->
+                                    <div class="mb-3">
+                                        <label for="weight" class="form-label">Weight (kg)</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text"><i class="bi bi-speedometer2"></i></span>
+                                            <input type="number" class="form-control" id="weight" placeholder="e.g., 70" step="0.1" required>
+                                        </div>
+                                    </div>
+                                    <!-- Height Input -->
+                                    <div class="mb-3">
+                                        <label for="height" class="form-label">Height (cm)</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text"><i class="bi bi-rulers"></i></span>
+                                            <input type="number" class="form-control" id="height" placeholder="e.g., 175" step="0.1" required>
+                                        </div>
+                                    </div>
+                                    <!-- Error Message -->
+                                    <div class="alert alert-danger d-none" id="error-message" role="alert">
+                                        Please enter a valid positive weight and height.
+                                    </div>
+                                    <!-- Submit Button -->
+                                    <button type="submit" class="btn btn-primary w-100 btn-lg">
+                                        Calculate
+                                        <i class="bi bi-calculator-fill ms-1"></i>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Result Card (Initially Hidden) -->
+                    <div class="col-md-6 mb-4">
+                        <div class="card h-100 shadow-sm border-0 d-none" id="result-card">
+                            <div class="card-body p-4 d-flex flex-column justify-content-center text-center">
+                                <h2 class="h4 card-title fw-semibold mb-3">Your Result</h2>
+                                <h1 class="display-2 fw-bold" id="bmi-value">22.9</h1>
+                                <p class="h4" id="bmi-category">Normal</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BMI Information Section -->
+                <div class="row mt-4">
+                    <div class="col-12">
+                        <div class="card shadow-sm border-0">
+                            <div class="card-body p-4">
+                                <h2 class="h4 card-title fw-semibold text-center mb-4">What is BMI?</h2>
+                                <div class="accordion" id="bmi-info-accordion">
+                                    <!-- Item 1 -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                <strong>Underweight (BMI < 18.5)</strong>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#bmi-info-accordion">
+                                            <div class="accordion-body">
+                                                Being underweight may indicate malnutrition or other health issues. It's important to ensure you are getting enough nutrients. Consider consulting a healthcare provider to discuss a healthy diet.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Item 2 -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                <strong>Normal (BMI 18.5 - 24.9)</strong>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#bmi-info-accordion">
+                                            <div class="accordion-body">
+                                                Congratulations! A BMI in this range suggests you are at a healthy weight for your height. Maintaining a balanced diet and regular physical activity is key to staying in this range.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Item 3 -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingThree">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                <strong>Overweight (BMI 25 - 29.9)</strong>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#bmi-info-accordion">
+                                            <div class="accordion-body">
+                                                A BMI in this range may indicate a higher risk of developing certain health conditions. Small changes in diet and increasing physical activity can make a significant difference.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Item 4 -->
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingFour">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                                <strong>Obese (BMI ≥ 30)</strong>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#bmi-info-accordion">
+                                            <div class="accordion-body">
+                                                This range is associated with a higher risk of serious health conditions like heart disease and diabetes. It's recommended to consult with a healthcare professional for guidance on a safe and effective health plan.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Custom JS -->
+    <script src="script.js" defer></script>
+</body>
+</html>
+

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown Live Previewer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app-wrapper">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="logo">📝 Markdown Previewer</h1>
+                <p class="tagline">Write markdown, see it rendered in real-time</p>
+            </div>
+            <div class="header-actions">
+                <button class="btn btn-secondary" id="clearBtn">🗑️ Clear</button>
+                <button class="btn btn-secondary" id="copyBtn">📋 Copy HTML</button>
+                <button class="btn btn-secondary" id="downloadBtn">💾 Download</button>
+                <button class="btn btn-primary" id="themeToggle">🌙</button>
+            </div>
+        </header>
+
+        <!-- Toolbar -->
+        <div class="toolbar">
+            <button class="tool-btn" data-markdown="**Bold**" title="Bold (Ctrl+B)">
+                <strong>B</strong>
+            </button>
+            <button class="tool-btn" data-markdown="*Italic*" title="Italic (Ctrl+I)">
+                <em>I</em>
+            </button>
+            <button class="tool-btn" data-markdown="# Heading" title="Heading">
+                H1
+            </button>
+            <button class="tool-btn" data-markdown="## Heading 2" title="Heading 2">
+                H2
+            </button>
+            <button class="tool-btn" data-markdown="- List item" title="Bullet List">
+                • List
+            </button>
+            <button class="tool-btn" data-markdown="1. Numbered item" title="Numbered List">
+                1. List
+            </button>
+            <button class="tool-btn" data-markdown="[Link](url)" title="Link">
+                🔗
+            </button>
+            <button class="tool-btn" data-markdown="![Alt](image-url)" title="Image">
+                🖼️
+            </button>
+            <button class="tool-btn" data-markdown="`Code`" title="Inline Code">
+                &lt;/&gt;
+            </button>
+            <button class="tool-btn" data-markdown="```\nCode block\n```" title="Code Block">
+                { }
+            </button>
+            <button class="tool-btn" data-markdown="> Quote" title="Quote">
+                ❝
+            </button>
+            <button class="tool-btn" data-markdown="---" title="Horizontal Rule">
+                ―
+            </button>
+        </div>
+
+        <!-- Main Container -->
+        <div class="main-container">
+            <!-- Editor Panel -->
+            <div class="panel editor-panel">
+                <div class="panel-header">
+                    <h2>✍️ Markdown Editor</h2>
+                    <div class="panel-info">
+                        <span id="charCount">0 characters</span>
+                        <span id="wordCount">0 words</span>
+                        <span id="lineCount">0 lines</span>
+                    </div>
+                </div>
+                <textarea id="markdownInput" class="markdown-editor" placeholder="Start typing your markdown here...
+
+# Welcome to Markdown Previewer!
+
+## Features
+- **Real-time preview**
+- *Markdown syntax highlighting*
+- Easy to use toolbar
+- Dark/Light theme toggle
+
+### Try it out:
+1. Type in this editor
+2. See the preview on the right
+3. Use the toolbar for quick formatting
+
+```javascript
+// You can even add code blocks!
+function hello() {
+    console.log('Hello World!');
+}
+```
+
+> This is a blockquote
+
+[Visit GitHub](https://github.com)
+
+---
+
+Happy writing! 🚀"></textarea>
+            </div>
+
+            <!-- Divider -->
+            <div class="divider" id="divider"></div>
+
+            <!-- Preview Panel -->
+            <div class="panel preview-panel">
+                <div class="panel-header">
+                    <h2>👁️ Live Preview</h2>
+                    <button class="toggle-view-btn" id="toggleView">
+                        📱 Toggle View
+                    </button>
+                </div>
+                <div id="markdownPreview" class="markdown-preview">
+                    <!-- Rendered markdown will appear here -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Cheat Sheet Modal -->
+        <button class="help-btn" id="helpBtn">❓</button>
+
+        <div class="modal hidden" id="cheatSheetModal">
+            <div class="modal-overlay"></div>
+            <div class="modal-content">
+                <button class="modal-close" id="modalClose">&times;</button>
+                <h2>📚 Markdown Cheat Sheet</h2>
+
+                <div class="cheat-section">
+                    <h3>Headers</h3>
+                    <code># H1<br>## H2<br>### H3</code>
+                </div>
+
+                <div class="cheat-section">
+                    <h3>Emphasis</h3>
+                    <code>*italic* or _italic_<br>**bold** or __bold__<br>~~strikethrough~~</code>
+                </div>
+
+                <div class="cheat-section">
+                    <h3>Lists</h3>
+                    <code>- Unordered list<br>1. Ordered list<br>- [ ] Task list</code>
+                </div>
+
+                <div class="cheat-section">
+                    <h3>Links & Images</h3>
+                    <code>[Link text](url)<br>![Alt text](image-url)</code>
+                </div>
+
+                <div class="cheat-section">
+                    <h3>Code</h3>
+                    <code>`inline code`<br>```<br>code block<br>```</code>
+                </div>
+
+                <div class="cheat-section">
+                    <h3>Quotes</h3>
+                    <code>> Blockquote</code>
+                </div>
+
+                <div class="cheat-section">
+                    <h3>Tables</h3>
+                    <code>| Header 1 | Header 2 |<br>| -------- | -------- |<br>| Cell 1   | Cell 2   |</code>
+                </div>
+            </div>
+        </div>
+
+        <!-- Toast Notification -->
+        <div class="toast hidden" id="toast">
+            <span id="toastMessage"></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

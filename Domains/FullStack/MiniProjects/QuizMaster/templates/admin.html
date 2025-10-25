@@ -1,0 +1,82 @@
+{% extends 'layout.html' %}
+
+{% block title %} Admin Dashboard {% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <h1 class="text-center text-primary">
+        <i class="fas fa-tachometer-alt"></i> Admin Dashboard
+    </h1>
+
+    <div class="text-end mb-4">
+        <a href="{{ url_for('add_subject') }}" class="btn btn-success">
+            <i class="fas fa-plus"></i> Add Subject
+        </a>
+    </div>
+
+    <h2 class="text-dark mb-3">
+        <i class="fas fa-book"></i> Subjects
+    </h2>
+
+    {% if subjects %}
+        <div class="row">
+            {% for subject in subjects %}
+            <div class="col-md-6 col-lg-4">
+                <div class="card shadow-lg rounded-4 mb-4">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="mb-0">{{ subject.subject_name }}</h5>
+                    </div>
+                    <div class="card-body">
+                        {% if subject.chapters %}
+                            <table class="table table-bordered">
+                                <thead class="table-light">
+                                    <tr>
+                                        <th>Chapter</th>
+                                        <th>Questions</th>
+                                        <th>Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for chapter in subject.chapters %}
+                                    <tr>
+                                        <td>{{ chapter.chapter_name }}</td>
+                                        <td>{{ chapter.get_questions_count() }}</td>
+                                        <td class="d-flex gap-2">
+                                            <a href="{{ url_for('edit_chapter', chapter_id=chapter.id) }}" class="btn btn-sm btn-primary">
+                                                <i class="fas fa-edit"></i>
+                                            </a>
+                                            <a href="{{ url_for('delete_chapter', chapter_id=chapter.id) }}" class="btn btn-sm btn-danger">
+                                                <i class="fas fa-trash"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    {% endfor %}
+                                </tbody>
+                            </table>
+                        {% else %}
+                            <p class="text-muted">No chapters available.</p>
+                        {% endif %}
+                        
+                        <div class="text-center mt-3">
+                            <a href="{{ url_for('add_chapter', subject_id=subject.id) }}" class="btn btn-outline-primary btn-sm">
+                                <i class="fas fa-plus"></i> Add Chapter
+                            </a>
+                        </div>
+                    </div>
+                    <div class="card-footer d-flex justify-content-between">
+                        <a href="{{ url_for('edit_subject', id=subject.id) }}" class="btn btn-primary btn-sm">
+                            <i class="fas fa-edit"></i> Edit
+                        </a>
+                        <a href="{{ url_for('delete_subject', id=subject.id) }}" class="btn btn-danger btn-sm">
+                            <i class="fas fa-trash"></i> Delete
+                        </a>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <p class="text-muted text-center">No subjects available.</p>
+    {% endif %}
+</div>
+{% endblock %}

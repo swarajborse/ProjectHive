@@ -1,0 +1,72 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    Edit Question
+{% endblock %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="card shadow-lg border-warning">
+        <div class="card-header bg-warning text-white">
+            <h2 class="h4 mb-0"><i class="fas fa-edit"></i> Edit Question</h2>
+        </div>
+        <div class="card-body">
+            <form action="{{ url_for('edit_question', id=question.id) }}" method="POST">
+                <div class="mb-3">
+                    <label for="subject_name" class="form-label"><i class="fas fa-book"></i> Subject Name</label>
+                    <input type="text" name="subject_name" id="subject_name" class="form-control" value="{{ subject.subject_name }}" disabled>
+                </div>
+
+                <div class="mb-3">
+                    <label for="chapter_name" class="form-label"><i class="fas fa-chalkboard"></i> Chapter Name</label>
+                    <input type="text" name="chapter_name" id="chapter_name" class="form-control" value="{{ chapter.chapter_name }}" disabled>
+                </div>
+
+                <div class="mb-3">
+                    <label for="question_number" class="form-label"><i class="fas fa-sort-numeric-up"></i> Question Number</label>
+                    <input type="number" name="question_number" id="question_number" class="form-control" value="{{ question.question_number }}" readonly>
+                </div>
+
+                <div class="mb-3">
+                    <label for="question_title" class="form-label"><i class="fas fa-heading"></i> Question Title</label>
+                    <input type="text" name="question_title" id="question_title" class="form-control" value="{{ question.question_title }}" required placeholder="Enter Question Title">
+                </div>
+
+                <div class="mb-3">
+                    <label for="question_statement" class="form-label"><i class="fas fa-file-alt"></i> Question Statement</label>
+                    <input type="text" name="question_statement" id="question_statement" class="form-control" value="{{ question.question_statement }}" placeholder="Enter Question Statement">
+                </div>
+
+                <div class="mb-3">
+                    <label><i class="fas fa-list-ol"></i> Options</label>
+                    <div class="form-group">
+                        <input type="text" name="option1" id="option1" class="form-control" required value="{{ question.option1 }}" placeholder="Enter Option 1">
+                        <input type="text" name="option2" id="option2" class="form-control" required value="{{ question.option2 }}" placeholder="Enter Option 2">
+                        <input type="text" name="option3" id="option3" class="form-control" required value="{{ question.option3 }}" placeholder="Enter Option 3">
+                        <input type="text" name="option4" id="option4" class="form-control" required value="{{ question.option4 }}" placeholder="Enter Option 4">
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="correct_option" class="form-label"><i class="fas fa-check-circle"></i> Correct Option</label>
+                    <select name="correct_option" id="correct_option" class="form-control" required>
+                        <option value="a" {% if question.correct_option == 'a' %}selected{% endif %}>Option a</option>
+                        <option value="b" {% if question.correct_option == 'b' %}selected{% endif %}>Option b</option>
+                        <option value="c" {% if question.correct_option == 'c' %}selected{% endif %}>Option c</option>
+                        <option value="d" {% if question.correct_option == 'd' %}selected{% endif %}>Option d</option>
+                    </select>
+                </div>
+
+                <div class="d-flex justify-content-start">
+                    <button type="submit" class="btn btn-warning me-2">
+                        <i class="fa fa-edit"></i> Edit Question
+                    </button>
+                    <a href="{{ url_for('quiz') }}" class="btn btn-secondary">
+                        <i class="fa fa-times"></i> Cancel
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

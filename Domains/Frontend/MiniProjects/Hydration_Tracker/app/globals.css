@@ -1,0 +1,31 @@
+@import "tailwindcss";
+@font-face {
+    font-family: "OverusedGrotesk";
+    src: url("/fonts/OverusedGroteskRoman-VF.ttf") format("truetype");
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --font-overused: "OverusedGrotesk", sans-serif;
+}
+
+body {
+    font-family: var(--font-overused), sans-serif;
+}
+/* Hide scrollbars but keep scroll functionality */
+.scrollbar-hidden {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
+.masonry-column {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}

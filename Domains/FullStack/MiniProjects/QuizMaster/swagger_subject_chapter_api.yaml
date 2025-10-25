@@ -1,0 +1,112 @@
+
+openapi: 3.0.0
+info:
+  title: Subject & Chapter API
+  version: 1.0.0
+  description: A simple RESTful API to manage subjects and chapters.
+
+servers:
+  - url: http://localhost:5000
+
+paths:
+  /api/subject:
+    get:
+      summary: Get all subjects
+      responses:
+        '200':
+          description: A list of subjects
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  subjects:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Subject'
+    post:
+      summary: Create a new subject
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SubjectInput'
+      responses:
+        '201':
+          description: Subject created successfully
+        '400':
+          description: Subject already exists
+
+  /api/chapter:
+    get:
+      summary: Get all chapters
+      responses:
+        '200':
+          description: A list of chapters
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  chapters:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Chapter'
+    post:
+      summary: Create a new chapter
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ChapterInput'
+      responses:
+        '201':
+          description: Chapter created successfully
+        '400':
+          description: Chapter already exists under this subject
+
+components:
+  schemas:
+    Subject:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        description:
+          type: string
+
+    SubjectInput:
+      type: object
+      required:
+        - name
+        - description
+      properties:
+        name:
+          type: string
+        description:
+          type: string
+
+    Chapter:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        subject_id:
+          type: integer
+
+    ChapterInput:
+      type: object
+      required:
+        - name
+        - subject_id
+      properties:
+        name:
+          type: string
+        subject_id:
+          type: integer

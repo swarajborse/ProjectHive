@@ -1,0 +1,170 @@
+/* analytics.css */
+.analytics-content {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 90px 40px var(--spacing-2xl) 40px;
+}
+
+/* Time Selector */
+.time-selector-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-xl);
+}
+
+.tabs-container {
+    display: flex;
+    gap: var(--spacing-md);
+}
+
+.tab-btn {
+    color: var(--color-text-secondary);
+    padding: 10px 15px;
+    font-weight: 500;
+    transition: var(--transition-normal);
+    border-bottom: 2px solid transparent;
+}
+
+.tab-btn.active, .tab-btn:hover {
+    color: var(--color-primary);
+    border-bottom: 2px solid var(--color-primary);
+}
+
+.download-btn {
+    padding: 10px 20px;
+}
+
+/* Statistics Grid */
+.statistics-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-xl);
+}
+
+.stat-card {
+    text-align: center;
+}
+
+.stat-card .label {
+    color: var(--color-text-secondary);
+    margin-bottom: 5px;
+}
+
+.stat-card .stat-value {
+    font-size: 2em;
+    margin: 0;
+}
+
+/* Charts Grid */
+.charts-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* Two main columns */
+    gap: var(--spacing-lg);
+}
+
+.chart-card.full-width {
+    grid-column: 1 / -1; /* Spans all columns */
+}
+
+.chart-card {
+    min-height: 350px;
+}
+
+.chart-placeholder {
+    height: 300px;
+    margin-top: var(--spacing-lg);
+    background-color: var(--color-bg-hover);
+    border-radius: var(--radius-md);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-text-secondary);
+    font-size: 1.1em;
+    border: 1px dashed var(--color-border);
+    position: relative;
+}
+
+/* Mock Bar Chart Styling (for Income vs Expense) */
+.bar-chart-mock {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: var(--spacing-lg);
+    height: 300px;
+    gap: var(--spacing-md);
+}
+
+.bar-set {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60px;
+    height: 100%;
+    position: relative;
+}
+
+.income-bar, .expense-bar {
+    width: 25px;
+    border-radius: 4px 4px 0 0;
+    transition: height 0.5s;
+}
+
+.income-bar {
+    background-color: var(--color-success);
+    margin-bottom: 2px;
+}
+
+.expense-bar {
+    background-color: var(--color-danger);
+    margin-bottom: 2px;
+}
+
+.bar-set .label {
+    position: absolute;
+    bottom: -20px;
+    color: var(--color-text-secondary);
+    font-size: 0.9em;
+}
+
+/* Mock Pie/Line Chart Legend Dots */
+.pie-chart-mock .legend-dot, .line-chart-mock .legend-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 1024px) {
+    .time-selector-card {
+        flex-direction: column;
+        align-items: stretch;
+        gap: var(--spacing-md);
+    }
+    .tabs-container {
+        justify-content: space-around;
+        width: 100%;
+        margin-bottom: var(--spacing-md);
+    }
+    .download-btn {
+        width: 100%;
+    }
+    .statistics-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .charts-grid {
+        grid-template-columns: 1fr; /* Stack charts on mobile */
+    }
+    .chart-card {
+        min-height: 300px;
+    }
+}
+
+@media (max-width: 600px) {
+    .statistics-grid {
+        grid-template-columns: 1fr;
+    }
+}

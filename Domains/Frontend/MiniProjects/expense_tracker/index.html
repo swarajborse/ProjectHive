@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Expense Tracker</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Link to external CSS file (must be in the same directory) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="app" class="p-4 md:p-8 lg:p-12 max-w-4xl mx-auto">
+        <header class="text-center mb-8">
+            <!-- Dark mode text color -->
+            <h1 class="text-4xl md:text-5xl font-extrabold text-blue-300 tracking-tight">
+                BudgetFlow Tracker
+            </h1>
+            <!-- Dark mode text color -->
+            <p class="text-gray-400 mt-2">Manage your money in real-time.</p>
+            <p class="text-xs mt-1 text-gray-500" id="user-info">Authenticating...</p>
+        </header>
+
+        <!-- Balance Summary Section -->
+        <section class="grid grid-cols-3 gap-4 mb-8">
+            <div class="p-4 rounded-xl main-card text-center transition-transform hover:scale-[1.01] duration-300">
+                <!-- Dark mode text color -->
+                <h2 class="text-lg font-semibold text-gray-400">Balance</h2>
+                <p id="balance" class="text-3xl font-bold text-blue-400 mt-1">--</p>
+            </div>
+            <div class="p-4 rounded-xl main-card text-center transition-transform hover:scale-[1.01] duration-300">
+                <!-- Dark mode text color -->
+                <h2 class="text-lg font-semibold text-gray-400">Income</h2>
+                <p id="income" class="text-3xl font-bold text-emerald-400 mt-1">--</p>
+            </div>
+            <div class="p-4 rounded-xl main-card text-center transition-transform hover:scale-[1.01] duration-300">
+                <!-- Dark mode text color -->
+                <h2 class="text-lg font-semibold text-gray-400">Expenses</h2>
+                <p id="expense" class="text-3xl font-bold text-rose-400 mt-1">--</p>
+            </div>
+        </section>
+
+        <!-- Add Transaction Form -->
+        <section class="main-card p-6 rounded-xl mb-8">
+            <!-- Dark mode text color -->
+            <h2 class="text-2xl font-bold mb-4 text-blue-300">Add New Transaction</h2>
+            <form id="transaction-form" class="space-y-4">
+                <div>
+                    <!-- Dark mode label text color -->
+                    <label for="description" class="block text-sm font-medium text-gray-400 mb-1">Description</label>
+                    <!-- Dark theme input styling -->
+                    <input type="text" id="description" placeholder="E.g., Salary, Coffee, Rent" required
+                           class="w-full p-3 rounded-lg bg-gray-700 border border-gray-600 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-white transition duration-200">
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <!-- Dark mode label text color -->
+                        <label for="amount" class="block text-sm font-medium text-gray-400 mb-1">Amount ($)</label>
+                        <!-- Dark theme input styling -->
+                        <input type="number" id="amount" placeholder="50.00" step="0.01" required
+                               class="w-full p-3 rounded-lg bg-gray-700 border border-gray-600 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-white transition duration-200">
+                    </div>
+                    <div>
+                        <!-- Dark mode label text color -->
+                        <label for="type" class="block text-sm font-medium text-gray-400 mb-1">Type</label>
+                        <!-- Dark theme select styling -->
+                        <select id="type" required
+                                class="w-full p-3 rounded-lg bg-gray-700 border border-gray-600 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-white transition duration-200 appearance-none cursor-pointer">
+                            <option value="income" class="bg-gray-800">Income</option>
+                            <option value="expense" class="bg-gray-800">Expense</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- Button colors remain the same for accent -->
+                <button type="submit" id="submit-btn"
+                        class="animated-btn w-full py-3 mt-4 rounded-lg font-bold text-lg text-white bg-emerald-600 hover:bg-emerald-500 focus:outline-none focus:ring-4 focus:ring-emerald-300/50 transition duration-200 shadow-lg shadow-emerald-600/30">
+                    Add Transaction
+                </button>
+            </form>
+            <!-- Dark mode error text color -->
+            <p id="error-message" class="text-rose-400 mt-2 text-center hidden"></p>
+        </section>
+
+        <!-- Transaction History Section -->
+        <section class="main-card p-6 rounded-xl">
+            <!-- Dark mode text color -->
+            <h2 class="text-2xl font-bold mb-4 text-blue-300">Transaction History</h2>
+            <div id="transactions-list" class="space-y-3">
+                <!-- Transactions will be inserted here by JavaScript -->
+                <!-- Dark mode loading text color -->
+                <p id="loading-message" class="text-gray-400 text-center py-4">Loading transactions...</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Link to external JavaScript file (must be in the same directory) -->
+    <script src="script.js"></script>
+</body>
+</html>

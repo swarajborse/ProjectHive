@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In-Hand Salary Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>💰 In-Hand Salary Calculator</h1>
+            <p class="subtitle">Based on your salary breakup sheet</p>
+        </header>
+
+        <div class="main-content">
+            <div class="card input-section">
+                <h2>📥 Salary Components</h2>
+                <form id="salaryForm">
+                    <div class="form-group">
+                        <h3>Monthly Components</h3>
+                        
+                        <label for="basicSalary">
+                            Basic Salary (₹/month)
+                            <span class="tooltip">ℹ️
+                                <span class="tooltiptext">Fixed base component of your salary</span>
+                            </span>
+                        </label>
+                        <input type="number" id="basicSalary" placeholder="e.g., 10000" required>
+
+                        <label for="allowances">
+                            Basket of Allowances (₹/month)
+                            <span class="tooltip">ℹ️
+                                <span class="tooltiptext">HRA + LTA + Medical + Transport + Misc.</span>
+                            </span>
+                        </label>
+                        <input type="number" id="allowances" placeholder="e.g., 20000" required>
+
+                        <label for="bonus">
+                            Bonus/Ex-Gratia (₹/month)
+                            <span class="tooltip">ℹ️
+                                <span class="tooltiptext">Paid monthly (e.g., 95% of eligible)</span>
+                            </span>
+                        </label>
+                        <input type="number" id="bonus" placeholder="e.g., 2000" value="0">
+
+                        <label for="additionalBonus">
+                            Additional Bonus (₹/month)
+                            <span class="tooltip">ℹ️
+                                <span class="tooltiptext">Year-end 5% adjustment</span>
+                            </span>
+                        </label>
+                        <input type="number" id="additionalBonus" placeholder="e.g., 100" value="0">
+                    </div>
+
+                    <div class="form-group">
+                        <h3>Retiral Benefits (% of Basic)</h3>
+                        
+                        <label for="employerPF">Employer PF (%)</label>
+                        <input type="number" id="employerPF" value="12" step="0.01">
+
+                        <label for="gratuity">Gratuity (%)</label>
+                        <input type="number" id="gratuity" value="4" step="0.01">
+
+                        <label for="employeePF">Employee PF (%)</label>
+                        <input type="number" id="employeePF" value="12" step="0.01">
+                    </div>
+
+                    <div class="form-group">
+                        <h3>Deductions</h3>
+                        
+                        <label for="professionalTax">Professional Tax (₹/month)</label>
+                        <input type="number" id="professionalTax" value="200">
+
+                        <label for="taxRegime">Tax Regime</label>
+                        <select id="taxRegime">
+                            <option value="new">New Regime</option>
+                            <option value="old">Old Regime</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="calculate-btn">Calculate In-Hand Salary</button>
+                </form>
+            </div>
+
+            <div class="card result-section" id="resultSection" style="display: none;">
+                <h2>📊 Results</h2>
+                
+                <div class="result-grid">
+                    <div class="result-item">
+                        <span class="label">Monthly Gross Salary</span>
+                        <span class="value" id="monthlyGross">₹0</span>
+                    </div>
+                    
+                    <div class="result-item">
+                        <span class="label">Annual Gross Salary</span>
+                        <span class="value" id="annualGross">₹0</span>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="result-item deduction">
+                        <span class="label">Employee PF</span>
+                        <span class="value" id="employeePFAmount">₹0</span>
+                    </div>
+
+                    <div class="result-item deduction">
+                        <span class="label">Professional Tax</span>
+                        <span class="value" id="professionalTaxAmount">₹0</span>
+                    </div>
+
+                    <div class="result-item deduction">
+                        <span class="label">Monthly TDS</span>
+                        <span class="value" id="monthlyTDS">₹0</span>
+                    </div>
+
+                    <div class="result-item deduction">
+                        <span class="label">Total Monthly Deductions</span>
+                        <span class="value" id="totalDeductions">₹0</span>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="result-item highlight">
+                        <span class="label">✅ Monthly In-Hand Salary</span>
+                        <span class="value" id="monthlyInHand">₹0</span>
+                    </div>
+
+                    <div class="result-item highlight">
+                        <span class="label">Annual In-Hand Salary</span>
+                        <span class="value" id="annualInHand">₹0</span>
+                    </div>
+                </div>
+
+                <div class="tax-breakdown">
+                    <h3>Tax Calculation Breakdown</h3>
+                    <div id="taxBreakdown"></div>
+                </div>
+
+                <div class="chart-container">
+                    <h3>Salary Distribution</h3>
+                    <canvas id="salaryChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Made by Soham Gadekar • <a href="https://github.com" target="_blank">Open Source on GitHub</a></p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

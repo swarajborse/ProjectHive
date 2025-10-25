@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Constellation Map</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Interactive Constellation Map</h1>
+            <p>Click on stars to learn about constellations</p>
+        </header>
+        
+        <div class="controls">
+            <button id="resetBtn">Reset View</button>
+            <button id="connectBtn">Connect Dots</button>
+            <div class="constellation-select">
+                <label for="constellation">Select Constellation:</label>
+                <select id="constellation">
+                    <option value="all">All Constellations</option>
+                    <option value="ursa-major">Ursa Major</option>
+                    <option value="orion">Orion</option>
+                    <option value="cassiopeia">Cassiopeia</option>
+                    <option value="leo">Leo</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="sky-map">
+            <canvas id="starCanvas"></canvas>
+            <div id="constellationInfo" class="info-panel hidden">
+                <h3 id="constellationName"></h3>
+                <p id="constellationDescription"></p>
+                <button id="closeInfo">Close</button>
+            </div>
+        </div>
+        
+        <div class="instructions">
+            <p>Click on stars to learn about constellations. Use "Connect Dots" to see the constellation shapes.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

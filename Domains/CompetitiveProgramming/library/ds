@@ -1,0 +1,92 @@
+# 🧠 Data Structures Library (Python)
+
+### 📋 Description
+A simple **Data Structure Library** implemented in Python for learning and competitive programming practice.  
+It includes implementations of:  
+
+- Stack  
+- Queue  
+- Linked List  
+- Binary Tree  
+
+---
+
+### 🧱 Folder Structure
+
+data_structures_lib/
+│
+├── data_structures/
+│ ├── stack.py
+│ ├── queue.py
+│ ├── linked_list.py
+│ ├── binary_tree.py
+│ └── init.py
+│
+└── main.py
+
+yaml
+Copy code
+
+---
+
+### 🚀 How to Run
+
+1. Clone the repository:
+
+```bash
+git clone <your_repo_url>
+Navigate to the folder:
+
+bash
+Copy code
+cd data_structures_lib
+Run the example:
+
+bash
+Copy code
+python main.py
+🧩 Example Usage (main.py)
+python
+Copy code
+from data_structures.stack import Stack
+from data_structures.queue import Queue
+from data_structures.linked_list import LinkedList
+from data_structures.binary_tree import BinaryTree
+
+# Stack
+print("STACK:")
+s = Stack()
+s.push(10)
+s.push(20)
+s.push(30)
+print("Top:", s.peek())
+print("Popped:", s.pop())
+print("Stack size:", s.size())
+
+# Queue
+print("\nQUEUE:")
+q = Queue()
+q.enqueue(5)
+q.enqueue(10)
+q.enqueue(15)
+print("Dequeued:", q.dequeue())
+print("Queue size:", q.size())
+
+# Linked List
+print("\nLINKED LIST:")
+ll = LinkedList()
+ll.insert(10)
+ll.insert(20)
+ll.insert(30)
+ll.display()
+print("Search 20:", ll.search(20))
+ll.delete(20)
+ll.display()
+
+# Binary Tree
+print("\nBINARY TREE (Inorder Traversal):")
+bt = BinaryTree()
+for num in [50, 30, 70, 20, 40, 60, 80]:
+    bt.insert(num)
+bt.inorder(bt.root)
+print()

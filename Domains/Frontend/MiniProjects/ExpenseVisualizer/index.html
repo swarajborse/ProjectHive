@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Visualizer | Track Your Spending</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <h1>💰 Expense Visualizer</h1>
+                <p>Track, Analyze, and Optimize Your Spending</p>
+            </div>
+            <div class="header-stats">
+                <div class="stat-card">
+                    <span class="stat-label">Total Spent</span>
+                    <span class="stat-value" id="totalSpent">$0.00</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-label">This Month</span>
+                    <span class="stat-value" id="monthlySpent">$0.00</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-label">Categories</span>
+                    <span class="stat-value" id="categoryCount">0</span>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <!-- Add Expense Section -->
+            <section class="add-expense-section">
+                <h2>Add New Expense</h2>
+                <form id="expenseForm" class="expense-form">
+                    <div class="form-group">
+                        <input type="text" id="expenseDescription" placeholder="Description" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="number" id="expenseAmount" placeholder="Amount" step="0.01" min="0" required>
+                    </div>
+                    <div class="form-group">
+                        <select id="expenseCategory" required>
+                            <option value="">Select Category</option>
+                            <option value="food">🍕 Food & Dining</option>
+                            <option value="transport">🚗 Transportation</option>
+                            <option value="shopping">🛍️ Shopping</option>
+                            <option value="entertainment">🎬 Entertainment</option>
+                            <option value="bills">📄 Bills & Utilities</option>
+                            <option value="health">🏥 Health & Medical</option>
+                            <option value="education">📚 Education</option>
+                            <option value="other">📦 Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="date" id="expenseDate" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="expenseNotes" placeholder="Notes (optional)"></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Add Expense</button>
+                </form>
+            </section>
+
+            <!-- Controls Section -->
+            <section class="controls-section">
+                <div class="filters">
+                    <select id="timeFilter">
+                        <option value="all">All Time</option>
+                        <option value="today">Today</option>
+                        <option value="week">This Week</option>
+                        <option value="month" selected>This Month</option>
+                        <option value="year">This Year</option>
+                        <option value="custom">Custom Range</option>
+                    </select>
+                    
+                    <select id="categoryFilter">
+                        <option value="all">All Categories</option>
+                    </select>
+
+                    <div class="custom-range hidden" id="customRange">
+                        <input type="date" id="startDate">
+                        <span>to</span>
+                        <input type="date" id="endDate">
+                        <button type="button" id="applyRange">Apply</button>
+                    </div>
+                </div>
+
+                <div class="view-controls">
+                    <button id="exportBtn" class="btn-secondary">Export Data</button>
+                    <button id="clearDataBtn" class="btn-danger">Clear All Data</button>
+                </div>
+            </section>
+
+            <!-- Charts Section -->
+            <section class="charts-section">
+                <div class="chart-container">
+                    <div class="chart-card">
+                        <h3>Spending by Category</h3>
+                        <canvas id="categoryChart"></canvas>
+                    </div>
+                    <div class="chart-card">
+                        <h3>Monthly Trend</h3>
+                        <canvas id="trendChart"></canvas>
+                    </div>
+                    <div class="chart-card">
+                        <h3>Daily Spending</h3>
+                        <canvas id="dailyChart"></canvas>
+                    </div>
+                    <div class="chart-card">
+                        <h3>Category Distribution</h3>
+                        <canvas id="donutChart"></canvas>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Expenses List -->
+            <section class="expenses-section">
+                <h2>Recent Expenses</h2>
+                <div class="expenses-list" id="expensesList">
+                    <!-- Expenses will be dynamically added here -->
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Budget Modal -->
+    <div id="budgetModal" class="modal hidden">
+        <div class="modal-content">
+            <h3>Set Monthly Budget</h3>
+            <input type="number" id="monthlyBudget" placeholder="Enter monthly budget">
+            <div class="modal-actions">
+                <button id="saveBudget" class="btn-primary">Save Budget</button>
+                <button id="cancelBudget" class="btn-secondary">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Confirmation Modal -->
+    <div id="confirmModal" class="modal hidden">
+        <div class="modal-content">
+            <h3>Are you sure?</h3>
+            <p>This will permanently delete all your expense data.</p>
+            <div class="modal-actions">
+                <button id="confirmClear" class="btn-danger">Yes, Clear All</button>
+                <button id="cancelClear" class="btn-secondary">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="chart-config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

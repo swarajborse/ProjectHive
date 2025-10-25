@@ -26,7 +26,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 **[@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade)**
 
-*Contributions: 21 PRs across 13 domain(s)*
+*Contributions: 20 PRs across 13 domain(s)*
 
 *Domains: AI-ML, AR-VR, Backend, Blockchain, Cloud, Cybersecurity, DevOps, Frontend, FullStack, IoT, MLOps, NLP, Robotics-Automation*
 
@@ -38,13 +38,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/Ogagaoghene.png" width="100" height="100" style="border-radius: 50%;" alt="Ogagaoghene"/>
+<img src="https://github.com/shr128.png" width="100" height="100" style="border-radius: 50%;" alt="shr128"/>
 
-**[@Ogagaoghene](https://github.com/Ogagaoghene)**
+**[@shr128](https://github.com/shr128)**
 
-*Contributions: 2 PRs across 1 domain(s)*
+*Contributions: 6 PRs across 1 domain(s)*
 
-*Domains: Backend*
+*Domains: Frontend*
 
 </div>
 
@@ -54,13 +54,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/Rushorgir.png" width="100" height="100" style="border-radius: 50%;" alt="Rushorgir"/>
+<img src="https://github.com/Aaditya-2407.png" width="100" height="100" style="border-radius: 50%;" alt="Aaditya-2407"/>
 
-**[@Rushorgir](https://github.com/Rushorgir)**
+**[@Aaditya-2407](https://github.com/Aaditya-2407)**
 
-*Contributions: 1 PRs across 1 domain(s)*
+*Contributions: 6 PRs across 1 domain(s)*
 
-*Domains: CompetitiveProgramming*
+*Domains: Frontend*
 
 </div>
 
@@ -70,13 +70,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/SanjeevDeori.png" width="100" height="100" style="border-radius: 50%;" alt="SanjeevDeori"/>
+<img src="https://github.com/k4niz.png" width="100" height="100" style="border-radius: 50%;" alt="k4niz"/>
 
-**[@SanjeevDeori](https://github.com/SanjeevDeori)**
+**[@k4niz](https://github.com/k4niz)**
 
-*Contributions: 1 PRs across 1 domain(s)*
+*Contributions: 5 PRs across 4 domain(s)*
 
-*Domains: Frontend*
+*Domains: AI-ML, AR-VR, FullStack, IoT*
 
 </div>
 
@@ -86,11 +86,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/github.png" width="100" height="100" style="border-radius: 50%;" alt="Pending"/>
+<img src="https://github.com/snehal492006.png" width="100" height="100" style="border-radius: 50%;" alt="snehal492006"/>
 
-**[Username Pending]**
+**[@snehal492006](https://github.com/snehal492006)**
 
-*Contributions: TBD*
+*Contributions: 5 PRs across 3 domain(s)*
+
+*Domains: AI-ML, CompetitiveProgramming, Frontend*
 
 </div>
 
@@ -100,11 +102,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/github.png" width="100" height="100" style="border-radius: 50%;" alt="Pending"/>
+<img src="https://github.com/Ogagaoghene.png" width="100" height="100" style="border-radius: 50%;" alt="Ogagaoghene"/>
 
-**[Username Pending]**
+**[@Ogagaoghene](https://github.com/Ogagaoghene)**
 
-*Contributions: TBD*
+*Contributions: 5 PRs across 1 domain(s)*
+
+*Domains: Backend*
 
 </div>
 
@@ -114,11 +118,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/github.png" width="100" height="100" style="border-radius: 50%;" alt="Pending"/>
+<img src="https://github.com/anujaugale617.png" width="100" height="100" style="border-radius: 50%;" alt="anujaugale617"/>
 
-**[Username Pending]**
+**[@anujaugale617](https://github.com/anujaugale617)**
 
-*Contributions: TBD*
+*Contributions: 4 PRs across 1 domain(s)*
+
+*Domains: Frontend*
 
 </div>
 
@@ -128,11 +134,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/github.png" width="100" height="100" style="border-radius: 50%;" alt="Pending"/>
+<img src="https://github.com/Ansh-1019.png" width="100" height="100" style="border-radius: 50%;" alt="Ansh-1019"/>
 
-**[Username Pending]**
+**[@Ansh-1019](https://github.com/Ansh-1019)**
 
-*Contributions: TBD*
+*Contributions: 4 PRs across 2 domain(s)*
+
+*Domains: AI-ML, Backend*
 
 </div>
 
@@ -142,11 +150,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/github.png" width="100" height="100" style="border-radius: 50%;" alt="Pending"/>
+<img src="https://github.com/SOHAM-GADEKAR.png" width="100" height="100" style="border-radius: 50%;" alt="SOHAM-GADEKAR"/>
 
-**[Username Pending]**
+**[@SOHAM-GADEKAR](https://github.com/SOHAM-GADEKAR)**
 
-*Contributions: TBD*
+*Contributions: 4 PRs across 2 domain(s)*
+
+*Domains: Frontend, IoT*
 
 </div>
 
@@ -156,11 +166,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/github.png" width="100" height="100" style="border-radius: 50%;" alt="Pending"/>
+<img src="https://github.com/vatsalgupta2004.png" width="100" height="100" style="border-radius: 50%;" alt="vatsalgupta2004"/>
 
-**[Username Pending]**
+**[@vatsalgupta2004](https://github.com/vatsalgupta2004)**
 
-*Contributions: TBD*
+*Contributions: 2 PRs across 2 domain(s)*
+
+*Domains: AI-ML, Frontend*
 
 </div>
 
@@ -203,7 +215,7 @@ For detailed statistics and domain-specific rankings, check out:
 
 *Rankings are updated automatically with each merged contribution.*
 
-**Last Updated:** 2025-10-19
+**Last Updated:** 2025-10-25
 
 ---
 
