@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kawaii Drawing Studio 🎨</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="animated-bg">
+        <div class="floating-shape shape-1"></div>
+        <div class="floating-shape shape-2"></div>
+        <div class="floating-shape shape-3"></div>
+        <div class="floating-shape shape-4"></div>
+    </div>
+    
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <span class="logo-icon">🎨</span>
+                <div class="logo-text">
+                    <h1>Kawaii Drawing Studio</h1>
+                    <p class="tagline">Create Beautiful Art with Joy ✨</p>
+                </div>
+            </div>
+            <div class="header-stats">
+                <div class="stat-item">
+                    <span class="stat-icon">🖌️</span>
+                    <span class="stat-label">Drawing Mode</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="studio-container">
+            <aside class="sidebar">
+                <div class="tool-section">
+                    <h3 class="section-title">
+                        <span class="icon">🎨</span>
+                        Brush Color
+                    </h3>
+                    <div class="color-picker-area">
+                        <div class="main-color-picker">
+                            <input type="color" id="colorPicker" value="#ff6b9d">
+                            <div class="color-info">
+                                <div class="color-preview" id="colorPreview"></div>
+                                <span class="color-hex" id="colorHex">#ff6b9d</span>
+                            </div>
+                        </div>
+                        <div class="preset-colors" id="presetColors"></div>
+                    </div>
+                </div>
+
+                <div class="tool-section">
+                    <h3 class="section-title">
+                        <span class="icon">✏️</span>
+                        Brush Settings
+                    </h3>
+                    <div class="brush-settings">
+                        <div class="setting-row">
+                            <label>Size</label>
+                            <div class="size-value" id="widthDisplay">5</div>
+                        </div>
+                        <input type="range" id="lineWidth" min="1" max="50" value="5">
+                        <div class="brush-preview" id="brushPreview">
+                            <div class="preview-label">Preview</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tool-section">
+                    <h3 class="section-title">
+                        <span class="icon">🔧</span>
+                        Tools
+                    </h3>
+                    <div class="tools-grid">
+                        <button class="tool-btn primary" id="clearBtn">
+                            <span class="btn-icon">🗑️</span>
+                            <span class="btn-text">Clear</span>
+                        </button>
+                        <button class="tool-btn secondary" id="downloadBtn">
+                            <span class="btn-icon">💾</span>
+                            <span class="btn-text">Save</span>
+                        </button>
+                        <button class="tool-btn accent" id="undoBtn">
+                            <span class="btn-icon">↶</span>
+                            <span class="btn-text">Undo</span>
+                        </button>
+                        <button class="tool-btn accent" id="redoBtn">
+                            <span class="btn-icon">↷</span>
+                            <span class="btn-text">Redo</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="tool-section fun-facts">
+                    <h3 class="section-title">
+                        <span class="icon">💡</span>
+                        Quick Tip
+                    </h3>
+                    <p class="tip-text" id="tipText">Click and drag to create beautiful strokes!</p>
+                </div>
+            </aside>
+
+            <section class="canvas-area">
+                <div class="canvas-toolbar">
+                    <div class="canvas-info">
+                        <span class="info-badge">
+                            <span class="badge-icon">📐</span>
+                            1000 × 600
+                        </span>
+                        <span class="info-badge" id="strokeCount">
+                            <span class="badge-icon">🎨</span>
+                            0 strokes
+                        </span>
+                    </div>
+                </div>
+                <div class="canvas-wrapper">
+                    <canvas id="drawingCanvas" width="1000" height="600"></canvas>
+                    <div class="canvas-overlay" id="canvasOverlay">
+                        <div class="welcome-message">
+                            <h2>🎨 Start Drawing!</h2>
+                            <p>Click anywhere on the canvas to begin your masterpiece</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Made with 💖 for creative souls</p>
+            <div class="footer-links">
+                <span>✨ Draw • Create • Inspire ✨</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
