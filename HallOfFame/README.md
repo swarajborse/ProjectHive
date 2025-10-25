@@ -42,9 +42,9 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 **[@snehal492006](https://github.com/snehal492006)**
 
-*Contributions: 7 PRs across 3 domain(s)*
+*Contributions: 6 PRs across 3 domain(s)*
 
-*Domains: CompetitiveProgramming, AI-ML, Frontend*
+*Domains: AI-ML, CompetitiveProgramming, Frontend*
 
 </div>
 
@@ -118,6 +118,22 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
+<img src="https://github.com/AksharGoyal.png" width="100" height="100" style="border-radius: 50%;" alt="AksharGoyal"/>
+
+**[@AksharGoyal](https://github.com/AksharGoyal)**
+
+*Contributions: 4 PRs across 2 domain(s)*
+
+*Domains: Backend, cli*
+
+</div>
+
+---
+
+### 🏅 Rank 8
+
+<div align="center">
+
 <img src="https://github.com/Ansh-1019.png" width="100" height="100" style="border-radius: 50%;" alt="Ansh-1019"/>
 
 **[@Ansh-1019](https://github.com/Ansh-1019)**
@@ -130,7 +146,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 8
+### 🏅 Rank 9
 
 <div align="center">
 
@@ -146,7 +162,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 9
+### 🏅 Rank 10
 
 <div align="center">
 
@@ -157,22 +173,6 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 *Contributions: 3 PRs across 1 domain(s)*
 
 *Domains: Frontend*
-
-</div>
-
----
-
-### 🏅 Rank 10
-
-<div align="center">
-
-<img src="https://github.com/vatsalgupta2004.png" width="100" height="100" style="border-radius: 50%;" alt="vatsalgupta2004"/>
-
-**[@vatsalgupta2004](https://github.com/vatsalgupta2004)**
-
-*Contributions: 2 PRs across 2 domain(s)*
-
-*Domains: AI-ML, Frontend*
 
 </div>
 

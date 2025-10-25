@@ -11,18 +11,18 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | Rank | Contributor | Total PRs | Domains Contributed | Last Active |
 |------|-------------|-----------|---------------------|-------------|
 | 🥇 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 20 | 13 (AI-ML, AR-VR, Backend, Blockchain, Cloud, Cybersecurity, DevOps, Frontend, FullStack, IoT, MLOps, NLP, Robotics-Automation) | Recent |
-| 🥈 | [@snehal492006](https://github.com/snehal492006) | 7 | 3 (CompetitiveProgramming, AI-ML, Frontend) | Recent |
+| 🥈 | [@snehal492006](https://github.com/snehal492006) | 6 | 3 (AI-ML, CompetitiveProgramming, Frontend) | Recent |
 | 🥉 | [@shr128](https://github.com/shr128) | 6 | 1 (Frontend) | Recent |
 | 4 | [@Aaditya-2407](https://github.com/Aaditya-2407) | 6 | 1 (Frontend) | Recent |
 | 5 | [@k4niz](https://github.com/k4niz) | 5 | 4 (AI-ML, AR-VR, FullStack, IoT) | Recent |
 | 6 | [@Ogagaoghene](https://github.com/Ogagaoghene) | 5 | 1 (Backend) | Recent |
-| 7 | [@Ansh-1019](https://github.com/Ansh-1019) | 4 | 2 (AI-ML, Backend) | Recent |
-| 8 | [@SOHAM-GADEKAR](https://github.com/SOHAM-GADEKAR) | 4 | 2 (Frontend, IoT) | Recent |
-| 9 | [@anujaugale617](https://github.com/anujaugale617) | 3 | 1 (Frontend) | Recent |
-| 10 | [@vatsalgupta2004](https://github.com/vatsalgupta2004) | 2 | 2 (AI-ML, Frontend) | Recent |
-| 11 | [@Mmadan128](https://github.com/Mmadan128) | 2 | 1 (AI-ML) | Recent |
-| 12 | [@Dhiraj201226](https://github.com/Dhiraj201226) | 2 | 2 (AI-ML, Frontend) | Recent |
-| 13 | [@AksharGoyal](https://github.com/AksharGoyal) | 2 | 2 (Backend, cli) | Recent |
+| 7 | [@AksharGoyal](https://github.com/AksharGoyal) | 4 | 2 (Backend, cli) | Recent |
+| 8 | [@Ansh-1019](https://github.com/Ansh-1019) | 4 | 2 (AI-ML, Backend) | Recent |
+| 9 | [@SOHAM-GADEKAR](https://github.com/SOHAM-GADEKAR) | 4 | 2 (Frontend, IoT) | Recent |
+| 10 | [@anujaugale617](https://github.com/anujaugale617) | 3 | 1 (Frontend) | Recent |
+| 11 | [@vatsalgupta2004](https://github.com/vatsalgupta2004) | 2 | 2 (AI-ML, Frontend) | Recent |
+| 12 | [@Mmadan128](https://github.com/Mmadan128) | 2 | 1 (AI-ML) | Recent |
+| 13 | [@Dhiraj201226](https://github.com/Dhiraj201226) | 2 | 2 (AI-ML, Frontend) | Recent |
 | 14 | [@GayatriVitkar](https://github.com/GayatriVitkar) | 2 | 1 (CompetitiveProgramming) | Recent |
 | 15 | [@Mansi13-6](https://github.com/Mansi13-6) | 2 | 1 (Frontend) | Recent |
 | 16 | [@MeghPatel-007](https://github.com/MeghPatel-007) | 2 | 1 (Frontend) | Recent |
@@ -45,12 +45,20 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 
 ## 📊 Domain Breakdown
 
-### CompetitiveProgramming
+### Backend
 
 | Contributor | Contributions |
 |-------------|---------------|
-| [@snehal492006](https://github.com/snehal492006) | 4 |
-| [@GayatriVitkar](https://github.com/GayatriVitkar) | 2 |
+| [@Ogagaoghene](https://github.com/Ogagaoghene) | 5 |
+| [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 4 |
+| [@AksharGoyal](https://github.com/AksharGoyal) | 3 |
+| [@Ansh-1019](https://github.com/Ansh-1019) | 1 |
+
+### cli
+
+| Contributor | Contributions |
+|-------------|---------------|
+| [@AksharGoyal](https://github.com/AksharGoyal) | 1 |
 
 ### AI-ML
 
@@ -60,10 +68,57 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | [@k4niz](https://github.com/k4niz) | 2 |
 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 2 |
 | [@Mmadan128](https://github.com/Mmadan128) | 2 |
-| [@snehal492006](https://github.com/snehal492006) | 1 |
 | [@Snehal](https://github.com/Snehal) | 1 |
+| [@snehal492006](https://github.com/snehal492006) | 1 |
 | [@vatsalgupta2004](https://github.com/vatsalgupta2004) | 1 |
 | [@Dhiraj201226](https://github.com/Dhiraj201226) | 1 |
+
+### AR-VR
+
+| Contributor | Contributions |
+|-------------|---------------|
+| [@k4niz](https://github.com/k4niz) | 1 |
+| [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 1 |
+
+### FullStack
+
+| Contributor | Contributions |
+|-------------|---------------|
+| [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 2 |
+| [@k4niz](https://github.com/k4niz) | 1 |
+| [@ekxnsh22005](https://github.com/ekxnsh22005) | 1 |
+
+### IoT
+
+| Contributor | Contributions |
+|-------------|---------------|
+| [@k4niz](https://github.com/k4niz) | 1 |
+| [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 1 |
+| [@SOHAM-GADEKAR](https://github.com/SOHAM-GADEKAR) | 1 |
+
+### Blockchain
+
+| Contributor | Contributions |
+|-------------|---------------|
+| [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 1 |
+
+### Cloud
+
+| Contributor | Contributions |
+|-------------|---------------|
+| [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 1 |
+
+### Cybersecurity
+
+| Contributor | Contributions |
+|-------------|---------------|
+| [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 1 |
+
+### DevOps
+
+| Contributor | Contributions |
+|-------------|---------------|
+| [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 1 |
 
 ### Frontend
 
@@ -92,62 +147,6 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | [@Tanushri1307](https://github.com/Tanushri1307) | 1 |
 | [@Laikokwui](https://github.com/Laikokwui) | 1 |
 
-### AR-VR
-
-| Contributor | Contributions |
-|-------------|---------------|
-| [@k4niz](https://github.com/k4niz) | 1 |
-| [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 1 |
-
-### FullStack
-
-| Contributor | Contributions |
-|-------------|---------------|
-| [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 2 |
-| [@k4niz](https://github.com/k4niz) | 1 |
-| [@ekxnsh22005](https://github.com/ekxnsh22005) | 1 |
-
-### IoT
-
-| Contributor | Contributions |
-|-------------|---------------|
-| [@k4niz](https://github.com/k4niz) | 1 |
-| [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 1 |
-| [@SOHAM-GADEKAR](https://github.com/SOHAM-GADEKAR) | 1 |
-
-### Backend
-
-| Contributor | Contributions |
-|-------------|---------------|
-| [@Ogagaoghene](https://github.com/Ogagaoghene) | 5 |
-| [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 4 |
-| [@Ansh-1019](https://github.com/Ansh-1019) | 1 |
-| [@AksharGoyal](https://github.com/AksharGoyal) | 1 |
-
-### Blockchain
-
-| Contributor | Contributions |
-|-------------|---------------|
-| [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 1 |
-
-### Cloud
-
-| Contributor | Contributions |
-|-------------|---------------|
-| [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 1 |
-
-### Cybersecurity
-
-| Contributor | Contributions |
-|-------------|---------------|
-| [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 1 |
-
-### DevOps
-
-| Contributor | Contributions |
-|-------------|---------------|
-| [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 1 |
-
 ### MLOps
 
 | Contributor | Contributions |
@@ -166,11 +165,12 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 |-------------|---------------|
 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 1 |
 
-### cli
+### CompetitiveProgramming
 
 | Contributor | Contributions |
 |-------------|---------------|
-| [@AksharGoyal](https://github.com/AksharGoyal) | 1 |
+| [@snehal492006](https://github.com/snehal492006) | 3 |
+| [@GayatriVitkar](https://github.com/GayatriVitkar) | 2 |
 
 ---
 
