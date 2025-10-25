@@ -11,7 +11,7 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | Rank | Contributor | Total PRs | Domains Contributed | Last Active |
 |------|-------------|-----------|---------------------|-------------|
 | 🥇 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 20 | 13 (AI-ML, AR-VR, Backend, Blockchain, Cloud, Cybersecurity, DevOps, Frontend, FullStack, IoT, MLOps, NLP, Robotics-Automation) | Recent |
-| 🥈 | [@snehal492006](https://github.com/snehal492006) | 6 | 3 (AI-ML, CompetitiveProgramming, Frontend) | Recent |
+| 🥈 | [@snehal492006](https://github.com/snehal492006) | 7 | 3 (CompetitiveProgramming, AI-ML, Frontend) | Recent |
 | 🥉 | [@shr128](https://github.com/shr128) | 6 | 1 (Frontend) | Recent |
 | 4 | [@Aaditya-2407](https://github.com/Aaditya-2407) | 6 | 1 (Frontend) | Recent |
 | 5 | [@k4niz](https://github.com/k4niz) | 5 | 4 (AI-ML, AR-VR, FullStack, IoT) | Recent |
@@ -45,25 +45,25 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 
 ## 📊 Domain Breakdown
 
+### CompetitiveProgramming
+
+| Contributor | Contributions |
+|-------------|---------------|
+| [@snehal492006](https://github.com/snehal492006) | 4 |
+| [@GayatriVitkar](https://github.com/GayatriVitkar) | 2 |
+
 ### AI-ML
 
 | Contributor | Contributions |
 |-------------|---------------|
 | [@Ansh-1019](https://github.com/Ansh-1019) | 3 |
-| [@snehal492006](https://github.com/snehal492006) | 2 |
 | [@k4niz](https://github.com/k4niz) | 2 |
 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 2 |
 | [@Mmadan128](https://github.com/Mmadan128) | 2 |
+| [@snehal492006](https://github.com/snehal492006) | 1 |
 | [@Snehal](https://github.com/Snehal) | 1 |
 | [@vatsalgupta2004](https://github.com/vatsalgupta2004) | 1 |
 | [@Dhiraj201226](https://github.com/Dhiraj201226) | 1 |
-
-### CompetitiveProgramming
-
-| Contributor | Contributions |
-|-------------|---------------|
-| [@snehal492006](https://github.com/snehal492006) | 2 |
-| [@GayatriVitkar](https://github.com/GayatriVitkar) | 2 |
 
 ### Frontend
 

@@ -42,9 +42,9 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 **[@snehal492006](https://github.com/snehal492006)**
 
-*Contributions: 6 PRs across 3 domain(s)*
+*Contributions: 7 PRs across 3 domain(s)*
 
-*Domains: AI-ML, CompetitiveProgramming, Frontend*
+*Domains: CompetitiveProgramming, AI-ML, Frontend*
 
 </div>
 
