@@ -38,6 +38,22 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
+<img src="https://github.com/snehal492006.png" width="100" height="100" style="border-radius: 50%;" alt="snehal492006"/>
+
+**[@snehal492006](https://github.com/snehal492006)**
+
+*Contributions: 6 PRs across 3 domain(s)*
+
+*Domains: AI-ML, CompetitiveProgramming, Frontend*
+
+</div>
+
+---
+
+### 🥉 Rank 3
+
+<div align="center">
+
 <img src="https://github.com/shr128.png" width="100" height="100" style="border-radius: 50%;" alt="shr128"/>
 
 **[@shr128](https://github.com/shr128)**
@@ -50,7 +66,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🥉 Rank 3
+### 🏅 Rank 4
 
 <div align="center">
 
@@ -66,7 +82,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 4
+### 🏅 Rank 5
 
 <div align="center">
 
@@ -77,22 +93,6 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 *Contributions: 5 PRs across 4 domain(s)*
 
 *Domains: AI-ML, AR-VR, FullStack, IoT*
-
-</div>
-
----
-
-### 🏅 Rank 5
-
-<div align="center">
-
-<img src="https://github.com/snehal492006.png" width="100" height="100" style="border-radius: 50%;" alt="snehal492006"/>
-
-**[@snehal492006](https://github.com/snehal492006)**
-
-*Contributions: 5 PRs across 3 domain(s)*
-
-*Domains: AI-ML, CompetitiveProgramming, Frontend*
 
 </div>
 
@@ -118,22 +118,6 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/anujaugale617.png" width="100" height="100" style="border-radius: 50%;" alt="anujaugale617"/>
-
-**[@anujaugale617](https://github.com/anujaugale617)**
-
-*Contributions: 4 PRs across 1 domain(s)*
-
-*Domains: Frontend*
-
-</div>
-
----
-
-### 🏅 Rank 8
-
-<div align="center">
-
 <img src="https://github.com/Ansh-1019.png" width="100" height="100" style="border-radius: 50%;" alt="Ansh-1019"/>
 
 **[@Ansh-1019](https://github.com/Ansh-1019)**
@@ -146,7 +130,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 9
+### 🏅 Rank 8
 
 <div align="center">
 
@@ -157,6 +141,22 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 *Contributions: 4 PRs across 2 domain(s)*
 
 *Domains: Frontend, IoT*
+
+</div>
+
+---
+
+### 🏅 Rank 9
+
+<div align="center">
+
+<img src="https://github.com/anujaugale617.png" width="100" height="100" style="border-radius: 50%;" alt="anujaugale617"/>
+
+**[@anujaugale617](https://github.com/anujaugale617)**
+
+*Contributions: 3 PRs across 1 domain(s)*
+
+*Domains: Frontend*
 
 </div>
 
