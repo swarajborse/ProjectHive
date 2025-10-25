@@ -11,7 +11,7 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | Rank | Contributor | Total PRs | Domains Contributed | Last Active |
 |------|-------------|-----------|---------------------|-------------|
 | 🥇 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 20 | 13 (AI-ML, AR-VR, Backend, Blockchain, Cloud, Cybersecurity, DevOps, Frontend, FullStack, IoT, MLOps, NLP, Robotics-Automation) | Recent |
-| 🥈 | [@snehal492006](https://github.com/snehal492006) | 9 | 3 (Frontend, AI-ML, CompetitiveProgramming) | Recent |
+| 🥈 | [@snehal492006](https://github.com/snehal492006) | 9 | 3 (AI-ML, CompetitiveProgramming, Frontend) | Recent |
 | 🥉 | [@shr128](https://github.com/shr128) | 6 | 1 (Frontend) | Recent |
 | 4 | [@Aaditya-2407](https://github.com/Aaditya-2407) | 6 | 1 (Frontend) | Recent |
 | 5 | [@k4niz](https://github.com/k4niz) | 5 | 4 (AI-ML, AR-VR, FullStack, IoT) | Recent |
@@ -45,33 +45,6 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 
 ## 📊 Domain Breakdown
 
-### Frontend
-
-| Contributor | Contributions |
-|-------------|---------------|
-| [@shr128](https://github.com/shr128) | 6 |
-| [@Aaditya-2407](https://github.com/Aaditya-2407) | 6 |
-| [@snehal492006](https://github.com/snehal492006) | 4 |
-| [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 3 |
-| [@anujaugale617](https://github.com/anujaugale617) | 3 |
-| [@SOHAM-GADEKAR](https://github.com/SOHAM-GADEKAR) | 3 |
-| [@Mansi13-6](https://github.com/Mansi13-6) | 2 |
-| [@MeghPatel-007](https://github.com/MeghPatel-007) | 2 |
-| [@khyati262](https://github.com/khyati262) | 2 |
-| [@Keron](https://github.com/Keron) | 2 |
-| [@Utkarsh-660](https://github.com/Utkarsh-660) | 2 |
-| [@alisha1510](https://github.com/alisha1510) | 2 |
-| [@vatsalgupta2004](https://github.com/vatsalgupta2004) | 1 |
-| [@Dhiraj201226](https://github.com/Dhiraj201226) | 1 |
-| [@star-lord1234](https://github.com/star-lord1234) | 1 |
-| [@mahir-m01](https://github.com/mahir-m01) | 1 |
-| [@GayatriVitkarcd](https://github.com/GayatriVitkarcd) | 1 |
-| [@SanjeevDeori](https://github.com/SanjeevDeori) | 1 |
-| [@Tanmay-Kad](https://github.com/Tanmay-Kad) | 1 |
-| [@jeturgavli](https://github.com/jeturgavli) | 1 |
-| [@Tanushri1307](https://github.com/Tanushri1307) | 1 |
-| [@Laikokwui](https://github.com/Laikokwui) | 1 |
-
 ### AI-ML
 
 | Contributor | Contributions |
@@ -91,6 +64,33 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 |-------------|---------------|
 | [@snehal492006](https://github.com/snehal492006) | 4 |
 | [@GayatriVitkar](https://github.com/GayatriVitkar) | 2 |
+
+### Frontend
+
+| Contributor | Contributions |
+|-------------|---------------|
+| [@shr128](https://github.com/shr128) | 6 |
+| [@Aaditya-2407](https://github.com/Aaditya-2407) | 6 |
+| [@snehal492006](https://github.com/snehal492006) | 3 |
+| [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 3 |
+| [@anujaugale617](https://github.com/anujaugale617) | 3 |
+| [@SOHAM-GADEKAR](https://github.com/SOHAM-GADEKAR) | 3 |
+| [@Mansi13-6](https://github.com/Mansi13-6) | 2 |
+| [@MeghPatel-007](https://github.com/MeghPatel-007) | 2 |
+| [@khyati262](https://github.com/khyati262) | 2 |
+| [@Keron](https://github.com/Keron) | 2 |
+| [@Utkarsh-660](https://github.com/Utkarsh-660) | 2 |
+| [@alisha1510](https://github.com/alisha1510) | 2 |
+| [@vatsalgupta2004](https://github.com/vatsalgupta2004) | 1 |
+| [@Dhiraj201226](https://github.com/Dhiraj201226) | 1 |
+| [@star-lord1234](https://github.com/star-lord1234) | 1 |
+| [@mahir-m01](https://github.com/mahir-m01) | 1 |
+| [@GayatriVitkarcd](https://github.com/GayatriVitkarcd) | 1 |
+| [@SanjeevDeori](https://github.com/SanjeevDeori) | 1 |
+| [@Tanmay-Kad](https://github.com/Tanmay-Kad) | 1 |
+| [@jeturgavli](https://github.com/jeturgavli) | 1 |
+| [@Tanushri1307](https://github.com/Tanushri1307) | 1 |
+| [@Laikokwui](https://github.com/Laikokwui) | 1 |
 
 ### AR-VR
 

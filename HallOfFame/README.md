@@ -44,7 +44,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 *Contributions: 9 PRs across 3 domain(s)*
 
-*Domains: Frontend, AI-ML, CompetitiveProgramming*
+*Domains: AI-ML, CompetitiveProgramming, Frontend*
 
 </div>
 
