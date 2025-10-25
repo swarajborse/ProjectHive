@@ -1,0 +1,685 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>VoteSmart - Online Voting Demo</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <!-- Chart.js CDN for results visualization -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <style>
+    :root{--accent:#0b5d8c;--muted:#f6f9fb;--card:#fff;--danger:#c0392b;--success:#27ae60}
+    *{box-sizing:border-box;font-family:Inter,system-ui,Arial}
+    body{margin:0;background:linear-gradient(180deg,#f7fbff,#ffffff);color:#123}
+    header{background:var(--accent);color:#fff;padding:12px 18px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+    header .brand{display:flex;gap:10px;align-items:center}
+    header a{color:#fff;text-decoration:none;margin:0 8px;padding:6px;border-radius:6px}
+    main{max-width:1100px;margin:18px auto;padding:12px}
+    .grid{display:grid;grid-template-columns:1fr 360px;gap:16px}
+    .card{background:var(--card);padding:14px;border-radius:12px;box-shadow:0 6px 20px rgba(17,24,39,0.06)}
+    .hero{display:flex;gap:12px;align-items:center}
+    .btn{background:var(--accent);color:#fff;border:none;padding:8px 12px;border-radius:8px;cursor:pointer}
+    .btn.secondary{background:#eef5f9;color:var(--accent);border:1px solid #e0eef6}
+    .small{font-size:13px;color:#556}
+    input,select,textarea{width:100%;padding:8px;border-radius:8px;border:1px solid #e3e7eb;margin-top:6px}
+    .menu-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+    .candidate{display:flex;gap:10px;align-items:center;border:1px solid #eef3f6;padding:10px;border-radius:8px}
+    .candidate img{width:72px;height:72px;object-fit:cover;border-radius:8px}
+    .muted{color:#6a7885}
+    .modal{position:fixed;inset:0;background:rgba(2,6,23,0.45);display:none;align-items:center;justify-content:center;padding:12px}
+    .modal.open{display:flex}
+    .panel{background:#fff;padding:18px;border-radius:10px;max-width:720px;width:100%;max-height:90vh;overflow:auto}
+    table{width:100%;border-collapse:collapse}
+    th,td{padding:8px;border-bottom:1px solid #f0f3f5;text-align:left}
+    footer{text-align:center;padding:18px;color:#556}
+    @media (max-width:980px){.grid{grid-template-columns:1fr}.hero{flex-direction:column;align-items:flex-start}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div style="width:48px;height:48px;border-radius:10px;background:#fff;color:var(--accent);display:flex;align-items:center;justify-content:center;font-weight:700">VS</div>
+      <div>
+        <div style="font-weight:700">VoteSmart</div>
+        <div class="small">Secure online voting (demo)</div>
+      </div>
+    </div>
+    <nav>
+      <a href="#" onclick="showSection('home')">Home</a>
+      <a href="#" onclick="showSection('voter')">Voter</a>
+      <a href="#" onclick="showSection('results')">Results</a>
+      <a href="#" onclick="showSection('about')">About</a>
+      <a href="#" onclick="showSection('contact')">Contact</a>
+      <a href="#" id="nav-auth" onclick="openModal('loginModal')">Login / Register</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section id="home" class="card">
+      <div class="hero">
+        <div style="flex:1">
+          <h2>Welcome to VoteSmart</h2>
+          <p class="muted">Transparent, simple, and secure voting — demonstration build for learning and prototyping. Use the Voter panel to register, login and cast your vote. Admins can create elections and manage candidates.</p>
+          <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap">
+            <button class="btn" onclick="showSection('voter')">Go to Voter Dashboard</button>
+            <button class="btn secondary" onclick="openModal('loginModal')">Login / Register</button>
+            <button class="btn" onclick="openModal('adminModal')">Admin Console</button>
+          </div>
+        </div>
+        <div style="width:320px">
+          <div class="card" style="padding:12px">
+            <h4>Announcements</h4>
+            <ul id="announcements" class="small"></ul>
+            <hr>
+            <div class="small">Next election: <strong id="nextElection">—</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="grid" style="margin-top:14px">
+      <!-- LEFT: VOTER / ELECTION UI -->
+      <section class="card" id="mainPanel">
+        <!-- Voter Dashboard -->
+        <div id="voter" style="display:none">
+          <h3>Voter Dashboard</h3>
+          <div id="voterStatus" class="small muted">Not logged in</div>
+          <div id="voterControls" style="margin-top:12px;display:flex;gap:8px">
+            <button class="btn" onclick="openModal('loginModal')">Login</button>
+            <button class="btn secondary" onclick="openModal('registerModal')">Register</button>
+          </div>
+
+          <hr style="margin:14px 0">
+
+          <div id="electionsList">
+            <h4>Available Elections</h4>
+            <div id="electCards" class="muted small">Loading elections...</div>
+          </div>
+
+          <div id="voteArea" style="margin-top:12px;display:none">
+            <h4 id="voteElectionTitle"></h4>
+            <div id="candidates" class="menu-list"></div>
+          </div>
+
+          <div id="votingHistory" style="margin-top:14px">
+            <h4>Your Voting History</h4>
+            <div id="historyList" class="small muted">No history</div>
+          </div>
+        </div>
+
+        <!-- RESULTS (also accessible separately) -->
+        <div id="results" style="display:none">
+          <h3>Election Results</h3>
+          <div id="resultsList" class="small muted">Select an election to see results</div>
+          <div style="margin-top:12px">
+            <canvas id="resultsChart" style="max-width:640px"></canvas>
+          </div>
+          <div style="margin-top:12px"><button class="btn" onclick="printResults()">Print / Download</button></div>
+        </div>
+
+        <!-- ABOUT -->
+        <div id="about" style="display:none">
+          <h3>About VoteSmart</h3>
+          <p class="muted">VoteSmart is a demonstration online voting system designed for educational use. It simulates core e-voting flows: secure registration, per-voter single vote enforcement, admin-managed elections, and transparent results visualization. <strong>Not production-ready</strong> — for a real deployment use server-side verification, strong authentication, audit logs and independent audits.</p>
+        </div>
+
+        <!-- CONTACT -->
+        <div id="contact" style="display:none">
+          <h3>Contact & Help</h3>
+          <p class="small">Email: support@votesmart.example | Phone: +91 98765 43210</p>
+          <form id="contactForm" onsubmit="return sendContact(event)">
+            <label>Your name</label><input id="contactName" required>
+            <label>Your email / phone</label><input id="contactInfo" required>
+            <label>Message</label><textarea id="contactMsg" rows="3" required></textarea>
+            <div style="margin-top:8px"><button class="btn">Send</button></div>
+          </form>
+        </div>
+
+        <!-- Admin area placeholder (also available via modal) -->
+        <div id="adminView" style="display:none">
+          <h3>Admin Panel</h3>
+          <div id="adminControls" class="small muted">Open the Admin Console modal to manage elections.</div>
+        </div>
+
+      </section>
+
+      <!-- RIGHT: Summary / Stats -->
+      <aside class="card">
+        <h4>Quick Stats</h4>
+        <div class="small">Total registered voters: <strong id="statVoters">0</strong></div>
+        <div class="small">Active elections: <strong id="statElections">0</strong></div>
+        <div class="small">Total votes cast: <strong id="statVotes">0</strong></div>
+
+        <hr>
+        <h4>Security notes</h4>
+        <div class="small muted">This demo shows client-side flows only. Real systems must include backend identity verification (Aadhaar/EPIC), server-side vote storage, cryptographic receipts, and audits.</div>
+
+        <hr>
+        <div style="margin-top:8px">
+          <button class="btn" onclick="openModal('registerModal')">Register to Vote</button>
+          <button class="btn secondary" onclick="openModal('loginModal')">Login</button>
+        </div>
+      </aside>
+    </div>
+
+    <footer class="card" style="margin-top:14px">
+      <div class="small">© VoteSmart Demo — For educational use only</div>
+    </footer>
+  </main>
+
+  <!-- Modals -->
+  <div id="loginModal" class="modal" onclick="modalOuterClick(event,'loginModal')">
+    <div class="panel" onclick="event.stopPropagation()">
+      <h3>Login (Voter / Admin)</h3>
+      <form onsubmit="return login(event)">
+        <label>Email or VoterID</label><input id="loginId" required>
+        <label>Password</label><input id="loginPass" type="password" required>
+        <div style="display:flex;gap:8px;margin-top:10px">
+          <button class="btn">Login</button>
+          <button type="button" class="btn secondary" onclick="openModal('otpModal')">Login with OTP</button>
+          <button type="button" class="btn secondary" onclick="closeModal('loginModal')">Close</button>
+        </div>
+      </form>
+      <div style="margin-top:12px" class="small muted">Admin demo account: <strong>admin@example.com</strong> / <strong>admin123</strong></div>
+    </div>
+  </div>
+
+  <div id="registerModal" class="modal" onclick="modalOuterClick(event,'registerModal')">
+    <div class="panel" onclick="event.stopPropagation()">
+      <h3>Voter Registration</h3>
+      <form onsubmit="return register(event)">
+        <label>Full name</label><input id="regName" required>
+        <label>Voter ID / Aadhaar</label><input id="regVoterId" required>
+        <label>Email</label><input id="regEmail" type="email" required>
+        <label>Mobile</label><input id="regMobile" required>
+        <label>Password</label><input id="regPass" type="password" required>
+        <div style="margin-top:10px;display:flex;gap:8px">
+          <button class="btn">Register</button>
+          <button type="button" class="btn secondary" onclick="closeModal('registerModal')">Cancel</button>
+        </div>
+      </form>
+      <div class="small muted" style="margin-top:8px">Registrations are auto-approved in this demo. In production, admin should verify documents.</div>
+    </div>
+  </div>
+
+  <div id="otpModal" class="modal" onclick="modalOuterClick(event,'otpModal')">
+    <div class="panel" onclick="event.stopPropagation()">
+      <h3>Login with OTP (Demo)</h3>
+      <form onsubmit="return otpRequest(event)">
+        <label>Mobile number</label><input id="otpMobile" required>
+        <div style="margin-top:10px;display:flex;gap:8px">
+          <button class="btn">Send OTP</button>
+          <button type="button" class="btn secondary" onclick="closeModal('otpModal')">Cancel</button>
+        </div>
+      </form>
+      <div id="otpStep" style="margin-top:10px;display:none">
+        <label>Enter OTP</label><input id="otpCode">
+        <div style="margin-top:10px;display:flex;gap:8px"><button class="btn" onclick="verifyOtp()">Verify</button></div>
+      </div>
+    </div>
+  </div>
+
+  <div id="adminModal" class="modal" onclick="modalOuterClick(event,'adminModal')">
+    <div class="panel" onclick="event.stopPropagation()">
+      <h3>Admin Console</h3>
+      <div style="display:flex;gap:8px;flex-wrap:wrap">
+        <button class="btn" onclick="adminOpen('elections')">Manage Elections</button>
+        <button class="btn" onclick="adminOpen('candidates')">Manage Candidates</button>
+        <button class="btn" onclick="adminOpen('voters')">Manage Voters</button>
+        <button class="btn" onclick="adminOpen('reports')">Reports & Export</button>
+        <button class="btn secondary" onclick="closeModal('adminModal')">Close</button>
+      </div>
+      <div id="adminArea" style="margin-top:12px"></div>
+    </div>
+  </div>
+
+  <!-- JS: application logic (client-side demo) -->
+  <script>
+    /***************************
+     * Demo "backend" persisted to localStorage
+     ***************************/
+    const KEY = 'votesmart_demo_v1';
+    const demo = {
+      users: [
+        { id:'admin@ex', email:'admin@example.com', name:'Administrator', password:'admin123', role:'admin', verified:true },
+        // sample voter
+        { id:'VOTER1', email:'alice@example.com', name:'Alice Rao', password:'alice123', mobile:'9876500000', role:'voter', verified:true }
+      ],
+      elections: [
+        /* example structure
+        { id:'E1', title:'College Council 2025', start:'2025-10-01T08:00', end:'2025-10-10T18:00', candidates:[{id:'C1',name:'Joe',party:'Team A',img:'',desc:'...'}], archived:false }
+        */
+      ],
+      votes: [], // { electionId, voterId, candidateId, time }
+      announcements: [{id:1,text:'Demo environment — not for real elections',date: new Date().toISOString()}]
+    };
+
+    function loadState(){
+      const raw = localStorage.getItem(KEY);
+      if(!raw){ localStorage.setItem(KEY, JSON.stringify(demo)); return JSON.parse(localStorage.getItem(KEY)); }
+      return JSON.parse(raw);
+    }
+    function saveState(s){localStorage.setItem(KEY, JSON.stringify(s));}
+    let state = loadState();
+
+    // session
+    let currentUser = null;
+    let otpSession = null;
+
+    /***************************
+     * Helpers & UI
+     ***************************/
+    function showSection(id){
+      ['home','voter','results','about','contact','adminView'].forEach(s=>document.getElementById(s).style.display='none');
+      if(id==='voter') document.getElementById('voter').style.display='block';
+      else if(id==='results'){ document.getElementById('results').style.display='block'; renderResultsList(); }
+      else if(id==='about') document.getElementById('about').style.display='block';
+      else if(id==='contact') document.getElementById('contact').style.display='block';
+      else if(id==='admin') document.getElementById('adminView').style.display='block';
+      else document.getElementById('home').style.display='block';
+      updateNav();
+    }
+
+    function updateNav(){
+      const nav = document.getElementById('nav-auth');
+      if(currentUser) nav.textContent = currentUser.name + ' ('+currentUser.role+')';
+      else nav.textContent = 'Login / Register';
+      // voter status
+      const vs = document.getElementById('voterStatus');
+      vs.textContent = currentUser ? ('Logged in as ' + currentUser.name + ' — ' + currentUser.role) : 'Not logged in';
+      document.getElementById('voterControls').style.display = currentUser ? 'none' : 'flex';
+      if(currentUser && currentUser.role==='voter'){ loadVoterDashboard(); }
+      renderQuickStats();
+    }
+
+    function openModal(id){ document.getElementById(id).classList.add('open'); }
+    function closeModal(id){ document.getElementById(id).classList.remove('open'); }
+    function modalOuterClick(e,id){ if(e.target.id===id) closeModal(id); }
+
+    /***************************
+     * Announcements & initial UI
+     ***************************/
+    function renderAnnouncements(){
+      const el = document.getElementById('announcements');
+      el.innerHTML = state.announcements.map(a=>`<li>${a.text} <span class="small muted">(${new Date(a.date).toLocaleDateString()})</span></li>`).join('');
+      const upcoming = state.elections.filter(e=>!e.archived).sort((a,b)=> new Date(a.start)-new Date(b.start))[0];
+      document.getElementById('nextElection').textContent = upcoming ? (upcoming.title + ' (' + new Date(upcoming.start).toLocaleDateString() + ')') : 'No active elections';
+    }
+
+    function renderQuickStats(){
+      document.getElementById('statVoters').textContent = state.users.filter(u=>u.role==='voter').length;
+      document.getElementById('statElections').textContent = state.elections.filter(e=>!e.archived).length;
+      document.getElementById('statVotes').textContent = state.votes.length;
+    }
+
+    /***************************
+     * Registration / Login / OTP (demo)
+     ***************************/
+    function register(e){
+      e.preventDefault();
+      const name = document.getElementById('regName').value.trim();
+      const vid = document.getElementById('regVoterId').value.trim();
+      const email = document.getElementById('regEmail').value.trim();
+      const mobile = document.getElementById('regMobile').value.trim();
+      const pass = document.getElementById('regPass').value;
+      if(!name||!vid||!email||!pass){ alert('Please fill all'); return false; }
+      // simple uniqueness checks
+      if(state.users.some(u=>u.email===email || u.id===vid)){ alert('User already exists (email or id)'); return false; }
+      const user = { id: vid, email, name, password: pass, mobile, role:'voter', verified:true };
+      state.users.push(user); saveState(state);
+      alert('Registered! You can login now.');
+      closeModal('registerModal');
+      return false;
+    }
+
+    function login(e){
+      e.preventDefault();
+      const id = document.getElementById('loginId').value.trim();
+      const pw = document.getElementById('loginPass').value;
+      // allow login by email or id
+      const user = state.users.find(u => (u.email===id || u.id===id) && u.password===pw);
+      if(!user){ alert('Invalid credentials'); return false; }
+      currentUser = user;
+      closeModal('loginModal');
+      updateNav();
+      alert('Logged in as ' + user.name);
+      return false;
+    }
+
+    function otpRequest(e){
+      e.preventDefault();
+      const mobile = document.getElementById('otpMobile').value.trim();
+      // find user by mobile
+      const user = state.users.find(u=>u.mobile===mobile);
+      if(!user){ alert('No user with this mobile. Please register first.'); return false; }
+      // demo OTP generation
+      otpSession = { mobile, code: String(Math.floor(100000 + Math.random()*900000)), userId:user.id, expires: Date.now()+5*60*1000 };
+      document.getElementById('otpStep').style.display='block';
+      alert('Demo OTP (no SMS): ' + otpSession.code);
+      return false;
+    }
+
+    function verifyOtp(){
+      const code = document.getElementById('otpCode').value.trim();
+      if(!otpSession){ alert('No OTP requested'); return; }
+      if(Date.now()>otpSession.expires){ alert('OTP expired'); otpSession=null; return; }
+      if(code!==otpSession.code){ alert('Wrong OTP'); return; }
+      const user = state.users.find(u=>u.id===otpSession.userId);
+      currentUser = user;
+      otpSession=null;
+      closeModal('otpModal');
+      updateNav();
+      alert('Logged in (OTP) as ' + user.name);
+    }
+
+    /***************************
+     * Voter UI: elections & voting
+     ***************************/
+    function loadVoterDashboard(){
+      // show elections
+      const container = document.getElementById('electCards');
+      const elections = state.elections.filter(e=>!e.archived);
+      if(elections.length===0){ container.innerHTML='No elections currently.'; return; }
+      container.innerHTML = elections.map(e=> {
+        const now = new Date();
+        const started = new Date(e.start) <= now;
+        const ended = new Date(e.end) < now;
+        const status = ended ? 'Closed' : (started ? 'Ongoing' : 'Upcoming');
+        return `<div style="border:1px solid #eef6fb;padding:10px;margin-bottom:8px;border-radius:8px">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <div><strong>${e.title}</strong><div class="small muted">${new Date(e.start).toLocaleString()} — ${new Date(e.end).toLocaleString()}</div></div>
+            <div><span class="small">${status}</span></div>
+          </div>
+          <div style="margin-top:8px" class="small"><button class="btn" onclick="openElection('${e.id}')">View / Vote</button> <button class="btn secondary" onclick="viewElectionDetails('${e.id}')">Details</button></div>
+        </div>`;
+      }).join('');
+      // history
+      renderVotingHistory();
+    }
+
+    function openElection(eid){
+      const election = state.elections.find(x=>x.id===eid);
+      if(!election){ alert('Election not found'); return; }
+      document.getElementById('voteArea').style.display='block';
+      document.getElementById('voteElectionTitle').textContent = election.title;
+      const candWrap = document.getElementById('candidates');
+      candWrap.innerHTML = election.candidates.map(c=>`
+        <div class="candidate card">
+          <img src="${c.img || 'https://via.placeholder.com/72x72?text=Candidate'}" alt="">
+          <div style="flex:1">
+            <div style="display:flex;justify-content:space-between;align-items:start">
+              <div><strong>${c.name}</strong><div class="small muted">${c.party}</div></div>
+              <div class="muted small">#${c.id}</div>
+            </div>
+            <div class="small" style="margin-top:8px">${c.desc || ''}</div>
+            <div style="margin-top:8px;display:flex;gap:8px">
+              <button class="btn" onclick="castVote('${eid}','${c.id}')">Vote</button>
+              <button class="btn secondary" onclick="viewCandidate('${eid}','${c.id}')">Profile</button>
+            </div>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function viewElectionDetails(eid){
+      const e = state.elections.find(x=>x.id===eid);
+      if(!e) return alert('Not found');
+      alert(`${e.title}\nStart: ${new Date(e.start).toLocaleString()}\nEnd: ${new Date(e.end).toLocaleString()}\nCandidates: ${e.candidates.map(c=>c.name).join(', ')}`);
+    }
+
+    function viewCandidate(eid,cid){
+      const e = state.elections.find(x=>x.id===eid);
+      const c = e.candidates.find(x=>x.id===cid);
+      alert(`${c.name} — ${c.party}\n\n${c.desc || '(no manifesto provided)'} `);
+    }
+
+    function hasVoted(eid, voterId){
+      return state.votes.some(v=>v.electionId===eid && v.voterId===voterId);
+    }
+
+    function castVote(eid, cid){
+      if(!currentUser || currentUser.role!=='voter'){ alert('Please login as voter'); openModal('loginModal'); return; }
+      const election = state.elections.find(x=>x.id===eid);
+      const now = new Date();
+      if(new Date(election.start) > now){ alert('Voting not yet started'); return; }
+      if(new Date(election.end) < now){ alert('Voting closed'); return; }
+      if(hasVoted(eid,currentUser.id)){ alert('You have already voted in this election (one vote per voter)'); return; }
+      // Save vote
+      const vote = { electionId: eid, voterId: currentUser.id, candidateId: cid, time: new Date().toISOString() };
+      state.votes.push(vote);
+      saveState(state);
+      alert('Vote recorded. Thank you for voting!');
+      renderVotingHistory();
+      renderQuickStats();
+    }
+
+    function renderVotingHistory(){
+      if(!currentUser){ document.getElementById('historyList').textContent = 'Not logged in'; return; }
+      const history = state.votes.filter(v=>v.voterId===currentUser.id);
+      if(history.length===0){ document.getElementById('historyList').textContent = 'No votes cast yet'; return; }
+      document.getElementById('historyList').innerHTML = history.map(h=>{
+        const e = state.elections.find(x=>x.id===h.electionId);
+        const cand = e ? e.candidates.find(c=>c.id===h.candidateId) : null;
+        return `<div>${e ? e.title : h.electionId} — voted for ${cand ? cand.name : h.candidateId} <span class="small muted">(${new Date(h.time).toLocaleString()})</span></div>`;
+      }).join('');
+    }
+
+    /***************************
+     * Results visualization
+     ***************************/
+    let chart = null;
+    function renderResultsList(){
+      const container = document.getElementById('resultsList');
+      if(state.elections.length===0){ container.textContent='No elections available'; return; }
+      container.innerHTML = state.elections.map(e=>`<div style="margin-bottom:6px"><strong>${e.title}</strong> <span class="small muted">(${new Date(e.start).toLocaleDateString()})</span> <button class="btn secondary" onclick="showResults('${e.id}')">Show</button></div>`).join('');
+    }
+
+    function showResults(eid){
+      const e = state.elections.find(x=>x.id===eid);
+      if(!e) return;
+      // aggregate votes
+      const counts = {};
+      e.candidates.forEach(c=>counts[c.id]=0);
+      state.votes.filter(v=>v.electionId===eid).forEach(v=>{ if(counts[v.candidateId]!==undefined) counts[v.candidateId]++ });
+      const labels = e.candidates.map(c=>c.name);
+      const data = e.candidates.map(c=>counts[c.id] || 0);
+      const ctx = document.getElementById('resultsChart').getContext('2d');
+      if(chart) chart.destroy();
+      chart = new Chart(ctx, {
+        type:'bar',
+        data:{ labels, datasets:[{ label:'Votes', data, backgroundColor: labels.map(()=> 'rgba(11,93,140,0.8)') }] },
+        options:{ responsive:true, plugins:{ legend:{display:false} } }
+      });
+      // show winner
+      const total = data.reduce((a,b)=>a+b,0);
+      const max = Math.max(...data);
+      const winnerIndex = data.indexOf(max);
+      alert(`${e.title}\nTotal votes: ${total}\nWinner: ${e.candidates[winnerIndex].name} (${max} votes)`);
+    }
+
+    function printResults(){ window.print(); }
+
+    /***************************
+     * Admin functions: create elections, candidates, manage users
+     ***************************/
+    function adminOpen(section){
+      const area = document.getElementById('adminArea');
+      if(section==='elections'){
+        area.innerHTML = `<h4>Manage Elections</h4>
+          <div style="display:flex;gap:12px">
+            <div style="flex:1">
+              <table><thead><tr><th>Title</th><th>Start</th><th>End</th><th>Actions</th></tr></thead><tbody id="adminElectionsList"></tbody></table>
+            </div>
+            <div style="width:320px">
+              <h5>Create Election</h5>
+              <label>Title</label><input id="admin_el_title">
+              <label>Start (ISO)</label><input id="admin_el_start" placeholder="YYYY-MM-DDTHH:MM">
+              <label>End (ISO)</label><input id="admin_el_end" placeholder="YYYY-MM-DDTHH:MM">
+              <div style="margin-top:8px"><button class="btn" onclick="createElection()">Create</button></div>
+            </div>
+          </div>`;
+        renderAdminElections();
+      }
+      if(section==='candidates'){
+        area.innerHTML = `<h4>Manage Candidates</h4>
+          <div style="display:flex;gap:12px">
+            <div style="flex:1"><div id="adminCandidateList" class="small muted">Select an election to manage candidates</div></div>
+            <div style="width:320px">
+              <h5>Add Candidate (select election first)</h5>
+              <label>Election ID</label><select id="selElectionForCand"></select>
+              <label>Name</label><input id="cand_name">
+              <label>Party / Symbol</label><input id="cand_party">
+              <label>Image URL</label><input id="cand_img">
+              <label>Manifesto / Desc</label><textarea id="cand_desc" rows="3"></textarea>
+              <div style="margin-top:8px"><button class="btn" onclick="addCandidate()">Add Candidate</button></div>
+            </div>
+          </div>`;
+        document.getElementById('selElectionForCand').innerHTML = state.elections.map(e=>`<option value="${e.id}">${e.title} (${e.id})</option>`).join('');
+        document.getElementById('adminCandidateList').innerHTML = '';
+      }
+      if(section==='voters'){
+        area.innerHTML = `<h4>Manage Voters</h4><table><thead><tr><th>ID</th><th>Name</th><th>Email</th><th>Actions</th></tr></thead><tbody>${state.users.filter(u=>u.role==='voter').map(u=>`<tr><td>${u.id}</td><td>${u.name}</td><td>${u.email}</td><td><button class="btn secondary" onclick="deleteVoter('${u.id}')">Remove</button></td></tr>`).join('')}</tbody></table>`;
+      }
+      if(section==='reports'){
+        area.innerHTML = `<h4>Reports & Export</h4><div class="small">Total votes: ${state.votes.length}</div><div style="margin-top:8px"><button class="btn" onclick="exportData()">Export JSON</button></div>`;
+      }
+    }
+
+    function renderAdminElections(){
+      const tbody = document.getElementById('adminElectionsList');
+      tbody.innerHTML = state.elections.map(e=>`<tr><td>${e.title}</td><td>${new Date(e.start).toLocaleString()}</td><td>${new Date(e.end).toLocaleString()}</td><td><button class="btn" onclick="editElection('${e.id}')">Edit</button> <button class="btn secondary" onclick="archiveElection('${e.id}')">Archive</button> <button class="btn secondary" onclick="manageCandidates('${e.id}')">Candidates</button></td></tr>`).join('');
+    }
+
+    function createElection(){
+      const title = document.getElementById('admin_el_title').value.trim();
+      const start = document.getElementById('admin_el_start').value.trim();
+      const end = document.getElementById('admin_el_end').value.trim();
+      if(!title||!start||!end){ alert('Fill all'); return; }
+      const id = 'E'+Date.now();
+      state.elections.push({ id, title, start: new Date(start).toISOString(), end: new Date(end).toISOString(), candidates: [], archived:false });
+      saveState(state);
+      alert('Election created: '+id);
+      adminOpen('elections');
+      renderAnnouncements(); renderQuickStats();
+      document.getElementById('admin_el_title').value='';document.getElementById('admin_el_start').value='';document.getElementById('admin_el_end').value='';
+    }
+
+    function editElection(eid){
+      const e = state.elections.find(x=>x.id===eid);
+      const newTitle = prompt('Title', e.title);
+      if(newTitle) e.title = newTitle;
+      saveState(state); renderAdminElections(); renderAnnouncements();
+    }
+
+    function archiveElection(eid){
+      if(!confirm('Archive this election?')) return;
+      const e = state.elections.find(x=>x.id===eid); e.archived=true;
+      saveState(state); renderAdminElections(); renderAnnouncements();
+    }
+
+    function manageCandidates(eid){
+      const e = state.elections.find(x=>x.id===eid);
+      const list = e.candidates.map(c=>`<div style="border:1px solid #eef6fb;padding:8px;border-radius:8px;margin-bottom:6px"><strong>${c.name}</strong> <div class="small muted">${c.party}</div><div style="margin-top:6px"><button class="btn secondary" onclick="removeCandidate('${eid}','${c.id}')">Remove</button></div></div>`).join('');
+      document.getElementById('adminArea').innerHTML = `<h4>Candidates for ${e.title}</h4><div>${list||'<div class="small muted">No candidates yet</div>'}</div><div style="margin-top:8px"><button class="btn" onclick="adminOpen('candidates')">Add more</button></div>`;
+    }
+
+    function addCandidate(){
+      const eid = document.getElementById('selElectionForCand').value;
+      const name = document.getElementById('cand_name').value.trim();
+      const party = document.getElementById('cand_party').value.trim();
+      const img = document.getElementById('cand_img').value.trim();
+      const desc = document.getElementById('cand_desc').value.trim();
+      if(!eid||!name){ alert('Select election and enter name'); return; }
+      const e = state.elections.find(x=>x.id===eid);
+      const cid = 'C' + Date.now();
+      e.candidates.push({ id: cid, name, party, img, desc });
+      saveState(state);
+      alert('Candidate added');
+      document.getElementById('cand_name').value='';document.getElementById('cand_party').value='';document.getElementById('cand_img').value='';document.getElementById('cand_desc').value='';
+      adminOpen('candidates');
+    }
+
+    function removeCandidate(eid,cid){
+      if(!confirm('Remove candidate?')) return;
+      const e = state.elections.find(x=>x.id===eid);
+      e.candidates = e.candidates.filter(c=>c.id!==cid);
+      saveState(state); manageCandidates(eid);
+    }
+
+    function deleteVoter(id){
+      if(!confirm('Remove voter?')) return;
+      state.users = state.users.filter(u=>u.id!==id);
+      saveState(state); adminOpen('voters'); renderQuickStats();
+    }
+
+    function exportData(){
+      const a = document.createElement('a');
+      a.href = 'data:application/json;charset=utf-8,' + encodeURIComponent(JSON.stringify(state,null,2));
+      a.download = 'votesmart_data.json';
+      a.click();
+    }
+
+    /***************************
+     * Misc
+     ***************************/
+    function viewElectionDetailsModal(eid){
+      const e = state.elections.find(x=>x.id===eid);
+      openModal('adminModal'); adminOpen('elections');
+    }
+
+    function sendContact(e){
+      e.preventDefault();
+      alert('Thanks — message submitted (demo).');
+      document.getElementById('contactForm').reset();
+      return false;
+    }
+
+    // initial demo content (if no elections exist, populate one)
+    function ensureDemoElection(){
+      if(state.elections.length===0){
+        const eId = 'E'+Date.now();
+        state.elections.push({
+          id:eId,
+          title:'College Council Election 2025',
+          start:new Date(Date.now() - 24*60*60*1000).toISOString(),
+          end:new Date(Date.now() + 7*24*60*60*1000).toISOString(),
+          candidates:[
+            {id:'C1',name:'Priya Sharma',party:'Students United',img:'https://i.pravatar.cc/100?img=47',desc:'Focus on campus welfare and events.'},
+            {id:'C2',name:'Rohan Mehta',party:'New Wave',img:'https://i.pravatar.cc/100?img=12',desc:'Transparency and student services.'},
+            {id:'C3',name:'Sana Khan',party:'Green Campus',img:'https://i.pravatar.cc/100?img=33',desc:'Eco-friendly initiatives.'}
+          ],
+          archived:false
+        });
+        saveState(state);
+      }
+    }
+
+    // load UI on start
+    function init(){
+      ensureDemoElection();
+      renderAnnouncements();
+      showSection('home');
+      renderAdminElections();
+      renderQuickStats();
+      // load voter dashboard if logged in
+      updateNav();
+    }
+    init();
+
+    // expose some functions to HTML scope
+    window.openModal = openModal;
+    window.closeModal = closeModal;
+    window.showSection = showSection;
+    window.castVote = castVote;
+    window.openElection = openElection;
+    window.viewElectionDetails = viewElectionDetails;
+    window.viewCandidate = viewCandidate;
+    window.adminOpen = adminOpen;
+    window.addCandidate = addCandidate;
+    window.createElection = createElection;
+    window.exportData = exportData;
+    window.printResults = printResults;
+
+  </script>
+</body>
+</html>
