@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Turf Booking Platform</title>
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        /* Login Form Styles */
+        .login-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+        }
+
+        .login-form {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .login-form h1 {
+            margin-bottom: 1.5rem;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+            text-align: left;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 0.8rem;
+            background: #6e8efb;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .login-btn:hover {
+            background: #5a7df4;
+        }
+
+        /* Main Dashboard Styles */
+        .dashboard {
+            display: none;
+            padding: 2rem;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .user-info {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logout-btn {
+            padding: 0.5rem 1rem;
+            background: #ff4757;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .turf-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .turf-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .turf-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .turf-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .turf-info {
+            padding: 1.5rem;
+        }
+
+        .turf-info h3 {
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+
+        .turf-info p {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .turf-price {
+            font-weight: 600;
+            color: #6e8efb;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .book-btn {
+            width: 100%;
+            padding: 0.8rem;
+            background: #6e8efb;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .book-btn:hover {
+            background: #5a7df4;
+        }
+
+        /* Booking Page Styles */
+        .booking-page {
+            display: none;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .back-btn {
+            padding: 0.5rem 1rem;
+            background: #6c757d;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+            cursor: pointer;
+        }
+
+        .booking-header {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .booking-image {
+            width: 400px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .booking-details {
+            flex: 1;
+        }
+
+        .booking-details h2 {
+            margin-bottom: 1rem;
+        }
+
+        .booking-details p {
+            margin-bottom: 0.5rem;
+            color: #666;
+        }
+
+        .booking-price {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #6e8efb;
+            margin: 1rem 0;
+        }
+
+        /* Reviews Section */
+        .reviews-section {
+            margin: 3rem 0;
+        }
+
+        .reviews-section h3 {
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .review-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+
+        .review-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.5rem;
+        }
+
+        .review-user {
+            font-weight: 600;
+            margin-right: 1rem;
+        }
+
+        .review-rating {
+            color: #ffc107;
+            font-weight: 600;
+        }
+
+        .review-date {
+            color: #999;
+            font-size: 0.8rem;
+            margin-left: auto;
+        }
+
+        .review-content {
+            color: #555;
+            line-height: 1.5;
+        }
+
+        /* Payment Section */
+        .payment-section {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin-top: 2rem;
+        }
+
+        .payment-section h3 {
+            margin-bottom: 1.5rem;
+        }
+
+        .payment-options {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .payment-method {
+            flex: 1;
+            padding: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .payment-method:hover {
+            border-color: #6e8efb;
+            background: #f8f9fe;
+        }
+
+        .payment-method.selected {
+            border-color: #6e8efb;
+            background: #f0f4ff;
+        }
+
+        .payment-method img {
+            height: 40px;
+            margin-bottom: 0.5rem;
+        }
+
+        .payment-details {
+            margin-top: 1rem;
+            display: none;
+        }
+
+        .payment-details.active {
+            display: block;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .confirm-btn {
+            width: 100%;
+            padding: 1rem;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: 600;
+            margin-top: 1rem;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .confirm-btn:hover {
+            background: #218838;
+        }
+
+        /* Success Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .modal-content {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            max-width: 500px;
+            text-align: center;
+        }
+
+        .modal h2 {
+            margin-bottom: 1rem;
+            color: #28a745;
+        }
+
+        .modal p {
+            margin-bottom: 2rem;
+            color: #666;
+        }
+
+        .modal-btn {
+            padding: 0.8rem 2rem;
+            background: #6e8efb;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .turf-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .booking-header {
+                flex-direction: column;
+            }
+
+            .booking-image {
+                width: 100%;
+            }
+
+            .payment-options {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container" id="loginSection">
+        <div class="login-form">
+            <h1>Welcome to Turf Booker</h1>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter your username">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password">
+            </div>
+            <button class="login-btn" id="loginBtn">Login</button>
+        </div>
+    </div>
+
+    <div class="dashboard" id="dashboard">
+        <div class="header">
+            <h1>Available Turfs</h1>
+            <div class="user-info">
+                <span id="loggedInUser"></span>
+                <button class="logout-btn" id="logoutBtn">Logout</button>
+            </div>
+        </div>
+
+        <div class="turf-grid" id="turfGrid">
+            </div>
+    </div>
+
+    <div class="booking-page" id="bookingPage">
+        <button class="back-btn" id="backBtn">← Back to Turfs</button>
+        
+        <div class="booking-header">
+            <img id="bookingImage" src="" alt="Turf Image" class="booking-image">
+            <div class="booking-details">
+                <h2 id="bookingTitle"></h2>
+                <p id="bookingLocation"></p>
+                <p id="bookingDescription"></p>
+                <div class="booking-price" id="bookingPrice"></div>
+                <div class="availability">Available: Monday-Sunday, 6AM-10PM</div>
+            </div>
+        </div>
+
+        <div class="reviews-section">
+            <h3>Customer Reviews</h3>
+            <div id="reviewsContainer">
+                </div>
+        </div>
+
+        <div class="payment-section">
+            <h3>Booking Details</h3>
+            
+            <div class="form-group">
+                <label for="bookingDate">Select Date</label>
+                <input type="date" id="bookingDate">
+            </div>
+            
+            <div class="form-group">
+                <label for="bookingTime">Select Time Slot</label>
+                <select id="bookingTime" class="form-control">
+                    <option value="">Select a time slot</option>
+                    <option value="06:00-08:00">6:00 AM - 8:00 AM</option>
+                    <option value="08:00-10:00">8:00 AM - 10:00 AM</option>
+                    <option value="10:00-12:00">10:00 AM - 12:00 PM</option>
+                    <option value="12:00-14:00">12:00 PM - 2:00 PM</option>
+                    <option value="14:00-16:00">2:00 PM - 4:00 PM</option>
+                    <option value="16:00-18:00">4:00 PM - 6:00 PM</option>
+                    <option value="18:00-20:00">6:00 PM - 8:00 PM</option>
+                    <option value="20:00-22:00">8:00 PM - 10:00 PM</option>
+                </select>
+            </div>
+
+            <h3 style="margin-top: 2rem;">Payment Method</h3>
+            <div class="payment-options">
+                <div class="payment-method" data-method="credit">
+                    <img src="https://cdn-icons-png.flaticon.com/512/179/179457.png" alt="Credit Card">
+                    <div>Credit Card</div>
+                </div>
+                <div class="payment-method" data-method="paypal">
+                    <img src="https://cdn-icons-png.flaticon.com/512/174/174861.png" alt="PayPal">
+                    <div>PayPal</div>
+                </div>
+                <div class="payment-method" data-method="upi">
+                    <img src="https://cdn-icons-png.flaticon.com/512/825/825454.png" alt="UPI">
+                    <div>UPI</div>
+                </div>
+            </div>
+
+            <div id="creditCardDetails" class="payment-details">
+                <div class="form-group">
+                    <label for="cardNumber">Card Number</label>
+                    <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456">
+                </div>
+                <div class="form-group">
+                    <label for="cardName">Cardholder Name</label>
+                    <input type="text" id="cardName" placeholder="John Doe">
+                </div>
+                <div style="display: flex; gap: 1rem;">
+                    <div class="form-group" style="flex: 1;">
+                        <label for="expiryDate">Expiry Date</label>
+                        <input type="text" id="expiryDate" placeholder="MM/YY">
+                    </div>
+                    <div class="form-group" style="flex: 1;">
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" placeholder="123">
+                    </div>
+                </div>
+            </div>
+
+            <div id="paypalDetails" class="payment-details">
+                <p>You will be redirected to PayPal to complete your payment</p>
+            </div>
+
+            <div id="upiDetails" class="payment-details">
+                <div class="form-group">
+                    <label for="upiId">UPI ID</label>
+                    <input type="text" id="upiId" placeholder="yourname@upi">
+                </div>
+            </div>
+
+            <button class="confirm-btn" id="confirmBtn">Confirm Booking</button>
+        </div>
+    </div>
+
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <h2>Booking Confirmed!</h2>
+            <p>Your turf booking has been successfully confirmed. A confirmation has been sent to your email.</p>
+            <button class="modal-btn" id="modalBtn">Back to Turfs</button>
+        </div>
+    </div>
+
+    <script>
+        // Sample data
+        const turfs = [
+            {
+                id: 1,
+                name: "Premium Football Turf",
+                location: "Downtown Sports Complex",
+                price: "$50/hour",
+                image: "https://images.unsplash.com/photo-1574629810360-7efbbe195018?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+                description: "FIFA approved artificial turf with floodlights",
+                reviews: [
+                    {
+                        user: "Alex Johnson",
+                        rating: 5,
+                        date: "2023-05-15",
+                        content: "Excellent turf with perfect maintenance. The lighting is great for evening games."
+                    },
+                    {
+                        user: "Sarah Williams",
+                        rating: 4,
+                        date: "2023-04-22",
+                        content: "Good quality turf, but a bit expensive compared to others in the area."
+                    },
+                    {
+                        user: "Michael Brown",
+                        rating: 5,
+                        date: "2023-03-10",
+                        content: "Best football turf in the city! Never had any issues with bookings."
+                    }
+                ]
+            },
+            {
+                id: 2,
+                name: "Cricket Ground",
+                location: "Central Park",
+                price: "$70/hour",
+                image: "https://images.unsplash.com/photo-1531415074968-036ba1b575da?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+                description: "Well-maintained cricket pitch with practice nets",
+                reviews: [
+                    {
+                        user: "Raj Patel",
+                        rating: 4,
+                        date: "2023-06-18",
+                        content: "Great pitch for weekend matches. The practice nets are very useful."
+                    },
+                    {
+                        user: "Emily Chen",
+                        rating: 3,
+                        date: "2023-05-30",
+                        content: "Good facilities but the ground could be better maintained."
+                    }
+                ]
+            },
+            {
+                id: 3,
+                name: "Multi-Sport Turf",
+                location: "Westside Arena",
+                price: "$45/hour",
+                image: "https://images.unsplash.com/photo-1570498839593-e565b39455fc?q=80&w=1035&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+                description: "Versatile turf suitable for football, hockey, and more",
+                reviews: [
+                    {
+                        user: "David Wilson",
+                        rating: 5,
+                        date: "2023-07-05",
+                        content: "Perfect for our weekly football matches. The surface is excellent."
+                    },
+                    {
+                        user: "Lisa Taylor",
+                        rating: 4,
+                        date: "2023-06-28",
+                        content: "Good value for money. The turf is well maintained."
+                    }
+                ]
+            }
+        ];
+
+        // DOM Elements
+        const loginSection = document.getElementById('loginSection');
+        const dashboard = document.getElementById('dashboard');
+        const bookingPage = document.getElementById('bookingPage');
+        const loginBtn = document.getElementById('loginBtn');
+        const logoutBtn = document.getElementById('logoutBtn');
+        const backBtn = document.getElementById('backBtn');
+        const confirmBtn = document.getElementById('confirmBtn');
+        const modalBtn = document.getElementById('modalBtn');
+        const usernameInput = document.getElementById('username');
+        const passwordInput = document.getElementById('password');
+        const loggedInUser = document.getElementById('loggedInUser');
+        const turfGrid = document.getElementById('turfGrid');
+        const reviewsContainer = document.getElementById('reviewsContainer');
+        const successModal = document.getElementById('successModal');
+        const paymentMethods = document.querySelectorAll('.payment-method');
+        const paymentDetails = document.querySelectorAll('.payment-details');
+
+        // Current booking state
+        let currentTurf = null;
+
+        // --- Core Functions ---
+
+        // Login Functionality
+        loginBtn.addEventListener('click', () => {
+            const username = usernameInput.value.trim();
+            const password = passwordInput.value.trim();
+
+            // Simple validation: should have a value
+            if (username && password) {
+                // FIX: Corrected string interpolation syntax
+                loggedInUser.textContent = `Welcome, ${username}`; 
+                
+                // Transition to dashboard
+                loginSection.style.display = 'none';
+                dashboard.style.display = 'block';
+                renderTurfs();
+            } else {
+                alert('Please enter both username and password');
+            }
+        });
+
+        // Logout Functionality
+        logoutBtn.addEventListener('click', () => {
+            loginSection.style.display = 'flex';
+            dashboard.style.display = 'none';
+            bookingPage.style.display = 'none';
+            usernameInput.value = '';
+            passwordInput.value = '';
+        });
+
+        // Back to Turfs
+        backBtn.addEventListener('click', () => {
+            bookingPage.style.display = 'none';
+            dashboard.style.display = 'block';
+        });
+
+        // Modal Button (on booking success)
+        modalBtn.addEventListener('click', () => {
+            successModal.style.display = 'none';
+            bookingPage.style.display = 'none';
+            dashboard.style.display = 'block';
+        });
+
+        // Payment Method Selection
+        paymentMethods.forEach(method => {
+            method.addEventListener('click', function() {
+                // Remove selected class from all methods
+                paymentMethods.forEach(m => m.classList.remove('selected'));
+                
+                // Add selected class to clicked method
+                this.classList.add('selected');
+                
+                // Hide all payment details
+                paymentDetails.forEach(detail => detail.classList.remove('active'));
+                
+                // Show selected payment details
+                const methodType = this.getAttribute('data-method');
+                document.getElementById(`${methodType}Details`).classList.add('active');
+            });
+        });
+
+        // Confirm Booking
+        confirmBtn.addEventListener('click', () => {
+            const date = document.getElementById('bookingDate').value;
+            const time = document.getElementById('bookingTime').value;
+            const selectedMethod = document.querySelector('.payment-method.selected');
+            
+            if (!date || !time) {
+                alert('Please select date and time slot');
+                return;
+            }
+            
+            if (!selectedMethod) {
+                alert('Please select a payment method');
+                return;
+            }
+            
+            // Validate payment details based on selected method
+            const methodType = selectedMethod.getAttribute('data-method');
+            let isValid = true;
+            
+            if (methodType === 'credit') {
+                const cardNumber = document.getElementById('cardNumber').value;
+                const cardName = document.getElementById('cardName').value;
+                const expiryDate = document.getElementById('expiryDate').value;
+                const cvv = document.getElementById('cvv').value;
+                
+                if (!cardNumber || !cardName || !expiryDate || !cvv) {
+                    isValid = false;
+                    alert('Please fill all credit card details');
+                }
+            } else if (methodType === 'upi') {
+                const upiId = document.getElementById('upiId').value;
+                if (!upiId) {
+                    isValid = false;
+                    alert('Please enter your UPI ID');
+                }
+            }
+            
+            if (isValid) {
+                // Simulate a successful booking process
+                successModal.style.display = 'flex';
+                
+                // Optional: Reset booking form fields after successful booking
+                document.getElementById('bookingDate').value = '';
+                document.getElementById('bookingTime').value = '';
+                selectedMethod.classList.remove('selected');
+                paymentDetails.forEach(detail => detail.classList.remove('active'));
+            }
+        });
+
+        // --- Rendering Functions ---
+
+        // Render Turf Cards
+        function renderTurfs() {
+            turfGrid.innerHTML = '';
+            
+            turfs.forEach(turf => {
+                const turfCard = document.createElement('div');
+                turfCard.className = 'turf-card';
+                
+                turfCard.innerHTML = `
+                    <img src="${turf.image}" alt="${turf.name}" class="turf-image">
+                    <div class="turf-info">
+                        <h3>${turf.name}</h3>
+                        <p><strong>Location:</strong> ${turf.location}</p>
+                        <p>${turf.description}</p>
+                        <span class="turf-price">${turf.price}</span>
+                        <button class="book-btn" data-id="${turf.id}">Book Now</button>
+                    </div>
+                `;
+                
+                turfGrid.appendChild(turfCard);
+            });
+
+            // Add event listeners to book buttons
+            document.querySelectorAll('.book-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const turfId = this.getAttribute('data-id');
+                    showBookingPage(turfId);
+                });
+            });
+        }
+
+        // Show Booking Page
+        function showBookingPage(turfId) {
+            currentTurf = turfs.find(t => t.id == turfId);
+            
+            if (!currentTurf) return;
+            
+            // Update booking page content
+            document.getElementById('bookingImage').src = currentTurf.image;
+            document.getElementById('bookingTitle').textContent = currentTurf.name;
+            document.getElementById('bookingLocation').textContent = currentTurf.location;
+            document.getElementById('bookingDescription').textContent = currentTurf.description;
+            document.getElementById('bookingPrice').textContent = currentTurf.price;
+            
+            // Render reviews
+            renderReviews(currentTurf.reviews);
+            
+            // Set minimum date to today
+            const today = new Date().toISOString().split('T')[0];
+            document.getElementById('bookingDate').min = today;
+            
+            // BONUS: Select the first payment method and show its details by default for better UX
+            if (paymentMethods.length > 0) {
+                paymentMethods[0].click();
+            }
+            
+            // Show booking page
+            dashboard.style.display = 'none';
+            bookingPage.style.display = 'block';
+        }
+
+        // Render Reviews
+        function renderReviews(reviews) {
+            reviewsContainer.innerHTML = '';
+            
+            if (reviews.length === 0) {
+                reviewsContainer.innerHTML = '<p>No reviews yet for this turf.</p>';
+                return;
+            }
+            
+            reviews.forEach(review => {
+                const reviewCard = document.createElement('div');
+                reviewCard.className = 'review-card';
+                
+                // Create star rating
+                let stars = '';
+                for (let i = 0; i < 5; i++) {
+                    stars += i < review.rating ? '★' : '☆';
+                }
+                
+                reviewCard.innerHTML = `
+                    <div class="review-header">
+                        <span class="review-user">${review.user}</span>
+                        <span class="review-rating">${stars}</span>
+                        <span class="review-date">${review.date}</span>
+                    </div>
+                    <div class="review-content">${review.content}</div>
+                `;
+                
+                reviewsContainer.appendChild(reviewCard);
+            });
+        }
+
+        // Initialize - hide dashboard and booking page by default
+        dashboard.style.display = 'none';
+        bookingPage.style.display = 'none';
+    </script>
+</body>
+</html>
