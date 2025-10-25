@@ -28,8 +28,3 @@ It provides hands-on experience with cryptographic operations, secure key manage
 | **Base64** | Encodes/decodes encrypted & signed data |
 
 ---
-
-## 🧠 Author
-
-Snehal Baramade
-✨ Frontend Developer | Creative Designer | Tech Enthusiast
