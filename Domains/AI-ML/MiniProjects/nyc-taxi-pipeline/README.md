@@ -1,4 +1,3 @@
-
 # NYC Taxi Data Pipeline (Beginner)
 
 **Contributor:** AksharGoyal
@@ -6,7 +5,7 @@
 ## Overview
 This project demonstrates a small, production-like ETL pipeline for NYC Yellow Taxi trip data. It downloads monthly parquet files, performs light cleaning/transformation, and loads the cleaned CSV into a DuckDB file. The pipeline is orchestrated with Prefect and organized into modular extract / transform / load tasks so components can be reused or tested independently.  
 
-# Tech stack
+## Tech stack
 - Python >=3.12
 - Prefect (Orchestration framework used to define tasks and flows, handle retries, caching, and logging)
 - pyarrow / fastparquet (parquet engine)
