@@ -1,0 +1,456 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Random Kind Act Generator</title>
+<style>
+  :root{
+    --bg1: #f7f8ff;
+    --bg2: #fff7fb;
+    --card: #ffffff;
+    --muted: #6b7280;
+    --accent: #7dd3fc;
+    --radius: 14px;
+    --shadow: 0 10px 30px rgba(16,24,40,0.08);
+    --glass: rgba(255,255,255,0.7);
+  }
+
+  /* Page */
+  html,body{height:100%;margin:0;font-family:Inter,ui-sans-serif,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;}
+  body{
+    background: linear-gradient(135deg,var(--bg1) 0%, var(--bg2) 100%);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:28px;
+    color:#0f172a;
+  }
+
+  /* App container */
+  .app {
+    width:100%;
+    max-width:820px;
+    border-radius:var(--radius);
+    background: linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.85));
+    padding:28px;
+    box-shadow:var(--shadow);
+    backdrop-filter: blur(6px) saturate(1.05);
+    border: 1px solid rgba(15,23,42,0.04);
+  }
+
+  header { display:flex; align-items:center; gap:16px; margin-bottom:18px; }
+  .logo {
+    width:56px;height:56px;border-radius:12px;
+    background: linear-gradient(135deg,#ffd7e2,#dbe7ff 60%, #e8f7e7);
+    display:grid;place-items:center;font-weight:700;color:#153243;
+    box-shadow: 0 6px 18px rgba(15,23,42,0.06);
+    font-size:18px;
+  }
+  h1 { font-size:20px;margin:0; }
+  p.lead { margin:0;color:var(--muted); font-size:13px; }
+
+  /* Main area */
+  .main { display:grid; grid-template-columns: 1fr 320px; gap:18px; align-items:start; }
+  @media (max-width:900px){ .main { grid-template-columns: 1fr; } }
+
+  /* Card with act */
+  .card {
+    background:var(--card);
+    border-radius:12px;
+    padding:22px;
+    min-height:220px;
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+    box-shadow: 0 6px 18px rgba(15,23,42,0.04);
+    position:relative;
+    overflow:hidden;
+  }
+
+  .act-stage {
+    flex:1;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+
+  .act {
+    max-width:100%;
+    text-align:center;
+    padding:18px 20px;
+    border-radius:12px;
+    font-size:20px;
+    line-height:1.3;
+    color:#07203a;
+    background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(250,250,255,0.95));
+    box-shadow: 0 8px 20px rgba(16,24,40,0.06);
+    transform-origin:center;
+    /* start hidden */
+    opacity:0;
+    transform: translateY(12px);
+    transition: transform .45s cubic-bezier(.2,.9,.3,1), opacity .35s ease;
+  }
+
+  .act.show { opacity:1; transform: translateY(0); }
+
+  .meta-row { display:flex; gap:8px; align-items:center; justify-content:center; flex-wrap:wrap; color:var(--muted); font-size:13px; }
+
+  /* buttons */
+  .controls { display:flex; gap:10px; justify-content:center; flex-wrap:wrap; }
+  .btn {
+    background: linear-gradient(180deg,#7dd3fc,#60a5fa);
+    border:none;color:#03314b;padding:10px 14px;border-radius:10px;font-weight:600;cursor:pointer;
+    box-shadow: 0 8px 20px rgba(96,165,250,0.12);
+    transition: transform .16s ease, box-shadow .16s ease;
+  }
+  .btn.secondary { background:transparent;border:1px solid rgba(15,23,42,0.06); color:var(--muted); box-shadow:none; }
+  .btn:active { transform: translateY(2px) scale(.995); }
+
+  /* side panel */
+  aside.panel {
+    background:linear-gradient(180deg, rgba(250,250,255,0.85), rgba(255,255,255,0.9));
+    padding:14px;border-radius:12px;border:1px solid rgba(15,23,42,0.03);
+  }
+  aside h3{ margin:0 0 8px 0; font-size:15px; color:#123; }
+  .toggle { display:flex; gap:8px; align-items:center; margin-bottom:10px; }
+  .small { font-size:13px; color:var(--muted); }
+
+  /* saved banner */
+  .saved-banner {
+    position:absolute; left:18px; right:18px; top:18px;
+    background: linear-gradient(90deg, rgba(221,255,238,0.95), rgba(255,255,255,0.9));
+    border-radius:10px; padding:8px 12px; display:flex; justify-content:space-between; gap:12px;
+    align-items:center; box-shadow: 0 6px 18px rgba(16,24,40,0.04);
+    font-size:13px; color:#065f46;
+  }
+
+  /* contributors note */
+  .contributors {
+    margin-top:12px;
+    font-size:13px;color:var(--muted);
+    background:rgba(15,23,42,0.02);padding:8px;border-radius:8px;
+  }
+
+  /* gentle animations */
+  .pulse {
+    animation: pulse 2.4s ease-in-out infinite;
+  }
+  @keyframes pulse {
+    0%{ transform:scale(1); } 50%{ transform:scale(1.02); } 100%{ transform:scale(1); }
+  }
+
+  footer { margin-top:14px; text-align:center; color:var(--muted); font-size:13px; }
+
+</style>
+</head>
+<body>
+  <div class="app" role="application" aria-label="Random Kind Act Generator">
+    <header>
+      <div class="logo">RK</div>
+      <div>
+        <h1>Random Kind Act Generator</h1>
+        <p class="lead">Brighten someone's day — one small act at a time ✨</p>
+      </div>
+    </header>
+
+    <div class="main">
+      <!-- Main card showing acts -->
+      <section class="card" aria-live="polite">
+        <!-- Saved banner (only visible if saved for today) -->
+        <div id="savedBanner" class="saved-banner" style="display:none;">
+          <div id="savedText">Today's act saved ✔️</div>
+          <div style="display:flex;gap:8px;">
+            <button class="btn secondary" id="clearSavedBtn" title="Clear today's saved act">Clear</button>
+          </div>
+        </div>
+
+        <div class="act-stage">
+          <div id="act" class="act" tabindex="0">Loading...</div>
+        </div>
+
+        <div class="meta-row">
+          <div id="dateText" class="small"></div>
+        </div>
+
+        <div class="controls">
+          <button class="btn pulse" id="newBtn" title="Show a new kind act">✨ New Act</button>
+          <button class="btn secondary" id="saveBtn" title="Save this act as today's act">💾 Save Today's Act</button>
+          <button class="btn secondary" id="randomWithEmoji" title="Show a random act with an extra emoji">🎲 With Emoji</button>
+        </div>
+
+        <footer>
+          <div class="small">Tip: Toggle "Save today's act" to keep one act per day. Contributors: add acts in the JS array.</div>
+        </footer>
+      </section>
+
+      <!-- Side panel -->
+      <aside class="panel" aria-label="Options and Contributors">
+        <h3>Options</h3>
+        <div class="toggle">
+          <input type="checkbox" id="autoSave" />
+          <label for="autoSave" class="small">Auto-save today's act when generated</label>
+        </div>
+
+        <div style="margin-top:8px;">
+          <strong>Saved history</strong>
+          <div id="history" class="small" style="margin-top:8px;color:var(--muted)">No saved acts yet.</div>
+        </div>
+
+        <div class="contributors" aria-hidden="false">
+          <strong>Contributors</strong>
+          <p style="margin:6px 0 0 0">To add your own kind acts, open the script and add string items to the <code>acts</code> array. Example:</p>
+          <pre style="font-size:13px;background:rgba(0,0,0,0.03);padding:8px;border-radius:6px;margin-top:8px;">// Add acts here:
+const acts = [
+  "Leave a thank-you note for someone 😊",
+  "Buy tea for the person behind you ☕",
+  // ← add your act strings here
+];</pre>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+<script>
+/* -------------------------
+   Random Kind Act Generator
+   - Predefined 'acts' array below (contributors add here)
+   - Saves a single act per day in localStorage under key 'rka_saved'
+   ------------------------- */
+
+/* =========================
+   CONTRIBUTORS: add acts here
+   - Add plain strings (include emoji if you like)
+   - Keep each entry inside the array and comma-separated
+   Example: "Compliment a coworker 💬"
+   ========================= */
+const acts = [
+  "Leave a handwritten thank-you note for someone ✉️",
+  "Compliment a stranger's smile 😊",
+  "Buy a coffee for the person behind you ☕",
+  "Pick up litter in your local park 🧹",
+  "Share a positive playlist with a friend 🎧",
+  "Donate a book you loved to a library 📚",
+  "Text someone you appreciate and tell them why 💛",
+  "Pay for someone's parking or toll if possible 🚗",
+  "Bake or bring snacks to share with neighbors 🍪",
+  "Offer to help a colleague with a small task 🤝",
+  "Leave a generous tip for a service worker 💸",
+  "Plant a small flower or herb for the building 🌱",
+  "Leave a sticky note with an uplifting message 📝",
+  "Compliment a parent on how they're handling things 👏",
+  "Volunteer 30 minutes to a local helpline or shelter 🧡",
+  "Share an encouraging comment on a friend's post 💬",
+  "Return shopping carts in a parking lot 🛒",
+  "Give someone genuine eye contact and a listening ear 👂",
+  "Donate unused clothes to charity 🧥",
+  "Offer your seat to someone who needs it more 🪑"
+  // CONTRIBUTORS: add more acts here (keep them as strings)
+];
+
+/* =========================
+   Utility & DOM references
+   ========================= */
+const actEl = document.getElementById('act');
+const newBtn = document.getElementById('newBtn');
+const saveBtn = document.getElementById('saveBtn');
+const savedBanner = document.getElementById('savedBanner');
+const savedText = document.getElementById('savedText');
+const clearSavedBtn = document.getElementById('clearSavedBtn');
+const autoSaveChk = document.getElementById('autoSave');
+const historyEl = document.getElementById('history');
+const dateText = document.getElementById('dateText');
+const randomWithEmojiBtn = document.getElementById('randomWithEmoji');
+
+const STORAGE_KEY = 'rka_saved'; // stores {date: 'YYYY-MM-DD', act: '...'}
+const HISTORY_KEY = 'rka_history'; // simple array of saved acts for reference
+
+/* =========================
+   Date helpers
+   ========================= */
+function todayStr(){
+  const d = new Date();
+  const yyyy = d.getFullYear();
+  const mm = String(d.getMonth()+1).padStart(2,'0');
+  const dd = String(d.getDate()).padStart(2,'0');
+  return `${yyyy}-${mm}-${dd}`;
+}
+function niceDateString(){
+  return new Date().toLocaleDateString(undefined, { weekday: 'long', year:'numeric', month:'short', day:'numeric' });
+}
+
+/* =========================
+   Random selection and UI
+   ========================= */
+function randomAct(withExtraEmoji = false){
+  if (!acts.length) return "No acts available — add some in the script!";
+  const i = Math.floor(Math.random() * acts.length);
+  let val = acts[i];
+  if (withExtraEmoji){
+    // gentle random emoji add-on
+    const emojis = ['✨','🌸','💛','😊','🌟','🤝','☕','📚','🍪','🌱'];
+    val = `${emojis[Math.floor(Math.random()*emojis.length)]}  ${val}`;
+  }
+  return val;
+}
+
+let currentAct = null;
+
+/* animate and show act */
+function showAct(text, {saveIfAuto=false, markAsSaved=false} = {}){
+  // fade-out current
+  actEl.classList.remove('show');
+  // small delay to allow transition
+  setTimeout(()=>{
+    actEl.textContent = text;
+    actEl.classList.add('show');
+    dateText.textContent = `— ${niceDateString()} —`;
+    currentAct = text;
+
+    // if we should auto-save this as today's act
+    if (saveIfAuto && autoSaveChk.checked){
+      saveToday(text);
+    }
+    // if caller requested markAsSaved, show banner
+    if (markAsSaved) showSavedBanner(text);
+  }, 160);
+}
+
+/* =========================
+   Saving today's act (localStorage)
+   ========================= */
+function loadSaved(){
+  try{
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (!raw) return null;
+    const obj = JSON.parse(raw);
+    if (obj && obj.date === todayStr() && obj.act) return obj.act;
+    return null;
+  }catch(e){ console.error(e); return null; }
+}
+
+function saveToday(actText){
+  try{
+    const obj = { date: todayStr(), act: actText };
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(obj));
+    // add to history
+    const histRaw = localStorage.getItem(HISTORY_KEY);
+    let hist = [];
+    if (histRaw) hist = JSON.parse(histRaw);
+    hist.unshift({ date: obj.date, act: obj.act });
+    // keep history limited to 50 entries
+    if (hist.length > 50) hist = hist.slice(0,50);
+    localStorage.setItem(HISTORY_KEY, JSON.stringify(hist));
+    showSavedBanner(actText);
+    renderHistory();
+  }catch(e){ console.error("saveToday error",e); }
+}
+
+function clearToday(){
+  try{
+    const raw = localStorage.getItem(STORAGE_KEY);
+    if (!raw) return;
+    const obj = JSON.parse(raw);
+    if (obj && obj.date === todayStr()){
+      localStorage.removeItem(STORAGE_KEY);
+      savedBanner.style.display = 'none';
+      // after clearing we want to allow new acts
+      showAct(randomAct(), {saveIfAuto:false});
+    }
+    renderHistory();
+  }catch(e){ console.error(e); }
+}
+
+/* show saved banner and disable new when appropriate */
+function showSavedBanner(actText){
+  savedText.textContent = `Today's act saved — ${actText}`;
+  savedBanner.style.display = 'flex';
+}
+
+/* render saved history (simple) */
+function renderHistory(){
+  try{
+    const histRaw = localStorage.getItem(HISTORY_KEY);
+    if (!histRaw){ historyEl.textContent = 'No saved acts yet.'; return; }
+    const hist = JSON.parse(histRaw);
+    if (!Array.isArray(hist) || hist.length === 0){ historyEl.textContent = 'No saved acts yet.'; return; }
+    // show last 5 entries
+    const items = hist.slice(0,5).map(h => `${h.date}: ${h.act}`);
+    historyEl.innerHTML = items.map(i => `<div style="margin-bottom:6px;">${i}</div>`).join('');
+  }catch(e){ console.error(e); historyEl.textContent = 'Error loading history'; }
+}
+
+/* =========================
+   Event bindings
+   ========================= */
+newBtn.addEventListener('click', () => {
+  // if today's act is already saved, and auto-save is on, we should not generate a new one
+  const saved = loadSaved();
+  if (saved && autoSaveChk.checked){
+    // only show message; do not overwrite
+    showAct(saved);
+    showSavedBanner(saved);
+    return;
+  }
+  const act = randomAct(false);
+  showAct(act, { saveIfAuto: true });
+});
+
+randomWithEmojiBtn.addEventListener('click', () => {
+  const saved = loadSaved();
+  if (saved && autoSaveChk.checked){
+    showAct(saved);
+    showSavedBanner(saved);
+    return;
+  }
+  const act = randomAct(true);
+  showAct(act, { saveIfAuto: true });
+});
+
+saveBtn.addEventListener('click', () => {
+  if (!currentAct) return;
+  saveToday(currentAct);
+});
+
+clearSavedBtn.addEventListener('click', () => {
+  if (!confirm("Clear today's saved act?")) return;
+  clearToday();
+});
+
+/* keyboard: space => new */
+window.addEventListener('keydown', (e) => {
+  if (e.code === 'Space' && document.activeElement === document.body){
+    e.preventDefault();
+    newBtn.click();
+  }
+});
+
+/* =========================
+   Initialization
+   ========================= */
+function init(){
+  renderHistory();
+  const saved = loadSaved();
+  if (saved){
+    // show saved act and banner
+    showAct(saved);
+    showSavedBanner(saved);
+  } else {
+    // show a random starter act
+    showAct(randomAct());
+  }
+
+  // read initial auto-save from localStorage if present
+  const auto = localStorage.getItem('rka_auto_save');
+  if (auto === '1') autoSaveChk.checked = true;
+  autoSaveChk.addEventListener('change', () => {
+    localStorage.setItem('rka_auto_save', autoSaveChk.checked ? '1' : '0');
+  });
+}
+
+/* run init */
+init();
+
+</script>
+</body>
+</html>
