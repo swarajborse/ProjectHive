@@ -2,8 +2,10 @@
 --------------------------------------------------------------
 LeetCode Problem: 1679. Max Number of K-Sum Pairs
 Difficulty: Medium
+Topics: Array Hash Table Two PointersSorting
 Time complexity: O(NlogN)
 Space complexity: O(1)
+Contibutor:- Utsav Ojha
 --------------------------------------------------------------
 
 🧩 Problem Statement:
