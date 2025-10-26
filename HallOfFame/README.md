@@ -150,13 +150,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/kayode96-max.png" width="100" height="100" style="border-radius: 50%;" alt="kayode96-max"/>
+<img src="https://github.com/AksharGoyal.png" width="100" height="100" style="border-radius: 50%;" alt="AksharGoyal"/>
 
-**[@kayode96-max](https://github.com/kayode96-max)**
+**[@AksharGoyal](https://github.com/AksharGoyal)**
 
-*Contributions: 3 PRs across 1 domain(s)*
+*Contributions: 3 PRs across 2 domain(s)*
 
-*Domains: Frontend*
+*Domains: Backend, cli*
 
 </div>
 
@@ -166,13 +166,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/AksharGoyal.png" width="100" height="100" style="border-radius: 50%;" alt="AksharGoyal"/>
+<img src="https://github.com/anujaugale617.png" width="100" height="100" style="border-radius: 50%;" alt="anujaugale617"/>
 
-**[@AksharGoyal](https://github.com/AksharGoyal)**
+**[@anujaugale617](https://github.com/anujaugale617)**
 
-*Contributions: 3 PRs across 2 domain(s)*
+*Contributions: 3 PRs across 1 domain(s)*
 
-*Domains: Backend, cli*
+*Domains: Frontend*
 
 </div>
 
