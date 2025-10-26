@@ -54,13 +54,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/shr128.png" width="100" height="100" style="border-radius: 50%;" alt="shr128"/>
+<img src="https://github.com/Ansh-1019.png" width="100" height="100" style="border-radius: 50%;" alt="Ansh-1019"/>
 
-**[@shr128](https://github.com/shr128)**
+**[@Ansh-1019](https://github.com/Ansh-1019)**
 
-*Contributions: 6 PRs across 1 domain(s)*
+*Contributions: 6 PRs across 4 domain(s)*
 
-*Domains: Frontend*
+*Domains: CompetitiveProgramming, FullStack, AI-ML, Backend*
 
 </div>
 
@@ -70,9 +70,9 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/Aaditya-2407.png" width="100" height="100" style="border-radius: 50%;" alt="Aaditya-2407"/>
+<img src="https://github.com/shr128.png" width="100" height="100" style="border-radius: 50%;" alt="shr128"/>
 
-**[@Aaditya-2407](https://github.com/Aaditya-2407)**
+**[@shr128](https://github.com/shr128)**
 
 *Contributions: 6 PRs across 1 domain(s)*
 
@@ -86,13 +86,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/AksharGoyal.png" width="100" height="100" style="border-radius: 50%;" alt="AksharGoyal"/>
+<img src="https://github.com/Aaditya-2407.png" width="100" height="100" style="border-radius: 50%;" alt="Aaditya-2407"/>
 
-**[@AksharGoyal](https://github.com/AksharGoyal)**
+**[@Aaditya-2407](https://github.com/Aaditya-2407)**
 
-*Contributions: 5 PRs across 3 domain(s)*
+*Contributions: 6 PRs across 1 domain(s)*
 
-*Domains: AI-ML, Backend, cli*
+*Domains: Frontend*
 
 </div>
 
@@ -134,13 +134,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/Ansh-1019.png" width="100" height="100" style="border-radius: 50%;" alt="Ansh-1019"/>
+<img src="https://github.com/AksharGoyal.png" width="100" height="100" style="border-radius: 50%;" alt="AksharGoyal"/>
 
-**[@Ansh-1019](https://github.com/Ansh-1019)**
+**[@AksharGoyal](https://github.com/AksharGoyal)**
 
-*Contributions: 4 PRs across 2 domain(s)*
+*Contributions: 4 PRs across 3 domain(s)*
 
-*Domains: AI-ML, Backend*
+*Domains: AI-ML, Backend, cli*
 
 </div>
 
