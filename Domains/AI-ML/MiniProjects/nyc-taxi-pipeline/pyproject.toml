@@ -1,0 +1,29 @@
+[project]
+name = "nyc-taxi-pipeline"
+version = "0.1.0"
+description = "Beginner NYC Taxi ETL pipeline with uv, Prefect, and DuckDB"
+authors = [{name = "AksharGoyal"}]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "duckdb>=1.4.1",
+    "pandas>=2.3.3",
+    "prefect>=3.4.25",
+    "pyarrow>=22.0.0",
+    "pytest>=8.4.2",
+    "requests>=2.32.5",
+    "sqlalchemy>=2.0.44",
+]
+
+[tool.uv]
+# uv will manage dependencies and create uv.lock when you run uv add / uv sync
+
+[dependency-groups]
+dev = [
+    "duckdb>=1.4.1",
+    "pandas>=2.3.3",
+    "prefect>=3.4.25",
+    "pytest>=8.4.2",
+    "requests>=2.32.5",
+]
+
