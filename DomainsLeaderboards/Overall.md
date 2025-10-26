@@ -20,7 +20,7 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | 8 | [@SOHAM-GADEKAR](https://github.com/SOHAM-GADEKAR) | 4 | 2 (Frontend, IoT) | Recent |
 | 9 | [@AksharGoyal](https://github.com/AksharGoyal) | 3 | 2 (Backend, cli) | Recent |
 | 10 | [@anujaugale617](https://github.com/anujaugale617) | 3 | 1 (Frontend) | Recent |
-| 11 | [@supritimishra](https://github.com/supritimishra) | 2 | 2 (CompetitiveProgramming, Frontend) | Recent |
+| 11 | [@supritimishra](https://github.com/supritimishra) | 2 | 1 (Frontend) | Recent |
 | 12 | [@vatsalgupta2004](https://github.com/vatsalgupta2004) | 2 | 2 (AI-ML, Frontend) | Recent |
 | 13 | [@Mmadan128](https://github.com/Mmadan128) | 2 | 1 (AI-ML) | Recent |
 | 14 | [@Dhiraj201226](https://github.com/Dhiraj201226) | 2 | 2 (AI-ML, Frontend) | Recent |
@@ -39,22 +39,15 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | 27 | [@GayatriVitkarcd](https://github.com/GayatriVitkarcd) | 1 | 1 (Frontend) | Recent |
 | 28 | [@SanjeevDeori](https://github.com/SanjeevDeori) | 1 | 1 (Frontend) | Recent |
 | 29 | [@Tanmay-Kad](https://github.com/Tanmay-Kad) | 1 | 1 (Frontend) | Recent |
-| 30 | [@jeturgavli](https://github.com/jeturgavli) | 1 | 1 (Frontend) | Recent |
-| 31 | [@Tanushri1307](https://github.com/Tanushri1307) | 1 | 1 (Frontend) | Recent |
-| 32 | [@Laikokwui](https://github.com/Laikokwui) | 1 | 1 (Frontend) | Recent |
-| 33 | [@ekxnsh22005](https://github.com/ekxnsh22005) | 1 | 1 (FullStack) | Recent |
+| 30 | [@utkarsh-sharma](https://github.com/utkarsh-sharma) | 1 | 1 (Frontend) | Recent |
+| 31 | [@jeturgavli](https://github.com/jeturgavli) | 1 | 1 (Frontend) | Recent |
+| 32 | [@Tanushri1307](https://github.com/Tanushri1307) | 1 | 1 (Frontend) | Recent |
+| 33 | [@Laikokwui](https://github.com/Laikokwui) | 1 | 1 (Frontend) | Recent |
+| 34 | [@ekxnsh22005](https://github.com/ekxnsh22005) | 1 | 1 (FullStack) | Recent |
 
 ---
 
 ## 📊 Domain Breakdown
-
-### CompetitiveProgramming
-
-| Contributor | Contributions |
-|-------------|---------------|
-| [@snehal492006](https://github.com/snehal492006) | 4 |
-| [@GayatriVitkar](https://github.com/GayatriVitkar) | 2 |
-| [@supritimishra](https://github.com/supritimishra) | 1 |
 
 ### Frontend
 
@@ -66,6 +59,7 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | [@snehal492006](https://github.com/snehal492006) | 3 |
 | [@anujaugale617](https://github.com/anujaugale617) | 3 |
 | [@SOHAM-GADEKAR](https://github.com/SOHAM-GADEKAR) | 3 |
+| [@supritimishra](https://github.com/supritimishra) | 2 |
 | [@Mansi13-6](https://github.com/Mansi13-6) | 2 |
 | [@kayode96-max](https://github.com/kayode96-max) | 2 |
 | [@MeghPatel-007](https://github.com/MeghPatel-007) | 2 |
@@ -73,7 +67,6 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | [@Keron](https://github.com/Keron) | 2 |
 | [@Utkarsh-660](https://github.com/Utkarsh-660) | 2 |
 | [@alisha1510](https://github.com/alisha1510) | 2 |
-| [@supritimishra](https://github.com/supritimishra) | 1 |
 | [@vatsalgupta2004](https://github.com/vatsalgupta2004) | 1 |
 | [@Dhiraj201226](https://github.com/Dhiraj201226) | 1 |
 | [@star-lord1234](https://github.com/star-lord1234) | 1 |
@@ -82,6 +75,7 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | [@GayatriVitkarcd](https://github.com/GayatriVitkarcd) | 1 |
 | [@SanjeevDeori](https://github.com/SanjeevDeori) | 1 |
 | [@Tanmay-Kad](https://github.com/Tanmay-Kad) | 1 |
+| [@utkarsh-sharma](https://github.com/utkarsh-sharma) | 1 |
 | [@jeturgavli](https://github.com/jeturgavli) | 1 |
 | [@Tanushri1307](https://github.com/Tanushri1307) | 1 |
 | [@Laikokwui](https://github.com/Laikokwui) | 1 |
@@ -172,6 +166,13 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | Contributor | Contributions |
 |-------------|---------------|
 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 1 |
+
+### CompetitiveProgramming
+
+| Contributor | Contributions |
+|-------------|---------------|
+| [@snehal492006](https://github.com/snehal492006) | 4 |
+| [@GayatriVitkar](https://github.com/GayatriVitkar) | 2 |
 
 ### cli
 
