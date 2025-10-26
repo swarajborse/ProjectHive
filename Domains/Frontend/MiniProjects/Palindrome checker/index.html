@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Palindrome Checker | Interactive Tool</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-sync-alt"></i> Palindrome Checker</h1>
+            <p class="subtitle">Discover words and phrases that read the same forwards and backwards</p>
+        </header>
+
+        <main>
+            <div class="checker-card">
+                <div class="input-group">
+                    <input type="text" name="text" id="text-input" placeholder="Type your text here..." aria-label="Enter text to check for palindrome">
+                    <button id="check-btn" class="primary-btn">
+                        <i class="fas fa-check"></i> Check
+                    </button>
+                </div>
+                <div id="result" class="result-box" aria-live="polite"></div>
+            </div>
+
+            <section class="info-section">
+                <div class="info-card">
+                    <h2><i class="fas fa-question-circle"></i> What is a Palindrome?</h2>
+                    <p>A palindrome is a word, phrase, number, or sequence that reads the same forwards and backwards, ignoring spaces, punctuation, and capitalization.</p>
+                </div>
+
+                <div class="examples-card">
+                    <h2><i class="fas fa-lightbulb"></i> Examples</h2>
+                    <div class="examples-grid">
+                        <div class="example-item" onclick="setExample(this.textContent)">Racecar</div>
+                        <div class="example-item" onclick="setExample(this.textContent)">Madam</div>
+                        <div class="example-item" onclick="setExample(this.textContent)">Level</div>
+                        <div class="example-item" onclick="setExample(this.textContent)">A man, a plan, a canal, Panama</div>
+                        <div class="example-item" onclick="setExample(this.textContent)">Never odd or even</div>
+                        <div class="example-item" onclick="setExample(this.textContent)">Do geese see God?</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p> • <span id="char-count">0</span> characters typed</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
