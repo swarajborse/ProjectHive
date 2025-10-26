@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roman Numerals Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- <div class="container">
+        <h1>Roman Numerals Converter</h1>
+        <form id="converter-form">
+            <label for="number-input">Enter a number:</label>
+            <input type="number" id="number"  required>
+            <button type="button"  id="convert-btn">Convert</button>
+        </form>
+        <div id="output"></div>
+    </div> -->
+
+        <div class="container">
+            <header>
+                <h1><i class="fas fa-sort-numeric-up"></i> Roman Numerals Converter</h1>
+                <p class="subtitle">Convert numbers (1-3999) to Roman numerals instantly</p>
+            </header>
+            <main>
+                <div class="converter-card">
+                    <form id="converter-form" autocomplete="off" onsubmit="return false;">
+                        <div class="input-group">
+                            <input type="number" id="number" min="1" max="3999" placeholder="Enter a number (1-3999)" aria-label="Enter a number to convert" required>
+                            <button type="button" id="convert-btn" class="primary-btn"><i class="fas fa-exchange-alt"></i> Convert</button>
+                        </div>
+                    </form>
+                    <div id="output" class="result-box" aria-live="polite"></div>
+                </div>
+                <section class="info-section">
+                    <div class="info-card">
+                        <h2>How Roman Numerals Work</h2>
+                        <p>Roman numerals use combinations of letters from the Latin alphabet (I, V, X, L, C, D, M). Only numbers from 1 to 3999 are supported in this converter.</p>
+                    </div>
+                    <div class="examples-card">
+                        <h2>Examples</h2>
+                        <div class="examples-grid">
+                            <div class="example-item" onclick="setExample(4)">4 → IV</div>
+                            <div class="example-item" onclick="setExample(9)">9 → IX</div>
+                            <div class="example-item" onclick="setExample(58)">58 → LVIII</div>
+                            <div class="example-item" onclick="setExample(1994)">1994 → MCMXCIV</div>
+                            <div class="example-item" onclick="setExample(2023)">2023 → MMXXIII</div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer>
+                <p>Click an example to try it! • <span id="char-count">0</span> digits entered</p>
+            </footer>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
