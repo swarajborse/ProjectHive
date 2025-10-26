@@ -18,9 +18,9 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | 6 | [@Ogagaoghene](https://github.com/Ogagaoghene) | 5 | 1 (Backend) | Recent |
 | 7 | [@Ansh-1019](https://github.com/Ansh-1019) | 4 | 2 (AI-ML, Backend) | Recent |
 | 8 | [@SOHAM-GADEKAR](https://github.com/SOHAM-GADEKAR) | 4 | 2 (Frontend, IoT) | Recent |
-| 9 | [@AksharGoyal](https://github.com/AksharGoyal) | 3 | 2 (Backend, cli) | Recent |
-| 10 | [@anujaugale617](https://github.com/anujaugale617) | 3 | 1 (Frontend) | Recent |
-| 11 | [@kayode96-max](https://github.com/kayode96-max) | 2 | 1 (Frontend) | Recent |
+| 9 | [@kayode96-max](https://github.com/kayode96-max) | 3 | 1 (Frontend) | Recent |
+| 10 | [@AksharGoyal](https://github.com/AksharGoyal) | 3 | 2 (Backend, cli) | Recent |
+| 11 | [@anujaugale617](https://github.com/anujaugale617) | 3 | 1 (Frontend) | Recent |
 | 12 | [@vatsalgupta2004](https://github.com/vatsalgupta2004) | 2 | 2 (AI-ML, Frontend) | Recent |
 | 13 | [@Mmadan128](https://github.com/Mmadan128) | 2 | 1 (AI-ML) | Recent |
 | 14 | [@Dhiraj201226](https://github.com/Dhiraj201226) | 2 | 2 (AI-ML, Frontend) | Recent |
@@ -52,11 +52,11 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 |-------------|---------------|
 | [@shr128](https://github.com/shr128) | 6 |
 | [@Aaditya-2407](https://github.com/Aaditya-2407) | 6 |
+| [@kayode96-max](https://github.com/kayode96-max) | 3 |
 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 3 |
 | [@snehal492006](https://github.com/snehal492006) | 3 |
 | [@anujaugale617](https://github.com/anujaugale617) | 3 |
 | [@SOHAM-GADEKAR](https://github.com/SOHAM-GADEKAR) | 3 |
-| [@kayode96-max](https://github.com/kayode96-max) | 2 |
 | [@Mansi13-6](https://github.com/Mansi13-6) | 2 |
 | [@MeghPatel-007](https://github.com/MeghPatel-007) | 2 |
 | [@khyati262](https://github.com/khyati262) | 2 |
