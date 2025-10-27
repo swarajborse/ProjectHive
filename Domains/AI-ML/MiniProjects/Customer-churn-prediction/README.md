@@ -95,4 +95,35 @@ A simple ANN was built using Keras with the following configuration:
 
   * **batch_size:** [25, 32]
   * **epochs:** [100, 500]
-  * **optimizer:** [adam, rmspro
+  * **optimizer:** [adam, rmspro]
+ 
+  
+## Best Results Found:
+
+* batch_size: 25
+
+* epochs: 500
+
+* optimizer: rmsprop
+
+* Accuracy: 0.8545
+
+---
+## Tech Stack
+
+* Python
+
+* Keras (TensorFlow backend)
+
+* Scikit-learn
+
+* Pandas
+
+* NumPy
+
+---
+Notes
+
+* The project emphasizes reducing overfitting and improving model stability through cross-validation and dropout regularization.
+
+* GridSearchCV provided an optimized set of hyperparameters for better performance and consistency.
