@@ -122,7 +122,7 @@ A simple ANN was built using Keras with the following configuration:
 * NumPy
 
 ---
-Notes
+## Notes
 
 * The project emphasizes reducing overfitting and improving model stability through cross-validation and dropout regularization.
 
