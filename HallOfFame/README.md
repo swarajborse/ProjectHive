@@ -170,9 +170,9 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 **[@Utkarsh-660](https://github.com/Utkarsh-660)**
 
-*Contributions: 3 PRs across 2 domain(s)*
+*Contributions: 3 PRs across 1 domain(s)*
 
-*Domains: CompetitiveProgramming, Frontend*
+*Domains: Frontend*
 
 </div>
 
