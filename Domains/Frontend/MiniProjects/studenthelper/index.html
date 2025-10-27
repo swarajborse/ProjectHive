@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentSphere - All-in-One Student Platform</title>
+    <style>
+        :root {
+            --primary: #4361ee;
+            --secondary: #3f37c9;
+            --accent: #4cc9f0;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --success: #4CAF50;
+            --warning: #ff9e00;
+            --danger: #ef476f;
+            --gray: #6c757d;
+            --light-gray: #e9ecef;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f0f2f5;
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        header {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary);
+        }
+
+        .logo span {
+            color: var(--accent);
+        }
+
+        .logo i {
+            margin-right: 8px;
+            font-size: 1.8rem;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
+        .nav-links li {
+            margin-left: 1.5rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            transition: color 0.3s;
+            position: relative;
+            padding: 6px 0;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--primary);
+            transition: width 0.3s;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s;
+            border: none;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--secondary);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(67, 97, 238, 0.3);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        .hero {
+            padding: 5rem 0;
+            background: linear-gradient(135deg, #4361ee 0%, #3a0ca3 100%);
+            color: white;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .search-container {
+            display: flex;
+            margin: 2rem auto;
+            max-width: 600px;
+            border-radius: 50px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .search-container input {
+            flex: 1;
+            padding: 1rem 1.5rem;
+            border: none;
+            outline: none;
+            font-size: 1rem;
+        }
+
+        .search-container button {
+            padding: 1rem 1.5rem;
+            background-color: var(--accent);
+            color: white;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .search-container button:hover {
+            background-color: #3db4db;
+        }
+
+        .features {
+            padding: 5rem 0;
+            background-color: white;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title h2 {
+            font-size: 2.2rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .section-title p {
+            max-width: 700px;
+            margin: 0 auto;
+            color: var(--gray);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-icon {
+            width: 70px;
+            height: 70px;
+            margin: 0 auto 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-size: 1.8rem;
+            color: white;
+        }
+
+        .feature-icon.academic {
+            background-color: var(--primary);
+        }
+
+        .feature-icon.career {
+            background-color: var(--success);
+        }
+
+        .feature-icon.community {
+            background-color: var(--warning);
+        }
+
+        .feature-icon.housing {
+            background-color: var(--danger);
+        }
+
+        .feature-card h3 {
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .feature-card p {
+            color: var(--gray);
+            margin-bottom: 1.5rem;
+        }
+
+        .section {
+            padding: 5rem 0;
+        }
+
+        .section:nth-child(even) {
+            background-color: var(--light);
+        }
+
+        .section-content {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+        }
+
+        .section-image {
+            flex: 1;
+            max-width: 500px;
+        }
+
+        .section-image img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-text {
+            flex: 1;
+        }
+
+        .section-text h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary);
+        }
+
+        .section-text p {
+            margin-bottom: 1.5rem;
+            color: var(--gray);
+        }
+
+        .feature-list {
+            list-style: none;
+            margin-bottom: 1.5rem;
+        }
+
+        .feature-list li {
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: center;
+        }
+
+        .feature-list li::before {
+            content: '✓';
+            margin-right: 10px;
+            color: var(--success);
+            font-weight: bold;
+        }
+
+        .testimonials {
+            background-color: var(--primary);
+            color: white;
+            padding: 5rem 0;
+        }
+
+        .testimonials .section-title h2 {
+            color: white;
+        }
+
+        .testimonials .section-title p {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .testimonial-card {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 2rem;
+            backdrop-filter: blur(10px);
+        }
+
+        .testimonial-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .testimonial-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 1rem;
+            background-color: var(--accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: white;
+        }
+
+        .testimonial-info h4 {
+            font-size: 1.1rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .testimonial-info p {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        .testimonial-content {
+            font-style: italic;
+            opacity: 0.9;
+            line-height: 1.7;
+        }
+
+        .cta {
+            text-align: center;
+            padding: 5rem 0;
+            background-color: white;
+        }
+
+        .cta h2 {
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary);
+        }
+
+        .cta p {
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            color: var(--gray);
+        }
+
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 4rem 0 2rem;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-column h3 {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            color: var(--accent);
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: white;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .social-links a:hover {
+            background-color: var(--accent);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .section-content {
+                flex-direction: column;
+            }
+
+            .section-image {
+                margin-bottom: 2rem;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .cta-buttons .btn {
+                width: 100%;
+                max-width: 300px;
+                margin-bottom: 1rem;
+            }
+        }
+
+        /* Academic Portal Styles */
+        .academic-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .academic-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .academic-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .academic-card-header {
+            padding: 1.5rem;
+            background-color: var(--primary);
+            color: white;
+        }
+
+        .academic-card-header h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .academic-card-body {
+            padding: 1.5rem;
+        }
+
+        .academic-card-body p {
+            color: var(--gray);
+            margin-bottom: 1.5rem;
+        }
+
+        /* Job Board Styles */
+        .job-filters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .filter-btn {
+            padding: 0.6rem 1.2rem;
+            background-color: var(--light-gray);
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .filter-btn.active {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        .filter-btn:hover {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        .jobs-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .job-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .job-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .job-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .job-logo {
+            width: 50px;
+            height: 50px;
+            border-radius: 8px;
+            margin-right: 1rem;
+            background-color: var(--light-gray);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--dark);
+            font-weight: bold;
+        }
+
+        .job-company h4 {
+            font-size: 1.1rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .job-company p {
+            font-size: 0.9rem;
+            color: var(--gray);
+        }
+
+        .job-details {
+            margin-bottom: 1.5rem;
+        }
+
+        .job-title {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary);
+        }
+
+        .job-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .job-meta span {
+            display: flex;
+            align-items: center;
+            font-size: 0.9rem;
+            color: var(--gray);
+        }
+
+        .job-meta i {
+            margin-right: 5px;
+        }
+
+        .job-description {
+            color: var(--gray);
+            margin-bottom: 1.5rem;
+        }
+
+        .job-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .job-tag {
+            padding: 0.3rem 0.8rem;
+            background-color: var(--light-gray);
+            border-radius: 50px;
+            font-size: 0.8rem;
+        }
+
+        .job-actions {
+            margin-top: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        /* Community Styles */
+        .community-events {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .event-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .event-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .event-image {
+            height: 180px;
+            background-color: var(--light-gray);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gray);
+            font-size: 1.2rem;
+        }
+
+        .event-details {
+            padding: 1.5rem;
+        }
+
+        .event-date {
+            display: inline-block;
+            padding: 0.3rem 0.8rem;
+            background-color: var(--primary);
+            color: white;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .event-title {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .event-location {
+            display: flex;
+            align-items: center;
+            color: var(--gray);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .event-location i {
+            margin-right: 5px;
+        }
+
+        .event-description {
+            color: var(--gray);
+            margin-bottom: 1.5rem;
+        }
+
+        /* Housing Styles */
+        .housing-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .housing-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .housing-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .housing-image {
+            height: 200px;
+            background-color: var(--light-gray);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gray);
+            font-size: 1.2rem;
+        }
+
+        .housing-details {
+            padding: 1.5rem;
+        }
+
+        .housing-price {
+            font-size: 1.3rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: var(--primary);
+        }
+
+        .housing-title {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .housing-location {
+            display: flex;
+            align-items: center;
+            color: var(--gray);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .housing-location i {
+            margin-right: 5px;
+        }
+
+        .housing-features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .housing-feature {
+            display: flex;
+            align-items: center;
+            font-size: 0.9rem;
+            color: var(--gray);
+        }
+
+        .housing-feature i {
+            margin-right: 5px;
+        }
+    </style>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <i class="fas fa-graduation-cap"></i>
+                    Student<span>Sphere</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#academic">Academic</a></li>
+                    <li><a href="#careers">Careers</a></li>
+                    <li><a href="https://chat.whatsapp.com/HMEUFLAJIkgAZUD12AJqeP">Community</a></li>
+                    <li><a href="#housing">Housing</a></li>
+                </ul>
+                <div>
+                    <a href="#login" class="btn btn-outline">Login</a>
+                    <a href="#signup" class="btn btn-primary">Sign Up</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Your Complete Student Life Companion</h1>
+                <p>Connect with tutors, find jobs, build community, and discover the perfect place to stay - all in one platform.</p>
+                <div class="search-container">
+                    <input type="text" placeholder="What are you looking for?">
+                    <button><i class="fas fa-search"></i> Search</button>
+                </div>
+                <div class="cta-buttons">
+                    <a href="#signup" class="btn btn-primary">Get Started</a>
+                    <a href="#features" class="btn btn-outline">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Everything You Need in One Place</h2>
+                <p>StudentSphere brings together all the essential resources and services that students need throughout their academic journey.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon academic">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>AI-Powered Academic Assistance</h3>
+                    <p>Connect with qualified peer tutors, get AI-assisted study recommendations, and access resources tailored to your courses.</p>
+                    <a href="#academic" class="btn btn-outline">Learn More</a>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon career">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Career Development</h3>
+                    <p>Discover internships and job opportunities, polish your resume with AI tools, and connect with potential employers.</p>
+                    <a href="#careers" class="btn btn-outline">Learn More</a>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon community">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Campus Community</h3>
+                    <p>Find campus events, join student groups, access mental health resources, and build meaningful connections.</p>
+                    <a href="#community" class="btn btn-outline">Learn More</a>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon housing">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Smart Housing Solutions</h3>
+                    <p>Find compatible roommates and affordable accommodations near campus with our AI-matching system.</p>
+                    <a href="#housing" class="btn btn-outline">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="academic">
+        <div class="container">
+            <div class="section-title">
+                <h2>AI-Powered Academic Assistance</h2>
+                <p>Enhance your learning experience with personalized academic support powered by cutting-edge AI technology.</p>
+            </div>
+            <div class="section-content">
+                <div class="section-image">
+                    <img src="/api/placeholder/600/400" alt="Academic Assistance">
+                </div>
+                <div class="section-text">
+                    <h2>Elevate Your Academic Performance</h2>
+                    <p>Our academic assistance platform connects you with qualified peer tutors and provides AI-powered tools to help you succeed in your studies.</p>
+                    <ul class="feature-list">
+                        <li>Connect with peer tutors who excel in your specific subjects</li>
+                        <li>Get personalized study plans based on your learning style</li>
+                        <li>Access AI-powered revision and practice tools</li>
+                        <li>Collaborate on group projects with integrated tools</li>
+                        <li>Track your academic progress and identify areas for improvement</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Find a Tutor</a>
+                </div>
+            </div>
+            <div class="academic-features">
+                <div class="academic-card">
+                    <div class="academic-card-header">
+                        <h3>Peer Tutoring Network</h3>
+                    </div>
+                    <div class="academic-card-body">
+                        <p>Connect with fellow students who excel in specific subjects. Our platform helps you find qualified peer tutors who can provide personalized assistance.</p>
+                        <a href="#" class="btn btn-outline">Find Tutors</a>
+                    </div>
+                </div>
+                <div class="academic-card">
+                    <div class="academic-card-header">
+                        <h3>AI Resume Builder</h3>
+                    </div>
+                    <div class="academic-card-body">
+                        <p>Create professional resumes and cover letters tailored to your desired job applications with AI-powered templates and suggestions.</p>
+                        <a href="#" class="btn btn-outline">Build Resume</a>
+                    </div>
+                </div>
+                <div class="academic-card">
+                    <div class="academic-card-header">
+                        <h3>Study Resource Library</h3>
+                    </div>
+                    <div class="academic-card-body">
+                        <p>Access a comprehensive library of study materials, practice tests, and lecture notes contributed by students and verified by professors.</p>
+                        <a href="#" class="btn btn-outline">Browse Resources</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="careers">
+        <div class="container">
+            <div class="section-title">
+                <h2>Integrated Job & Internship Board</h2>
+                <p>Launch your career with our comprehensive job platform designed specifically for students and recent graduates.</p>
+            </div>
+            <div class="section-content">
+                <div class="section-text">
+                    <h2>Jumpstart Your Career Journey</h2>
+                    <p>Our job and internship board connects students with employers offering positions specifically tailored for those starting their professional journey.</p>
+                    <ul class="feature-list">
+                        <li>Browse internships and entry-level positions across various industries</li>
+                        <li>Create professional profiles that showcase your skills and experience</li>
+                        <li>Receive personalized job recommendations based on your interests</li>
+                        <li>Connect directly with recruiters and company representatives</li>
+                        <li>Access career development resources and interview preparation tools</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Explore Opportunities</a>
+                </div>
+                <div class="section-image">
+                    <img src="/api/placeholder/600/400" alt="Career Development">
+                </div>
+            </div>
+            <div class="job-filters">
+                <button class="filter-btn active">All</button>
+                <button class="filter-btn">Internships</button>
+                <button class="filter-btn">Part-time</button>
+                <button class="filter-btn">Full-time</button>
+                <button class="filter-btn">Remote</button>
+            </div>
+            <div class="jobs-grid">
+                <div class="job-card">
+                    <div class="job-header">
+                        <div class="job-logo">TC</div>
+                        <div class="job-company">
+                            <h4>TechCorp</h4>
+                            <p>Technology</p>
+                        </div>
+                    </div>
+                    <div class="job-details">
+                        <h3 class="job-title
