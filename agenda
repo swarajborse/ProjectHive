@@ -1,0 +1,83 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class AgendaSimples {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Agenda agenda = new Agenda();
+        int opcao;
+
+        do {
+            System.out.println("\n=== 📒 Agenda Simples ===");
+            System.out.println("1 - Adicionar contato");
+            System.out.println("2 - Listar contatos");
+            System.out.println("3 - Sair");
+            System.out.print("Escolha uma opção: ");
+            opcao = sc.nextInt();
+            sc.nextLine(); // limpar buffer
+
+            switch (opcao) {
+                case 1:
+                    System.out.print("Nome: ");
+                    String nome = sc.nextLine();
+                    System.out.print("Telefone: ");
+                    String telefone = sc.nextLine();
+                    agenda.adicionarContato(new Contato(nome, telefone));
+                    break;
+                case 2:
+                    agenda.listarContatos();
+                    break;
+                case 3:
+                    System.out.println("Encerrando...");
+                    break;
+                default:
+                    System.out.println("Opção inválida!");
+            }
+
+        } while (opcao != 3);
+
+        sc.close();
+    }
+
+    // ======== Classe Contato ========
+    static class Contato {
+        private String nome;
+        private String telefone;
+
+        public Contato(String nome, String telefone) {
+            this.nome = nome;
+            this.telefone = telefone;
+        }
+
+        public String getNome() { return nome; }
+        public String getTelefone() { return telefone; }
+
+        @Override
+        public String toString() {
+            return "Nome: " + nome + " | Telefone: " + telefone;
+        }
+    }
+
+    // ======== Classe Agenda ========
+    static class Agenda {
+        private List<Contato> contatos = new ArrayList<>();
+
+        public void adicionarContato(Contato contato) {
+            contatos.add(contato);
+            System.out.println("✅ Contato adicionado com sucesso!");
+        }
+
+        public void listarContatos() {
+            System.out.println("\n=== Lista de Contatos ===");
+            if (contatos.isEmpty()) {
+                System.out.println("Nenhum contato cadastrado.");
+            } else {
+                for (Contato c : contatos) {
+                    System.out.println(c);
+                }
+            }
+        }
+    }
+}
