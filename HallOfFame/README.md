@@ -118,13 +118,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/AksharGoyal.png" width="100" height="100" style="border-radius: 50%;" alt="AksharGoyal"/>
+<img src="https://github.com/Ansh-1019.png" width="100" height="100" style="border-radius: 50%;" alt="Ansh-1019"/>
 
-**[@AksharGoyal](https://github.com/AksharGoyal)**
+**[@Ansh-1019](https://github.com/Ansh-1019)**
 
 *Contributions: 4 PRs across 2 domain(s)*
 
-*Domains: Backend, cli*
+*Domains: AI-ML, Backend*
 
 </div>
 
@@ -134,13 +134,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/Ansh-1019.png" width="100" height="100" style="border-radius: 50%;" alt="Ansh-1019"/>
+<img src="https://github.com/AksharGoyal.png" width="100" height="100" style="border-radius: 50%;" alt="AksharGoyal"/>
 
-**[@Ansh-1019](https://github.com/Ansh-1019)**
+**[@AksharGoyal](https://github.com/AksharGoyal)**
 
-*Contributions: 4 PRs across 2 domain(s)*
+*Contributions: 4 PRs across 3 domain(s)*
 
-*Domains: AI-ML, Backend*
+*Domains: AI-ML, Backend, cli*
 
 </div>
 
@@ -215,7 +215,7 @@ For detailed statistics and domain-specific rankings, check out:
 
 *Rankings are updated automatically with each merged contribution.*
 
-**Last Updated:** 2025-10-26
+**Last Updated:** 2025-10-27
 
 ---
 
