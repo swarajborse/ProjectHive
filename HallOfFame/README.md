@@ -118,6 +118,22 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
+<img src="https://github.com/AbhinavPundir18.png" width="100" height="100" style="border-radius: 50%;" alt="AbhinavPundir18"/>
+
+**[@AbhinavPundir18](https://github.com/AbhinavPundir18)**
+
+*Contributions: 4 PRs across 2 domain(s)*
+
+*Domains: Frontend, CompetitiveProgramming*
+
+</div>
+
+---
+
+### 🏅 Rank 8
+
+<div align="center">
+
 <img src="https://github.com/Ansh-1019.png" width="100" height="100" style="border-radius: 50%;" alt="Ansh-1019"/>
 
 **[@Ansh-1019](https://github.com/Ansh-1019)**
@@ -130,7 +146,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 8
+### 🏅 Rank 9
 
 <div align="center">
 
@@ -146,7 +162,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 9
+### 🏅 Rank 10
 
 <div align="center">
 
@@ -157,22 +173,6 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 *Contributions: 4 PRs across 2 domain(s)*
 
 *Domains: Frontend, IoT*
-
-</div>
-
----
-
-### 🏅 Rank 10
-
-<div align="center">
-
-<img src="https://github.com/AbhinavPundir18.png" width="100" height="100" style="border-radius: 50%;" alt="AbhinavPundir18"/>
-
-**[@AbhinavPundir18](https://github.com/AbhinavPundir18)**
-
-*Contributions: 3 PRs across 2 domain(s)*
-
-*Domains: Frontend, CompetitiveProgramming*
 
 </div>
 
@@ -215,7 +215,7 @@ For detailed statistics and domain-specific rankings, check out:
 
 *Rankings are updated automatically with each merged contribution.*
 
-**Last Updated:** 2025-10-27
+**Last Updated:** 2025-10-28
 
 ---
 
