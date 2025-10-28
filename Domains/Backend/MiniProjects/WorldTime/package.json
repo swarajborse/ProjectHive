@@ -1,0 +1,24 @@
+{
+  "name": "world-time",
+  "version": "1.0.0",
+  "description": "Get current local time for any city without dealing with timezone math",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    "world-time",
+    "timezone",
+    "api"
+  ],
+  "author": "Hacktoberfest Contributor",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
