@@ -32,7 +32,7 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | 20 | [@Keron](https://github.com/Keron) | 2 | 1 (Frontend) | Recent |
 | 21 | [@Utkarsh-660](https://github.com/Utkarsh-660) | 2 | 1 (Frontend) | Recent |
 | 22 | [@alisha1510](https://github.com/alisha1510) | 2 | 1 (Frontend) | Recent |
-| 23 | [@adamstosho](https://github.com/adamstosho) | 1 | 1 (AI-ML) | Recent |
+| 23 | [@adamstosho](https://github.com/adamstosho) | 1 | 0 () | Recent |
 | 24 | [@Snehal](https://github.com/Snehal) | 1 | 1 (AI-ML) | Recent |
 | 25 | [@AbhinavPundir18](https://github.com/AbhinavPundir18) | 1 | 1 (CompetitiveProgramming) | Recent |
 | 26 | [@star-lord1234](https://github.com/star-lord1234) | 1 | 1 (Frontend) | Recent |
@@ -61,7 +61,6 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 2 |
 | [@ProjectHive-Community](https://github.com/ProjectHive-Community) | 2 |
 | [@Mmadan128](https://github.com/Mmadan128) | 2 |
-| [@adamstosho](https://github.com/adamstosho) | 1 |
 | [@Snehal](https://github.com/Snehal) | 1 |
 | [@snehal492006](https://github.com/snehal492006) | 1 |
 | [@vatsalgupta2004](https://github.com/vatsalgupta2004) | 1 |
