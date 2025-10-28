@@ -1,0 +1,22 @@
+{
+  "name": "link-checker",
+  "version": "1.0.0",
+  "description": "A simple 404 link checker for websites",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "link-checker",
+    "404",
+    "crawler",
+    "seo"
+  ],
+  "author": "Hacktoberfest Contributor",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "cheerio": "^1.0.0-rc.12"
+  }
+}
