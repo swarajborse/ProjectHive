@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secureसखी - Women Safety in Delhi</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Righteous&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-content">
+        <header>
+            <div class="logo">
+                <h1>SECUREसखी</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#help">Help</a></li>
+                    <li><a href="#review">Review</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="login-btn">Login/Signup</button>
+                <button id="themeToggle">🌙</button>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="search-container">
+                    <h2>Search Your Area</h2>
+                    <div class="search-box">
+                        <input type="text" placeholder="Enter area name in Delhi..." id="areaSearch">
+                        <button id="searchBtn"><i class="fas fa-search"></i> Search</button>
+                    </div>
+                    <div id="searchError" class="error-message"></div>
+                </div>
+            </section>
+
+            <div class="map-safety-container">
+                <section class="map-container">
+                    <div id="map"></div>
+                </section>
+                <section class="safety-info">
+                    <h3>Area Safety Information</h3>
+                    <div id="safetyDetails"></div>
+                </section>
+            </div>
+
+            <section class="emergency-chat">
+                <div class="chat-container">
+                    <h3>Emergency AI Assistant</h3>
+                    <div class="chat-box" id="chatBox"></div>
+                    <div class="chat-input">
+                        <input type="text" placeholder="Type your emergency..." id="userInput">
+                        <button id="sendBtn">Send</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="helpline-numbers">
+                <h3>Emergency Helpline Numbers</h3>
+                <div class="numbers-grid">
+                    <div class="number-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h4>Police</h4>
+                        <p>100</p>
+                    </div>
+                    <div class="number-card">
+                        <i class="fas fa-ambulance"></i>
+                        <h4>Ambulance</h4>
+                        <p>102</p>
+                    </div>
+                    <div class="number-card">
+                        <i class="fas fa-phone-alt"></i>
+                        <h4>Women Helpline</h4>
+                        <p>1091</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Secureसखी. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Error handling for Google Maps API
+        window.onerror = function(msg, url, line) {
+            if (msg.includes('Google Maps')) {
+                const searchError = document.getElementById('searchError');
+                if (searchError) {
+                    searchError.textContent = 'Error loading Google Maps. Please check your API key.';
+                    searchError.style.display = 'block';
+                }
+            }
+            return false;
+        };
+
+        // Add auth failure handler
+        window.gm_authFailure = function() {
+            const searchError = document.getElementById('searchError');
+            if (searchError) {
+                searchError.textContent = 'Error: Google Maps authentication failed. Please check your API key.';
+                searchError.style.display = 'block';
+            }
+        };
+
+        // Initialize map when Google Maps API is loaded
+        function initMap() {
+            try {
+                const mapElement = document.getElementById('map');
+                if (!mapElement) {
+                    throw new Error('Map element not found');
+                }
+
+                const delhi = { lat: 28.6139, lng: 77.2090 };
+                const map = new google.maps.Map(mapElement, {
+                    zoom: 12,
+                    center: delhi,
+                    mapTypeControl: true,
+                    streetViewControl: true,
+                    fullscreenControl: true,
+                    zoomControl: true
+                });
+
+                // Initialize the Places Autocomplete
+                const input = document.getElementById('areaSearch');
+                const options = {
+                    bounds: new google.maps.LatLngBounds(
+                        new google.maps.LatLng(28.4, 76.8),
+                        new google.maps.LatLng(28.9, 77.5)
+                    ),
+                    componentRestrictions: { country: 'in' },
+                    strictBounds: true,
+                    types: ['geocode', 'establishment']
+                };
+                
+                const autocomplete = new google.maps.places.Autocomplete(input, options);
+                autocomplete.addListener('place_changed', () => {
+                    const place = autocomplete.getPlace();
+                    if (!place.geometry) {
+                        const searchError = document.getElementById('searchError');
+                        if (searchError) {
+                            searchError.textContent = 'No details available for this place';
+                            searchError.style.display = 'block';
+                        }
+                        return;
+                    }
+                    map.setCenter(place.geometry.location);
+                    map.setZoom(15);
+                });
+            } catch (error) {
+                console.error('Error initializing map:', error);
+                const searchError = document.getElementById('searchError');
+                if (searchError) {
+                    searchError.textContent = 'Error initializing map: ' + error.message;
+                    searchError.style.display = 'block';
+                }
+            }
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=" async defer></script>
+    <script src="script.js"></script>
+</body>
+</html> 
