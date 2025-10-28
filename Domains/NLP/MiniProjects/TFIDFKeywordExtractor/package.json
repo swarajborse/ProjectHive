@@ -1,0 +1,26 @@
+{
+  "name": "tfidf-keyword-extractor",
+  "version": "1.0.0",
+  "description": "Advanced TF-IDF Keyword Extraction Engine for document analysis and search relevance scoring",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js"
+  },
+  "keywords": [
+    "tfidf",
+    "keyword-extraction",
+    "nlp",
+    "text-mining",
+    "search-relevance",
+    "document-analysis",
+    "term-weighting",
+    "information-retrieval"
+  ],
+  "author": "ProjectHive Contributor",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "tfidf": "^0.1.0"
+  }
+}
