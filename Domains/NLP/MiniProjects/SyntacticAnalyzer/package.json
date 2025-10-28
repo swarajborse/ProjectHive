@@ -1,0 +1,26 @@
+{
+  "name": "syntactic-analyzer",
+  "version": "1.0.0",
+  "description": "Advanced morphosyntactic parsing engine for computational linguistics applications",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    "nlp",
+    "pos-tagging",
+    "syntactic-analysis",
+    "computational-linguistics",
+    "morphology"
+  ],
+  "author": "Hacktoberfest Contributor",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "compromise": "^14.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
