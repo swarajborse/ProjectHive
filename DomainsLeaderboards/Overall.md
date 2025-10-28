@@ -19,9 +19,9 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | 7 | [@Ansh-1019](https://github.com/Ansh-1019) | 4 | 2 (AI-ML, Backend) | Recent |
 | 8 | [@AksharGoyal](https://github.com/AksharGoyal) | 4 | 3 (AI-ML, Backend, cli) | Recent |
 | 9 | [@SOHAM-GADEKAR](https://github.com/SOHAM-GADEKAR) | 4 | 2 (Frontend, IoT) | Recent |
-| 10 | [@AbhinavPundir18](https://github.com/AbhinavPundir18) | 3 | 2 (CompetitiveProgramming, Frontend) | Recent |
-| 11 | [@anujaugale617](https://github.com/anujaugale617) | 3 | 1 (Frontend) | Recent |
-| 12 | [@mekapilgupta](https://github.com/mekapilgupta) | 2 | 1 (Backend) | Recent |
+| 10 | [@mekapilgupta](https://github.com/mekapilgupta) | 3 | 1 (Backend) | Recent |
+| 11 | [@AbhinavPundir18](https://github.com/AbhinavPundir18) | 3 | 2 (CompetitiveProgramming, Frontend) | Recent |
+| 12 | [@anujaugale617](https://github.com/anujaugale617) | 3 | 1 (Frontend) | Recent |
 | 13 | [@vatsalgupta2004](https://github.com/vatsalgupta2004) | 2 | 2 (AI-ML, Frontend) | Recent |
 | 14 | [@ProjectHive-Community](https://github.com/ProjectHive-Community) | 2 | 1 (AI-ML) | Recent |
 | 15 | [@Mmadan128](https://github.com/Mmadan128) | 2 | 1 (AI-ML) | Recent |
@@ -61,7 +61,7 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 |-------------|---------------|
 | [@Ogagaoghene](https://github.com/Ogagaoghene) | 5 |
 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 4 |
-| [@mekapilgupta](https://github.com/mekapilgupta) | 2 |
+| [@mekapilgupta](https://github.com/mekapilgupta) | 3 |
 | [@AksharGoyal](https://github.com/AksharGoyal) | 2 |
 | [@Ansh-1019](https://github.com/Ansh-1019) | 1 |
 | [@Albus](https://github.com/Albus) | 1 |
