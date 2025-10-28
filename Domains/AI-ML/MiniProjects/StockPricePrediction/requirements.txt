@@ -1,0 +1,39 @@
+# Stock Price Prediction Requirements
+
+# Core Dependencies
+tensorflow==2.13.0
+keras==2.13.1
+numpy==1.24.3
+pandas==2.0.3
+
+# Data Fetching
+yfinance==0.2.28
+
+# Data Processing
+scikit-learn==1.3.0
+
+# Visualization
+matplotlib==3.7.2
+seaborn==0.12.2
+plotly==5.16.1
+
+# Web Interface (Optional)
+streamlit==1.26.0
+
+# Progress Bars
+tqdm==4.66.1
+
+# Model Persistence
+joblib==1.3.2
+
+# Testing
+pytest==7.4.0
+pytest-cov==4.1.0
+
+# Date/Time Handling
+python-dateutil==2.8.2
+
+# Utilities
+ta==0.11.0  # Technical Analysis library
+mplfinance==0.12.10b0  # Financial plotting
+

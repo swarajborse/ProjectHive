@@ -58,6 +58,7 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | [@Ansh-1019](https://github.com/Ansh-1019) | 3 |
 | [@k4niz](https://github.com/k4niz) | 2 |
 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 2 |
+| [@ProjectHive-Community](https://github.com/ProjectHive-Community) | 2 |
 | [@Mmadan128](https://github.com/Mmadan128) | 2 |
 | [@Snehal](https://github.com/Snehal) | 1 |
 | [@snehal492006](https://github.com/snehal492006) | 1 |
@@ -170,7 +171,7 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 |-------------|---------------|
 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 1 |
 
-### CompetitiveProgramming
+### cli
 
 | Contributor | Contributions |
 |-------------|---------------|
