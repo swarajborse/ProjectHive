@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Health Assessment</title>
+    <style>
+        :root {
+            --primary-dark: #0d1b2a;
+            --primary-medium: #1b263b;
+            --primary-light: #415a77;
+            --accent: #778da9;
+            --text-light: #e0e1dd;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--primary-dark);
+            color: var(--text-light);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 90%;
+            background-color: var(--primary-medium);
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            padding: 2rem;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            margin-bottom: 1.5rem;
+            color: var(--text-light);
+            font-size: 2rem;
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 0.5rem;
+        }
+
+        h2, h3 {
+            color: var(--text-light);
+            margin-top: 1.5rem;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 10px;
+            background-color: var(--primary-light);
+            border-radius: 5px;
+            margin: 20px 0;
+            overflow: hidden;
+        }
+
+        .progress {
+            height: 100%;
+            background-color: var(--accent);
+            width: 0%;
+            transition: width 0.5s ease;
+        }
+
+        .question {
+            font-size: 1.2rem;
+            margin: 1rem 0;
+            padding: 0.5rem;
+        }
+
+        .options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            margin: 20px 0;
+        }
+
+        .option {
+            background-color: var(--primary-light);
+            color: var(--text-light);
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 1rem;
+        }
+
+        .option:hover {
+            background-color: var(--accent);
+            transform: translateY(-2px);
+        }
+
+        #result-container {
+            display: none;
+            text-align: left;
+        }
+
+        .result-section {
+            background-color: var(--primary-light);
+            border-radius: 8px;
+            padding: 15px;
+            margin: 15px 0;
+        }
+
+        .schedule {
+            background-color: var(--primary-light);
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        .schedule-item {
+            padding: 8px;
+            border-bottom: 1px solid var(--accent);
+        }
+
+        .schedule-item:last-child {
+            border-bottom: none;
+        }
+
+        .btn {
+            background-color: var(--accent);
+            color: var(--text-light);
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 1rem;
+            margin: 10px;
+        }
+
+        .btn:hover {
+            background-color: var(--primary-light);
+            transform: translateY(-2px);
+        }
+
+        .btn-primary {
+            background-color: #4a77a8;
+        }
+
+        .score-indicator {
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                width: 95%;
+                padding: 1rem;
+            }
+            
+            .options {
+                grid-template-columns: 1fr;
+            }
+        }
+        div a{
+            background-color: #4a77a8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Mental Health Assessment</h1>
+        
+        <div id="quiz">
+            <div id="question-container">
+                <div class="progress-bar">
+                    <div id="progress" class="progress"></div>
+                </div>
+                <p id="progress-text">Question 1 of 5</p>
+                <p id="question" class="question">How often do you feel overwhelmed by stress?</p>
+                <div class="options">
+                    <button class="option" onclick="selectOption(1)">Never</button>
+                    <button class="option" onclick="selectOption(2)">Sometimes</button>
+                    <button class="option" onclick="selectOption(3)">Often</button>
+                    <button class="option" onclick="selectOption(4)">Always</button>
+                </div>
+            </div>
+            
+            <div id="result-container">
+                <h2>Your Assessment Results</h2>
+                <div class="score-indicator" id="score-display"></div>
+                <p id="result-text" class="result-section"></p>
+                
+                <div class="result-section">
+                    <h3>Recommendations</h3>
+                    <p id="suggestions-text"></p>
+                </div>
+                
+                <div class="schedule">
+                    <h3>Suggested Daily Schedule</h3>
+                    <div id="schedule-container"></div>
+                </div>
+                
+                <div style="margin-top: 30px;">
+                    <button class="btn btn-primary" onclick="restartQuiz()">Take Assessment Again</button>
+                    <a href="index.html"  class="btn btn-primary">Submit</a>
+
+                    
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const questions = [
+            "How often do you feel overwhelmed by stress?",
+            "Do you find it hard to relax?",
+            "How often do you feel anxious or worried?",
+            "Do you feel comfortable talking about your feelings?",
+            "How often do you feel sad or down?"
+        ];
+
+        let currentQuestionIndex = 0;
+        let totalScore = 0;
+
+        function updateProgress() {
+            const progressPercentage = (currentQuestionIndex / questions.length) * 100;
+            document.getElementById('progress').style.width = `${progressPercentage}%`;
+            document.getElementById('progress-text').innerText = `Question ${currentQuestionIndex + 1} of ${questions.length}`;
+        }
+
+        function selectOption(rating) {
+            totalScore += rating;
+            currentQuestionIndex++;
+
+            if (currentQuestionIndex < questions.length) {
+                loadNextQuestion();
+            } else {
+                showResults();
+            }
+        }
+
+        function loadNextQuestion() {
+            document.getElementById('question-container').style.display = 'block';
+            document.getElementById('result-container').style.display = 'none';
+            document.getElementById('question').innerText = questions[currentQuestionIndex];
+            updateProgress();
+        }
+
+        function showResults() {
+            document.getElementById('question-container').style.display = 'none';
+            document.getElementById('result-container').style.display = 'block';
+
+            const averageScore = totalScore / questions.length;
+            
+            // Display score as text and number
+            const scoreElement = document.getElementById('score-display');
+            let scoreText;
+            
+            if (averageScore < 1.5) {
+                scoreText = "Excellent";
+                scoreElement.style.color = "#4caf50"; // Green
+            } else if (averageScore < 2) {
+                scoreText = "Good";
+                scoreElement.style.color = "#8bc34a"; // Light green
+            } else if (averageScore < 3) {
+                scoreText = "Moderate";
+                scoreElement.style.color = "#ffc107"; // Amber
+            } else if (averageScore <= 3.5) {
+                scoreText = "Concerning";
+                scoreElement.style.color = "#ff9800"; // Orange
+            } else {
+                scoreText = "Critical";
+                scoreElement.style.color = "#f44336"; // Red
+            }
+            
+            scoreElement.innerText = `${scoreText} (${averageScore.toFixed(1)}/4.0)`;
+            
+            let resultText = '';
+            let suggestions = '';
+            let schedule = [];
+
+            if (averageScore < 1.5 && averageScore >= 1) {
+                resultText = "Excellent mental health score, aim to maintain it.";
+                suggestions = "• Check-Ins: Periodic check-ins with a mental health professional to ensure ongoing well-being.\n• Leadership: Consider mentoring or leading wellness groups.\n• Advanced Activities: Try advanced physical activities or joining sports clubs.\n• Continued Learning: Engage in continuing education or workshops on mental health and wellness.\n• Share Knowledge: Share positive mental health practices with others.";
+                schedule = [
+                    "7:00 AM: Wake up and meditate (10 mins)",
+                    "7:30 AM: Breakfast",
+                    "8:00 AM: Work or study session",
+                    "12:00 PM: Lunch break and a short walk",
+                    "1:00 PM: Continue work or study",
+                    "5:00 PM: Exercise (gym or outdoor activity)",
+                    "6:00 PM: Dinner with family or friends",
+                    "7:30 PM: Leisure activity (reading, hobbies)",
+                    "9:00 PM: Wind down with a relaxing routine",
+                    "10:30 PM: Sleep"
+                ];
+            } else if (averageScore < 2 && averageScore >= 1.5) {
+                resultText = "Good mental health score, minor improvements can be made.";
+                suggestions = "• Maintenance Counseling: Consider occasional check-ins with a counselor.\n• Advanced Reading: Explore books on advanced personal development.\n• Exercise Routine: Maintain or slightly increase the intensity of physical activities.\n• Volunteer Work: Consider participating in community service or volunteer work.\n• Creative Activities: Explore creative outlets like painting, writing, or music.";
+                schedule = [
+                    "8:00 AM: Wake up and have a light breakfast",
+                    "8:30 AM: Short walk or stretching (15 mins)",
+                    "9:00 AM: Work on tasks (set small goals)",
+                    "12:00 PM: write goals on diary",
+                    "1:00 PM: Continue work or engage in a creative activity",
+                    "3:00 PM: Take a break  (listen to music or meditate)",
+                    "4:00 PM: Light exercise (yoga or a short walk)",
+                    "5:00 PM: tea",
+                    "6:00 PM: Watch a favorite show or read",
+                    "9:00 PM: Prepare for bed (limit screen time)",
+                    "10:00 PM: Sleep"
+                ];
+            } else if (averageScore < 3 && averageScore >= 2) {
+                resultText = "Moderate mental health score, some improvements needed.";
+                suggestions = "• Counseling: Consider regular counseling sessions.\n• Goal Setting: Set small, achievable goals for daily routines.\n• Mindfulness: Try guided meditation and mindfulness apps.\n• Exercise: Engage in moderate exercise like jogging or group fitness classes.\n• Hobbies: Find hobbies or activities that bring joy.";
+                schedule = [
+                    "9:00 AM: Wake up and have breakfast",
+                    "9:30 AM: complete high energy tasks first",
+                    "11:00 AM: take a break and do calming activities like reading ",
+                    "12:00 PM: perform other tasks with small breaks",
+                    "1:00 PM: Rest or nap",
+                    "2:00 PM: Light household chores (dishes, tidying)",
+                    "3:00 PM: Watch a comforting show or listen to music",
+                    "5:00 PM: tea with friends ",
+                    "6:00 PM: Connect with nature like walks or other sports",
+                    "8:00 PM: Wind down with a book or calming activity",
+                    "10:00 PM: Sleep"
+                ];
+            } else if (averageScore <= 3.5 && averageScore >= 3) {
+                resultText = "Low mental health score, but not critical.";
+                suggestions = "• Counseling: Consider regular counseling sessions.\n• Journaling: Keep a daily journal to track feelings and thoughts.\n• Reading: Explore books focused on self-help and mental wellness.\n• Physical Activity: Try light physical activities like walking or yoga.\n• Social Support: Reach out to friends or family members for support.";
+                schedule = [
+                    "7:30 AM: Wake up and practice deep breathing (5 mins)",
+                    "8:00 AM: Breakfast",
+                    "8:30 AM: Write down three things to accomplish today",
+                    "10:00 AM: Engage in a calming activity (art, gardening)",
+                    "12:00 PM: Lunch",
+                    "1:00 PM: high energy activities",
+                    "2:00 PM: Mindfulness or meditation session (10-15 mins)",
+                    "3:00 PM: Work on tasks with breaks in between with slowly going to ease",
+                    "5:00 PM: tea with family and friends",
+                    "6:00 PM: engage in social activity or sports like cricket football",
+                    "9:00 PM: Prepare for bed with a calming routine like skincare",
+                    "10:00 PM: Sleep"
+                ];
+            } else {
+                resultText = "Very low mental health score, indicates a need for immediate support.";
+                suggestions = "• Immediate Counseling: Consider scheduling an urgent counseling session.\n• Helpline Numbers: Keep contacts for mental health crisis hotlines accessible.\n• Calming Techniques: Try basic breathing exercises and mindfulness practices.\n• Self-Care Tips: Focus on simple self-care activities like taking a warm bath or listening to calming music.";
+                schedule = [
+                    "6:00 AM: Wake up and have a simple breakfast",
+                    "10:30 AM: gym or light exercise (if possible)",
+                    "12:00 PM: Lunch",
+                    "1:00 PM: Rest or nap",
+                    "2:00 PM: visit or orphange and elder homes ",
+                    "3:00 PM: write a diary about what happened and your plans for future",
+                    "4:00 PM: Connect with a supportive friend or family member",
+                    "5:00 PM: tea",
+                    "6:00 PM:  engage in pilates and yogas",
+                    "8:00 PM: Wind down with a calming activity like knitting",
+                    "10:00 PM: Sleep"
+                ];
+            }
+
+            document.getElementById('result-text').innerText = resultText;
+            document.getElementById('suggestions-text').innerText = suggestions;
+            
+            // Create schedule items
+            const scheduleContainer = document.getElementById('schedule-container');
+            scheduleContainer.innerHTML = '';
+            
+            schedule.forEach(item => {
+                const scheduleItem = document.createElement('div');
+                scheduleItem.className = 'schedule-item';
+                scheduleItem.innerText = item;
+                scheduleContainer.appendChild(scheduleItem);
+            });
+        }
+
+        function restartQuiz() {
+            currentQuestionIndex = 0;
+            totalScore = 0;
+            document.getElementById('result-container').style.display = 'none';
+            loadNextQuestion();
+        }
+
+       
+
+        window.onload = function() {
+            loadNextQuestion();
+            updateProgress();
+        };
+    </script>
+</body>
+</html>
