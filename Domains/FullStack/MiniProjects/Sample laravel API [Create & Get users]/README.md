@@ -1,10 +1,12 @@
-## Project Information
+## Sample API built on Laravel
 **Contributor:** Tryxns
 
-## Prerequisite
+## Description
+A REST API built on Laravel which able to insert user data & get user data from DB
+
+## Tech Stack
 1. **PHP 8.2 or newer** 
 2. **MySQL**
-3. **Postman**
 
 ## 🚀 Getting Started
 1. **Clone Repo**: 
