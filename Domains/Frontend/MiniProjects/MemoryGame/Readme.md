@@ -1,4 +1,7 @@
 Memory Match Game 🎴
+
+contributor : nihira20 
+
 A delightful card matching game with cute emojis!
 Description
 A fun and interactive memory card game where players flip cards to find matching pairs of adorable emojis. Features smooth animations, score tracking, and a beautiful gradient interface that makes playing enjoyable for all ages.
