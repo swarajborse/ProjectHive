@@ -54,6 +54,22 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
+<img src="https://github.com/AbhinavPundir18.png" width="100" height="100" style="border-radius: 50%;" alt="AbhinavPundir18"/>
+
+**[@AbhinavPundir18](https://github.com/AbhinavPundir18)**
+
+*Contributions: 7 PRs across 2 domain(s)*
+
+*Domains: CompetitiveProgramming, Frontend*
+
+</div>
+
+---
+
+### 🏅 Rank 4
+
+<div align="center">
+
 <img src="https://github.com/shr128.png" width="100" height="100" style="border-radius: 50%;" alt="shr128"/>
 
 **[@shr128](https://github.com/shr128)**
@@ -66,7 +82,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 4
+### 🏅 Rank 5
 
 <div align="center">
 
@@ -82,7 +98,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 5
+### 🏅 Rank 6
 
 <div align="center">
 
@@ -98,7 +114,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 6
+### 🏅 Rank 7
 
 <div align="center">
 
@@ -114,7 +130,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 7
+### 🏅 Rank 8
 
 <div align="center">
 
@@ -130,7 +146,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 8
+### 🏅 Rank 9
 
 <div align="center">
 
@@ -146,7 +162,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 9
+### 🏅 Rank 10
 
 <div align="center">
 
@@ -157,22 +173,6 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 *Contributions: 4 PRs across 2 domain(s)*
 
 *Domains: Frontend, IoT*
-
-</div>
-
----
-
-### 🏅 Rank 10
-
-<div align="center">
-
-<img src="https://github.com/AbhinavPundir18.png" width="100" height="100" style="border-radius: 50%;" alt="AbhinavPundir18"/>
-
-**[@AbhinavPundir18](https://github.com/AbhinavPundir18)**
-
-*Contributions: 3 PRs across 2 domain(s)*
-
-*Domains: CompetitiveProgramming, Frontend*
 
 </div>
 
