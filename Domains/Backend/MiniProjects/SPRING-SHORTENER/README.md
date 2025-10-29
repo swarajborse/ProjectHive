@@ -1,101 +1,107 @@
-# 🌐 URL Shortener — Spring Boot MVP 🚀
+# 🌐 SpringShortener — MVP 🚀
 
-- A lightweight URL shortener built with Spring Boot and a minimal HTML/CSS/JS frontend.
-- This MVP covers the core flow: enter a long URL → get a short one → copy or share instantly.
+Contributor: shwetharbaliga
 
-## ✨ Features (MVP)
+## 📝 Description
 
-- 🔗 Shorten long URLs via a Spring Boot REST API
+- A minimal URL shortener built using Spring Boot and MongoDB, with a lightweight HTML/CSS/JS frontend.
+- It lets users shorten long URLs, get a short code instantly, and copy or share the generated link.
 
-- 📦 Store URL mappings in MongoDB
+## ✨ Features
 
-- 💡 Clean, centered UI with smooth fade transitions
+- Create short URLs via a Spring Boot REST API
 
-- 📋 Copy short URL to clipboard
+- Redirect short URLs to the original destination
 
-- 💬 Share short URL via WhatsApp
+- Avoid duplicates (checks for existing URLs)
 
-- 💻 Simple structure, ready for scaling
+- Copy and share directly from the UI
+
+- Smooth transitions and clean, minimal design
 
 ## 🧠 Tech Stack
 
-- Backend: Spring Boot (Java), MongoDB
+- Backend: Spring Boot (Java)
+
 - Frontend: HTML, CSS, JavaScript
-- Database: MongoDB (local or Atlas connection)
 
-## ⚙️ Getting Started
+- Database: MongoDB
 
+## ⚙️ Setup
 ### Clone the repository
 ```
-git clone https://github.com/shwetharbaliga/URL-SHORTENER.git
-cd URL-SHORTENER
+git clone <repository-url>
+cd Domains/Backend/MiniProjects/SpringShortener
 ```
 
-### 🖥 Run the backend
+### Run the backend
 
-- Ensure MongoDB is running locally (mongodb://localhost:27017/urlshortener)
+Ensure MongoDB is running locally:
+```
+mongodb://localhost:27017/urlshortener
+```
 
-- Or configure your Atlas URI in application.properties
-
-### Start the Spring Boot app:
-
+### Start the app:
 ```
 ./mvnw spring-boot:run
 ```
 
-or in IntelliJ / VS Code — run the main class.
+or run the UrlShortenerApplication.java file in your IDE.
 
-### 🌍 Run the frontend
+### Run the frontend
 
-- Open index.html in your browser
+- Open src/main/resources/static/index.html in your browser.
+- Enter a long URL → click Generate ShortCode → Copy or Share 🎉
 
-- Paste a long URL and click Generate ShortCode
+## 🔗 API Endpoints
+### 🧩 Create Short URL
 
-- Copy or share the generated link 🎉
-
-📂 Project Structure
 ```
-URL-SHORTENER/
-│
-├── src/main/java/com/example/urlshortener/
-│   ├── controller/UrlController.java
-│   ├── model/Url.java
-│   ├── repository/UrlRepository.java
-│   ├── service/UrlService.java
-│   └── UrlShortenerApplication.java
-│
-├── src/main/resources/
-│   ├── application.properties
-│   └── static/
-│       ├── index.html
-│       ├── styles.css
-│       └── assets/
-│           ├── copy.svg
-│           └── share-fat.svg
+POST /api/urls/create
+Content-Type: application/json
+
+{
+  "originalUrl": "https://example.com/some/long/url"
+}
+
+
+Response:
+
+{
+  "message": "New short code created",
+  "shortcode": "abc123"
+}
 ```
 
-### 🚧 Work in Progress
+If the URL already exists:
+```
+{
+  "message": "Short code already exists",
+  "shortcode": "abc123"
+}
+```
+### 🚀 Redirect to Original URL
+```
+GET /api/urls/r/{shortCode}
+```
+Redirects to the original long URL if found.
+If not found → returns 404 “Short URL not found”.
 
-- Add URL validation
+## 🏠 Test Endpoint
 
-- Handle duplicates / expired links
+GET /api/urls/ → returns a simple “Hello from SpringBoot + MongoDB!” message.
 
-- Improve UI layout alignment
+## ⚙️ How It Works
 
-- Deploy frontend + backend together
+- User enters a long URL in the frontend.
 
-### 🌱 Next Steps
+- Backend checks if it already exists in MongoDB.
 
-- Add analytics (click count, usage stats)
+- If not, it generates a new short code and saves it.
 
-- Introduce Redis caching
+- User gets a short code, which redirects to the original URL.
 
-- Enable rate limiting
-
-- Containerize with Docker
-
-### 🧡 Credits
+## 🧡 Credits
 
 - Built by Shweta Ravindra Baliga
-
-- Inspired by Karan Pratap Singh’s System Design Series and adapted into a Spring Boot version with custom frontend touches.
+- Inspired by Karan Pratap Singh’s System Design Series and reimagined in Spring Boot with a custom frontend.
