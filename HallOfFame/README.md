@@ -166,13 +166,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/mekapilgupta.png" width="100" height="100" style="border-radius: 50%;" alt="mekapilgupta"/>
+<img src="https://github.com/AbhinavPundir18.png" width="100" height="100" style="border-radius: 50%;" alt="AbhinavPundir18"/>
 
-**[@mekapilgupta](https://github.com/mekapilgupta)**
+**[@AbhinavPundir18](https://github.com/AbhinavPundir18)**
 
-*Contributions: 3 PRs across 1 domain(s)*
+*Contributions: 3 PRs across 2 domain(s)*
 
-*Domains: Backend*
+*Domains: CompetitiveProgramming, Frontend*
 
 </div>
 
@@ -215,7 +215,7 @@ For detailed statistics and domain-specific rankings, check out:
 
 *Rankings are updated automatically with each merged contribution.*
 
-**Last Updated:** 2025-10-28
+**Last Updated:** 2025-10-29
 
 ---
 
