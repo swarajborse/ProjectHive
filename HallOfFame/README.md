@@ -38,13 +38,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/snehal492006.png" width="100" height="100" style="border-radius: 50%;" alt="snehal492006"/>
+<img src="https://github.com/mekapilgupta.png" width="100" height="100" style="border-radius: 50%;" alt="mekapilgupta"/>
 
-**[@snehal492006](https://github.com/snehal492006)**
+**[@mekapilgupta](https://github.com/mekapilgupta)**
 
-*Contributions: 8 PRs across 3 domain(s)*
+*Contributions: 8 PRs across 2 domain(s)*
 
-*Domains: AI-ML, CompetitiveProgramming, Frontend*
+*Domains: NLP, Backend*
 
 </div>
 
@@ -54,13 +54,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/mekapilgupta.png" width="100" height="100" style="border-radius: 50%;" alt="mekapilgupta"/>
+<img src="https://github.com/snehal492006.png" width="100" height="100" style="border-radius: 50%;" alt="snehal492006"/>
 
-**[@mekapilgupta](https://github.com/mekapilgupta)**
+**[@snehal492006](https://github.com/snehal492006)**
 
-*Contributions: 6 PRs across 2 domain(s)*
+*Contributions: 8 PRs across 3 domain(s)*
 
-*Domains: Backend, NLP*
+*Domains: AI-ML, CompetitiveProgramming, Frontend*
 
 </div>
 

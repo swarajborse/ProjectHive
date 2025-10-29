@@ -11,8 +11,8 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | Rank | Contributor | Total PRs | Domains Contributed | Last Active |
 |------|-------------|-----------|---------------------|-------------|
 | 🥇 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 20 | 13 (AI-ML, AR-VR, Backend, Blockchain, Cloud, Cybersecurity, DevOps, Frontend, FullStack, IoT, MLOps, NLP, Robotics-Automation) | Recent |
-| 🥈 | [@snehal492006](https://github.com/snehal492006) | 8 | 3 (AI-ML, CompetitiveProgramming, Frontend) | Recent |
-| 🥉 | [@mekapilgupta](https://github.com/mekapilgupta) | 6 | 2 (Backend, NLP) | Recent |
+| 🥈 | [@mekapilgupta](https://github.com/mekapilgupta) | 8 | 2 (NLP, Backend) | Recent |
+| 🥉 | [@snehal492006](https://github.com/snehal492006) | 8 | 3 (AI-ML, CompetitiveProgramming, Frontend) | Recent |
 | 4 | [@shr128](https://github.com/shr128) | 6 | 1 (Frontend) | Recent |
 | 5 | [@Aaditya-2407](https://github.com/Aaditya-2407) | 6 | 1 (Frontend) | Recent |
 | 6 | [@k4niz](https://github.com/k4niz) | 5 | 4 (AI-ML, AR-VR, FullStack, IoT) | Recent |
@@ -55,6 +55,13 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 
 ## 📊 Domain Breakdown
 
+### NLP
+
+| Contributor | Contributions |
+|-------------|---------------|
+| [@mekapilgupta](https://github.com/mekapilgupta) | 4 |
+| [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 1 |
+
 ### Backend
 
 | Contributor | Contributions |
@@ -65,13 +72,6 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | [@AksharGoyal](https://github.com/AksharGoyal) | 2 |
 | [@Ansh-1019](https://github.com/Ansh-1019) | 1 |
 | [@Albus](https://github.com/Albus) | 1 |
-
-### NLP
-
-| Contributor | Contributions |
-|-------------|---------------|
-| [@mekapilgupta](https://github.com/mekapilgupta) | 1 |
-| [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 1 |
 
 ### AI-ML
 
