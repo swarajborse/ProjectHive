@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <title>URL Shortener</title>
+</head>
+<body>
+<div style="text-align:center; margin-top:50px;">
+    <h2>Welcome to URL-SHORTENER!</h2>
+    <div style="display:flex; flex-direction:column; align-items:center; gap:10px; margin-top:50px;">
+        <div class="action-container">
+            <label>Paste your URL here!</label>
+            <input id="originalUrl" placeholder="Enter your URL" />
+            <button id="generateBtn">Generate ShortCode</button>
+            <img id="copyBtn" src="./assets/copy.svg" alt="Copy" width="25">
+            <img id="shareBtn" src="./assets/share-fat.svg" alt="Share" width="25">
+        </div>
+    </div>
+
+</div>
+<script>
+    const generateBtn = document.getElementById('generateBtn');
+    const copyBtn = document.getElementById('copyBtn');
+    const shareBtn = document.getElementById('shareBtn');
+    const input = document.getElementById('originalUrl');
+
+    generateBtn.addEventListener('click', async () => {
+      const url = input.value.trim();
+
+      if (!url) {
+        alert("Please enter a URL first!");
+        return;
+      }
+
+      // make backend request
+      const response = await fetch("http://localhost:8080/api/urls/create", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ originalUrl: url })
+      });
+
+      if (!response.ok) {
+        alert("Error creating short URL!");
+        return;
+      }
+
+      const data = await response.json();
+      const shortCode = data.shortcode;
+      const shortUrl = `http://localhost:8080/api/urls/r/${shortCode}`;
+
+      // show short URL to user
+      input.value = shortUrl;
+
+      // fade out generate button and show icons
+      generateBtn.style.opacity = '0';
+      setTimeout(() => {
+        generateBtn.style.visibility = 'hidden';
+        copyBtn.style.visibility = shareBtn.style.visibility = 'visible';
+        copyBtn.style.opacity = shareBtn.style.opacity = '1';
+      }, 300);
+    });
+
+    // copy button logic
+    copyBtn.addEventListener('click', () => {
+      navigator.clipboard.writeText(input.value);
+      alert("Short URL copied!");
+    });
+
+    // share button logic
+    shareBtn.addEventListener('click', () => {
+      window.open(`https://wa.me/?text=${encodeURIComponent(input.value)}`, '_blank');
+    });
+</script>
+
+</body>
+</html>
