@@ -58,7 +58,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 **[@AbhinavPundir18](https://github.com/AbhinavPundir18)**
 
-*Contributions: 7 PRs across 2 domain(s)*
+*Contributions: 6 PRs across 2 domain(s)*
 
 *Domains: CompetitiveProgramming, Frontend*
 

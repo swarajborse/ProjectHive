@@ -12,7 +12,7 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 |------|-------------|-----------|---------------------|-------------|
 | 🥇 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 20 | 13 (AI-ML, AR-VR, Backend, Blockchain, Cloud, Cybersecurity, DevOps, Frontend, FullStack, IoT, MLOps, NLP, Robotics-Automation) | Recent |
 | 🥈 | [@snehal492006](https://github.com/snehal492006) | 8 | 3 (AI-ML, CompetitiveProgramming, Frontend) | Recent |
-| 🥉 | [@AbhinavPundir18](https://github.com/AbhinavPundir18) | 7 | 2 (CompetitiveProgramming, Frontend) | Recent |
+| 🥉 | [@AbhinavPundir18](https://github.com/AbhinavPundir18) | 6 | 2 (CompetitiveProgramming, Frontend) | Recent |
 | 4 | [@shr128](https://github.com/shr128) | 6 | 1 (Frontend) | Recent |
 | 5 | [@Aaditya-2407](https://github.com/Aaditya-2407) | 6 | 1 (Frontend) | Recent |
 | 6 | [@k4niz](https://github.com/k4niz) | 5 | 4 (AI-ML, AR-VR, FullStack, IoT) | Recent |
@@ -60,7 +60,7 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | Contributor | Contributions |
 |-------------|---------------|
 | [@snehal492006](https://github.com/snehal492006) | 4 |
-| [@AbhinavPundir18](https://github.com/AbhinavPundir18) | 3 |
+| [@AbhinavPundir18](https://github.com/AbhinavPundir18) | 2 |
 | [@GayatriVitkar](https://github.com/GayatriVitkar) | 2 |
 
 ### Frontend
@@ -69,7 +69,7 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 |-------------|---------------|
 | [@shr128](https://github.com/shr128) | 6 |
 | [@Aaditya-2407](https://github.com/Aaditya-2407) | 6 |
-| [@AbhinavPundir18](https://github.com/AbhinavPundir18) | 4 |
+| [@AbhinavPundir18](https://github.com/AbhinavPundir18) | 3 |
 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 3 |
 | [@snehal492006](https://github.com/snehal492006) | 3 |
 | [@anujaugale617](https://github.com/anujaugale617) | 3 |
