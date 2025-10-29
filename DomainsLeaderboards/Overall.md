@@ -59,8 +59,8 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 
 | Contributor | Contributions |
 |-------------|---------------|
-| [@mekapilgupta](https://github.com/mekapilgupta) | 5 |
 | [@Ogagaoghene](https://github.com/Ogagaoghene) | 5 |
+| [@mekapilgupta](https://github.com/mekapilgupta) | 4 |
 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 4 |
 | [@AksharGoyal](https://github.com/AksharGoyal) | 2 |
 | [@Ansh-1019](https://github.com/Ansh-1019) | 1 |
