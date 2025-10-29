@@ -1,0 +1,25 @@
+{
+  "name": "random-fact-generator",
+  "version": "1.0.0",
+  "description": "Serves a random verified fact on every request",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    "random-fact",
+    "api",
+    "education",
+    "fun"
+  ],
+  "author": "Hacktoberfest Contributor",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
