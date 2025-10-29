@@ -54,13 +54,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/shr128.png" width="100" height="100" style="border-radius: 50%;" alt="shr128"/>
+<img src="https://github.com/mekapilgupta.png" width="100" height="100" style="border-radius: 50%;" alt="mekapilgupta"/>
 
-**[@shr128](https://github.com/shr128)**
+**[@mekapilgupta](https://github.com/mekapilgupta)**
 
-*Contributions: 6 PRs across 1 domain(s)*
+*Contributions: 6 PRs across 2 domain(s)*
 
-*Domains: Frontend*
+*Domains: Backend, NLP*
 
 </div>
 
@@ -70,9 +70,9 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/Aaditya-2407.png" width="100" height="100" style="border-radius: 50%;" alt="Aaditya-2407"/>
+<img src="https://github.com/shr128.png" width="100" height="100" style="border-radius: 50%;" alt="shr128"/>
 
-**[@Aaditya-2407](https://github.com/Aaditya-2407)**
+**[@shr128](https://github.com/shr128)**
 
 *Contributions: 6 PRs across 1 domain(s)*
 
@@ -86,13 +86,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/mekapilgupta.png" width="100" height="100" style="border-radius: 50%;" alt="mekapilgupta"/>
+<img src="https://github.com/Aaditya-2407.png" width="100" height="100" style="border-radius: 50%;" alt="Aaditya-2407"/>
 
-**[@mekapilgupta](https://github.com/mekapilgupta)**
+**[@Aaditya-2407](https://github.com/Aaditya-2407)**
 
-*Contributions: 5 PRs across 2 domain(s)*
+*Contributions: 6 PRs across 1 domain(s)*
 
-*Domains: Frontend, Backend*
+*Domains: Frontend*
 
 </div>
 
