@@ -1,0 +1,26 @@
+{
+  "name": "toxic-comment-detector",
+  "version": "1.0.0",
+  "description": "Detect if a user comment is toxic/abusive using sentiment analysis",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "node test.js"
+  },
+  "keywords": [
+    "nlp",
+    "toxic-comment",
+    "sentiment-analysis",
+    "moderation"
+  ],
+  "author": "Hacktoberfest Contributor",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "sentiment": "^5.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
