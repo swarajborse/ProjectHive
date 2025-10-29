@@ -1,0 +1,26 @@
+{
+  "name": "one-sentence-summarizer",
+  "version": "1.0.0",
+  "description": "Advanced single-sentence text summarization engine leveraging NLP algorithms for rapid content distillation and intelligent information extraction",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "summarizer": "^1.0.0",
+  "express": "^4.18.0"
+  },
+  "keywords": [
+    "nlp",
+    "summarization",
+    "text-processing",
+    "information-extraction",
+    "nlp-engine",
+    "text-summary",
+    "content-distillation",
+    "ai-summarizer",
+    "sentence-extraction"
+  ],
+  "author": "ProjectHive Contributor",
+  "license": "MIT"
+}
