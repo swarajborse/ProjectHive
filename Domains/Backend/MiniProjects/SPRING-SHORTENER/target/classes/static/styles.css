@@ -1,0 +1,44 @@
+body {
+  background-color: #ade8f4;
+  font-family: sans-serif;
+}
+
+.action-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 80px;
+}
+
+#originalUrl {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 30px;
+  box-shadow: 5px 5px 5px #34a0a4;
+  background-color: #d9ed92;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+#copyBtn{
+padding-left:290px;
+}
+
+#shareBtn{
+padding-left:290px;
+padding-right:70px;
+}
+
+#copyBtn, #shareBtn {
+  visibility: hidden;
+  position: absolute; /* makes them overlap the button spot */
+  transition: opacity 0.4s ease-in-out;
+}
