@@ -1,5 +1,5 @@
 # Compensation API
-**Contributor:** YourGitHubUsername
+**Contributor:** Tryxns
 
 ## Description
 Compensation API is a mini API which consume data from CSV file & present it as JSON.
