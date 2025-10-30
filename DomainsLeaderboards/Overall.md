@@ -35,7 +35,7 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | 23 | [@Keron](https://github.com/Keron) | 2 | 1 (Frontend) | Recent |
 | 24 | [@Utkarsh-660](https://github.com/Utkarsh-660) | 2 | 1 (Frontend) | Recent |
 | 25 | [@alisha1510](https://github.com/alisha1510) | 2 | 1 (Frontend) | Recent |
-| 26 | [@Tejkaur04](https://github.com/Tejkaur04) | 1 | 0 () | Recent |
+| 26 | [@Sagarankita](https://github.com/Sagarankita) | 1 | 1 (CompetitiveProgramming) | Recent |
 | 27 | [@ajithh404](https://github.com/ajithh404) | 1 | 1 (AI-ML) | Recent |
 | 28 | [@Snehal](https://github.com/Snehal) | 1 | 1 (AI-ML) | Recent |
 | 29 | [@Albus](https://github.com/Albus) | 1 | 1 (Backend) | Recent |
@@ -55,6 +55,15 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 ---
 
 ## 📊 Domain Breakdown
+
+### CompetitiveProgramming
+
+| Contributor | Contributions |
+|-------------|---------------|
+| [@snehal492006](https://github.com/snehal492006) | 4 |
+| [@GayatriVitkar](https://github.com/GayatriVitkar) | 2 |
+| [@AbhinavPundir18](https://github.com/AbhinavPundir18) | 2 |
+| [@Sagarankita](https://github.com/Sagarankita) | 1 |
 
 ### AI-ML
 
@@ -183,14 +192,6 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 |-------------|---------------|
 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 1 |
 
-### CompetitiveProgramming
-
-| Contributor | Contributions |
-|-------------|---------------|
-| [@snehal492006](https://github.com/snehal492006) | 4 |
-| [@GayatriVitkar](https://github.com/GayatriVitkar) | 2 |
-| [@AbhinavPundir18](https://github.com/AbhinavPundir18) | 2 |
-
 ### cli
 
 | Contributor | Contributions |
@@ -214,6 +215,6 @@ Top 10 contributors are featured in our [Hall of Fame](../HallOfFame/README.md)!
 
 ---
 
-**Last Updated:** 2025-10-29
+**Last Updated:** 2025-10-30
 
 *Leaderboard updates automatically on every merged PR via GitHub Actions*
