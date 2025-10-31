@@ -150,13 +150,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/sujal-pawar.png" width="100" height="100" style="border-radius: 50%;" alt="sujal-pawar"/>
+<img src="https://github.com/lokhandeshreya165-prog.png" width="100" height="100" style="border-radius: 50%;" alt="lokhandeshreya165-prog"/>
 
-**[@sujal-pawar](https://github.com/sujal-pawar)**
+**[@lokhandeshreya165-prog](https://github.com/lokhandeshreya165-prog)**
 
 *Contributions: 4 PRs across 2 domain(s)*
 
-*Domains: Backend, Frontend*
+*Domains: Frontend, CompetitiveProgramming*
 
 </div>
 
