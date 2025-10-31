@@ -150,13 +150,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/Ansh-1019.png" width="100" height="100" style="border-radius: 50%;" alt="Ansh-1019"/>
+<img src="https://github.com/lokhandeshreya165-prog.png" width="100" height="100" style="border-radius: 50%;" alt="lokhandeshreya165-prog"/>
 
-**[@Ansh-1019](https://github.com/Ansh-1019)**
+**[@lokhandeshreya165-prog](https://github.com/lokhandeshreya165-prog)**
 
 *Contributions: 4 PRs across 2 domain(s)*
 
-*Domains: AI-ML, Backend*
+*Domains: Frontend, CompetitiveProgramming*
 
 </div>
 
@@ -166,13 +166,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/AksharGoyal.png" width="100" height="100" style="border-radius: 50%;" alt="AksharGoyal"/>
+<img src="https://github.com/Ansh-1019.png" width="100" height="100" style="border-radius: 50%;" alt="Ansh-1019"/>
 
-**[@AksharGoyal](https://github.com/AksharGoyal)**
+**[@Ansh-1019](https://github.com/Ansh-1019)**
 
-*Contributions: 4 PRs across 3 domain(s)*
+*Contributions: 4 PRs across 2 domain(s)*
 
-*Domains: AI-ML, Backend, cli*
+*Domains: AI-ML, Backend*
 
 </div>
 
