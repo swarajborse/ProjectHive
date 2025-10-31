@@ -38,7 +38,7 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | 26 | [@Keron](https://github.com/Keron) | 2 | 1 (Frontend) | Recent |
 | 27 | [@Utkarsh-660](https://github.com/Utkarsh-660) | 2 | 1 (Frontend) | Recent |
 | 28 | [@alisha1510](https://github.com/alisha1510) | 2 | 1 (Frontend) | Recent |
-| 29 | [@Kirti-Pant](https://github.com/Kirti-Pant) | 1 | 1 (AI-ML) | Recent |
+| 29 | [@AsavariPawar](https://github.com/AsavariPawar) | 1 | 1 (CompetitiveProgramming) | Recent |
 | 30 | [@ajithh404](https://github.com/ajithh404) | 1 | 1 (AI-ML) | Recent |
 | 31 | [@Snehal](https://github.com/Snehal) | 1 | 1 (AI-ML) | Recent |
 | 32 | [@Albus](https://github.com/Albus) | 1 | 1 (Backend) | Recent |
@@ -59,6 +59,16 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 
 ## 📊 Domain Breakdown
 
+### CompetitiveProgramming
+
+| Contributor | Contributions |
+|-------------|---------------|
+| [@snehal492006](https://github.com/snehal492006) | 4 |
+| [@lokhandeshreya165-prog](https://github.com/lokhandeshreya165-prog) | 3 |
+| [@GayatriVitkar](https://github.com/GayatriVitkar) | 2 |
+| [@AbhinavPundir18](https://github.com/AbhinavPundir18) | 2 |
+| [@AsavariPawar](https://github.com/AsavariPawar) | 1 |
+
 ### AI-ML
 
 | Contributor | Contributions |
@@ -68,7 +78,6 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 2 |
 | [@ProjectHive-Community](https://github.com/ProjectHive-Community) | 2 |
 | [@Mmadan128](https://github.com/Mmadan128) | 2 |
-| [@Kirti-Pant](https://github.com/Kirti-Pant) | 1 |
 | [@ajithh404](https://github.com/ajithh404) | 1 |
 | [@Snehal](https://github.com/Snehal) | 1 |
 | [@snehal492006](https://github.com/snehal492006) | 1 |
@@ -191,15 +200,6 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | Contributor | Contributions |
 |-------------|---------------|
 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 1 |
-
-### CompetitiveProgramming
-
-| Contributor | Contributions |
-|-------------|---------------|
-| [@snehal492006](https://github.com/snehal492006) | 4 |
-| [@lokhandeshreya165-prog](https://github.com/lokhandeshreya165-prog) | 3 |
-| [@GayatriVitkar](https://github.com/GayatriVitkar) | 2 |
-| [@AbhinavPundir18](https://github.com/AbhinavPundir18) | 2 |
 
 ### cli
 
