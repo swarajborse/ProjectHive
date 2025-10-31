@@ -38,13 +38,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/sujal-pawar.png" width="100" height="100" style="border-radius: 50%;" alt="sujal-pawar"/>
+<img src="https://github.com/snehal492006.png" width="100" height="100" style="border-radius: 50%;" alt="snehal492006"/>
 
-**[@sujal-pawar](https://github.com/sujal-pawar)**
+**[@snehal492006](https://github.com/snehal492006)**
 
-*Contributions: 8 PRs across 4 domain(s)*
+*Contributions: 8 PRs across 3 domain(s)*
 
-*Domains: AI-ML, Backend, Frontend, FullStack*
+*Domains: AI-ML, CompetitiveProgramming, Frontend*
 
 </div>
 
@@ -54,13 +54,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/snehal492006.png" width="100" height="100" style="border-radius: 50%;" alt="snehal492006"/>
+<img src="https://github.com/sujal-pawar.png" width="100" height="100" style="border-radius: 50%;" alt="sujal-pawar"/>
 
-**[@snehal492006](https://github.com/snehal492006)**
+**[@sujal-pawar](https://github.com/sujal-pawar)**
 
-*Contributions: 8 PRs across 3 domain(s)*
+*Contributions: 7 PRs across 4 domain(s)*
 
-*Domains: AI-ML, CompetitiveProgramming, Frontend*
+*Domains: AI-ML, Backend, Frontend, FullStack*
 
 </div>
 
