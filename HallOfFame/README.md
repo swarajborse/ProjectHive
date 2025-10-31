@@ -54,6 +54,22 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
+<img src="https://github.com/sujal-pawar.png" width="100" height="100" style="border-radius: 50%;" alt="sujal-pawar"/>
+
+**[@sujal-pawar](https://github.com/sujal-pawar)**
+
+*Contributions: 7 PRs across 3 domain(s)*
+
+*Domains: FullStack, Backend, Frontend*
+
+</div>
+
+---
+
+### 🏅 Rank 4
+
+<div align="center">
+
 <img src="https://github.com/mekapilgupta.png" width="100" height="100" style="border-radius: 50%;" alt="mekapilgupta"/>
 
 **[@mekapilgupta](https://github.com/mekapilgupta)**
@@ -66,7 +82,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 4
+### 🏅 Rank 5
 
 <div align="center">
 
@@ -82,7 +98,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 5
+### 🏅 Rank 6
 
 <div align="center">
 
@@ -98,7 +114,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 6
+### 🏅 Rank 7
 
 <div align="center">
 
@@ -114,7 +130,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 7
+### 🏅 Rank 8
 
 <div align="center">
 
@@ -125,22 +141,6 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 *Contributions: 5 PRs across 1 domain(s)*
 
 *Domains: Backend*
-
-</div>
-
----
-
-### 🏅 Rank 8
-
-<div align="center">
-
-<img src="https://github.com/sujal-pawar.png" width="100" height="100" style="border-radius: 50%;" alt="sujal-pawar"/>
-
-**[@sujal-pawar](https://github.com/sujal-pawar)**
-
-*Contributions: 5 PRs across 3 domain(s)*
-
-*Domains: Backend, Frontend, FullStack*
 
 </div>
 
@@ -166,13 +166,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/lokhandeshreya165-prog.png" width="100" height="100" style="border-radius: 50%;" alt="lokhandeshreya165-prog"/>
+<img src="https://github.com/Ansh-1019.png" width="100" height="100" style="border-radius: 50%;" alt="Ansh-1019"/>
 
-**[@lokhandeshreya165-prog](https://github.com/lokhandeshreya165-prog)**
+**[@Ansh-1019](https://github.com/Ansh-1019)**
 
 *Contributions: 4 PRs across 2 domain(s)*
 
-*Domains: FullStack, CompetitiveProgramming*
+*Domains: AI-ML, Backend*
 
 </div>
 
