@@ -22,13 +22,13 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | 10 | [@Ansh-1019](https://github.com/Ansh-1019) | 4 | 2 (AI-ML, Backend) | Recent |
 | 11 | [@AksharGoyal](https://github.com/AksharGoyal) | 4 | 3 (AI-ML, Backend, cli) | Recent |
 | 12 | [@SOHAM-GADEKAR](https://github.com/SOHAM-GADEKAR) | 4 | 2 (Frontend, IoT) | Recent |
-| 13 | [@lokhandeshreya165-prog](https://github.com/lokhandeshreya165-prog) | 3 | 1 (CompetitiveProgramming) | Recent |
-| 14 | [@anujaugale617](https://github.com/anujaugale617) | 3 | 1 (Frontend) | Recent |
-| 15 | [@vatsalgupta2004](https://github.com/vatsalgupta2004) | 2 | 2 (AI-ML, Frontend) | Recent |
-| 16 | [@ProjectHive-Community](https://github.com/ProjectHive-Community) | 2 | 1 (AI-ML) | Recent |
-| 17 | [@Mmadan128](https://github.com/Mmadan128) | 2 | 1 (AI-ML) | Recent |
-| 18 | [@Dhiraj201226](https://github.com/Dhiraj201226) | 2 | 2 (AI-ML, Frontend) | Recent |
-| 19 | [@Tryxns](https://github.com/Tryxns) | 2 | 1 (Backend) | Recent |
+| 13 | [@Tryxns](https://github.com/Tryxns) | 3 | 2 (Backend, FullStack) | Recent |
+| 14 | [@lokhandeshreya165-prog](https://github.com/lokhandeshreya165-prog) | 3 | 1 (CompetitiveProgramming) | Recent |
+| 15 | [@anujaugale617](https://github.com/anujaugale617) | 3 | 1 (Frontend) | Recent |
+| 16 | [@vatsalgupta2004](https://github.com/vatsalgupta2004) | 2 | 2 (AI-ML, Frontend) | Recent |
+| 17 | [@ProjectHive-Community](https://github.com/ProjectHive-Community) | 2 | 1 (AI-ML) | Recent |
+| 18 | [@Mmadan128](https://github.com/Mmadan128) | 2 | 1 (AI-ML) | Recent |
+| 19 | [@Dhiraj201226](https://github.com/Dhiraj201226) | 2 | 2 (AI-ML, Frontend) | Recent |
 | 20 | [@vaibhavbaviskar21](https://github.com/vaibhavbaviskar21) | 2 | 2 (Blockchain, Frontend) | Recent |
 | 21 | [@GayatriVitkar](https://github.com/GayatriVitkar) | 2 | 1 (CompetitiveProgramming) | Recent |
 | 22 | [@Mansi13-6](https://github.com/Mansi13-6) | 2 | 1 (Frontend) | Recent |
@@ -125,6 +125,7 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 2 |
 | [@sujal-pawar](https://github.com/sujal-pawar) | 2 |
 | [@k4niz](https://github.com/k4niz) | 1 |
+| [@Tryxns](https://github.com/Tryxns) | 1 |
 | [@ekxnsh22005](https://github.com/ekxnsh22005) | 1 |
 
 ### IoT
