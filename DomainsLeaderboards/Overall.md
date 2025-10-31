@@ -38,7 +38,7 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | 26 | [@Keron](https://github.com/Keron) | 2 | 1 (Frontend) | Recent |
 | 27 | [@Utkarsh-660](https://github.com/Utkarsh-660) | 2 | 1 (Frontend) | Recent |
 | 28 | [@alisha1510](https://github.com/alisha1510) | 2 | 1 (Frontend) | Recent |
-| 29 | [@pulkittrillion](https://github.com/pulkittrillion) | 1 | 0 () | Recent |
+| 29 | [@Shravanidorle](https://github.com/Shravanidorle) | 1 | 0 () | Recent |
 | 30 | [@ajithh404](https://github.com/ajithh404) | 1 | 1 (AI-ML) | Recent |
 | 31 | [@Snehal](https://github.com/Snehal) | 1 | 1 (AI-ML) | Recent |
 | 32 | [@shravanidorle](https://github.com/shravanidorle) | 1 | 1 (AI-ML) | Recent |
