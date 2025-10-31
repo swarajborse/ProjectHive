@@ -134,6 +134,22 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
+<img src="https://github.com/sujal-pawar.png" width="100" height="100" style="border-radius: 50%;" alt="sujal-pawar"/>
+
+**[@sujal-pawar](https://github.com/sujal-pawar)**
+
+*Contributions: 5 PRs across 3 domain(s)*
+
+*Domains: Backend, Frontend, FullStack*
+
+</div>
+
+---
+
+### 🏅 Rank 9
+
+<div align="center">
+
 <img src="https://github.com/AbhinavPundir18.png" width="100" height="100" style="border-radius: 50%;" alt="AbhinavPundir18"/>
 
 **[@AbhinavPundir18](https://github.com/AbhinavPundir18)**
@@ -146,7 +162,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 ---
 
-### 🏅 Rank 9
+### 🏅 Rank 10
 
 <div align="center">
 
@@ -156,23 +172,7 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 *Contributions: 4 PRs across 2 domain(s)*
 
-*Domains: Frontend, CompetitiveProgramming*
-
-</div>
-
----
-
-### 🏅 Rank 10
-
-<div align="center">
-
-<img src="https://github.com/Ansh-1019.png" width="100" height="100" style="border-radius: 50%;" alt="Ansh-1019"/>
-
-**[@Ansh-1019](https://github.com/Ansh-1019)**
-
-*Contributions: 4 PRs across 2 domain(s)*
-
-*Domains: AI-ML, Backend*
+*Domains: FullStack, CompetitiveProgramming*
 
 </div>
 
