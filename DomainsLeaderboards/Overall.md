@@ -19,10 +19,10 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | 7 | [@k4niz](https://github.com/k4niz) | 5 | 4 (AI-ML, AR-VR, FullStack, IoT) | Recent |
 | 8 | [@Ogagaoghene](https://github.com/Ogagaoghene) | 5 | 1 (Backend) | Recent |
 | 9 | [@AbhinavPundir18](https://github.com/AbhinavPundir18) | 5 | 2 (CompetitiveProgramming, Frontend) | Recent |
-| 10 | [@Ansh-1019](https://github.com/Ansh-1019) | 4 | 2 (AI-ML, Backend) | Recent |
-| 11 | [@AksharGoyal](https://github.com/AksharGoyal) | 4 | 3 (AI-ML, Backend, cli) | Recent |
-| 12 | [@SOHAM-GADEKAR](https://github.com/SOHAM-GADEKAR) | 4 | 2 (Frontend, IoT) | Recent |
-| 13 | [@Tryxns](https://github.com/Tryxns) | 3 | 2 (Backend, FullStack) | Recent |
+| 10 | [@Tryxns](https://github.com/Tryxns) | 4 | 2 (Backend, FullStack) | Recent |
+| 11 | [@Ansh-1019](https://github.com/Ansh-1019) | 4 | 2 (AI-ML, Backend) | Recent |
+| 12 | [@AksharGoyal](https://github.com/AksharGoyal) | 4 | 3 (AI-ML, Backend, cli) | Recent |
+| 13 | [@SOHAM-GADEKAR](https://github.com/SOHAM-GADEKAR) | 4 | 2 (Frontend, IoT) | Recent |
 | 14 | [@lokhandeshreya165-prog](https://github.com/lokhandeshreya165-prog) | 3 | 1 (CompetitiveProgramming) | Recent |
 | 15 | [@anujaugale617](https://github.com/anujaugale617) | 3 | 1 (Frontend) | Recent |
 | 16 | [@vatsalgupta2004](https://github.com/vatsalgupta2004) | 2 | 2 (AI-ML, Frontend) | Recent |
@@ -38,33 +38,48 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | 26 | [@Keron](https://github.com/Keron) | 2 | 1 (Frontend) | Recent |
 | 27 | [@Utkarsh-660](https://github.com/Utkarsh-660) | 2 | 1 (Frontend) | Recent |
 | 28 | [@alisha1510](https://github.com/alisha1510) | 2 | 1 (Frontend) | Recent |
-| 29 | [@pulkittrillion](https://github.com/pulkittrillion) | 1 | 1 (cli) | Recent |
-| 30 | [@ajithh404](https://github.com/ajithh404) | 1 | 1 (AI-ML) | Recent |
-| 31 | [@Snehal](https://github.com/Snehal) | 1 | 1 (AI-ML) | Recent |
-| 32 | [@Albus](https://github.com/Albus) | 1 | 1 (Backend) | Recent |
-| 33 | [@star-lord1234](https://github.com/star-lord1234) | 1 | 1 (Frontend) | Recent |
-| 34 | [@mahir-m01](https://github.com/mahir-m01) | 1 | 1 (Frontend) | Recent |
-| 35 | [@ipsitdebnath](https://github.com/ipsitdebnath) | 1 | 1 (Frontend) | Recent |
-| 36 | [@GayatriVitkarcd](https://github.com/GayatriVitkarcd) | 1 | 1 (Frontend) | Recent |
-| 37 | [@SanjeevDeori](https://github.com/SanjeevDeori) | 1 | 1 (Frontend) | Recent |
-| 38 | [@Tanmay-Kad](https://github.com/Tanmay-Kad) | 1 | 1 (Frontend) | Recent |
-| 39 | [@utkarsh-sharma](https://github.com/utkarsh-sharma) | 1 | 1 (Frontend) | Recent |
-| 40 | [@jeturgavli](https://github.com/jeturgavli) | 1 | 1 (Frontend) | Recent |
-| 41 | [@Tanushri1307](https://github.com/Tanushri1307) | 1 | 1 (Frontend) | Recent |
-| 42 | [@Laikokwui](https://github.com/Laikokwui) | 1 | 1 (Frontend) | Recent |
-| 43 | [@supritimishra](https://github.com/supritimishra) | 1 | 1 (Frontend) | Recent |
-| 44 | [@ekxnsh22005](https://github.com/ekxnsh22005) | 1 | 1 (FullStack) | Recent |
+| 29 | [@ajithh404](https://github.com/ajithh404) | 1 | 1 (AI-ML) | Recent |
+| 30 | [@Snehal](https://github.com/Snehal) | 1 | 1 (AI-ML) | Recent |
+| 31 | [@Albus](https://github.com/Albus) | 1 | 1 (Backend) | Recent |
+| 32 | [@star-lord1234](https://github.com/star-lord1234) | 1 | 1 (Frontend) | Recent |
+| 33 | [@mahir-m01](https://github.com/mahir-m01) | 1 | 1 (Frontend) | Recent |
+| 34 | [@ipsitdebnath](https://github.com/ipsitdebnath) | 1 | 1 (Frontend) | Recent |
+| 35 | [@GayatriVitkarcd](https://github.com/GayatriVitkarcd) | 1 | 1 (Frontend) | Recent |
+| 36 | [@SanjeevDeori](https://github.com/SanjeevDeori) | 1 | 1 (Frontend) | Recent |
+| 37 | [@Tanmay-Kad](https://github.com/Tanmay-Kad) | 1 | 1 (Frontend) | Recent |
+| 38 | [@utkarsh-sharma](https://github.com/utkarsh-sharma) | 1 | 1 (Frontend) | Recent |
+| 39 | [@jeturgavli](https://github.com/jeturgavli) | 1 | 1 (Frontend) | Recent |
+| 40 | [@Tanushri1307](https://github.com/Tanushri1307) | 1 | 1 (Frontend) | Recent |
+| 41 | [@Laikokwui](https://github.com/Laikokwui) | 1 | 1 (Frontend) | Recent |
+| 42 | [@supritimishra](https://github.com/supritimishra) | 1 | 1 (Frontend) | Recent |
+| 43 | [@ekxnsh22005](https://github.com/ekxnsh22005) | 1 | 1 (FullStack) | Recent |
 
 ---
 
 ## 📊 Domain Breakdown
 
-### cli
+### Backend
 
 | Contributor | Contributions |
 |-------------|---------------|
-| [@pulkittrillion](https://github.com/pulkittrillion) | 1 |
-| [@AksharGoyal](https://github.com/AksharGoyal) | 1 |
+| [@Ogagaoghene](https://github.com/Ogagaoghene) | 5 |
+| [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 4 |
+| [@mekapilgupta](https://github.com/mekapilgupta) | 4 |
+| [@Tryxns](https://github.com/Tryxns) | 2 |
+| [@AksharGoyal](https://github.com/AksharGoyal) | 2 |
+| [@Ansh-1019](https://github.com/Ansh-1019) | 1 |
+| [@sujal-pawar](https://github.com/sujal-pawar) | 1 |
+| [@Albus](https://github.com/Albus) | 1 |
+
+### FullStack
+
+| Contributor | Contributions |
+|-------------|---------------|
+| [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 2 |
+| [@sujal-pawar](https://github.com/sujal-pawar) | 2 |
+| [@Tryxns](https://github.com/Tryxns) | 1 |
+| [@k4niz](https://github.com/k4niz) | 1 |
+| [@ekxnsh22005](https://github.com/ekxnsh22005) | 1 |
 
 ### AI-ML
 
@@ -90,16 +105,6 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | [@k4niz](https://github.com/k4niz) | 1 |
 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 1 |
 
-### FullStack
-
-| Contributor | Contributions |
-|-------------|---------------|
-| [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 2 |
-| [@sujal-pawar](https://github.com/sujal-pawar) | 2 |
-| [@k4niz](https://github.com/k4niz) | 1 |
-| [@Tryxns](https://github.com/Tryxns) | 1 |
-| [@ekxnsh22005](https://github.com/ekxnsh22005) | 1 |
-
 ### IoT
 
 | Contributor | Contributions |
@@ -107,19 +112,6 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | [@k4niz](https://github.com/k4niz) | 1 |
 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 1 |
 | [@SOHAM-GADEKAR](https://github.com/SOHAM-GADEKAR) | 1 |
-
-### Backend
-
-| Contributor | Contributions |
-|-------------|---------------|
-| [@Ogagaoghene](https://github.com/Ogagaoghene) | 5 |
-| [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 4 |
-| [@mekapilgupta](https://github.com/mekapilgupta) | 4 |
-| [@AksharGoyal](https://github.com/AksharGoyal) | 2 |
-| [@Tryxns](https://github.com/Tryxns) | 2 |
-| [@Ansh-1019](https://github.com/Ansh-1019) | 1 |
-| [@sujal-pawar](https://github.com/sujal-pawar) | 1 |
-| [@Albus](https://github.com/Albus) | 1 |
 
 ### Blockchain
 
@@ -207,6 +199,12 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | [@lokhandeshreya165-prog](https://github.com/lokhandeshreya165-prog) | 3 |
 | [@GayatriVitkar](https://github.com/GayatriVitkar) | 2 |
 | [@AbhinavPundir18](https://github.com/AbhinavPundir18) | 2 |
+
+### cli
+
+| Contributor | Contributions |
+|-------------|---------------|
+| [@AksharGoyal](https://github.com/AksharGoyal) | 1 |
 
 ---
 

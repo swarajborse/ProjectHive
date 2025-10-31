@@ -166,13 +166,13 @@ Our Hall of Fame recognizes outstanding individuals who have made significant co
 
 <div align="center">
 
-<img src="https://github.com/Ansh-1019.png" width="100" height="100" style="border-radius: 50%;" alt="Ansh-1019"/>
+<img src="https://github.com/Tryxns.png" width="100" height="100" style="border-radius: 50%;" alt="Tryxns"/>
 
-**[@Ansh-1019](https://github.com/Ansh-1019)**
+**[@Tryxns](https://github.com/Tryxns)**
 
 *Contributions: 4 PRs across 2 domain(s)*
 
-*Domains: AI-ML, Backend*
+*Domains: Backend, FullStack*
 
 </div>
 
