@@ -11,8 +11,8 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | Rank | Contributor | Total PRs | Domains Contributed | Last Active |
 |------|-------------|-----------|---------------------|-------------|
 | 🥇 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 20 | 13 (AI-ML, AR-VR, Backend, Blockchain, Cloud, Cybersecurity, DevOps, Frontend, FullStack, IoT, MLOps, NLP, Robotics-Automation) | Recent |
-| 🥈 | [@snehal492006](https://github.com/snehal492006) | 8 | 3 (AI-ML, CompetitiveProgramming, Frontend) | Recent |
-| 🥉 | [@sujal-pawar](https://github.com/sujal-pawar) | 7 | 3 (FullStack, Backend, Frontend) | Recent |
+| 🥈 | [@sujal-pawar](https://github.com/sujal-pawar) | 8 | 4 (AI-ML, Backend, Frontend, FullStack) | Recent |
+| 🥉 | [@snehal492006](https://github.com/snehal492006) | 8 | 3 (AI-ML, CompetitiveProgramming, Frontend) | Recent |
 | 4 | [@mekapilgupta](https://github.com/mekapilgupta) | 7 | 2 (Backend, NLP) | Recent |
 | 5 | [@shr128](https://github.com/shr128) | 6 | 1 (Frontend) | Recent |
 | 6 | [@Aaditya-2407](https://github.com/Aaditya-2407) | 6 | 1 (Frontend) | Recent |
@@ -58,14 +58,22 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 
 ## 📊 Domain Breakdown
 
-### FullStack
+### AI-ML
 
 | Contributor | Contributions |
 |-------------|---------------|
-| [@sujal-pawar](https://github.com/sujal-pawar) | 3 |
+| [@Ansh-1019](https://github.com/Ansh-1019) | 3 |
+| [@sujal-pawar](https://github.com/sujal-pawar) | 2 |
+| [@k4niz](https://github.com/k4niz) | 2 |
 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 2 |
-| [@k4niz](https://github.com/k4niz) | 1 |
-| [@ekxnsh22005](https://github.com/ekxnsh22005) | 1 |
+| [@ProjectHive-Community](https://github.com/ProjectHive-Community) | 2 |
+| [@Mmadan128](https://github.com/Mmadan128) | 2 |
+| [@ajithh404](https://github.com/ajithh404) | 1 |
+| [@Snehal](https://github.com/Snehal) | 1 |
+| [@snehal492006](https://github.com/snehal492006) | 1 |
+| [@vatsalgupta2004](https://github.com/vatsalgupta2004) | 1 |
+| [@Dhiraj201226](https://github.com/Dhiraj201226) | 1 |
+| [@AksharGoyal](https://github.com/AksharGoyal) | 1 |
 
 ### Backend
 
@@ -114,21 +122,14 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | [@Laikokwui](https://github.com/Laikokwui) | 1 |
 | [@supritimishra](https://github.com/supritimishra) | 1 |
 
-### AI-ML
+### FullStack
 
 | Contributor | Contributions |
 |-------------|---------------|
-| [@Ansh-1019](https://github.com/Ansh-1019) | 3 |
-| [@k4niz](https://github.com/k4niz) | 2 |
+| [@sujal-pawar](https://github.com/sujal-pawar) | 2 |
 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 2 |
-| [@ProjectHive-Community](https://github.com/ProjectHive-Community) | 2 |
-| [@Mmadan128](https://github.com/Mmadan128) | 2 |
-| [@ajithh404](https://github.com/ajithh404) | 1 |
-| [@Snehal](https://github.com/Snehal) | 1 |
-| [@snehal492006](https://github.com/snehal492006) | 1 |
-| [@vatsalgupta2004](https://github.com/vatsalgupta2004) | 1 |
-| [@Dhiraj201226](https://github.com/Dhiraj201226) | 1 |
-| [@AksharGoyal](https://github.com/AksharGoyal) | 1 |
+| [@k4niz](https://github.com/k4niz) | 1 |
+| [@ekxnsh22005](https://github.com/ekxnsh22005) | 1 |
 
 ### AR-VR
 
