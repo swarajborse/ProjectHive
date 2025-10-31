@@ -29,19 +29,19 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | 17 | [@ProjectHive-Community](https://github.com/ProjectHive-Community) | 2 | 1 (AI-ML) | Recent |
 | 18 | [@Mmadan128](https://github.com/Mmadan128) | 2 | 1 (AI-ML) | Recent |
 | 19 | [@Dhiraj201226](https://github.com/Dhiraj201226) | 2 | 2 (AI-ML, Frontend) | Recent |
-| 20 | [@vaibhavbaviskar21](https://github.com/vaibhavbaviskar21) | 2 | 2 (Blockchain, Frontend) | Recent |
-| 21 | [@GayatriVitkar](https://github.com/GayatriVitkar) | 2 | 1 (CompetitiveProgramming) | Recent |
-| 22 | [@Mansi13-6](https://github.com/Mansi13-6) | 2 | 1 (Frontend) | Recent |
-| 23 | [@kayode96-max](https://github.com/kayode96-max) | 2 | 1 (Frontend) | Recent |
-| 24 | [@MeghPatel-007](https://github.com/MeghPatel-007) | 2 | 1 (Frontend) | Recent |
-| 25 | [@khyati262](https://github.com/khyati262) | 2 | 1 (Frontend) | Recent |
-| 26 | [@Keron](https://github.com/Keron) | 2 | 1 (Frontend) | Recent |
-| 27 | [@Utkarsh-660](https://github.com/Utkarsh-660) | 2 | 1 (Frontend) | Recent |
-| 28 | [@alisha1510](https://github.com/alisha1510) | 2 | 1 (Frontend) | Recent |
-| 29 | [@pulkittrillion](https://github.com/pulkittrillion) | 1 | 0 () | Recent |
-| 30 | [@ajithh404](https://github.com/ajithh404) | 1 | 1 (AI-ML) | Recent |
-| 31 | [@Snehal](https://github.com/Snehal) | 1 | 1 (AI-ML) | Recent |
-| 32 | [@shravanidorle](https://github.com/shravanidorle) | 1 | 1 (AI-ML) | Recent |
+| 20 | [@shravanidorle](https://github.com/shravanidorle) | 2 | 2 (AI-ML, Frontend) | Recent |
+| 21 | [@vaibhavbaviskar21](https://github.com/vaibhavbaviskar21) | 2 | 2 (Blockchain, Frontend) | Recent |
+| 22 | [@GayatriVitkar](https://github.com/GayatriVitkar) | 2 | 1 (CompetitiveProgramming) | Recent |
+| 23 | [@Mansi13-6](https://github.com/Mansi13-6) | 2 | 1 (Frontend) | Recent |
+| 24 | [@kayode96-max](https://github.com/kayode96-max) | 2 | 1 (Frontend) | Recent |
+| 25 | [@MeghPatel-007](https://github.com/MeghPatel-007) | 2 | 1 (Frontend) | Recent |
+| 26 | [@khyati262](https://github.com/khyati262) | 2 | 1 (Frontend) | Recent |
+| 27 | [@Keron](https://github.com/Keron) | 2 | 1 (Frontend) | Recent |
+| 28 | [@Utkarsh-660](https://github.com/Utkarsh-660) | 2 | 1 (Frontend) | Recent |
+| 29 | [@alisha1510](https://github.com/alisha1510) | 2 | 1 (Frontend) | Recent |
+| 30 | [@Shravanidorle](https://github.com/Shravanidorle) | 1 | 1 (Frontend) | Recent |
+| 31 | [@ajithh404](https://github.com/ajithh404) | 1 | 1 (AI-ML) | Recent |
+| 32 | [@Snehal](https://github.com/Snehal) | 1 | 1 (AI-ML) | Recent |
 | 33 | [@Albus](https://github.com/Albus) | 1 | 1 (Backend) | Recent |
 | 34 | [@star-lord1234](https://github.com/star-lord1234) | 1 | 1 (Frontend) | Recent |
 | 35 | [@mahir-m01](https://github.com/mahir-m01) | 1 | 1 (Frontend) | Recent |
@@ -59,6 +59,42 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 ---
 
 ## 📊 Domain Breakdown
+
+### Frontend
+
+| Contributor | Contributions |
+|-------------|---------------|
+| [@shr128](https://github.com/shr128) | 6 |
+| [@Aaditya-2407](https://github.com/Aaditya-2407) | 6 |
+| [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 3 |
+| [@snehal492006](https://github.com/snehal492006) | 3 |
+| [@sujal-pawar](https://github.com/sujal-pawar) | 3 |
+| [@AbhinavPundir18](https://github.com/AbhinavPundir18) | 3 |
+| [@anujaugale617](https://github.com/anujaugale617) | 3 |
+| [@SOHAM-GADEKAR](https://github.com/SOHAM-GADEKAR) | 3 |
+| [@Mansi13-6](https://github.com/Mansi13-6) | 2 |
+| [@kayode96-max](https://github.com/kayode96-max) | 2 |
+| [@MeghPatel-007](https://github.com/MeghPatel-007) | 2 |
+| [@khyati262](https://github.com/khyati262) | 2 |
+| [@Keron](https://github.com/Keron) | 2 |
+| [@Utkarsh-660](https://github.com/Utkarsh-660) | 2 |
+| [@alisha1510](https://github.com/alisha1510) | 2 |
+| [@Shravanidorle](https://github.com/Shravanidorle) | 1 |
+| [@vatsalgupta2004](https://github.com/vatsalgupta2004) | 1 |
+| [@Dhiraj201226](https://github.com/Dhiraj201226) | 1 |
+| [@shravanidorle](https://github.com/shravanidorle) | 1 |
+| [@vaibhavbaviskar21](https://github.com/vaibhavbaviskar21) | 1 |
+| [@star-lord1234](https://github.com/star-lord1234) | 1 |
+| [@mahir-m01](https://github.com/mahir-m01) | 1 |
+| [@ipsitdebnath](https://github.com/ipsitdebnath) | 1 |
+| [@GayatriVitkarcd](https://github.com/GayatriVitkarcd) | 1 |
+| [@SanjeevDeori](https://github.com/SanjeevDeori) | 1 |
+| [@Tanmay-Kad](https://github.com/Tanmay-Kad) | 1 |
+| [@utkarsh-sharma](https://github.com/utkarsh-sharma) | 1 |
+| [@jeturgavli](https://github.com/jeturgavli) | 1 |
+| [@Tanushri1307](https://github.com/Tanushri1307) | 1 |
+| [@Laikokwui](https://github.com/Laikokwui) | 1 |
+| [@supritimishra](https://github.com/supritimishra) | 1 |
 
 ### AI-ML
 
@@ -140,40 +176,6 @@ Welcome to the ProjectHive Leaderboard! This page automatically tracks all contr
 | Contributor | Contributions |
 |-------------|---------------|
 | [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 1 |
-
-### Frontend
-
-| Contributor | Contributions |
-|-------------|---------------|
-| [@shr128](https://github.com/shr128) | 6 |
-| [@Aaditya-2407](https://github.com/Aaditya-2407) | 6 |
-| [@Tejas-Santosh-Nalawade](https://github.com/Tejas-Santosh-Nalawade) | 3 |
-| [@snehal492006](https://github.com/snehal492006) | 3 |
-| [@sujal-pawar](https://github.com/sujal-pawar) | 3 |
-| [@AbhinavPundir18](https://github.com/AbhinavPundir18) | 3 |
-| [@anujaugale617](https://github.com/anujaugale617) | 3 |
-| [@SOHAM-GADEKAR](https://github.com/SOHAM-GADEKAR) | 3 |
-| [@Mansi13-6](https://github.com/Mansi13-6) | 2 |
-| [@kayode96-max](https://github.com/kayode96-max) | 2 |
-| [@MeghPatel-007](https://github.com/MeghPatel-007) | 2 |
-| [@khyati262](https://github.com/khyati262) | 2 |
-| [@Keron](https://github.com/Keron) | 2 |
-| [@Utkarsh-660](https://github.com/Utkarsh-660) | 2 |
-| [@alisha1510](https://github.com/alisha1510) | 2 |
-| [@vatsalgupta2004](https://github.com/vatsalgupta2004) | 1 |
-| [@Dhiraj201226](https://github.com/Dhiraj201226) | 1 |
-| [@vaibhavbaviskar21](https://github.com/vaibhavbaviskar21) | 1 |
-| [@star-lord1234](https://github.com/star-lord1234) | 1 |
-| [@mahir-m01](https://github.com/mahir-m01) | 1 |
-| [@ipsitdebnath](https://github.com/ipsitdebnath) | 1 |
-| [@GayatriVitkarcd](https://github.com/GayatriVitkarcd) | 1 |
-| [@SanjeevDeori](https://github.com/SanjeevDeori) | 1 |
-| [@Tanmay-Kad](https://github.com/Tanmay-Kad) | 1 |
-| [@utkarsh-sharma](https://github.com/utkarsh-sharma) | 1 |
-| [@jeturgavli](https://github.com/jeturgavli) | 1 |
-| [@Tanushri1307](https://github.com/Tanushri1307) | 1 |
-| [@Laikokwui](https://github.com/Laikokwui) | 1 |
-| [@supritimishra](https://github.com/supritimishra) | 1 |
 
 ### MLOps
 
